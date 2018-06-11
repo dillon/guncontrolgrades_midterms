@@ -1,0 +1,432 @@
+/* green: rgb(0, 170, 109) aka #00aa6d */
+/* blue: primary bootstrap blue */;
+/* Site-wide */
+
+br {
+  font-size: 0.1rem;
+}
+
+.pageContainer {
+  margin: auto;
+  /*margin-top:30px;*/
+  max-width: 1100px;
+}
+
+.funbox {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(218, 225, 233);
+  margin:24px; /* 24 px */
+  max-width:1100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 1.5rem 2rem;
+  border-radius: .25rem;
+}
+
+.row {
+  margin:0px !important;
+}
+
+.noMarginCol {
+  margin:0px !important;
+  padding:0px !important;
+}
+
+.smallCaps {
+  font-size:.8rem;
+  text-align:center;
+  color: #212529;
+
+}
+
+.funboxTitle {
+  font-size: 1.1rem;
+}
+
+
+
+.hintText {
+  font-size: .75rem;
+  line-height: 1.2;
+}
+
+.v-center {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+
+.nav-tabs {
+  padding-bottom:15px !important;
+}
+
+.Navbar .nav-link a {
+  color: white;
+  font-size:.8rem;
+  font-weight:normal;
+}
+.navbar-brand {
+  font-size:1rem !important;
+}
+
+.Navbar .nav-link a:hover {
+  color: white;
+  text-decoration: none;
+
+}
+
+.Navbar .navbar-brand a {
+  color: white;
+  font-size:.9rem;
+  font-weight: normal;
+  vertical-align:center;
+  display:block;
+
+}
+
+.Navbar .navbar-brand a:hover {
+  color: white;
+  text-decoration: none;
+
+}
+
+.navbar {
+  max-width:1100px;
+  margin:auto;
+  background-color: #334858;
+  padding-left:24px !important;
+  padding-right:24px !important;
+}
+
+.Navbar {
+  background-color: #334858
+}
+
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
+/* US Map */
+
+
+#us-map {
+  width: 102%;
+  height:100%;
+  overflow:hidden;
+  max-width:950px;
+  margin:auto;
+}
+
+#TX:hover,
+#FL:hover,
+#AK:hover,
+#CA:hover {
+  /* 
+  stroke: black !important;
+  stroke-width:.05rem;
+  stroke-linejoin: round;
+  */
+  fill: rgb(0, 172, 100, .9) !important;
+  cursor: pointer;
+}
+
+#path67 {
+  fill: none !important;
+  stroke: #a9a9a9 !important;
+  cursor: default;
+}
+
+/* State left column */
+
+.letterGrades {
+  font-size: 1.5rem;
+  margin-top: -7px;
+  vertical-align: middle;
+  display: inline-block;
+  /*color: white;
+  float: right;
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+  margin-top: -76px;
+  margin-right: -10px;*/
+}
+
+.candidates {
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.districtNameInTabs {
+  margin-top:15px;
+  font-size:.9rem;
+}
+.candidates img {
+  width: 100%;
+  max-width: 180px;
+  margin: auto;
+  vertical-align: middle;
+  display: inline-block;
+  /*  border: 1px solid black;
+*/
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: .2s;
+  -webkit-transition: .2s;
+  opacity:.9;
+}
+
+.candidates button:hover img {
+  -webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(70%);
+  transition: .2s;
+  -webkit-transition: .2s;
+}
+
+
+.candidates button:hover {
+  background-color: white;
+  color: #212529;;
+  /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);*/
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  border-color:rgb(156,164,177) !important;
+  transition:.2s;
+  -webkit-transition: .2s;
+}
+
+
+.candidates button {
+  background-color: white;
+  color: #212529;
+  padding: 0px;
+  border-radius: 5px 5px 5px 5px;
+  overflow: hidden;
+  border-width: 1px;
+  border-color: rgb(219,224,232) !important;
+  transition:.2s;
+  -webkit-transition: .2s;
+}
+
+.candidates .noMarginCol:first-child button {
+  margin-right: 12px;
+}
+
+.candidates .noMarginCol:nth-child(2) button {
+  margin-left: 12px;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  /*background-color: #e9ecef !important;*/
+  /*color: #212529 !important;*/
+  box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, .5);
+  border-color: rgb(113, 173, 23) !important;
+  background-color:inherit !important;
+  color:inherit !important;
+  transition:.2s;
+  -webkit-transition: .2s !important;
+ }
+
+.btn-secondary:not(:disabled):not(.disabled).active img,
+.btn-secondary:not(:disabled):not(.disabled):active img,
+.show > .btn-secondary.dropdown-toggle img{
+   transition:.2s;
+  -webkit-transition: .2s !important;
+  filter: grayscale(15%);
+  -webkit-filter: grayscale(15%) !important;
+  opacity:1;
+}
+
+/* TARGET DEVICES WITH NO HOVER OR SIMULATED HOVER (I.E. IOS) */
+/* MAKE SAME AS .CANDIDATES BUTTON */
+@media (hover: none) {
+  .candidates button:hover {
+    background-color: white;
+    color: #212529;
+    padding: 0px;
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    border-width: 1px;
+    border-color: rgb(219,224,232) !important;
+  }
+  .candidates button:hover img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: .2s;
+  }
+}
+
+
+#textbox {
+  padding: 0px 10px;
+  text-align: left;
+  margin-top: 10px;
+  overflow: auto;
+}
+
+/* State right column */
+
+
+.votingCardSpacer {
+  height:126px;
+}
+
+.votingCard {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(218, 225, 233);
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 15px;
+  margin-top: 24px;
+  max-width:500px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 1.5rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px;
+
+}
+
+.votes img {
+  width: 35px;
+  border-radius: 5%;
+  border: 1px solid #545b62;
+  transition:.2s;
+  -webkit-transition: .2s !important;
+  filter: grayscale(15%);
+  -webkit-filter: grayscale(15%) !important;
+
+}
+
+.table tr:first-child,
+.table tr:first-child td {
+  border-top: none !important;
+}
+
+.votes {
+  margin-top:10px;
+}
+
+.table tr td:first-child {
+  width: 50px;
+}
+
+.table td {
+  float:top;
+  display:inline-block;
+  height:50px;
+}
+
+.tableDiv {
+  min-height: 250px;
+  min-width:240px;
+  margin:auto;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  /* CSS specific to iOS devices */
+  .printButton {
+    visibility: hidden;
+    width: 0px !important;
+  }
+}
+
+.SocialMediaShareButton,
+.printButton {
+  margin: 3px;
+  width: 25px;
+  vertical-align: middle !important;
+  display: inline-block;
+}
+
+.printButton {
+  margin-top: 6px;
+}
+
+.ShareSection .row div {
+  margin: 5px;
+}
+
+.SocialMediaShareButton:hover,
+.printButton:hover {
+  cursor: pointer;
+  opacity: 0.75 !important;
+  transition: 0.3s;
+}
+
+.SocialMediaShareButton,
+.printButton {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.social-icon--whatsapp {
+  display: none;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  border-bottom-color: rgb(222, 226, 230) !important;
+
+}
+
+.nav-item .nav-link {
+  padding: .3rem .6rem !important;
+  font-size:.9rem;
+
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #e9ecef !important;
+  color: #212529 !important;
+}
+
+.nav-tabs {
+  /*border-bottom: 1px solid rgb(188, 209, 238) !important;*/
+}
+
+.table td,
+.table th {
+  padding: 0.1rem !important;
+  vertical-align: middle !important;
+}
+
+.votingColumn {
+  min-width:300px;
+  margin-bottom:30px !important;
+}
+
+.clearfix::after {
+  display:none !important
+}
+
+
+
+ @media only screen and (max-width: 767px) {
+  .funbox {
+    box-shadow: none;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    margin:0px;
+    max-width:1100px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 1rem .75rem;
+    border-radius: .25rem;
+  }
+  .votingCardSpacer {
+    height:0;
+  }
+}
