@@ -1,4 +1,4 @@
-
+if yarn start or npm start gives error, try $ nvm use node
 
 # radio buttons
 each candidate is rendered as a radio button
