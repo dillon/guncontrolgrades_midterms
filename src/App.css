@@ -8,7 +8,6 @@ br {
 
 .pageContainer {
   margin: auto;
-  /*margin-top:30px;*/
   max-width: 1100px;
 }
 
@@ -83,7 +82,6 @@ br {
   color: white;
   font-size:.9rem;
   font-weight: normal;
-  vertical-align:center;
   display:block;
 
 }
@@ -322,7 +320,6 @@ br {
 
 .table td {
   float:top;
-  display:inline-block;
   height:50px;
 }
 

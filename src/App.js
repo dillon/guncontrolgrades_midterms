@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
-// import { Grid, Row } from "react-bootstrap";
 import React from "react";
 import "./App.css";
 import {
@@ -13,49 +12,23 @@ import {
   Row,
   Col,
   ButtonGroup,
-  Breadcrumb,
-  BreadcrumbItem,
-  Card,
-  CardHeader,
-  CardTitle,
-  CardText,
-  CardFooter,
-  CardBody,
-  ListGroup,
-  ListGroupItem,
   Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
 } from "reactstrap";
 import {
   FacebookShareButton,
-  GooglePlusShareButton,
-  LinkedinShareButton,
   TwitterShareButton,
-  TelegramShareButton,
-  WhatsappShareButton,
-  PinterestShareButton,
-  VKShareButton,
-  OKShareButton,
-  RedditShareButton,
-  TumblrShareButton,
-  LivejournalShareButton,
   EmailShareButton
 } from "react-share";
 import classnames from "classnames";
 import { stateInfo } from "./stateInfo.js";
 import ReactToPrint from "react-to-print";
 import FaTwitter from "react-icons/lib/fa/twitter";
-import IoWhatsapp from "react-icons/lib/io/social-whatsapp";
 import TiMail from "react-icons/lib/ti/mail";
 import TiPrinter from "react-icons/lib/ti/printer";
 import FaFacebook from "react-icons/lib/fa/facebook-official";
-import FaTumblr from "react-icons/lib/fa/tumblr";
 import IoBackArrow from "react-icons/lib/io/ios-arrow-back";
 
 const portrait001 = require("./portraits/Portrait_001.jpg");
@@ -860,9 +833,6 @@ class Candidates extends React.Component {
 
 // State > NavesAndPanesAndVotingCard > MyVotes
 class MyVotes extends React.Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const votes = this.props.value.map(y => (
       <tr className="votes" key={y[3] + "votes"}>
