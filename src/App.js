@@ -654,7 +654,7 @@ class NavAndPanesAndVotingCard extends React.Component {
     );
 
     return (
-      <Row id="NavAndPanesAndVotingCard" letterGrades="12">
+      <Row id="NavAndPanesAndVotingCard">
         <Col className="noMarginCol" md="7">
           <div className="funbox">
             <p className="funboxTitle">
