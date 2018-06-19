@@ -1,4 +1,5 @@
-if yarn start or npm start gives error, try $ nvm use node
+if yarn start or npm start gives error, try $ `nvm use node`
+if that doesn't work, try deleting node_modules folder and running $ `npm install`
 
 # radio buttons
 each candidate is rendered as a radio button
