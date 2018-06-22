@@ -884,7 +884,8 @@ class MyVotes extends React.Component {
 // APP
 const App = () => {
   return (
-    <Router>
+    // delete when deploying to custom URL
+    <Router basename="/d4d-map">
       <div>
         <NavHeader />
         <Route path="/State/:id" exact component={State} />

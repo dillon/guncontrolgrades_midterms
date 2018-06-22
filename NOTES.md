@@ -1,3 +1,7 @@
+
+[ ] when deploying to custom url delete basename in Router
+
+
 if yarn start or npm start gives error, try $ `nvm use node`
 if that doesn't work, try deleting node_modules folder and running $ `npm install`
 
