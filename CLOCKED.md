@@ -50,4 +50,4 @@ ___
 
 ### Deploying to Github Pages
 
-- 2 hr
+- 3 hr
