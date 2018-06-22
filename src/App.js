@@ -94,7 +94,7 @@ class NavHeader extends React.Component {
       <div className="Navbar">
         <Navbar expand="md" dark>
           <NavbarBrand>
-            <Link className="active" to="/">
+            <Link className="active" to="/d4d-map">
               <strong>D4D</strong> Gun Control Grades
             </Link>
           </NavbarBrand>
@@ -103,14 +103,14 @@ class NavHeader extends React.Component {
             <Nav className="ml-auto" navbar>
               <NavItem>
                 <NavLink>
-                  <Link className="active" to="/About">
+                  <Link className="active" to="/d4d-map/About">
                     About
                   </Link>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink>
-                  <Link className="active" to="/Contact">
+                  <Link className="active" to="/d4d-map/Contact">
                     Contact
                   </Link>
                 </NavLink>
@@ -887,10 +887,10 @@ const App = () => {
     <Router>
       <div>
         <NavHeader />
-        <Route path="/State/:id" exact component={State} />
-        <Route path="/About" exact component={About} />
-        <Route path="/Contact" exact component={Contact} />
-        <Route exact path="/" component={UsMap} />
+        <Route path="/d4d-map/State/:id" exact component={State} />
+        <Route path="/d4d-map/About" exact component={About} />
+        <Route path="/d4d-map/Contact" exact component={Contact} />
+        <Route exact path="/d4d-map/" component={UsMap} />
       </div>
     </Router>
   );
