@@ -1,4 +1,30 @@
 ## To Do:
+
+- [ ] consider react-print over react-to-print
+- [ ] image placeholders
+
+- [ ] switch from reactstrap to flexbox or grid (FCC for hints)
+	- [ ] also change collapse to show voting card first
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## DONE
 - [x] Change dictionary structure
 	- [x] Add what district they're in
 	- [x] Senate has only "Statewide" district or no district 
@@ -35,21 +61,3 @@
 
 
 - [x] Change images to import up front for faster load time
-
-- [/] Fix Whatsapp 
-  <WhatsappShareButton
-    url="https://github.com"
-    title={
-      "I filled out my Midterm Elections voting card at GunControlMap.com" +
-      shareQuote +
-      "\n"
-    }
-  >
-    <IoWhatsapp size={18} color="#25d366" />
-  </WhatsappShareButton>
-
-
-- [ ] image placeholders
-
-- [ ] switch from reactstrap to flexbox or grid (FCC for hints)
-	- [ ] also change collapse to show voting card first
