@@ -2,7 +2,7 @@
   "name": "gunsafetymap",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dpett122.github.io/d4d-map/",
+  "homepage": "https://dpett.github.io/d4d-map/",
   "dependencies": {
     "audit": "0.0.6",
     "bootstrap": "^4.1.1",
