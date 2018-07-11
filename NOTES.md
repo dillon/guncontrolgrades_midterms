@@ -4,7 +4,7 @@
 
 ## To take down test site
 
-[ ] delete gh-pages branch
+[ ] change .gitignore or delete gh-pages branch
 
 ## When deploying to custom url:
 
