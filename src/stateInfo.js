@@ -1,3 +1,5 @@
+// import { Server } from "http";
+
 // stateInfo.{stateId}
 // stateInfo.{stateId}.name  === 'Florida'
 // stateInfo.{stateId}.legislatures
@@ -11,6 +13,7 @@
 // stateInfo.{stateId}.legislatures[i].districts[i].candidates[i].name === 'Jody Hice'
 // stateInfo.{stateId}.legislatures[i].districts[i].candidates[i].img === "portrait014)
 // stateInfo.{stateId}.legislatures[i]districts[i]candidates[i].grade === 'A'
+
 
 export const stateInfo = {
   FL: {

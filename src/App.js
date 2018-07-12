@@ -534,37 +534,35 @@ const UsMap = () => {
 const State = props => {
   // props: stateId
   const { id } = props.match.params;
-  const stateName = stateInfo[id].name;
   return (
-    <div class="pageContainer">
-      <NavAndPanesAndVotingCard stateId={id} stateName={stateName} />
+    <div className="pageContainer">
+      <StateContainer stateId={id} />
     </div>
   );
 };
 
-// State > NavAndPanesAndVotingCard
-class NavAndPanesAndVotingCard extends React.Component {
-  // props: stateId
+// State > StateContainer
+class StateContainer extends React.Component {
   constructor(props) {
-    super(props);
+    super(props); // props: stateId
     this.state = {
       activeTab: "usHouse",
-      onLoad: true,
-      value: []
+      pressed: []
     };
     this.toggle = this.toggle.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
 
   componentWillMount() {
+    // set activeTab to whatever the first legislature is, in case usHouse is not up for election in this state
     this.setState({
       activeTab: stateInfo[this.props.stateId].legislatures[0].id
     });
   }
 
-  indexGet(value, arr) {
-    for (var i = 0; i < value.length; i++) {
-      let index = value[i].indexOf(arr[3]);
+  indexGet(pressed, arr) {
+    for (var i = 0; i < pressed.length; i++) {
+      let index = pressed[i].indexOf(arr[3]);
       if (index > -1) {
         return +i;
       }
@@ -572,30 +570,27 @@ class NavAndPanesAndVotingCard extends React.Component {
   }
 
   handleChange(type, selected, remove) {
-    // const value = this.state.value;
     const arr = selected.split(",");
-    const index = this.indexGet(this.state.value, arr);
-    //getIndexOfK(this.state.value, [arr][3])
-    // const index = this.state.value.indexOf([selected.split(',')]);
-    const value = this.state.value;
+    const index = this.indexGet(this.state.pressed, arr);
+    const pressed = this.state.pressed;
 
     switch (type) {
       case "add":
-        value.push(arr);
+        pressed.push(arr);
         break;
       case "delete":
-        value.splice(index, 1);
+        pressed.splice(index, 1);
         break;
       case "change":
         const removeArr = remove.split(",");
-        const removeIndex = this.indexGet(this.state.value, removeArr);
-        value.splice(removeIndex, 1, arr);
+        const removeIndex = this.indexGet(this.state.pressed, removeArr);
+        pressed.splice(removeIndex, 1, arr);
         break;
       default:
         console.log("switch defaulted");
         break;
     }
-    this.setState({ value: value });
+    this.setState({ pressed: pressed });
   }
 
   toggle(tab) {
@@ -607,8 +602,10 @@ class NavAndPanesAndVotingCard extends React.Component {
   }
 
   render() {
+    const stateName = stateInfo[this.props.stateId].name;
     const legislatures = stateInfo[this.props.stateId].legislatures;
 
+    // Nav Tabs
     const navTabs = stateInfo[this.props.stateId]["legislatures"].map(x => (
       // x = stateInfo.{stateId}.legislatures[i]
       <NavItem key={x.id}>
@@ -625,6 +622,7 @@ class NavAndPanesAndVotingCard extends React.Component {
       </NavItem>
     ));
 
+    // Tab Panes
     const tabPanes = legislatures.map(x => (
       // x = stateInfo.{stateId}.legislatures[i]
       <TabPane key={x.id + "tabpane"} tabId={x.id}>
@@ -649,12 +647,13 @@ class NavAndPanesAndVotingCard extends React.Component {
       </TabPane>
     ));
 
-    const shareQuote = this.state.value.map(
+    // Format Candidate metainfo for Voting Card
+    const shareQuote = this.state.pressed.map(
       y => "\n" + y[0] + " – " + y[1] + ": " + y[2] + " (" + y[4] + ")"
     );
 
     return (
-      <Row id="NavAndPanesAndVotingCard">
+      <Row id="StateContainer">
         <Col className="noMarginCol" md="7">
           <div className="funbox">
             <p className="funboxTitle">
@@ -666,7 +665,7 @@ class NavAndPanesAndVotingCard extends React.Component {
                   className="v-center"
                 />
               </Link>
-              &nbsp;<span className="v-center">{this.props.stateName}</span>
+              &nbsp;<span className="v-center">{stateName}</span>
             </p>
             <div className="clearfix" style={{ paddingRight: "30rem" }}>
               <div />
@@ -685,9 +684,9 @@ class NavAndPanesAndVotingCard extends React.Component {
         <Col className="noMarginCol votingColumn" md="5">
           <MyVotes
             ref={el => (this.componentRef = el)}
-            value={this.state.value}
+            pressed={this.state.pressed}
             legislatures={legislatures}
-            stateName={this.props.stateName}
+            stateName={stateName}
           />
           <p className="hintText text-muted" style={{ textAlign: "center" }}>
             Learn more about our grading system{" "}
@@ -700,7 +699,7 @@ class NavAndPanesAndVotingCard extends React.Component {
             </Link>
           </p>
           <div id="ShareSection">
-            {this.state.value.length === 0 ? (
+            {this.state.pressed.length === 0 ? (
               <br />
             ) : (
               <div lg="12" style={{ margin: 0, textAlign: "center" }}>
@@ -760,12 +759,13 @@ class NavAndPanesAndVotingCard extends React.Component {
   }
 }
 
-// State > NavAndPanesAndVotingCard > {tabPanes > Candidates}
+// State > StateContainer > {tabPanes > Candidates}
 class Candidates extends React.Component {
   constructor(props) {
     // props: candidates, legislature, district, handleChange
     super(props);
     this.state = {
+      // each district has its own state to manage which radio button is pressed
       rSelected: ""
     };
     this.onRadioBtnClick = this.onRadioBtnClick.bind(this);
@@ -831,10 +831,10 @@ class Candidates extends React.Component {
   }
 }
 
-// State > NavesAndPanesAndVotingCard > MyVotes
+// State > StateContainer > MyVotes
 class MyVotes extends React.Component {
   render() {
-    const votes = this.props.value.map(y => (
+    const votes = this.props.pressed.map(y => (
       <tr className="votes" key={y[3] + "votes"}>
         <td>
           <img rel="preload" as="image" src={eval(y[3])} alt={y[2]} />
@@ -858,7 +858,7 @@ class MyVotes extends React.Component {
           </p>
           <div class="tableDiv">
             <Table id="votesList" flush>
-              {this.props.value.length === 0 ? (
+              {this.props.pressed.length === 0 ? (
                 <div className="text-muted" style={{ fontSize: ".8rem" }}>
                   <em>Select a candidate to add them to your voting card.</em>
                 </div>
@@ -880,6 +880,11 @@ class MyVotes extends React.Component {
     );
   }
 }
+
+
+
+
+
 
 // APP
 const App = () => {
