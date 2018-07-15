@@ -7904,16 +7904,16 @@ react-share@^2.1.1:
     jsonp "^0.2.1"
     prop-types "^15.5.8"
 
-react-sticky@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/react-sticky/-/react-sticky-6.0.2.tgz#d301c1b5307649220dbc045fcbacd077885c5ede"
+react-sticky@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/react-sticky/-/react-sticky-6.0.3.tgz#7a18b643e1863da113d7f7036118d2a75d9ecde4"
   dependencies:
     prop-types "^15.5.8"
     raf "^3.3.0"
 
-react-to-print@^1.0.20:
-  version "1.0.20"
-  resolved "https://registry.yarnpkg.com/react-to-print/-/react-to-print-1.0.20.tgz#5bd922e1a011d5ec2ee7e2f5ce0a5f8352c41c30"
+react-to-print@2.0.0-beta-1:
+  version "2.0.0-beta-1"
+  resolved "https://registry.yarnpkg.com/react-to-print/-/react-to-print-2.0.0-beta-1.tgz#ac9fdcd0c2ec2c991769a67ad5f0de33e6d3e540"
   dependencies:
     prop-types "^15.6.0"
     react "^16.2.0"

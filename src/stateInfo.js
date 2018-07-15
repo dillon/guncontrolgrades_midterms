@@ -14,7 +14,7 @@
 // stateInfo.{stateId}.legislatures[i].districts[i].candidates[i].img === "portrait014)
 // stateInfo.{stateId}.legislatures[i]districts[i]candidates[i].grade === 'A'
 
-
+// can not include commas
 export const stateInfo = {
   FL: {
     name: "Florida",
@@ -28,12 +28,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Jody Hice",
-                img: "portrait001",
+                img: require("./portraits/Portrait_001.jpg"),
                 grade: "A"
               },
               {
                 name: "Drew Ferguson",
-                img: "portrait002",
+                img: require("./portraits/Portrait_002.jpg"),
                 grade: "F"
               }
             ]
@@ -43,12 +43,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Jacob Reed",
-                img: "portrait003",
+                img: require("./portraits/Portrait_003.jpg"),
                 grade: "B"
               },
               {
                 name: "Lindsey Graham",
-                img: "portrait004",
+                img: require("./portraits/Portrait_004.jpg"),
                 grade: "C"
               }
             ]
@@ -58,12 +58,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Richard Burr",
-                img: "portrait005",
+                img: require("./portraits/Portrait_005.jpg"),
                 grade: "B"
               },
               {
                 name: "Pat Toomey",
-                img: "portrait006",
+                img: require("./portraits/Portrait_006.jpg"),
                 grade: "D"
               }
             ]
@@ -79,12 +79,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Lamar Alexander",
-                img: "portrait007",
+                img: require("./portraits/Portrait_007.jpg"),
                 grade: "B"
               },
               {
                 name: "Shelley Moore Capito",
-                img: "portrait008",
+                img: require("./portraits/Portrait_008.jpg"),
                 grade: "?"
               }
             ]
@@ -100,12 +100,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Bob Corker",
-                img: "portrait009",
+                img: require("./portraits/Portrait_009.jpg"),
                 grade: "A"
               },
               {
                 name: "Todd C. Young",
-                img: "portrait010",
+                img: require("./portraits/Portrait_010.jpg"),
                 grade: "B"
               }
             ]
@@ -121,12 +121,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Pat Roberts",
-                img: "portrait011",
+                img: require("./portraits/Portrait_011.jpg"),
                 grade: "B"
               },
               {
                 name: "Chris Coons",
-                img: "portrait012",
+                img: require("./portraits/Portrait_012.jpg"),
                 grade: "D"
               }
             ]
@@ -142,12 +142,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Ben Sasse",
-                img: "portrait013",
+                img: require("./portraits/Portrait_013.jpg"),
                 grade: "B"
               },
               {
                 name: "Bill Cassidy",
-                img: "portrait014",
+                img: require("./portraits/Portrait_014.jpg"),
                 grade: "F"
               }
             ]
@@ -157,12 +157,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Gary Peters",
-                img: "portrait015",
+                img: require("./portraits/Portrait_015.jpg"),
                 grade: "B"
               },
               {
                 name: "John Neely Kennedy",
-                img: "portrait016",
+                img: require("./portraits/Portrait_016.jpg"),
                 grade: "B"
               }
             ]
@@ -183,12 +183,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Jody Hice",
-                img: "portrait017",
+                img: require("./portraits/Portrait_017.jpg"),
                 grade: "A"
               },
               {
                 name: "Drew Ferguson",
-                img: "portrait018",
+                img: require("./portraits/Portrait_018.jpg"),
                 grade: "F"
               }
             ]
@@ -198,12 +198,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Jim Inhofe",
-                img: "portrait019",
+                img: require("./portraits/Portrait_019.jpg"),
                 grade: "B"
               },
               {
                 name: "Jerry Moran",
-                img: "portrait020",
+                img: require("./portraits/Portrait_020.jpg"),
                 grade: "C"
               }
             ]
@@ -213,12 +213,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Jeanne Shaheen",
-                img: "portrait005",
+                img: require("./portraits/Portrait_005.jpg"),
                 grade: "B"
               },
               {
                 name: "Rob Portman",
-                img: "portrait006",
+                img: require("./portraits/Portrait_006.jpg"),
                 grade: "D"
               }
             ]
@@ -234,12 +234,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Tammy Duckworth",
-                img: "portrait007",
+                img: require("./portraits/Portrait_007.jpg"),
                 grade: "B"
               },
               {
                 name: "Chuck Schumer",
-                img: "portrait008",
+                img: require("./portraits/Portrait_008.jpg"),
                 grade: "?"
               }
             ]
@@ -255,12 +255,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Michael Bennet",
-                img: "portrait009",
+                img: require("./portraits/Portrait_009.jpg"),
                 grade: "A"
               },
               {
                 name: "Patrick Jacobs",
-                img: "portrait010",
+                img: require("./portraits/Portrait_010.jpg"),
                 grade: "B"
               }
             ]
@@ -276,12 +276,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "SS One",
-                img: "portrait011",
+                img: require("./portraits/Portrait_011.jpg"),
                 grade: "B"
               },
               {
                 name: "SS Two",
-                img: "portrait012",
+                img: require("./portraits/Portrait_012.jpg"),
                 grade: "D"
               }
             ]
@@ -297,12 +297,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Govnr One",
-                img: "portrait013",
+                img: require("./portraits/Portrait_013.jpg"),
                 grade: "B"
               },
               {
                 name: "Govnr Two",
-                img: "portrait014",
+                img: require("./portraits/Portrait_014.jpg"),
                 grade: "F"
               }
             ]
@@ -312,12 +312,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Ltg One",
-                img: "portrait015",
+                img: require("./portraits/Portrait_015.jpg"),
                 grade: "B"
               },
               {
                 name: "Ltg Two",
-                img: "portrait016",
+                img: require("./portraits/Portrait_016.jpg"),
                 grade: "B"
               }
             ]
@@ -338,12 +338,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Tammy Duckworth",
-                img: "portrait007",
+                img: require("./portraits/Portrait_007.jpg"),
                 grade: "B"
               },
               {
                 name: "Chuck Schumer",
-                img: "portrait008",
+                img: require("./portraits/Portrait_008.jpg"),
                 grade: "?"
               }
             ]
@@ -359,12 +359,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Mazie K. Hirono",
-                img: "portrait013",
+                img: require("./portraits/Portrait_013.jpg"),
                 grade: "B"
               },
               {
                 name: "Angus King",
-                img: "portrait014",
+                img: require("./portraits/Portrait_014.jpg"),
                 grade: "F"
               }
             ]
@@ -374,12 +374,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Dean Heller",
-                img: "portrait015",
+                img: require("./portraits/Portrait_015.jpg"),
                 grade: "B"
               },
               {
                 name: "Bernie Sanders",
-                img: "portrait016",
+                img: require("./portraits/Portrait_016.jpg"),
                 grade: "B"
               }
             ]
@@ -400,12 +400,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Tammy Duckworth",
-                img: "portrait007",
+                img: require("./portraits/Portrait_007.jpg"),
                 grade: "B"
               },
               {
                 name: "Chuck Schumer",
-                img: "portrait008",
+                img: require("./portraits/Portrait_008.jpg"),
                 grade: "?"
               }
             ]
@@ -421,12 +421,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Heidi Heitkamp",
-                img: "portrait011",
+                img: require("./portraits/Portrait_011.jpg"),
                 grade: "B"
               },
               {
                 name: "Bob Casey Jr.",
-                img: "portrait012",
+                img: require("./portraits/Portrait_012.jpg"),
                 grade: "D"
               }
             ]
@@ -442,12 +442,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "Tammy Baldwin",
-                img: "portrait013",
+                img: require("./portraits/Portrait_013.jpg"),
                 grade: "B"
               },
               {
                 name: "John Barrasso",
-                img: "portrait014",
+                img: require("./portraits/Portrait_014.jpg"),
                 grade: "F"
               }
             ]
@@ -457,12 +457,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: "John McCain",
-                img: "portrait015",
+                img: require("./portraits/Portrait_015.jpg"),
                 grade: "B"
               },
               {
                 name: "John Boozman",
-                img: "portrait016",
+                img: require("./portraits/Portrait_016.jpg"),
                 grade: "B"
               }
             ]
