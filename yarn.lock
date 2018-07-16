@@ -7911,9 +7911,9 @@ react-sticky@^6.0.3:
     prop-types "^15.5.8"
     raf "^3.3.0"
 
-react-to-print@2.0.0-beta-1:
-  version "2.0.0-beta-1"
-  resolved "https://registry.yarnpkg.com/react-to-print/-/react-to-print-2.0.0-beta-1.tgz#ac9fdcd0c2ec2c991769a67ad5f0de33e6d3e540"
+react-to-print@^2.0.0-beta-2:
+  version "2.0.0-beta-2"
+  resolved "https://registry.yarnpkg.com/react-to-print/-/react-to-print-2.0.0-beta-2.tgz#4b86b6177af82a0e64343a4f2afbfed27d981d34"
   dependencies:
     prop-types "^15.6.0"
     react "^16.2.0"

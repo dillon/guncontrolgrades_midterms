@@ -711,7 +711,6 @@ class StateContainer extends React.Component {
                     <TiPrinter className="printButton" size={22} color="#333" />
                   )}
                   content={() => this.componentRef}
-                  debug={true}
                 />
 
                 <EmailShareButton
