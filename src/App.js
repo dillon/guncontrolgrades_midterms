@@ -857,7 +857,7 @@ class MyVotes extends React.Component {
         <div className="votingCardSpacer" />
         <div className="votingCard">
           <p style={{ width: "100%" }} className="smallCaps">
-            MY {this.props.stateName.toUpperCase()} VOTING CARD
+            {this.props.stateName.toUpperCase()} VOTING CARD
           </p>
           <div className="tableDiv">
             <Table id="votesList" flush>
