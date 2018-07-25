@@ -1,26 +1,25 @@
-## To Do:
+# Deliverables, Estimates, Costs
 
-[ ] consider react-print over react-to-print
-[ ] image placeholders
+## Information/Assets I need
+- Name of website
+- Logo for website
+- Name of domain name: “https://name.com”
+- Blurb for “About” page (including explanation of grading system)
+- Contact information
+- Any design feedback
+- Grades for candidates
 
-[ ] switch from reactstrap to flexbox or grid (FCC for hints)
-	[ ] also change collapse to show voting card first
+## My Final To-do's
+- Fix print and share button logic, 1 hour
+- Finalize layout/style for desktop/mobile, 2-4 hours (depending on feedback)
+- Collect all candidate information and images, 5 hours
+- Compress/format/upload images, and enter all candidate info into database, 4 hours
+- Analytics, security, and setup on custom domain, 3 hours
+(Total: 15-17 hours)
 
-## Deliverables from elsewhere
-[ ] Icon
-[ ] Name of website
-[ ] Candidates
-
-
-
-
-
-
-
-
-
-
-
+## Additional Costs
+- Repository hosting: $84.00
+- Domain name $TBD/year
 
 
 
