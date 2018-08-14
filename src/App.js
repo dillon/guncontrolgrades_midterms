@@ -334,12 +334,14 @@ const UsMap = () => {
                     fill={badState}
                     d="M905.4,295l-6.1,4.1l-3.9,2.3l-3.4,3.7l-4,3.9l-3.2,0.8l-2.9,0.5l-5.5,2.6l-2.1,0.2l-3.4-3.1   l-5.2,0.6l-2.6-1.5l-2.4-1.4l-4.9,0.7l-10.2,1.6l-7.8,1.2l1.3,14.6l1.8,13.7l2.6,23.4l0.6,4.8l4.1-0.1l2.4-0.8l3.4,1.5l2.1,4.4   l5.1,0l1.9,2.1l1.8-0.1l2.5-1.3l2.5,0.4l2,1.5l1.7-2.1l2.3-1.3l2.1-0.7l0.6,2.7l1.8,1l3.5,2.3l2.2-0.1l1.1-1.1l-0.1-1.4l1.6-1.5   l0.2-5l1-3.9l1.5-1.4l1.5,0.9l0.8,1.2l1.2-0.2l-0.4-2.4l-0.6-0.6v-2.4l1-1.3l2.3-3.4l1.3-1.5l2.1,0.5l2.3-1.6l3.1-3.4l2.3-3.9   l0.2-5.4l0.5-5v-4.7l-1.1-3.1l1-1.5l0.9-1l-1.4-9.8L905.4,295z"
                   />
-                  <path
-                    id="MI"
-                    datainfo="<div>State: Michigan</div><div>Capital: Lansing</div>"
-                    fill={badState}
-                    d="M755.6,182.1l1.8-2.1l2.2-0.8l5.4-3.9l2.3-0.6l0.5,0.5l-5.1,5.1l-3.3,1.9l-2.1,0.9L755.6,182.1z    M841.8,214.2l0.6,2.5l3.2,0.2l1.3-1.2c0,0-0.1-1.5-0.4-1.6c-0.3-0.2-1.6-1.9-1.6-1.9l-2.2,0.2l-1.6,0.2l-0.3,1.1L841.8,214.2z    M871.9,277.2l-3.2-8.2l-2.3-9.1l-2.4-3.2l-2.6-1.8l-1.6,1.1l-3.9,1.8l-1.9,5l-2.7,3.7l-1.1,0.6l-1.5-0.6c0,0-2.6-1.5-2.4-2.1   c0.2-0.6,0.5-5,0.5-5l3.4-1.3l0.8-3.4l0.6-2.6l2.4-1.6l-0.3-10l-1.6-2.3l-1.3-0.8l-0.8-2.1l0.8-0.8l1.6,0.3l0.2-1.6L850,231   l-1.3-2.6h-2.6l-4.5-1.5l-5.5-3.4h-2.7l-0.6,0.6l-1-0.5l-3.1-2.3l-2.9,1.8l-2.9,2.3l0.3,3.6l1,0.3l2.1,0.5l0.5,0.8l-2.6,0.8   l-2.6,0.3l-1.5,1.8l-0.3,2.1l0.3,1.6l0.3,5.5l-3.6,2.1l-0.6-0.2v-4.2l1.3-2.4l0.6-2.4l-0.8-0.8l-1.9,0.8l-1,4.2l-2.7,1.1l-1.8,1.9   l-0.2,1l0.6,0.8l-0.6,2.6l-2.3,0.5v1.1l0.8,2.4l-1.1,6.1l-1.6,4l0.6,4.7l0.5,1.1l-0.8,2.4l-0.3,0.8l-0.3,2.7l3.6,6l2.9,6.5l1.5,4.8   l-0.8,4.7l-1,6l-2.4,5.2l-0.3,2.7l-3.3,3.1l4.4-0.2l21.4-2.3l7.3-1l0.1,1.7l6.9-1.2l10.3-1.5l3.9-0.5l0.1-0.6l0.2-1.5l2.1-3.7   l2-1.7l-0.2-5.1l1.6-1.6l1.1-0.3l0.2-3.6l1.5-3l1.1,0.6l0.2,0.6l0.8,0.2l1.9-1L871.9,277.2z M741.5,211.2l0.7-0.6l2.7-0.8l3.6-2.3   v-1l0.6-0.6l6-1l2.4-1.9l4.4-2.1l0.2-1.3l1.9-2.9l1.8-0.8l1.3-1.8l2.3-2.3l4.4-2.4l4.7-0.5l1.1,1.1l-0.3,1l-3.7,1l-1.5,3.1   l-2.3,0.8l-0.5,2.4l-2.4,3.2l-0.3,2.6l0.8,0.5l1-1.1l3.6-2.9l1.3,1.3h2.3l3.2,1l1.5,1.1l1.5,3.1l2.7,2.7l3.9-0.2l1.5-1l1.6,1.3   l1.6,0.5l1.3-0.8h1.1l1.6-1l4-3.6l3.4-1.1l6.6-0.3l4.5-1.9l2.6-1.3l1.5,0.2v5.7l0.5,0.3l2.9,0.8l1.9-0.5l6.1-1.6l1.1-1.1l1.5,0.5v7   l3.2,3.1l1.3,0.6l1.3,1l-1.3,0.3l-0.8-0.3l-3.7-0.5l-2.1,0.6l-2.3-0.2l-3.2,1.5h-1.8l-5.8-1.3l-5.2,0.2l-1.9,2.6l-7,0.6l-2.4,0.8   l-1.1,3.1l-1.3,1.1l-0.5-0.2l-1.5-1.6l-4.5,2.4h-0.6l-1.1-1.6l-0.8,0.2l-1.9,4.4l-1,4l-3.2,7l-1.2-1l-1.4-1l-1.9-10.3l-3.5-1.4   l-2.1-2.3l-12.1-2.7l-2.9-1l-8.2-2.2l-7.9-1.1L741.5,211.2z"
-                  />
+                  <Link to={`State/MI`}>
+                    <path
+                      id="MI"
+                      datainfo="<div>State: Michigan</div><div>Capital: Lansing</div>"
+                      fill={goodState}
+                      d="M755.6,182.1l1.8-2.1l2.2-0.8l5.4-3.9l2.3-0.6l0.5,0.5l-5.1,5.1l-3.3,1.9l-2.1,0.9L755.6,182.1z    M841.8,214.2l0.6,2.5l3.2,0.2l1.3-1.2c0,0-0.1-1.5-0.4-1.6c-0.3-0.2-1.6-1.9-1.6-1.9l-2.2,0.2l-1.6,0.2l-0.3,1.1L841.8,214.2z    M871.9,277.2l-3.2-8.2l-2.3-9.1l-2.4-3.2l-2.6-1.8l-1.6,1.1l-3.9,1.8l-1.9,5l-2.7,3.7l-1.1,0.6l-1.5-0.6c0,0-2.6-1.5-2.4-2.1   c0.2-0.6,0.5-5,0.5-5l3.4-1.3l0.8-3.4l0.6-2.6l2.4-1.6l-0.3-10l-1.6-2.3l-1.3-0.8l-0.8-2.1l0.8-0.8l1.6,0.3l0.2-1.6L850,231   l-1.3-2.6h-2.6l-4.5-1.5l-5.5-3.4h-2.7l-0.6,0.6l-1-0.5l-3.1-2.3l-2.9,1.8l-2.9,2.3l0.3,3.6l1,0.3l2.1,0.5l0.5,0.8l-2.6,0.8   l-2.6,0.3l-1.5,1.8l-0.3,2.1l0.3,1.6l0.3,5.5l-3.6,2.1l-0.6-0.2v-4.2l1.3-2.4l0.6-2.4l-0.8-0.8l-1.9,0.8l-1,4.2l-2.7,1.1l-1.8,1.9   l-0.2,1l0.6,0.8l-0.6,2.6l-2.3,0.5v1.1l0.8,2.4l-1.1,6.1l-1.6,4l0.6,4.7l0.5,1.1l-0.8,2.4l-0.3,0.8l-0.3,2.7l3.6,6l2.9,6.5l1.5,4.8   l-0.8,4.7l-1,6l-2.4,5.2l-0.3,2.7l-3.3,3.1l4.4-0.2l21.4-2.3l7.3-1l0.1,1.7l6.9-1.2l10.3-1.5l3.9-0.5l0.1-0.6l0.2-1.5l2.1-3.7   l2-1.7l-0.2-5.1l1.6-1.6l1.1-0.3l0.2-3.6l1.5-3l1.1,0.6l0.2,0.6l0.8,0.2l1.9-1L871.9,277.2z M741.5,211.2l0.7-0.6l2.7-0.8l3.6-2.3   v-1l0.6-0.6l6-1l2.4-1.9l4.4-2.1l0.2-1.3l1.9-2.9l1.8-0.8l1.3-1.8l2.3-2.3l4.4-2.4l4.7-0.5l1.1,1.1l-0.3,1l-3.7,1l-1.5,3.1   l-2.3,0.8l-0.5,2.4l-2.4,3.2l-0.3,2.6l0.8,0.5l1-1.1l3.6-2.9l1.3,1.3h2.3l3.2,1l1.5,1.1l1.5,3.1l2.7,2.7l3.9-0.2l1.5-1l1.6,1.3   l1.6,0.5l1.3-0.8h1.1l1.6-1l4-3.6l3.4-1.1l6.6-0.3l4.5-1.9l2.6-1.3l1.5,0.2v5.7l0.5,0.3l2.9,0.8l1.9-0.5l6.1-1.6l1.1-1.1l1.5,0.5v7   l3.2,3.1l1.3,0.6l1.3,1l-1.3,0.3l-0.8-0.3l-3.7-0.5l-2.1,0.6l-2.3-0.2l-3.2,1.5h-1.8l-5.8-1.3l-5.2,0.2l-1.9,2.6l-7,0.6l-2.4,0.8   l-1.1,3.1l-1.3,1.1l-0.5-0.2l-1.5-1.6l-4.5,2.4h-0.6l-1.1-1.6l-0.8,0.2l-1.9,4.4l-1,4l-3.2,7l-1.2-1l-1.4-1l-1.9-10.3l-3.5-1.4   l-2.1-2.3l-12.1-2.7l-2.9-1l-8.2-2.2l-7.9-1.1L741.5,211.2z"
+                    />
+                  </Link>
                   <path
                     id="WY"
                     datainfo="<div>State: Wyoming</div><div>Capital: Cheyenne</div>"
@@ -705,56 +707,56 @@ class StateContainer extends React.Component {
             {this.state.pressed.length === 0 ? (
               <br />
             ) : (
-              <div lg="12" style={{ margin: 0, textAlign: "center" }}>
-                <ReactToPrint
-                  trigger={() => (
-                    <TiPrinter className="printButton" size={22} color="#333" />
-                  )}
-                  content={() => this.componentRef}
-                />
+                <div lg="12" style={{ margin: 0, textAlign: "center" }}>
+                  <ReactToPrint
+                    trigger={() => (
+                      <TiPrinter className="printButton" size={22} color="#333" />
+                    )}
+                    content={() => this.componentRef}
+                  />
 
-                <EmailShareButton
-                  url="https://github.com"
-                  subject={"My GunControlMap voting card"}
-                  body={
-                    "I filled out my Midterm Elections voting card at GunControlMap.com" +
-                    shareQuote +
-                    "\n"
-                  }
-                >
-                  <TiMail size={22} color="#333" />
-                </EmailShareButton>
+                  <EmailShareButton
+                    url="https://github.com"
+                    subject={"My GunControlMap voting card"}
+                    body={
+                      "I filled out my Midterm Elections voting card at GunControlMap.com" +
+                      shareQuote +
+                      "\n"
+                    }
+                  >
+                    <TiMail size={22} color="#333" />
+                  </EmailShareButton>
 
-                <FacebookShareButton
-                  url="https://github.com"
-                  quote={
-                    "I filled out my Midterm Elections voting card at GunControlMap.com" +
-                    shareQuote +
-                    "\n"
-                  }
-                  hashtag="#GunControlMap"
-                >
-                  <FaFacebook size={18} color="#3B5998" />
-                </FacebookShareButton>
+                  <FacebookShareButton
+                    url="https://github.com"
+                    quote={
+                      "I filled out my Midterm Elections voting card at GunControlMap.com" +
+                      shareQuote +
+                      "\n"
+                    }
+                    hashtag="#GunControlMap"
+                  >
+                    <FaFacebook size={18} color="#3B5998" />
+                  </FacebookShareButton>
 
-                <TwitterShareButton
-                  url="https://github.com"
-                  title={
-                    "I filled out my Midterm Elections voting card at GunControlMap.com" +
-                    shareQuote +
-                    "\n"
-                  }
-                  hashtags={[
-                    "GunControlMap",
-                    "GunControl",
-                    "GunRegulation",
-                    "Midterms"
-                  ]}
-                >
-                  <FaTwitter size={18} color="#1DA1F2" />
-                </TwitterShareButton>
-              </div>
-            )}
+                  <TwitterShareButton
+                    url="https://github.com"
+                    title={
+                      "I filled out my Midterm Elections voting card at GunControlMap.com" +
+                      shareQuote +
+                      "\n"
+                    }
+                    hashtags={[
+                      "GunControlMap",
+                      "GunControl",
+                      "GunRegulation",
+                      "Midterms"
+                    ]}
+                  >
+                    <FaTwitter size={18} color="#1DA1F2" />
+                  </TwitterShareButton>
+                </div>
+              )}
           </div>
         </Col>
       </Row>
@@ -861,14 +863,14 @@ class MyVotes extends React.Component {
           </p>
           <div className="tableDiv">
             <Table id="votesList" flush>
-            <tbody>
-              {this.props.pressed.length === 0 ? (
-                <div className="text-muted" style={{ fontSize: ".8rem" }}>
-                  <em>Select a candidate to add them to your voting card.</em>
-                </div>
-              ) : (
-                votes
-              )}
+              <tbody>
+                {this.props.pressed.length === 0 ? (
+                  <div className="text-muted" style={{ fontSize: ".8rem" }}>
+                    <em>Select a candidate to add them to your voting card.</em>
+                  </div>
+                ) : (
+                    votes
+                  )}
               </tbody>
             </Table>
           </div>

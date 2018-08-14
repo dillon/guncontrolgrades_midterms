@@ -119,7 +119,8 @@ br {
 #TX:hover,
 #FL:hover,
 #AK:hover,
-#CA:hover {
+#CA:hover,
+#MI:hover {
   /* 
   stroke: black !important;
   stroke-width:.05rem;
