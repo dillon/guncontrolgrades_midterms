@@ -33,30 +33,8 @@ import TiMail from "react-icons/lib/ti/mail";
 import TiPrinter from "react-icons/lib/ti/printer";
 import FaFacebook from "react-icons/lib/fa/facebook-official";
 import IoBackArrow from "react-icons/lib/io/ios-arrow-back";
-// const portrait001 = require("./portraits/Portrait_001.jpg");
-// const portrait002 = require("./portraits/Portrait_002.jpg");
-// const portrait003 = require("./portraits/Portrait_003.jpg");
-// const portrait004 = require("./portraits/Portrait_004.jpg");
-// const portrait005 = require("./portraits/Portrait_005.jpg");
-// const portrait006 = require("./portraits/Portrait_006.jpg");
-// const portrait007 = require("./portraits/Portrait_007.jpg");
-// const portrait008 = require("./portraits/Portrait_008.jpg");
-// const portrait009 = require("./portraits/Portrait_009.jpg");
-// const portrait010 = require("./portraits/Portrait_010.jpg");
-// const portrait011 = require("./portraits/Portrait_011.jpg");
-// const portrait012 = require("./portraits/Portrait_012.jpg");
-// const portrait013 = require("./portraits/Portrait_013.jpg");
-// const portrait014 = require("./portraits/Portrait_014.jpg");
-// const portrait015 = require("./portraits/Portrait_015.jpg");
-// const portrait016 = require("./portraits/Portrait_016.jpg");
-// const portrait017 = require("./portraits/Portrait_017.jpg");
-// const portrait018 = require("./portraits/Portrait_018.jpg");
-// const portrait019 = require("./portraits/Portrait_019.jpg");
-// const portrait020 = require("./portraits/Portrait_020.jpg");
 
 // styles and global variables
-const goodState = "#00ac64";
-const badState = "#d7d7d8";
 const emailAddress = "info@downtown4democracy.org";
 const emailUrl =
   "mailto:info@downtown4democracy.org?subject=Gun%20Control%20Map";

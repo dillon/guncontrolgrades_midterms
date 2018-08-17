@@ -1,19 +1,3 @@
-// import { Server } from 'http';
-
-// stateInfo.{stateId}
-// stateInfo.{stateId}.name  === 'Florida'
-// stateInfo.{stateId}.legislatures
-// stateInfo.{stateId}.legislatures[i]
-// stateInfo.{stateId}.legislatures[i].name === 'US House'
-// stateInfo.{stateId}.legislatures[i].id === 'usHouse'
-// stateInfo.{stateId}.legislatures[i].districts
-// stateInfo.{stateId}.legislatures[i].districts[i].name === 'District 1'
-// stateInfo.{stateId}.legislatures[i].districts[i].candidates
-// stateInfo.{stateId}.legislatures[i].districts[i].candidates[i]
-// stateInfo.{stateId}.legislatures[i].districts[i].candidates[i].name === 'Jody Hice'
-// stateInfo.{stateId}.legislatures[i].districts[i].candidates[i].img === 'portrait014)
-// stateInfo.{stateId}.legislatures[i]districts[i]candidates[i].grade === 'A'
-
 // strings can not include commas
 
 // candidates from new york times 2018 results
@@ -5405,7 +5389,55 @@ export const stateInfo = {
       },
     ]
   },
+  // MN: Minnesota // primaries Aug. 14
 
+  MS: {
+    // https://www.nytimes.com/interactive/2018/06/05/us/elections/results-mississippi-primary-elections.html
+    // https://www.nytimes.com/interactive/2018/06/26/us/elections/results-mississippi-primary-runoff-elections.html
+    name: 'Mississippi',
+    legislatures: [
+      {
+        name: 'US Senate',
+        id: 'usSenate',
+        districts: [
+          {
+            name: 'Statewide',
+            candidates: [
+              {
+                name: 'David Baria',
+                img: require('./portraits/todo.jpg'),
+                grade: '?'
+              },
+              {
+                name: 'Roger Wicker',
+                img: require('./portraits/todo.jpg'),
+                grade: '?'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: 'US House',
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Randy Wadkins',
+                img: require('./portraits/todo.jpg'),
+                grade: '?'
+              } 
+              // TODO: the other candidate and also rest of state
+            ]
+          }
+        ]
+      }
+    ]
+
+  },
+ 
   // TODO: rest of states
 
   WA: {
