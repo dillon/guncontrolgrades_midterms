@@ -112,7 +112,7 @@ br {
     fill: #d7d7d8
 }
 
-#g5 a:hover{
+#g5 a:hover {
     /* 
   stroke: black !important;
   stroke-width:.05rem;
@@ -191,12 +191,9 @@ br {
     -webkit-transition: .2s;
 }
 
-.candidates .noMarginCol:first-child button {
-    margin-right: 12px;
-}
-
-.candidates .noMarginCol:nth-child(2) button {
-    margin-left: 12px;
+.noMarginCol {
+    margin: 0;
+    padding: 0 !important;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active,
@@ -294,7 +291,7 @@ br {
 }
 
 .tableDiv {
-    min-height: 250px;
+    min-height: 200px;
     margin: auto;
 }
 
@@ -355,10 +352,6 @@ br {
     color: #212529 !important;
 }
 
-.nav-tabs {
-    /*border-bottom: 1px solid rgb(188, 209, 238) !important;*/
-}
-
 .table td,
 .table th {
     padding: 0.1rem !important;
@@ -391,4 +384,13 @@ br {
     .votingCardSpacer {
         height: 0;
     }
+}
+
+.hiddenLink {
+    color: black;
+}
+
+.hiddenLink:hover {
+    text-decoration: none;
+    color: black;
 }

@@ -21,7 +21,8 @@
 - Repository hosting: $84.00
 - Domain name $TBD/year
 
-
+## Personal to-do's
+- restructure components into different files  i.e. crypto-dashboard project
 
 
 
