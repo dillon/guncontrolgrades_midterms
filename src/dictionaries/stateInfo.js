@@ -4788,12 +4788,14 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'G.K. Butterfield',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/GKButterfield.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Roger Allison',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/178270_lg.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -4803,17 +4805,20 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Linda Coleman',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/lindacoleman.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'George Holding',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/GeorgeHoldingReplace.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               },
               {
                 name: 'Jeff Matemu',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/1934893284.jpg'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -4823,7 +4828,8 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Walter B. Jones',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/WalterBJones.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -4833,17 +4839,20 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'David E. Price',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/David_Price.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Steve Loor',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/80F89488-3389-4321-B789-1FF25A86074B.png'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               },
               {
                 name: 'Barbara Howe',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Barbara_Howe.jpg'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -4852,13 +4861,15 @@ export const stateInfo = {
             name: 'District 5',
             candidates: [
               {
-                name: 'DD Adams',
-                img: require('../portraits/todo.jpg'),
+                name: 'Denise D. Adams',
+                img: require('../portraits/Denise_Adams.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Virginia Foxx',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Virginia_Foxx.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -4868,12 +4879,14 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Ryan Watts',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/RyanWatts.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Mark Walker',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Mark_Walker_NC.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -4883,12 +4896,14 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Kyle Horton',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Kyle_Horton.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'David Rouzer',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/David_Rouzer_official_congressional_photo.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -4898,12 +4913,14 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Frank McNeill',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/FrankMcNeillHeadShot.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Richard Hudson',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Richard_Hudson.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -4913,17 +4930,19 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Dan McCready',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/veytey.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Mark Harris',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Mark_Harris.png'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               },
               {
                 name: 'Jeff Scott',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Jeff_Scott.jpg'),
                 party: LIBERTARIAN,
                 grade: NO_GRADE
               }
@@ -4933,13 +4952,15 @@ export const stateInfo = {
             name: 'District 10',
             candidates: [
               {
-                name: 'David Brown',
-                img: require('../portraits/todo.jpg'),
+                name: 'David Wilson Brown',
+                img: require('../portraits/David_Wilson_Brown.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Patrick T. McHenry',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/PatrickTMH.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -4949,17 +4970,19 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Phillip Price',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Phillip_Price.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Mark Meadows',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Mark_meadows_nc.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               },
               {
                 name: 'Clifton Ingram',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/CIJ.png'),
                 party: LIBERTARIAN,
                 grade: NO_GRADE
               }
@@ -4970,12 +4993,14 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Alma Adams',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/AlmaAdams.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Paul Wright',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Paul_Wright.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -4985,17 +5010,20 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Kathy Manning',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/kathymanning.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Ted Budd',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Ted_Budd_official_congressional_photo.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               },
               {
                 name: 'Tom Bailey',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/tombailey.jpg'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -5016,12 +5044,14 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Heidi Heitkamp',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Heidi_heitkamp.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Kevin Cramer',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Kevin_Cramer.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -5037,12 +5067,14 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Mac Schneider',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/MSchneider.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Kelly Armstrong',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Kelly_Armstrong.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -5058,12 +5090,14 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'David Thompson',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/David_Thompson_NC.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Wayne Stenehjem',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/WayneStenehjem2015.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -5079,12 +5113,14 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Joshua Boschee',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Joshua_Boschee.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Will Gardner',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Will_Gardner.png'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -5100,12 +5136,14 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Jim Dotzenrod',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/JDotzenrod.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Doug Goehring',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Doug_Goehring.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -5126,12 +5164,14 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Sherrod Brown',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Sherrod_Brown.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
-                name: ' James B. Renacci',
-                img: require('../portraits/todo.jpg'),
+                name: 'James B. Renacci',
+                img: require('../portraits/James_Renacci.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -5147,12 +5187,14 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Richard Cordray',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Richard_Cordray.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Mike DeWine',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/MikeDeWine2015.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -5168,12 +5210,14 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Aftab Pureval',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Aftab_Pureval.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {
                 name: 'Steve Chabot',
                 img: require('../portraits/todo.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
