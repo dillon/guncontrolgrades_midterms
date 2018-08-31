@@ -17,9 +17,16 @@ const US_SENATE = 'U.S. Senate'
 const US_HOUSE = 'U.S. House'
 const SECRETARY_OF_STATE = 'Secretary of State'
 
+const REPUBLICAN = 'Republican'
+const DEMOCRAT = 'Democrat'
+const LIBERTARIAN = 'Libertarian'
+const GREEN = 'Green'
+const UNITED_UTAH = 'United Utah'
+const INDEPENDENT = 'Independent'
+const CONSTITUTION = 'Constitution'
+
 const NO_GRADE = '?'
 const STATEWIDE = 'Statewide'
-
 
 export const stateInfo = {
   AL: {
@@ -1927,7 +1934,7 @@ export const stateInfo = {
               {
                 name: 'Jim Brewer',
                 img: require('../portraits/none.jpg'),
-                party: 'Green',
+                party: GREEN,
                 grade: NO_GRADE
               }
             ]
@@ -1954,13 +1961,13 @@ export const stateInfo = {
               {
                 name: 'Zachary Burd',
                 img: require('../portraits/Zachary_Burd_1.jpg'),
-                party: 'Green',
+                party: GREEN,
                 grade: NO_GRADE
               },
               {
                 name: 'Michelle Tippens',
                 img: require('../portraits/Michelle_Rose_Tippens.jpg'),
-                party: 'Libertarian',
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -2716,7 +2723,7 @@ export const stateInfo = {
               {
                 name: 'Bryan Holder',
                 img: require('../portraits/155344_lg.jpg'),
-                party: 'libertarian',
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -2737,7 +2744,7 @@ export const stateInfo = {
               {
                 name: 'Charles Aldrich',
                 img: require('../portraits/Charles_Aldrich.jpg'),
-                party: 'libertarian',
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -2906,7 +2913,7 @@ export const stateInfo = {
               },
               {
                 name: 'Ron Estes',
-                img: require('../portraits/Ron_Estes,_115th_official_photo-7.jpg'),
+                img: require('../portraits/ronestes.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -3665,7 +3672,7 @@ export const stateInfo = {
               },
               {
                 name: 'Trent Kelly',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Trent_Kelly.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -3674,8 +3681,8 @@ export const stateInfo = {
             name: 'District 2',
             candidates: [
               {
-                name: 'Benie Thompson',
-                img: require('../portraits/todo.jpg'),
+                name: 'Bennie Thompson',
+                img: require('../portraits/Bennie_Thompson.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -3686,12 +3693,12 @@ export const stateInfo = {
               [
                 {
                   name: 'Michael Evans',
-                  img: require('../portraits/todo.jpg'),
+                  img: require('../portraits/Michael_Evans.jpg'),
                   grade: NO_GRADE
                 },
                 {
                   name: 'Michael Guest',
-                  img: require('../portraits/todo.jpg'),
+                  img: require('../portraits/Michael_Guest-photo.jpg'),
                   grade: NO_GRADE
                 }
               ]
@@ -3702,12 +3709,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Jeramey Anderson',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Jeramey_Anderson.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Steven M. Palazzo',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Steven_Palazzo.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -3728,12 +3735,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Claire McCaskill',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Claire_McCaskill.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Josh Hawley',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Josh_Hawley.png'),
                 grade: NO_GRADE
               }
             ]
@@ -3749,18 +3756,18 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'William Lacy Clay',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/William_Lacy_Clay.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Robert Vroman',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Robert_Vroman.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Robb Cunningham',
-                img: require('../portraits/todo.jpg'),
-                party: 'libertarian',
+                img: require('../portraits/Robb_E_Cunningham.jpg'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -3770,24 +3777,24 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Cort VanOstran',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/CortVanOstran.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Ann Wagner',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Ann_Wagner.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'David Arnold',
-                img: require('../portraits/todo.jpg'),
-                party: 'Green',
+                img: require('../portraits/none.jpg'),
+                party: GREEN,
                 grade: NO_GRADE
               },
               {
                 name: 'Larry Kirk',
-                img: require('../portraits/todo.jpg'),
-                party: 'libertarian',
+                img: require('../portraits/none.jpg'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -3797,18 +3804,18 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Katy Geppert',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Geppert_Professional_Picture.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Blaine Luetkemeyer',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Blaine_Luetkemeyer.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Donald Stolle',
-                img: require('../portraits/todo.jpg'),
-                party: 'libertarian',
+                img: require('../portraits/none.jpg'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -3818,18 +3825,18 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Renee Hoagenson',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Renee_Hoagenson.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Vicky Hartzler',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Vicky_Hartzler.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Mark Bliss',
-                img: require('../portraits/todo.jpg'),
-                party: 'libertarian',
+                img: require('../portraits/Mark_Bliss.png'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -3839,30 +3846,30 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Emanuel Cleaver II',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Emanuel_Cleaver.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Jacob Turk',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Jacob_Turk.png'),
                 grade: NO_GRADE
               },
               {
                 name: 'E.C. Fredland',
-                img: require('../portraits/todo.jpg'),
-                party: 'constitution',
+                img: require('../portraits/none.jpg'),
+                party: CONSTITUTION,
                 grade: NO_GRADE
               },
               {
                 name: 'Maurice Copeland',
-                img: require('../portraits/todo.jpg'),
-                party: 'green',
+                img: require('../portraits/none.jpg'),
+                party: GREEN,
                 grade: NO_GRADE
               },
               {
                 name: 'Alexander Howell',
-                img: require('../portraits/todo.jpg'),
-                party: 'libertarian',
+                img: require('../portraits/none.jpg'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -3872,18 +3879,18 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Henry Martin',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Henry_Martin2.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Sam Graves',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Sam_Graves.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Dan Hogan',
-                img: require('../portraits/todo.jpg'),
-                party: 'libertarian',
+                img: require('../portraits/Dan_Hogan.jpg'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -3893,18 +3900,18 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Jamie Schoolcraft',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Jamie_Schoolcraft.png'),
                 grade: NO_GRADE
               },
               {
                 name: 'Billy Long',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Billy_Long.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Benjamin Brixey',
-                img: require('../portraits/todo.jpg'),
-                party: 'libertarian',
+                img: require('../portraits/benbrix.jpg'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -3914,18 +3921,18 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Kathy Ellis',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Kathy_Ellis_for_Congress.png'),
                 grade: NO_GRADE
               },
               {
                 name: 'Jason Smith',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/jasont.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Jonathan Shell',
-                img: require('../portraits/todo.jpg'),
-                party: 'libertarian',
+                img: require('../portraits/none.jpg'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -3941,30 +3948,30 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Nicole Galloway',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Nicole_Galloway.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Saundra McDowell',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/vlqRjnoC_400x400.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Jacob Luetkemeyer',
-                img: require('../portraits/todo.jpg'),
-                party: 'constitution',
+                img: require('../portraits/jaluetkSmall.jpg'),
+                party: CONSTITUTION,
                 grade: NO_GRADE
               },
               {
                 name: 'Don Fitz',
-                img: require('../portraits/todo.jpg'),
-                party: 'green',
+                img: require('../portraits/Don_Fitz.jpg'),
+                party: GREEN,
                 grade: NO_GRADE
               },
               {
                 name: 'Sean O\'Toole',
-                img: require('../portraits/todo.jpg'),
-                party: 'libertarian',
+                img: require('../portraits/toole.jpg'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -3986,24 +3993,24 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Jon Tester',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Jon_Tester.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Matt Rosendale',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Matt_Rosendale.png'),
                 grade: NO_GRADE
               },
               {
                 name: 'Rick Breckenridge',
-                img: require('../portraits/todo.jpg'),
-                party: 'libertarian',
+                img: require('../portraits/Rick_Breckenridge.jpg'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               },
               {
                 name: 'Steve Kelly',
-                img: require('../portraits/todo.jpg'),
-                party: 'independent',
+                img: require('../portraits/ewiorweiorj.jpg'),
+                party: INDEPENDENT,
                 grade: NO_GRADE
               }
             ]
@@ -4016,24 +4023,24 @@ export const stateInfo = {
                 candidates: [
                   {
                     name: 'Kathleen Williams',
-                    img: require('../portraits/todo.jpg'),
+                    img: require('../portraits/KathleenWilliams.jpg'),
                     grade: NO_GRADE
                   },
                   {
-                    name: 'Greg Ianforte',
-                    img: require('../portraits/todo.jpg'),
+                    name: 'Greg Gianforte',
+                    img: require('../portraits/greg.jpg'),
                     grade: NO_GRADE
                   },
                   {
                     name: 'Elinor Swanson',
-                    img: require('../portraits/todo.jpg'),
-                    party: 'libertarian',
+                    img: require('../portraits/Elinor_Swanson.jpg'),
+                    party: LIBERTARIAN,
                     grade: NO_GRADE
                   },
                   {
                     name: 'Doug Campbell',
-                    img: require('../portraits/todo.jpg'),
-                    party: 'independent',
+                    img: require('../portraits/doug_campbell.jpg'),
+                    party: INDEPENDENT,
                     grade: NO_GRADE
                   }
                 ]
@@ -4059,12 +4066,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Bob Krist',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Krist.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Pete Ricketts',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/PeteRicketts2015.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4080,12 +4087,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Jessica McClure',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/jessicamcclure.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Jeff Fortenberry',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/jefffortenberry.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4095,12 +4102,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Kara Eastman',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Kara_Eastman.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Don Bacon',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Don_Bacon_official_congressional_photo.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4110,12 +4117,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Paul Theobald',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Paul_Theobald.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Adrian Smith',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Adrian_Smith1.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4131,18 +4138,18 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Jane Raybould',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/JaneRaybould.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Deb Fischer',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/DFischer.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Jim Schultz',
-                img: require('../portraits/todo.jpg'),
-                party: 'libertarian',
+                img: require('../portraits/JimSchultzForSenate.jpg'),
+                party: LIBERTARIAN,
                 grade: NO_GRADE
               }
             ]
@@ -4157,13 +4164,9 @@ export const stateInfo = {
             name: STATEWIDE,
             candidates: [
               {
-                name: 'Evangelos Argyrakis',
-                img: require('../portraits/todo.jpg'),
-                grade: NO_GRADE
-              },
-              {
                 name: 'Doug Peterson',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/DougPeterson.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE
               }
             ]
@@ -4179,12 +4182,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Spencer Danner',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/5a70fbeb6cf5c.image.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Bob Evnen',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/bobevnen.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4200,12 +4203,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Jane Skinner',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/JaneSkinner.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Charlie Janssen',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Janssen.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4221,7 +4224,7 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'John Murante',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/John_Murante.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4242,12 +4245,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Steve Sisolak',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Sisolak.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Adam Laxalt',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/AdamLaxalt2015.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4263,12 +4266,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Jacky Rosen',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Jacky_Rosen.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Dean Heller',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Dean_Heller.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4284,12 +4287,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Dina Titus',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Dina_Titus_113th_Congress.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Joyce Bentley',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/joyce_bentley1.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4299,12 +4302,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Clint Koble',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Clint_Koble.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Mark Amodei',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Mark_armodei.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4314,12 +4317,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Susie Lee',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Susie_Lee.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Danny Tarkanian',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Danny_Tarkanian.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4329,12 +4332,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Steven Horsford',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Steven_Horsford.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Cresent Hardy',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/cresenthardy.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4350,12 +4353,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Kate Marshall',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Kate_Marshall.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Michael Roberson',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/121938_lg.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4371,12 +4374,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Aaron Ford',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Ford_headshot_in_classroom_heads_and_shoulder.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Wes Duncan',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Wesley_Duncan.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4392,7 +4395,7 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Barbara Cegavske',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Barbara_Cegavske.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4408,7 +4411,7 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Bob Beers',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Bob_Beers.png'),
                 grade: NO_GRADE
               }
             ]
@@ -4430,12 +4433,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Robert Menendez',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/bobmenendez.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Bob Hugin',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/BobHugin.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4451,12 +4454,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Donald Norcross',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/donaldnorcross.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Paul Dilks',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/pauldilk.png'),
                 grade: NO_GRADE
               }
             ]
@@ -4466,12 +4469,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Jeff Van Drew',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/vandrew_color.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Seth Grossman',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Sethgrossman.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4480,13 +4483,13 @@ export const stateInfo = {
             name: 'District 3',
             candidates: [
               {
-                name: 'Andy Kim',
-                img: require('../portraits/todo.jpg'),
+                name: 'Andrew Kim',
+                img: require('../portraits/Andrew_Kim.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Tom MacArthur',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Tom_MacArthur_official_congressional_photo.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4496,12 +4499,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Joshua Welle',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/joshwelle.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Christopher H. Smith',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Chris_Smith.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4511,12 +4514,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Josh Gottheimer',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Josh_Gottheimer.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'John McCann',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/mccann.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4526,12 +4529,12 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Frank Pallone Jr.',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Frank_Pallone.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Richard Pezzullo',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Rich_Pezzullo.jpg'),
                 grade: NO_GRADE
               }
             ]
@@ -4552,11 +4555,582 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Martin Heinrich',
-                img: require('../portraits/todo.jpg'),
+                img: require('../portraits/Martin_Heinrich.jpg'),
                 grade: NO_GRADE
               },
               {
                 name: 'Mick Rich',
+                img: require('../portraits/MickRich.png'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: GOVERNOR,
+        id: 'governor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Michelle Lujan Grisham',
+                img: require('../portraits/michellelujangrisham.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Steve Pearce',
+                img: require('../portraits/Steve_Pearce.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Debra Haaland',
+                img: require('../portraits/Debra_Haaland.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Janice Arnold-Jones',
+                img: require('../portraits/arnoldjones.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Xochitl Torres Small',
+                img: require('../portraits/09E724B7-7935-48B5-88E8-42C85C674F6C.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Yvette Herrell',
+                img: require('../portraits/Yvette_Herrell.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 3',
+            candidates: [
+              {
+                name: 'Ben Ray Luján',
+                img: require('../portraits/Ben_Ray_Lujan.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Jerald Steve McFall',
+                img: require('../portraits/Steve-McFall.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: LIEUTENANT_GOVERNOR,
+        id: 'lieutenantGovernor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Howie Morales',
+                img: require('../portraits/HMorales.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Michelle Garcia Holmes',
+                img: require('../portraits/MichelleGarciaHolmes.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: ATTORNEY_GENERAL,
+        id: 'attorneyGeneral',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Hector Balderas',
+                img: require('../portraits/HectorBalderas.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Michael Hendricks',
+                img: require('../portraits/Michaelhendrickprofile.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: SECRETARY_OF_STATE,
+        id: 'secretaryOfState',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Maggie Toulouse Oliver',
+                img: require('../portraits/Maggie_Toulouse_Oliver.png'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'JoHanna Cox',
+                img: require('../portraits/JoHanna-C-Cox-Law-Headshot-683x1024.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: AUDITOR,
+        id: 'auditor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Brian S. Colón',
+                img: require('../portraits/BrianColon.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Wayne Johnson',
+                img: require('../portraits/WayneJohnson.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: TREASURER,
+        id: 'treasurer',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Tim Eichenberg',
+                img: require('../portraits/TEichenberg.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Arthur Castillo',
+                img: require('../portraits/ALC_head_shot.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: LAND_COMMISSIONER,
+        id: 'landCommissioner',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Stephanie Garcia Richard',
+                party: DEMOCRAT,
+                img: require('../portraits/Stephanie_Richard.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Patrick Lyons',
+                img: require('../portraits/Patrick_Lyons.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  // NY: New York // Sept. 13
+  NC: {
+    name: 'North Carolina',
+    legislatures: [
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'G.K. Butterfield',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Roger Allison',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Linda Coleman',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'George Holding',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Jeff Matemu',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 3',
+            candidates: [
+              {
+                name: 'Walter B. Jones',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 4',
+            candidates: [
+              {
+                name: 'David E. Price',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Steve Loor',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Barbara Howe',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 5',
+            candidates: [
+              {
+                name: 'DD Adams',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Virginia Foxx',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 6',
+            candidates: [
+              {
+                name: 'Ryan Watts',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mark Walker',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 7',
+            candidates: [
+              {
+                name: 'Kyle Horton',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'David Rouzer',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 8',
+            candidates: [
+              {
+                name: 'Frank McNeill',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Richard Hudson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 9',
+            candidates: [
+              {
+                name: 'Dan McCready',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mark Harris',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Jeff Scott',
+                img: require('../portraits/todo.jpg'),
+                party: LIBERTARIAN,
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 10',
+            candidates: [
+              {
+                name: 'David Brown',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Patrick T. McHenry',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 11',
+            candidates: [
+              {
+                name: 'Phillip Price',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mark Meadows',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Clifton Ingram',
+                img: require('../portraits/todo.jpg'),
+                party: LIBERTARIAN,
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 12',
+            candidates: [
+              {
+                name: 'Alma Adams',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Paul Wright',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 13',
+            candidates: [
+              {
+                name: 'Kathy Manning',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Ted Budd',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Tom Bailey',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  ND: {
+    name: 'North Dakota',
+    legislatures: [
+      {
+        name: US_SENATE,
+        id: 'usSenate',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Heidi Heitkamp',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Kevin Cramer',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Mac Schneider',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Kelly Armstrong',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: ATTORNEY_GENERAL,
+        id: 'attorneyGeneral',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'David Thompson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Wayne Stenehjem',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: SECRETARY_OF_STATE,
+        id: 'secretaryOfState',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Joshua Boschee',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Will Gardner',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: AGRICULTURE_COMMISSIONER,
+        id: 'agricultureCommissioner',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Jim Dotzenrod',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Doug Goehring',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  OH: {
+    name: 'Ohio',
+    legislatures: [
+      {
+        name: US_SENATE,
+        id: 'usSenate',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Sherrod Brown',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: ' James B. Renacci',
                 img: require('../portraits/todo.jpg'),
                 grade: NO_GRADE
               }
@@ -4569,15 +5143,2407 @@ export const stateInfo = {
         id: 'governor',
         districts: [
           {
-            name: STATEWIDE
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Richard Cordray',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mike DeWine',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Aftab Pureval',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Steve Chabot',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Jill Schiller',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Brad Wenstrup',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 3',
+            candidates: [
+              {
+                name: 'Joyce Beatty',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Jim Burgess',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 4',
+            candidates: [
+              {
+                name: 'Janet Garrett',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Jim Jordan',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 5',
+            candidates: [
+              {
+                name: 'Michael Galbraith',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Bob Latta',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 6',
+            candidates: [
+              {
+                name: 'Shawna Roberts',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Bill Johnson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 7',
+            candidates: [
+              {
+                name: 'Ken Harbaugh',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Bob Gibbs',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 8',
+            candidates: [
+              {
+                name: 'Vanessa Enoch',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Warren Davidson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 9',
+            candidates: [
+              {
+                name: 'Marcy Kaptur',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Steven Kraus',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 10',
+            candidates: [
+              {
+                name: 'Theresa Gasper',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Michael R. Turner',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 11',
+            candidates: [
+              {
+                name: 'Marcia L. Fudge',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Beverly Goldstein',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 12',
+            candidates: [
+              {
+                name: 'Danny O\'Conner',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Troy Balderson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 13',
+            candidates: [
+              {
+                name: 'Tim Ryan',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Chris DePizzo',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 14',
+            candidates: [
+              {
+                name: 'Betsy Rader',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'David Joyce',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 15',
+            candidates: [
+              {
+                name: 'Rick Neal',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Steve Stivers',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 16',
+            candidates: [
+              {
+                name: 'Susan Moran Palmer',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Anthony Gonzalez',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: ATTORNEY_GENERAL,
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Steve Dettelbach',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Dave Yost',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: SECRETARY_OF_STATE,
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Kathleen Clyde',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Frank LaRose',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: AUDITOR,
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Zack Space',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Keith Faber',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: TREASURER,
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Rob Richardson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Rober Sprague',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  // OK: Oklahoma // runoffs are Aug. 28
+  OR: {
+    name: 'Oregon',
+    legislatures: [
+      {
+        name: GOVERNOR,
+        id: 'governor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Kate Brown',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Knute Buehler',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Patrick Starnes',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Suzanne Bonamici',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'John Verbeek',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Jamie McLeod-Skinner',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Greg Walden',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 3',
+            candidates: [
+              {
+                name: 'Earl Blumenauer',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 4',
+            candidates: [
+              {
+                name: 'Peter A. DeFazio',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Arthur Robinson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 5',
+            candidates: [
+              {
+                name: 'Kurt Schrader',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mark Callahan',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
           }
         ]
       },
     ]
-  }, // TODO: rest of this state!!!!!
-  // TODO: rest of states
-
-  WA: { // TODO rest of state
+  },
+  PA: {
+    name: 'Pennsylvania',
+    legislatures: [
+      {
+        name: GOVERNOR,
+        id: 'governor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Tom Wolf',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Scott Wagner',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_SENATE,
+        id: 'usSenate',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Bob Casey',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Lou Barletta',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Scott Wallace',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Brian Fitzpatrick',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Brendan F. Boyle',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'David Torres',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 3',
+            candidates: [
+              {
+                name: 'Dwight Evans',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Bryan Leib',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 4',
+            candidates: [
+              {
+                name: 'Madeleine Dean',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Dan David',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 5',
+            candidates: [
+              {
+                name: 'Mary Gay Scanlon',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Pearl Kim',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 6',
+            candidates: [
+              {
+                name: 'Chrissy Houlahan',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Greg McCauley',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 7',
+            candidates: [
+              {
+                name: 'Susan Wild',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Marty Nothstein',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 8',
+            candidates: [
+              {
+                name: 'Matt Cartwright',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'John Chrin',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 9',
+            candidates: [
+              {
+                name: 'Denny Wolff',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Dan Meuser',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 10',
+            candidates: [
+              {
+                name: 'George Scott',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Scott Perry',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 11',
+            candidates: [
+              {
+                name: 'Jess King',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Lloyd K. Smucker',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 12',
+            candidates: [
+              {
+                name: 'Marc Friedenberg',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Tom Marino',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 13',
+            candidates: [
+              {
+                name: 'Brent Ottaway',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'John Joyce',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 14',
+            candidates: [
+              {
+                name: 'Bibiana Boerio',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Guy Reschenthaler',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 15',
+            candidates: [
+              {
+                name: 'Susan Boser',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Glenn Thompson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 16',
+            candidates: [
+              {
+                name: 'Ron DiNicola',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mike Kelly',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 17',
+            candidates: [
+              {
+                name: 'Conor Lamb',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Keith Rothfus',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 18',
+            candidates: [
+              {
+                name: 'Conor Lamb',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+            ]
+          },
+        ]
+      },
+      {
+        name: LIEUTENANT_GOVERNOR,
+        id: 'lieutenantGovernor',
+        districts: [
+          {
+            name: 'John Fetterman',
+            img: require('../portraits/todo.jpg'),
+            grade: NO_GRADE
+          },
+          {
+            name: 'Jeff Bartos',
+            img: require('../portraits/todo.jpg'),
+            grade: NO_GRADE
+          }
+        ]
+      }
+    ]
+  },
+  // RI: Rhode Island // Sept. 12
+  SC: {
+    name: 'South Carolina',
+    legislatures: [
+      {
+        name: GOVERNOR,
+        id: 'governor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'James Smith',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Henry McMaster',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Martin Barry',
+                img: require('../portraits/todo.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Joe Cunningham',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Katie Arrington',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Sean Carrigan',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Joe Wilson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Sonny Narang',
+                img: require('../portraits/todo.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 3',
+            candidates: [
+              {
+                name: 'Brandon Brown',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'William Timmons',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Guy Furay',
+                img: require('../portraits/todo.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 5',
+            candidates: [
+              {
+                name: 'Archie Parnell',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Ralph Norman',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Michael Chandler',
+                img: require('../portraits/todo.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 6',
+            candidates: [
+              {
+                name: 'James E. Clyburn',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Gerhard Gressmann',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Bryan Pugh',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 7',
+            candidates: [
+              {
+                name: 'Robert Williams',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Tom Rice',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: ATTORNEY_GENERAL,
+        id: 'attorneyGeneral',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Constance Anastopoulo',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Alan Wilson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: SECRETARY_OF_STATE,
+        id: 'secretaryOfState',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Melvin Whittenburg',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mark Hammond',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: TREASURER,
+        id: 'treasurer',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Rosalyn Glenn',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Curtis M. Loftis Jr.',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Sarah Work',
+                img: require('../portraits/todo.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: AGRICULTURE_COMMISSIONER,
+        id: 'agricultureCommissioner',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Hugh Weathers',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'David Edmond',
+                img: require('../portraits/todo.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Chris Nelums',
+                img: require('../portraits/todo.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  SD: {
+    name: 'South Dakota',
+    legislatures: [
+      {
+        name: GOVERNOR,
+        id: 'governor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Billie Sutton',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Kristi Noem',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Tim Bjorkman',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Dusty Johnson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  TN: {
+    name: 'Tennessee',
+    legislatures: [
+      {
+        name: GOVERNOR,
+        id: 'governor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Karl Dean',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Bill Lee',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_SENATE,
+        id: 'usSenate',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Phil Bredesen',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Marsha Blackburn',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Marty Olsen',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Phil Roe',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Renee Hoyos',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Tim Burchett',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 3',
+            candidates: [
+              {
+                name: 'Danielle Mitchell',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Chuck Fleischmann',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 4',
+            candidates: [
+              {
+                name: 'Mariah Phillips',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Scott DesJarlais',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 5',
+            candidates: [
+              {
+                name: 'Jim Cooper',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Dawn Barlow',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 6',
+            candidates: [
+              {
+                name: 'Dawn Barlow',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'John Rose',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 7',
+            candidates: [
+              {
+                name: 'Justin Kanew',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mark Green',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 8',
+            candidates: [
+              {
+                name: 'Erika Pearson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'David Kustoff',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 9',
+            candidates: [
+              {
+                name: 'Steve Cohen',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Charlotte Bergmann',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  TX: {
+    name: 'Texas',
+    legislatures: [
+      {
+        name: GOVERNOR,
+        id: 'governor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Lupe Valdez',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Greg Abbott',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_SENATE,
+        id: 'usSenate',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Beto O\'Rourke',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Ted Cruz',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Shirley McKellar',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Louie Gohmert',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Todd Litton',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Dan Crenshaw',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 3',
+            candidates: [
+              {
+                name: 'Lorie Burch',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Van Taylor',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 4',
+            candidates: [
+              {
+                name: 'Catherine Krantz',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'John Ratcliffe',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 5',
+            candidates: [
+              {
+                name: 'Dan Wood',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Lance Gooden',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 6',
+            candidates: [
+              {
+                name: 'Jana Lynne Sanchez',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Ron Wright',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 7',
+            candidates: [
+              {
+                name: 'Lizzie Pannill Fletcher',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'John Culberson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 8',
+            candidates: [
+              {
+                name: 'Steven David',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Kevin Brady',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 9',
+            candidates: [
+              {
+                name: 'Al Green',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 10',
+            candidates: [
+              {
+                name: 'Mike Siegel',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 11',
+            candidates: [
+              {
+                name: 'Jennie Lou Leeder',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mike Conaway',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 12',
+            candidates: [
+              {
+                name: 'Vanessa Adia',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Kay Granger',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 13',
+            candidates: [
+              {
+                name: 'Greg Sagan',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mac Thornberry',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 14',
+            candidates: [
+              {
+                name: 'Adrienne Bell',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Randy Weber',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 15',
+            candidates: [
+              {
+                name: 'Vicente Gonzalez',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Veronica Escobar',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 16',
+            candidates: [
+              {
+                name: 'Veronica Escobar',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Rick Seeberger',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 17',
+            candidates: [
+              {
+                name: 'Rick Kennedy',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Bill Flores',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 18',
+            candidates: [
+              {
+                name: 'Sheila Jackson Lee',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Ava Pate',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 19',
+            candidates: [
+              {
+                name: 'Miguel Levario',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Jodey Arrington',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 20',
+            candidates: [
+              {
+                name: 'Joaquin Castro',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 21',
+            candidates: [
+              {
+                name: 'Joseph Kopser',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Chip Roy',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 22',
+            candidates: [
+              {
+                name: 'Sri Kulkarni',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Pete Olson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 23',
+            candidates: [
+              {
+                name: 'Gina Ortiz Jones',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Will Hurd',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 24',
+            candidates: [
+              {
+                name: 'Jan McDowell',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Kenny Marchant',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 25',
+            candidates: [
+              {
+                name: 'Julie Oliver',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Roger Williams',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 26',
+            candidates: [
+              {
+                name: 'Linsey Fagan',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Michael Burgess',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 27',
+            candidates: [
+              {
+                name: 'Eric Holguin',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Michael Cloud',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 28',
+            candidates: [
+              {
+                name: 'Henry Cuellar',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 29',
+            candidates: [
+              {
+                name: 'Sylvia R. Garcia',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Phillip Aronoff',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 30',
+            candidates: [
+              {
+                name: 'Eddie Bernice Johnson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 31',
+            candidates: [
+              {
+                name: 'Mary Hegar',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'John Carter',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 32',
+            candidates: [
+              {
+                name: 'Colin Allred',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Pete Sessions',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 33',
+            candidates: [
+              {
+                name: 'Marc Veasey',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Willie Billups',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 34',
+            candidates: [
+              {
+                name: 'Filemon Vela',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Rey Gonzalez',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 35',
+            candidates: [
+              {
+                name: 'Lloyd Doggett',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'David Smalling',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 36',
+            candidates: [
+              {
+                name: 'Dayna Steel',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Brian Babin',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: LIEUTENANT_GOVERNOR,
+        id: 'lieutenantGovernor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Mike Collier',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Dan Patrick',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: AGRICULTURE_COMMISSIONER,
+        id: 'agricultureCommissioner',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Kim Olson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Sid Miller',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: LAND_COMMISSIONER,
+        id: 'landCommissioner',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Miguel Suazo',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'George P. Bush',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  UT: {
+    name: 'Utah',
+    legislatures: [
+      {
+        name: US_SENATE,
+        id: 'usSenate',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Jenny Wilson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mitt Romney',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Tim Aalders',
+                img: require('../portraits/todo.jpg'),
+                party: CONSTITUTION,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Reed McCandless',
+                img: require('../portraits/todo.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Craig Bowden',
+                img: require('../portraits/todo.jpg'),
+                party: LIBERTARIAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Lee Castillo',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Rob Bishop',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Adam Davis',
+                img: require('../portraits/todo.jpg'),
+                party: GREEN,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Eric Eliason',
+                img: require('../portraits/todo.jpg'),
+                party: UNITED_UTAH,
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Shireen Ghorbani',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Chris Stewart',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Jeffrey Whipple',
+                img: require('../portraits/todo.jpg'),
+                party: LIBERTARIAN,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Jan Garbett',
+                img: require('../portraits/todo.jpg'),
+                party: UNITED_UTAH,
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 3',
+            candidates: [
+              {
+                name: 'James Singer',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'John Curtis',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Gregory Duerden',
+                img: require('../portraits/todo.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Melanie McCoard',
+                img: require('../portraits/todo.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 4',
+            candidates: [
+              {
+                name: 'Ben McAdams',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mia Love',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  VT: {
+    name: 'Vermont',
+    legislatures: [
+      {
+        name: GOVERNOR,
+        id: 'governor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Christine Hallquist',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Phil Scott',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Cris Ericson',
+                img: require('../portraits/todo.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Stephen Marx',
+                img: require('../portraits/todo.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_SENATE,
+        id: 'usSenate',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Bernie Sanders',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Brooke Paige',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Peter Welch',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Brooke Paige',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Cris Ericson',
+                img: require('../portraits/todo.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: LIEUTENANT_GOVERNOR,
+        id: 'lietenantGovernor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'David Zuckerman',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Don Turner',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: ATTORNEY_GENERAL,
+        id: 'attorneyGeneral',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'T.J. Donovan',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Brooke Paige',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: SECRETARY_OF_STATE,
+        id: 'secretaryOfState',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Jim Condos',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Brooke Paige',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: AUDITOR,
+        id: 'auditor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Doug Hoffer',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Brooke Paige',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: AUDITOR,
+        id: 'auditor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Beth Pearce',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Brooke Paige',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+    ]
+  },
+  VA: {
+    name: 'Virginia',
+    legislatures: [
+      {
+        name: US_SENATE,
+        id: 'usSenate',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Tim Kaine',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Corey Stewart',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Vangie Williams',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Rob Wittman',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Elaine Luria',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Scott Taylor',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 3',
+            candidates: [
+              {
+                name: 'Robert C. Scott',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 4',
+            candidates: [
+              {
+                name: 'A. Donald McEachin',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Ryan McAdams',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 6',
+            candidates: [
+              {
+                name: 'Jennifer Lewis',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 7',
+            candidates: [
+              {
+                name: 'Abigail Spanberger',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 8',
+            candidates: [
+              {
+                name: 'Don Beyer',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 9',
+            candidates: [
+              {
+                name: 'Anthony Flaccavento',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Morgan Griffith',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 10',
+            canidates: [
+              {
+                name: 'Jennifer Wexton',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Barbara Comstock',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 11',
+            candidates: [
+              {
+                name: 'Gerald E. Connolly',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Jeff Dove',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  WA: {
     // https://www.nytimes.com/interactive/2018/08/07/us/elections/results-washington-primary-elections.html
     name: 'Washington',
     legislatures: [
@@ -4628,8 +7594,7 @@ export const stateInfo = {
                 name: 'Rick Larsen',
                 img: require('../portraits/todo.jpg'),
                 grade: NO_GRADE
-              },
-              // TBD: second candidate
+              }
             ]
           },
           {
@@ -4714,7 +7679,7 @@ export const stateInfo = {
                 name: 'Dino Rossi',
                 img: require('../portraits/todo.jpg'),
                 grade: NO_GRADE
-              }, // TBD: second candidate
+              },
             ]
           },
           {
@@ -4724,7 +7689,7 @@ export const stateInfo = {
                 name: 'Adam Smith',
                 img: require('../portraits/todo.jpg'),
                 grade: NO_GRADE
-              }, // TBD: second candidate
+              },
             ]
           },
           {
@@ -4744,7 +7709,502 @@ export const stateInfo = {
           }
         ]
       }
-    ] // legislatures
+    ]
   },
+  WV: {
+    name: 'West Virginia',
+    legislatures: [
+      {
+        name: US_SENATE,
+        id: 'usSenate',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Joe Manchin',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Patrick Morrisey',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Kendra Fershee',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'David B. McKinley',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Talley Sergent',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Alex X. Mooney',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 3',
+            candidates: [
+              {
+                name: 'Richard Ojeda',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Carol Miller',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  WI: {
+    name: 'Wisconsin',
+    legislatures: [
+      {
+        name: GOVERNOR,
+        id: 'governor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Tony Evers',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Scott Walker',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Michael White',
+                img: require('../portraits/todo.jpg'),
+                party: GREEN,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Phil Anderson',
+                img: require('../portraits/todo.jpg'),
+                party: LIBERTARIAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_SENATE,
+        id: 'usSenate',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Tammy Baldwin',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Leah Vukmir',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Randy Bryce',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Bryan Steil',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Mark Pocan',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 3',
+            candidates: [
+              {
+                name: 'Ron Kind',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Steve Toft',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 4',
+            candidates: [
+              {
+                name: 'Gwen Moore',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Tim Rogers',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 5',
+            candidates: [
+              {
+                name: 'Tom Palzewicz',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Jim Sensenbrenner',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 6',
+            candidates: [
+              {
+                name: 'Dan Kohl',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Glenn Grothman',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 7',
+            candidates: [
+              {
+                name: 'Margaret Engebretson',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Sean P. Duffy',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 8',
+            candidates: [
+              {
+                name: 'Beau Liegeois',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mike Gallagher',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: LIEUTENANT_GOVERNOR,
+        id: 'lieutenantGovernor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Mangela Barnes',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Rebecca Kleefisch',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Tiffany Anderson',
+                img: require('../portraits/todo.jpg'),
+                party: GREEN,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Patrick Baird',
+                img: require('../portraits/todo.jpg'),
+                party: LIBERTARIAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: ATTORNEY_GENERAL,
+        id: 'attorneyGeneral',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Josh Kaul',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Brad Schimel',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Terry Larson',
+                img: require('../portraits/todo.jpg'),
+                party: CONSTITUTION,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: SECRETARY_OF_STATE,
+        id: 'secretaryOfState',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Doug La Follette',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Jay Schroeder',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: TREASURER,
+        id: 'treasurer',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Sarah Godlewski',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Travis Hartwig',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Andrew Zuelke',
+                img: require('../portraits/todo.jpg'),
+                party: CONSTITUTION,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  WY: {
+    name: 'Wyoming',
+    legislatures: [
+      {
+        name: GOVERNOR,
+        id: 'governor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Mary Throne',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Mark Gordon',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_SENATE,
+        id: 'usSenate',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Gary Trauner',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'John Barrasso',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Greg Hunter',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Liz Cheney',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: SECRETARY_OF_STATE,
+        id: 'secretaryOfState',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'James Byrd',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Edward Buchanan',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: AUDITOR,
+        id: 'auditor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Jeff Dockter',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              },
+              {
+                name: 'Kristi Racines',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: TREASURER,
+        id: 'treasurer',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Curt Meier',
+                img: require('../portraits/todo.jpg'),
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  // TODO: rest of states
+
+
   // end of stateInfo object
 }

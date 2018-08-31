@@ -36,9 +36,10 @@ import IoBackArrow from 'react-icons/lib/io/ios-arrow-back';
 const State = props => {
   // props: stateId
   const { id } = props.match.params;
+  const newId = id.toUpperCase();
   return (
     <div className='pageContainer'>
-      <StateContainer stateId={id} />
+      <StateContainer stateId={newId} />
     </div>
   );
 };
