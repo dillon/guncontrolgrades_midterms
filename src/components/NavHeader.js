@@ -29,7 +29,7 @@ class NavHeader extends React.Component {
     render() {
       return (
         <div className='Navbar'>
-          <Navbar expand='md' dark>
+          <Navbar expand='sm' dark>
             <NavbarBrand>
               <Link className='active' to='/'>
                 <strong>D4D</strong> Gun Control Grades

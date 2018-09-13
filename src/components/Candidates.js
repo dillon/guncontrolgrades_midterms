@@ -56,12 +56,12 @@ class Candidates extends React.Component {
           key={x.name + '.' + x.img}
           onClick={() =>
             this.onRadioBtnClick(
-              joinedString + x.name + ',' + x.img + ',' + x.grade
+              joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade
             )
           }
           active={
             this.state.rSelected ===
-            joinedString + x.name + ',' + x.img + ',' + x.grade
+            joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade
           }
         >
           <img src={x.img} alt={x.name} style={{ alignSelf: 'flex-start' }} />
@@ -76,6 +76,9 @@ class Candidates extends React.Component {
               {x.grade}
             </div>
           </div>
+          <div className='candidateParty'>
+              {x.party}
+            </div>
   
         </Button >
       ));

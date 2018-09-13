@@ -16,7 +16,9 @@ class MyVotes extends React.Component {
             {y[0]} – {y[1]}
           </span>
           <br />
-          {y[2]} ({y[4]})
+          {y[2]}
+          <br />
+          ({y[4]}) – {y[5]}
         </td>
       </tr>
     ));
