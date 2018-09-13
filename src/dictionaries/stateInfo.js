@@ -2381,10 +2381,15 @@ export const stateInfo = {
         id: 'auditor',
         districts: [
           {
-            name: 'Kathy McGuiness',
-            img: require('../portraits/38493483948.jpg'),
-            party: DEMOCRAT,
-            grade: NO_GRADE
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Kathy McGuiness',
+                img: require('../portraits/38493483948.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              }
+            ]
           }
         ]
       }
@@ -6266,42 +6271,42 @@ export const stateInfo = {
               }
             ]
           },
+        ]
+      },
+      {
+        name: US_HOUSE,
+        districts: [
           {
-            name: US_HOUSE,
-            districts: [
+            name: STATEWIDE,
+            candidates: [
               {
-                name: STATEWIDE,
-                candidates: [
-                  {
-                    name: 'Kathleen Williams',
-                    img: require('../portraits/KathleenWilliams.jpg'),
-                    party: DEMOCRAT,
-                    grade: NO_GRADE
-                  },
-                  {
-                    name: 'Greg Gianforte',
-                    img: require('../portraits/greg.jpg'),
-                    party: REPUBLICAN,
-                    grade: NO_GRADE
-                  },
-                  {
-                    name: 'Elinor Swanson',
-                    img: require('../portraits/Elinor_Swanson.jpg'),
-                    party: LIBERTARIAN,
-                    grade: NO_GRADE
-                  },
-                  {
-                    name: 'Doug Campbell',
-                    img: require('../portraits/doug_campbell.jpg'),
-                    party: INDEPENDENT,
-                    grade: NO_GRADE
-                  }
-                ]
+                name: 'Kathleen Williams',
+                img: require('../portraits/KathleenWilliams.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Greg Gianforte',
+                img: require('../portraits/greg.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Elinor Swanson',
+                img: require('../portraits/Elinor_Swanson.jpg'),
+                party: LIBERTARIAN,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Doug Campbell',
+                img: require('../portraits/doug_campbell.jpg'),
+                party: INDEPENDENT,
+                grade: NO_GRADE
               }
             ]
           }
         ]
-      },
+      }
     ]
   },
   NE: {
@@ -8553,17 +8558,22 @@ export const stateInfo = {
         id: 'lieutenantGovernor',
         districts: [
           {
-            name: 'John Fetterman',
-            img: require('../portraits/John_Fetterman_photo_2016.png'),
-            party: DEMOCRAT,
-            grade: NO_GRADE
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'John Fetterman',
+                img: require('../portraits/John_Fetterman_photo_2016.png'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Jeff Bartos',
+                img: require('../portraits/JeffBartos.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              }
+            ]
           },
-          {
-            name: 'Jeff Bartos',
-            img: require('../portraits/JeffBartos.jpg'),
-            party: REPUBLICAN,
-            grade: NO_GRADE
-          }
         ]
       }
     ]
@@ -10146,8 +10156,8 @@ export const stateInfo = {
         ]
       },
       {
-        name: AUDITOR,
-        id: 'auditor',
+        name: TREASURER,
+        id: 'treasurer',
         districts: [
           {
             name: STATEWIDE,
@@ -10314,7 +10324,7 @@ export const stateInfo = {
           },
           {
             name: 'District 10',
-            canidates: [
+            candidates: [
               {
                 name: 'Jennifer Wexton',
                 img: require('../portraits/WextonHS_1b-crop.jpg'),

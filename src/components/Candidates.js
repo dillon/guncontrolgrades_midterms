@@ -3,6 +3,8 @@ import {
   Button,
 } from 'reactstrap';
 
+import PropTypes from 'prop-types';
+
 // styles and global variables
 const goodGradeStyle = {
   color: '#00ac64',
@@ -29,6 +31,7 @@ class Candidates extends React.Component {
       };
       this.onRadioBtnClick = this.onRadioBtnClick.bind(this);
     }
+
   
     onRadioBtnClick(selected) {
       const index = this.state.rSelected.indexOf(selected);
@@ -47,6 +50,7 @@ class Candidates extends React.Component {
     }
   
     render() {
+      console.log(this.props)
       const joinedString =
         this.props.legislature + ',' + this.props.district + ',';
       const candidates = this.props.candidates.map(x => (
@@ -85,5 +89,11 @@ class Candidates extends React.Component {
       return <div className='candidates'>{candidates}</div>;
     }
   }
+
+  Candidates.propTypes = {
+    candidates: PropTypes.object,
+    district: PropTypes.string,
+    legislature: PropTypes.string
+  };
 
   export default Candidates;
