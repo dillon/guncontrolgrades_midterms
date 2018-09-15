@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(244, 247, 250) !important;
+}
+
 br {
     font-size: 0.1rem;
 }
@@ -130,8 +134,16 @@ br {
 
 /* State left column */
 
-.letterGrades {
+/* .letterGrades {
     font-size: 1.5rem;
+} */
+
+.candidateCard {
+    border: 1px solid lightgrey
+}
+
+.candidateCard:hover {
+    border: 1px solid grey;
 }
 
 .candidates {
@@ -145,25 +157,20 @@ br {
 
 .districtNameInTabs {
     margin-top: 15px;
+    margin-bottom: 5px;
     font-size: .9rem;
 }
 
-.candidates img {
+/* .candidates img {
     width: 100%;
-    /*  border: 1px solid black;
-*/
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+
     transition: .2s;
     -webkit-transition: .2s;
     opacity: .9;
 }
 
 .candidates button:hover img {
-    -webkit-filter: grayscale(70%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(70%);
+
     transition: .2s;
     -webkit-transition: .2s;
 }
@@ -172,7 +179,6 @@ br {
     background-color: white;
     color: #212529;
     ;
-    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);*/
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
     border-color: rgb(156, 164, 177) !important;
     transition: .2s;
@@ -191,16 +197,9 @@ br {
     -webkit-transition: .2s;
 }
 
-.noMarginCol {
-    margin: 0;
-    padding: 0 !important;
-}
-
 .btn-secondary:not(:disabled):not(.disabled).active,
 .btn-secondary:not(:disabled):not(.disabled):active,
 .show>.btn-secondary.dropdown-toggle {
-    /*background-color: #e9ecef !important;*/
-    /*color: #212529 !important;*/
     box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, .5);
     border-color: rgb(113, 173, 23) !important;
     background-color: inherit !important;
@@ -214,9 +213,12 @@ br {
 .show>.btn-secondary.dropdown-toggle img {
     transition: .2s;
     -webkit-transition: .2s !important;
-    filter: grayscale(15%);
-    -webkit-filter: grayscale(15%) !important;
     opacity: 1;
+} */
+
+.noMarginCol {
+    margin: 0;
+    padding: 0 !important;
 }
 
 /* TARGET DEVICES WITH NO HOVER OR SIMULATED HOVER (I.E. IOS) */
@@ -233,9 +235,9 @@ br {
         border-color: rgb(219, 224, 232) !important;
     }
     .candidates button:hover img {
-        -webkit-filter: grayscale(100%);
+        /* -webkit-filter: grayscale(100%); */
         /* Safari 6.0 - 9.0 */
-        filter: grayscale(100%);
+        /* filter: grayscale(100%); */
         transition: .2s;
     }
 }
@@ -268,8 +270,8 @@ br {
     border: 1px solid #545b62;
     transition: .2s;
     -webkit-transition: .2s !important;
-    filter: grayscale(15%);
-    -webkit-filter: grayscale(15%) !important;
+    /* filter: grayscale(15%); */
+    /* -webkit-filter: grayscale(15%) !important; */
 }
 
 .table tr:first-child,

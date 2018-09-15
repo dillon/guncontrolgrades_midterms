@@ -10,7 +10,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
-	background-color: rgb(244, 247, 250) !important;
   overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
 }

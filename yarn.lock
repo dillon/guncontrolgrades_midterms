@@ -8775,6 +8775,10 @@ react-icons@^2.2.7:
   dependencies:
     react-icon-base "2.1.0"
 
+react-icons@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.0.5.tgz#9f22a319a48b562e052af2255a3dda8ded363d1c"
+
 react-inspector@^2.2.2:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/react-inspector/-/react-inspector-2.3.0.tgz#fc9c1d38ab687fc0d190dcaf133ae40158968fc8"
@@ -8901,9 +8905,9 @@ react-style-proptype@^3.0.0:
   dependencies:
     prop-types "^15.5.4"
 
-react-to-print@2.0.0-beta-3:
-  version "2.0.0-beta-3"
-  resolved "https://registry.yarnpkg.com/react-to-print/-/react-to-print-2.0.0-beta-3.tgz#3730d27780e5e9141462d94021f7af5e157f36b7"
+react-to-print@^2.0.0-alpha-3:
+  version "2.0.0-alpha-3"
+  resolved "https://registry.yarnpkg.com/react-to-print/-/react-to-print-2.0.0-alpha-3.tgz#0d6e453e3d029178e47636e8aa8f9317dfbc2f65"
   dependencies:
     prop-types "^15.6.0"
     react "^16.2.0"

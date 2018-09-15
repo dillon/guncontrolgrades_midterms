@@ -30,7 +30,7 @@ const UNITED_CITIZENS = 'United Citizens'
 const GRASSROOTS = 'Grassroots'
 const UNAFFILIATED = 'Unaffiliated'
 
-const NO_GRADE = '?'
+const NO_GRADE = 'B+'
 const STATEWIDE = 'Statewide'
 
 export const stateInfo = {
@@ -3450,7 +3450,7 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Cristina McNeil',
-                img: require('../portraits/nLmyuaDA_400x400.jpg'),
+                img: require('../portraits/Cristina_McNeil.jpg'),
                 party: DEMOCRAT,
                 grade: NO_GRADE
               },
@@ -7797,6 +7797,7 @@ export const stateInfo = {
       },
       {
         name: ATTORNEY_GENERAL,
+        id: 'attorneyGeneral',
         districts: [
           {
             name: STATEWIDE,
@@ -7819,6 +7820,7 @@ export const stateInfo = {
       },
       {
         name: SECRETARY_OF_STATE,
+        id: 'secretaryOfState',
         districts: [
           {
             name: STATEWIDE,
@@ -7863,6 +7865,7 @@ export const stateInfo = {
       },
       {
         name: TREASURER,
+        id: 'treasurer',
         districts: [
           {
             name: STATEWIDE,
@@ -11028,6 +11031,7 @@ export const stateInfo = {
               {
                 name: 'James Byrd',
                 img: require('../portraits/Byrd.jpg'),
+                party: DEMOCRAT,
                 grade: NO_GRADE
               },
               {

@@ -8,6 +8,7 @@ import {
   NavLink,
   Col,
   ButtonGroup,
+  Table,
 } from 'reactstrap';
 import {
   FacebookShareButton,
@@ -22,14 +23,12 @@ import { stateInfo } from '../dictionaries/stateInfo.js';
 
 // other components
 import Candidates from './Candidates.js'
-import MyVotes from './MyVotes.js'
+// import MyVotes from './MyVotes.js'
 
 // images
-import FaTwitter from 'react-icons/lib/fa/twitter';
-import TiMail from 'react-icons/lib/ti/mail';
-import TiPrinter from 'react-icons/lib/ti/printer';
-import FaFacebook from 'react-icons/lib/fa/facebook-official';
-import IoBackArrow from 'react-icons/lib/io/ios-arrow-back';
+import { TiMail, TiPrinter } from 'react-icons/ti';
+import { FaFacebook, FaTwitter } from 'react-icons/fa';
+import { IoIosArrowBack } from 'react-icons/io';
 
 
 // State
@@ -85,9 +84,8 @@ class StateContainer extends React.Component {
         pressed.splice(index, 1);
         break;
       case 'change':
-        const removeArr = remove.split(',');
-        const removeIndex = this.indexGet(this.state.pressed, removeArr);
-        pressed.splice(removeIndex, 1, arr);
+        // const removeIndex = this.indexGet(this.state.pressed, remove.split(','));
+        pressed.splice(this.indexGet(this.state.pressed, remove.split(',')), 1, arr);
         break;
       default:
         console.log('switch defaulted');
@@ -136,14 +134,14 @@ class StateContainer extends React.Component {
               {x.name} – {y.name}
             </p>
             <div>
-              <ButtonGroup style={{ width: '100%' }}>
+              <div style={candidatesContainer}>
                 <Candidates
                   candidates={y.candidates}
                   legislature={x.name}
                   district={y.name}
                   handleChange={this.handleChange}
                 />
-              </ButtonGroup>
+              </div>
             </div>
           </div>
         ))}
@@ -161,13 +159,13 @@ class StateContainer extends React.Component {
           <div className='funbox'>
             <p className='funboxTitle'>
               <Link className='active' to='/'>
-                <IoBackArrow
+                <IoIosArrowBack
                   size={18}
                   style={{ marginTop: 1 }}
                   color='#334858'
                   className='v-center'
                 />
-              <span className='v-center hiddenLink'>&nbsp;{stateName}</span>
+                <span className='v-center hiddenLink'>&nbsp;{stateName}</span>
               </Link>
             </p>
             <div className='clearfix' style={{ paddingRight: '30rem' }}>
@@ -184,7 +182,7 @@ class StateContainer extends React.Component {
             </TabContent>
           </div>
         </Col>
-        <Col className='noMarginCol votingColumn' style={{padding:0}} md='5'>
+        <Col className='noMarginCol votingColumn' style={{ padding: 0 }} md='5'>
           <MyVotes
             ref={el => (this.componentRef = el)}
             pressed={this.state.pressed}
@@ -260,6 +258,72 @@ class StateContainer extends React.Component {
       </div>
     );
   }
+}
+
+
+// State > StateContainer > MyVotes
+class MyVotes extends React.Component {
+  render() {
+    const votes = this.props.pressed.map(y => (
+      <tr className='votes' key={y[3] + 'votes'}>
+        <td>
+          <img src={y[3]} alt={y[2]} />
+        </td>
+        <td style={{ lineHeight: '1.2' }}>
+          <span className='text-muted hintText'>
+            {y[0]} – {y[1]}
+          </span>
+          <br />
+          {y[2]}
+          <br />
+          ({y[4]}) – {y[5]}
+        </td>
+      </tr>
+    ));
+
+    return (
+      <div style={{ maxWidth: 500, width: '100%', margin: 'auto' }}>
+        <div className='votingCardSpacer' />
+        <div className='votingCard'>
+          <p style={{ width: '100%' }} className='smallCaps'>
+            MY {this.props.stateName.toUpperCase()} VOTING CARD
+          </p>
+          <div className='tableDiv'>
+            <Table id='votesList' flush>
+              <tbody>
+                {this.props.pressed.length === 0 ? (
+                  <div className='text-muted' style={{ fontSize: '.8rem' }}>
+                    <em>Select a candidate to add them to your voting card.</em>
+                  </div>
+                ) : (
+                    votes
+                  )}
+              </tbody>
+            </Table>
+          </div>
+          <div style={{ width: '100%' }}>
+            <div
+              style={{ position: 'relative', bottom: 0, textAlign: 'center' }}
+              className='hintText text-muted'
+            >
+              created on guncontrolgrades.com
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+
+const candidatesContainer = {
+  width: '100%',
+  display: 'grid',
+  gridTemplateColumns: 'repeat(2, 1fr)',
+  gridColumnGap: 10,
+  gridRowGap: 10
+  // gridGap: '10px',
+  // gridAutoRows: 'minMax(100px, auto)'
 }
 
 export default State;
