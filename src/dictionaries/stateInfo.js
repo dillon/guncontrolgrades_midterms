@@ -30,7 +30,8 @@ const UNITED_CITIZENS = 'United Citizens'
 const GRASSROOTS = 'Grassroots'
 const UNAFFILIATED = 'Unaffiliated'
 
-const NO_GRADE = 'B+'
+const gradesArray = ['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'F']
+const NO_GRADE = gradesArray[Math.floor(Math.random() * (12 - 0)) + 0]
 const STATEWIDE = 'Statewide'
 
 export const stateInfo = {
@@ -9362,7 +9363,7 @@ export const stateInfo = {
             candidates: [
               {
                 name: 'Greg Sagan',
-                img: require('../portraits/download-1.jpg'),
+                img: require('../portraits/download1.png'),
                 party: DEMOCRAT,
                 grade: NO_GRADE
               },

@@ -82,18 +82,6 @@ br {
     text-decoration: none;
 }
 
-.navbar {
-    max-width: 1100px;
-    margin: auto;
-    background-color: #334858;
-    padding-left: 24px !important;
-    padding-right: 24px !important;
-}
-
-.Navbar {
-    background-color: #334858
-}
-
 .nav-item:hover {
     cursor: pointer;
 }
@@ -143,7 +131,7 @@ br {
 }
 
 .candidateCard:hover {
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
 }
 
 .candidates {
@@ -234,12 +222,6 @@ br {
         border-width: 1px;
         border-color: rgb(219, 224, 232) !important;
     }
-    .candidates button:hover img {
-        /* -webkit-filter: grayscale(100%); */
-        /* Safari 6.0 - 9.0 */
-        /* filter: grayscale(100%); */
-        transition: .2s;
-    }
 }
 
 /* State right column */
@@ -248,7 +230,23 @@ br {
     height: 126px;
 }
 
-.votingCard {
+#votingCard {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(218, 225, 233);
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 15px;
+    margin-top: 24px;
+    max-width: 500px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px;
+}
+
+#votingCardHide {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(218, 225, 233);
     margin-left: 24px;
@@ -268,8 +266,8 @@ br {
     width: 35px;
     border-radius: 5%;
     border: 1px solid #545b62;
-    transition: .2s;
-    -webkit-transition: .2s !important;
+    /* transition: .2s;
+    -webkit-transition: .2s !important; */
     /* filter: grayscale(15%); */
     /* -webkit-filter: grayscale(15%) !important; */
 }
@@ -386,6 +384,56 @@ br {
     .votingCardSpacer {
         height: 0;
     }
+    .candidatesContainer {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    #votingCard {
+        /* visibility: hidden; */
+        /* display: block; */
+        position: fixed;
+        z-index: 1;
+        right: 0;
+        bottom: 60px;
+        flex: 1;
+        height: 70%;
+        width: auto;
+        max-width: 410px;
+        max-height: 800px;
+        overflow-y: scroll;
+        border-radius: 3px;
+        /* transition: .05s;
+        -webkit-transition: .05s;
+        -moz-transition: .05s; */
+        -webkit-overflow-scrolling: touch;
+        -webkit-box-shadow: 0px 0px 800px 800px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0px 0px 800px 800px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 0px 800px 800px rgba(0, 0, 0, 0.6);
+    }
+    #learnMore, #ShareSection {
+        height: 0;
+        visibility: hidden;
+    }
+    #votingCardHide {
+        /* display: block; */
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        bottom: 60px;
+        flex: 1;
+        -webkit-overflow-scrolling: touch;
+        max-width: 767px;
+        -webkit-box-shadow: 0px 0px 800px 800px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 800px 800px rgba(0, 0, 0, 0.35);
+        box-shadow: 0px 0px 800px 800px rgba(0, 0, 0, 0.35);
+    }
+}
+
+#votingCardHide img {
+    opacity: 0;
+    height: 0;
+    width: 0
 }
 
 .hiddenLink {
@@ -395,4 +443,13 @@ br {
 .hiddenLink:hover {
     text-decoration: none;
     color: black;
+}
+
+.candidatesContainer {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@fontface {
+    font-family: 'Open Sans', 'sans-serif';
+    src: url('https://fonts.googleapis.com/css?family=Open+Sans')
 }

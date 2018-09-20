@@ -8,6 +8,9 @@ import PropTypes from 'prop-types';
 import { IconContext } from 'react-icons';
 
 import { GoPlus, GoCheck } from 'react-icons/go';
+
+import { colors } from "../utils/colors.js";
+
 // State > StateContainer > {tabPanes > Candidates}
 class Candidates extends React.Component {
   constructor(props) {
@@ -50,7 +53,7 @@ class Candidates extends React.Component {
         <img style={candidateImage} src={x.img} alt={x.name} />
         <div style={candidateInfo}>
           <div style={candidateName}>
-            {x.name}&nbsp;({x.party[0]})
+            {x.name}{/*&nbsp;({x.party[0]}) */}
             <div style={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade ? candidateNameAlternativeSelected : candidateNameAlternative}>
             {x.party}
           </div>
@@ -59,6 +62,7 @@ class Candidates extends React.Component {
             <div style={candidateGrade}>
               {x.grade}
             </div>
+            <div style={buttonContainer}>
             {this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade ?
               <button
                 style={candidateCheckboxActive}
@@ -77,14 +81,15 @@ class Candidates extends React.Component {
                 onClick={() => this.onRadioBtnClick(joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade)}
                 active={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade}
               >
-                <IconContext.Provider value={{ color: '#00ac64', size: '.9em', className: 'global-class-name' }}>
+                <IconContext.Provider value={{ color: colors.primary, size: '.9em', className: 'global-class-name' }}>
                   <div style={{ paddingBottom: 2 }}>
                     <GoPlus />
                   </div>
-                </IconContext.Provider>
+                </IconContext.Provider >
                 <div style={{ fontSize: '.9rem' }}>Add</div>
               </button>
             }
+            </div>
           </div>
         </div>
       </div>
@@ -107,21 +112,23 @@ const candidateCard = {
   overflow: 'hidden',
   display: 'flex',
   flexDirection: 'row',
-  transition: '.2s',
-  webkitTransition: '.2s',
+  transition: '.1s',
+  webkitTransition: '.1s',
+  maxWidth: 280,
 }
 
 const candidateCardSelected = {
-  backgroundColor: 'rgba(25, 171, 102, .15)',
-  color: '#0B6B3E',
+  backgroundColor: colors.primaryLowOpacity,
+  color: colors.primaryDark,
   height: 130,
   borderRadius: 5,
   overflow: 'hidden',
   display: 'flex',
   flexDirection: 'row',
-  border: '1px solid rgba(25, 171, 102, 1)',
-  transition: '.2s',
-  webkitTransition: '.2s'
+  border: `1px solid ${colors.primaryMediumOpacity}`,
+  transition: '.1s',
+  webkitTransition: '.1s',
+  maxWidth: 280,
 
 }
 
@@ -149,13 +156,15 @@ const candidateNameAlternative = {
 }
 
 const candidateNameAlternativeSelected = {
-  color: 'rgba(102, 147, 126, 1)',
+  color: colors.primary,
   fontSize: '.8rem',
 }
 
 const candidateGrade = {
   fontSize: '1.7rem',
-  paddingBottom: 5
+  fontFamily: 'Open Sans, sans-serif',
+  // paddingBottom: 5,
+  fontWeight: 600
 }
 
 const candidateGradeAndCheck = {
@@ -169,30 +178,46 @@ const candidateGradeAndCheck = {
 
 const candidateCheckboxActive = {
   color: 'white',
-  backgroundColor: '#00ac64',
+  backgroundColor: colors.primary,
   width: 60,
   height: 35,
   borderRadius: 3,
-  border: '1px solid #00ac64',
+  border: `1px solid ${colors.primary}`,
   display: 'flex',
   alignContent: 'center',
   alignItems: 'center',
   justifyContent: 'center',
   cursor: 'pointer',
+  // delete below to get rid of button animation
+  borderRadius: '50%',
+  width: 35,
+  transition: '.1s',
+  webkitTransition: '.1s'
+
 }
 
 const candidateCheckbox = {
-  color: '#00ac64',
+  color: colors.primary,
+  backgroundColor: 'rgba(0,0,0,0)',
   width: 60,
   height: 35,
   borderRadius: 3,
-  border: '1px solid #00ac64',
+  border: `1px solid ${colors.primary}`,
   display: 'flex',
   alignContent: 'center',
   alignItems: 'center',
   justifyContent: 'center',
   cursor: 'pointer',
+  // delete below to get rid of button animation
+  transition: '.1s',
+  webkitTransition: '.1s'
 
 }
 
+const buttonContainer = {
+  // width: 60,
+  display: 'flex',
+  alignContent: 'center',
+  justifyContent: 'center',
+}
 export default Candidates;

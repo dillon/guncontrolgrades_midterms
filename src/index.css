@@ -10,12 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
-  overflow-y: scroll; /* has to be scroll, not auto */
   -webkit-overflow-scrolling: touch;
-}
-
-:focus {
-  outline: 0;
 }
 
 br {

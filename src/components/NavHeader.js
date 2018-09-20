@@ -11,6 +11,8 @@ import {
   NavbarBrand,
 } from 'reactstrap';
 
+import { colors } from '../utils/colors'
+
 
 class NavHeader extends React.Component {
     constructor(props) {
@@ -28,8 +30,8 @@ class NavHeader extends React.Component {
     }
     render() {
       return (
-        <div className='Navbar'>
-          <Navbar expand='sm' dark>
+        <div id="navBar" class="Navbar" style={navbarContainer}>
+          <Navbar style={navbar} expand='sm' dark>
             <NavbarBrand>
               <Link className='active' to='/'>
                 <strong>D4D</strong> Gun Control Grades
@@ -60,4 +62,18 @@ class NavHeader extends React.Component {
     }
   }
   
+
+const navbar = {
+  backgroundColor: colors.primaryDark,
+  maxWidth: 1100,
+  margin: 'auto',
+  paddingLeft: '24px ',
+  paddingRight: '24px ,'
+
+}
+
+const navbarContainer = {
+  backgroundColor: colors.primaryDark
+}
+
   export default NavHeader;

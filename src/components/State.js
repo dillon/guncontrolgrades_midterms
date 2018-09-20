@@ -7,7 +7,6 @@ import {
   NavItem,
   NavLink,
   Col,
-  ButtonGroup,
   Table,
 } from 'reactstrap';
 import {
@@ -25,11 +24,14 @@ import { stateInfo } from '../dictionaries/stateInfo.js';
 import Candidates from './Candidates.js'
 // import MyVotes from './MyVotes.js'
 
-// images
+// icons
+import { IconContext } from 'react-icons';
 import { TiMail, TiPrinter } from 'react-icons/ti';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
-import { IoIosArrowBack } from 'react-icons/io';
+import { IoIosArrowBack, IoIosArrowUp, IoIosArrowDropupCircle } from 'react-icons/io';
 
+// colors
+import { colors } from '../utils/colors.js'
 
 // State
 const State = props => {
@@ -49,7 +51,8 @@ class StateContainer extends React.Component {
     super(props); // props: stateId
     this.state = {
       activeTab: 'usHouse',
-      pressed: []
+      pressed: [],
+      card: true
     };
     this.toggle = this.toggle.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -102,6 +105,19 @@ class StateContainer extends React.Component {
     }
   }
 
+  toggleCard() {
+    if (this.state.card) {
+      this.setState({
+        card: false
+      })
+    }
+    else {
+      this.setState({
+        card: true
+      })
+    }
+  }
+
   render() {
     const stateName = stateInfo[this.props.stateId].name;
     const legislatures = stateInfo[this.props.stateId].legislatures;
@@ -134,7 +150,7 @@ class StateContainer extends React.Component {
               {x.name} – {y.name}
             </p>
             <div>
-              <div style={candidatesContainer}>
+              <div className='candidatesContainer' style={candidatesContainer}>
                 <Candidates
                   candidates={y.candidates}
                   legislature={x.name}
@@ -154,7 +170,16 @@ class StateContainer extends React.Component {
     );
 
     return (
-      <div id='StateContainer' style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap-reverse' }}>
+      <div id='StateContainer' style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
+
+        <button style={scrollToTop} onClick={() => this.toggleCard()}>
+          <IconContext.Provider value={{ color: colors.primary, size: '2.2em', className: 'global-class-name' }}>
+            <div style={{ paddingBottom: 4 }}>
+              <IoIosArrowUp />
+            </div>
+          </IconContext.Provider>
+        </button>
+
         <Col className='noMarginCol' md='7'>
           <div className='funbox'>
             <p className='funboxTitle'>
@@ -188,8 +213,9 @@ class StateContainer extends React.Component {
             pressed={this.state.pressed}
             legislatures={legislatures}
             stateName={stateName}
+            card={this.state.card}
           />
-          <p className='hintText text-muted' style={{ textAlign: 'center' }}>
+          <p id="learnMore" className='hintText text-muted' style={{ textAlign: 'center' }}>
             Learn more about our grading system{' '}
             <Link
               style={{ textDecoration: 'underline', color: 'inherit' }}
@@ -283,8 +309,8 @@ class MyVotes extends React.Component {
 
     return (
       <div style={{ maxWidth: 500, width: '100%', margin: 'auto' }}>
-        <div className='votingCardSpacer' />
-        <div className='votingCard'>
+        {/* <div className='votingCardSpacer' /> */}
+        <div id={this.props.card ? 'votingCardHide' : 'votingCard'}>
           <p style={{ width: '100%' }} className='smallCaps'>
             MY {this.props.stateName.toUpperCase()} VOTING CARD
           </p>
@@ -319,11 +345,30 @@ class MyVotes extends React.Component {
 const candidatesContainer = {
   width: '100%',
   display: 'grid',
-  gridTemplateColumns: 'repeat(2, 1fr)',
+  // gridTemplateColumns: 'repeat(2, 1fr)',
   gridColumnGap: 10,
   gridRowGap: 10
   // gridGap: '10px',
   // gridAutoRows: 'minMax(100px, auto)'
+}
+
+const scrollToTop = {
+  cursor: 'pointer',
+  position: 'fixed',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  // border: '1px solid red',
+  width: 55,
+  height: 55,
+  border: '1px solid rgba(0,0,0,0)',
+  // right: window.innerHeight - 100,
+  // top: window.innerWidth - 100
+  bottom: 10,
+  right: 10,
+  borderRadius: '50%',
+  zIndex: 2,
+  backgroundColor: colors.primaryLight
 }
 
 export default State;
