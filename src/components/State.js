@@ -28,7 +28,7 @@ import Candidates from './Candidates.js'
 import { IconContext } from 'react-icons';
 import { TiMail, TiPrinter } from 'react-icons/ti';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
-import { IoIosArrowBack, IoIosArrowUp, IoIosArrowDropupCircle } from 'react-icons/io';
+import { IoIosArrowBack, IoMdCheckboxOutline, IoIosArrowUp, IoIosArrowDown, IoIosArrowDropupCircle } from 'react-icons/io';
 
 // colors
 import { colors } from '../utils/colors.js'
@@ -172,11 +172,18 @@ class StateContainer extends React.Component {
     return (
       <div id='StateContainer' style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
 
-        <button style={scrollToTop} onClick={() => this.toggleCard()}>
+        <button id="scrollToTop" style={scrollToTop} onClick={() => this.toggleCard()}>
           <IconContext.Provider value={{ color: colors.primary, size: '2.2em', className: 'global-class-name' }}>
-            <div style={{ paddingBottom: 4 }}>
-              <IoIosArrowUp />
-            </div>
+            {
+              this.state.card ?
+                <div style={{ paddingBottom: 4 }}>
+                  <IoIosArrowUp />
+                </div>
+                :
+                <div style={{ paddingTop: 4 }}>
+                  <IoIosArrowDown />
+                </div>
+            }
           </IconContext.Provider>
         </button>
 
@@ -225,60 +232,58 @@ class StateContainer extends React.Component {
               here.
             </Link>
           </p>
-          <div id='ShareSection'>
-            {this.state.pressed.length === 0 ? (
-              <br />
-            ) : (
-                <div lg='12' style={{ margin: 0, textAlign: 'center' }}>
-                  <ReactToPrint
-                    trigger={() => (
-                      <TiPrinter className='printButton' size={22} color='#333' />
-                    )}
-                    content={() => this.componentRef}
-                  />
+          <div id={this.state.card ? 'ShareSectionHide' : 'ShareSection'}>
+            <div lg='12' style={{ margin: 0, textAlign: 'center' }}>
+              <span id="sharePrint">
+                <ReactToPrint
+                  trigger={() => (
+                    <TiPrinter className='printButton' size={22 * 1.2} color='#333' />
+                  )}
+                  content={() => this.componentRef}
+                />
+              </span>
 
-                  <EmailShareButton
-                    url='https://github.com'
-                    subject={'My GunControlMap voting card'}
-                    body={
-                      'I filled out my Midterm Elections voting card at GunControlMap.com' +
-                      shareQuote +
-                      '\n'
-                    }
-                  >
-                    <TiMail size={22} color='#333' />
-                  </EmailShareButton>
+              <EmailShareButton
+                url='https://github.com'
+                subject={'My GunControlMap voting card'}
+                body={
+                  'I filled out my Midterm Elections voting card at GunControlMap.com' +
+                  shareQuote +
+                  '\n'
+                }
+              >
+                <TiMail id="shareMail" size={22 * 1.2} color='#333' />
+              </EmailShareButton>
 
-                  <FacebookShareButton
-                    url='https://github.com'
-                    quote={
-                      'I filled out my Midterm Elections voting card at GunControlMap.com' +
-                      shareQuote +
-                      '\n'
-                    }
-                    hashtag='#GunControlMap'
-                  >
-                    <FaFacebook size={18} color='#3B5998' />
-                  </FacebookShareButton>
+              <FacebookShareButton
+                url='https://github.com'
+                quote={
+                  'I filled out my Midterm Elections voting card at GunControlMap.com' +
+                  shareQuote +
+                  '\n'
+                }
+                hashtag='#GunControlMap'
+              >
+                <FaFacebook id="shareFacebook" size={18 * 1.2} color='#3B5998' />
+              </FacebookShareButton>
 
-                  <TwitterShareButton
-                    url='https://github.com'
-                    title={
-                      'I filled out my Midterm Elections voting card at GunControlMap.com' +
-                      shareQuote +
-                      '\n'
-                    }
-                    hashtags={[
-                      'GunControlMap',
-                      'GunControl',
-                      'GunRegulation',
-                      'Midterms'
-                    ]}
-                  >
-                    <FaTwitter size={18} color='#1DA1F2' />
-                  </TwitterShareButton>
-                </div>
-              )}
+              <TwitterShareButton
+                url='https://github.com'
+                title={
+                  'I filled out my Midterm Elections voting card at GunControlMap.com' +
+                  shareQuote +
+                  '\n'
+                }
+                hashtags={[
+                  'GunControlMap',
+                  'GunControl',
+                  'GunRegulation',
+                  'Midterms'
+                ]}
+              >
+                <FaTwitter id="shareTwitter" size={18 * 1.2} color='#1DA1F2' />
+              </TwitterShareButton>
+            </div>
           </div>
         </Col>
       </div>
@@ -358,7 +363,7 @@ const scrollToTop = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  // border: '1px solid red',
+  // border: `1px solid ${colors.primary}`,
   width: 55,
   height: 55,
   border: '1px solid rgba(0,0,0,0)',

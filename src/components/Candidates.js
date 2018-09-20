@@ -65,6 +65,7 @@ class Candidates extends React.Component {
             <div style={buttonContainer}>
             {this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade ?
               <button
+                id="candidateChekbox"
                 style={candidateCheckboxActive}
                 onClick={() => this.onRadioBtnClick(joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade)}
                 active={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade}
@@ -77,6 +78,7 @@ class Candidates extends React.Component {
               </button>
               :
               <button
+                id="candidateCheckbox"
                 style={candidateCheckbox}
                 onClick={() => this.onRadioBtnClick(joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade)}
                 active={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade}
@@ -198,7 +200,7 @@ const candidateCheckboxActive = {
 
 const candidateCheckbox = {
   color: colors.primary,
-  backgroundColor: 'rgba(0,0,0,0)',
+  // backgroundColor: 'rgba(0,0,0,0)',
   width: 60,
   height: 35,
   borderRadius: 3,

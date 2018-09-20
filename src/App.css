@@ -97,7 +97,7 @@ br {
 }
 
 #g5 a {
-    fill: #00ac64
+    fill: rgb(71, 87, 188)
 }
 
 #g5 {
@@ -110,7 +110,7 @@ br {
   stroke-width:.05rem;
   stroke-linejoin: round;
   */
-    fill: rgb(0, 172, 100, .9) !important;
+    fill: rgba(71, 87, 188, .8) !important;
     cursor: pointer;
 }
 
@@ -149,18 +149,23 @@ br {
     font-size: .9rem;
 }
 
+#candidateCheckbox:hover {
+    background-color: rgb(236, 239, 251);
+}
+
 /* .candidates img {
     width: 100%;
 
-    transition: .2s;
-    -webkit-transition: .2s;
+    transition: .1s;
+    -webkit-transition: .1s;
     opacity: .9;
 }
 
+
 .candidates button:hover img {
 
-    transition: .2s;
-    -webkit-transition: .2s;
+    transition: .1s;
+    -webkit-transition: .1s;
 }
 
 .candidates button:hover {
@@ -169,8 +174,8 @@ br {
     ;
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
     border-color: rgb(156, 164, 177) !important;
-    transition: .2s;
-    -webkit-transition: .2s;
+    transition: .1s;
+    -webkit-transition: .1s;
 }
 
 .candidates button {
@@ -181,8 +186,8 @@ br {
     border-radius: 5px 5px 5px 5px;
     border-width: 1px;
     border-color: rgb(219, 224, 232) !important;
-    transition: .2s;
-    -webkit-transition: .2s;
+    transition: .1s;
+    -webkit-transition: .1s;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active,
@@ -192,15 +197,15 @@ br {
     border-color: rgb(113, 173, 23) !important;
     background-color: inherit !important;
     color: inherit !important;
-    transition: .2s;
-    -webkit-transition: .2s !important;
+    transition: .1s;
+    -webkit-transition: .1s !important;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active img,
 .btn-secondary:not(:disabled):not(.disabled):active img,
 .show>.btn-secondary.dropdown-toggle img {
-    transition: .2s;
-    -webkit-transition: .2s !important;
+    transition: .1s;
+    -webkit-transition: .1s !important;
     opacity: 1;
 } */
 
@@ -266,8 +271,8 @@ br {
     width: 35px;
     border-radius: 5%;
     border: 1px solid #545b62;
-    /* transition: .2s;
-    -webkit-transition: .2s !important; */
+    /* transition: .1s;
+    -webkit-transition: .1s !important; */
     /* filter: grayscale(15%); */
     /* -webkit-filter: grayscale(15%) !important; */
 }
@@ -323,13 +328,13 @@ br {
 .printButton:hover {
     cursor: pointer;
     opacity: 0.75 !important;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 
 .SocialMediaShareButton,
 .printButton {
     opacity: 1;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 
 .social-icon--whatsapp {
@@ -360,11 +365,17 @@ br {
 
 .votingColumn {
     min-width: 300px;
-    margin-bottom: 30px !important;
+    /* margin-bottom: 30px !important; */
 }
 
 .clearfix::after {
     display: none !important
+}
+
+@media only screen and (max-width: 600px) {
+    .candidatesContainer {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -384,8 +395,8 @@ br {
     .votingCardSpacer {
         height: 0;
     }
-    .candidatesContainer {
-        grid-template-columns: repeat(1, 1fr) !important;
+    #StateContainer .noMarginCol .funbox {
+        margin-bottom: -200px;
     }
     #votingCard {
         /* visibility: hidden; */
@@ -401,17 +412,10 @@ br {
         max-height: 800px;
         overflow-y: scroll;
         border-radius: 3px;
-        /* transition: .05s;
-        -webkit-transition: .05s;
-        -moz-transition: .05s; */
         -webkit-overflow-scrolling: touch;
-        -webkit-box-shadow: 0px 0px 800px 800px rgba(0, 0, 0, 0.6);
-        -moz-box-shadow: 0px 0px 800px 800px rgba(0, 0, 0, 0.6);
-        box-shadow: 0px 0px 800px 800px rgba(0, 0, 0, 0.6);
-    }
-    #learnMore, #ShareSection {
-        height: 0;
-        visibility: hidden;
+        -webkit-box-shadow: 0px 0px 3000px 3000px rgba(0, 0, 0, 0.7);
+        -moz-box-shadow: 0px 0px 3000px 3000px rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 0px 3000px 1400px rgba(0, 0, 0, 0.7);
     }
     #votingCardHide {
         /* display: block; */
@@ -419,21 +423,77 @@ br {
         opacity: 0;
         position: fixed;
         z-index: 1;
-        left: 0;
+        right: 0;
         bottom: 60px;
         flex: 1;
-        -webkit-overflow-scrolling: touch;
+        height: 70%;
+        width: auto;
+        max-width: 410px;
+        max-height: 800px;
+        overflow-y: scroll;
+        border-radius: 3px;
         max-width: 767px;
-        -webkit-box-shadow: 0px 0px 800px 800px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: 0px 0px 800px 800px rgba(0, 0, 0, 0.35);
-        box-shadow: 0px 0px 800px 800px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
+        -moz-box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
+        box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
+    }
+    #scrollToTop {
+        visibility: visible !important;
+    }
+    #ShareSection {
+        bottom: 8px;
+        right: 68px;
+        position: fixed;
+        padding: 0;
+        margin: 0;
+        z-index: 3;
+    }
+    #ShareSection div {
+        display: flex;
+        z-index: 3;
+    }
+    #ShareSectionHide {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+    }
+    #ShareSectionHide div {
+        height: 0;
+    }
+    #sharePrint {
+        visibility: hidden;
+        opacity: 0;
+    }
+    #learnMore {
+        visibility: hidden;
+    }
+    .SocialMediaShareButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+        width: 55px;
+        height: 55px;
+        /* border: 1px solid rgba(0,0,0,0); */
+        /* // right: window.innerHeight - 100, */
+        /* // top: window.innerWidth - 100 */
+        /* bottom: 10px;
+        right: 75px; */
+        border-radius: 50%;
+        z-index: 3;
+        background-color: rgb(236, 239, 251);
+        margin: 3px;
     }
 }
 
-#votingCardHide img {
+/* #votingCardHide img {
     opacity: 0;
     height: 0;
     width: 0
+} */
+
+#scrollToTop {
+    visibility: hidden;
 }
 
 .hiddenLink {
@@ -452,4 +512,12 @@ br {
 @fontface {
     font-family: 'Open Sans', 'sans-serif';
     src: url('https://fonts.googleapis.com/css?family=Open+Sans')
+}
+
+.dropdown-menu a button:focus,
+.dropdown-menu a button:active,
+.dropdown-menu a button:hover {
+    background-color: inherit;
+    color: black;
+    text-decoration: none;
 }
