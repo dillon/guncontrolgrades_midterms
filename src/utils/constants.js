@@ -1,3 +1,6 @@
 export const constants = {
-    websiteURL: 'https://github.com'
+    name: 'Gun Control Map',
+    nameNoSpaces: 'GunControlMap',
+    URL: 'https://github.com',
+    URLString: 'guncontrolmap.com'
 }

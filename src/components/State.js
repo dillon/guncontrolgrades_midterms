@@ -300,10 +300,10 @@ class StateContainer extends React.Component {
               </span>
 
               <EmailShareButton
-                url={constants.websiteURL}
-                subject={'My GunControlMap voting card'}
+                url={constants.URL}
+                subject={`My ${constants.nameNoSpaces} voting card`}
                 body={
-                  'I filled out my Midterm Elections voting card at GunControlMap.com' +
+                  `I filled out my Midterm Elections voting card at ${constants.URLString}` +
                   shareQuote +
                   '\n'
                 }
@@ -312,26 +312,26 @@ class StateContainer extends React.Component {
               </EmailShareButton>
 
               <FacebookShareButton
-                url={constants.websiteURL}
+                url={constants.URL}
                 quote={
-                  'I filled out my Midterm Elections voting card at GunControlMap.com' +
+                  `I filled out my Midterm Elections voting card at ${constants.URLString}` +
                   shareQuote +
                   '\n'
                 }
-                hashtag='#GunControlMap'
+                hashtag={'#' + constants.nameNoSpaces}
               >
                 <FaFacebook id='shareFacebook' size={18 * 1.2} color='#3B5998' />
               </FacebookShareButton>
 
               <TwitterShareButton
-                url={constants.websiteURL}
+                url={constants.URL}
                 title={
-                  'I filled out my Midterm Elections voting card at GunControlMap.com' +
+                  `I filled out my Midterm Elections voting card at ${constants.URLString}` +
                   shareQuote +
                   '\n'
                 }
                 hashtags={[
-                  'GunControlMap',
+                  constants.nameNoSpaces,
                   'GunControl',
                   'GunRegulation',
                   'Midterms'
@@ -353,44 +353,44 @@ class StateContainer extends React.Component {
               </span>
 
               <EmailShareButton
-                url={constants.websiteURL}
-                subject={'My GunControlMap voting card'}
+                url={constants.URL}
+                subject={`My ${constants.nameNoSpaces} voting card`}
                 body={
-                  'I filled out my Midterm Elections voting card at GunControlMap.com' +
+                  `I filled out my Midterm Elections voting card at ${constants.URLString}` +
                   shareQuote +
                   '\n'
                 }
               >
-                <TiMail  size={22 * 1.2} color='#333' />
+                <TiMail size={22 * 1.2} color='#333' />
               </EmailShareButton>
 
               <FacebookShareButton
-                url={constants.websiteURL}
+                url={constants.URL}
                 quote={
-                  'I filled out my Midterm Elections voting card at GunControlMap.com' +
+                  `I filled out my Midterm Elections voting card at ${constants.URLString}` +
                   shareQuote +
                   '\n'
                 }
-                hashtag='#GunControlMap'
+                hashtag={'#' + constants.nameNoSpaces}
               >
-                <FaFacebook  size={18 * 1.2} color='#3B5998' />
+                <FaFacebook size={18 * 1.2} color='#3B5998' />
               </FacebookShareButton>
 
               <TwitterShareButton
-                url={constants.websiteURL}
+                url={constants.URL}
                 title={
-                  'I filled out my Midterm Elections voting card at GunControlMap.com' +
+                  `I filled out my Midterm Elections voting card at ${constants.URLString}` +
                   shareQuote +
                   '\n'
                 }
                 hashtags={[
-                  'GunControlMap',
+                  constants.nameNoSpaces,
                   'GunControl',
                   'GunRegulation',
                   'Midterms'
                 ]}
               >
-                <FaTwitter  size={18 * 1.2} color='#1DA1F2' />
+                <FaTwitter size={18 * 1.2} color='#1DA1F2' />
               </TwitterShareButton>
             </div>
           </div>
@@ -405,18 +405,22 @@ class StateContainer extends React.Component {
 class MyVotes extends React.Component {
   render() {
     const votes = this.props.pressed.map(y => (
-      <tr className='votes' key={y[3] + 'votes'}>
+      <tr style={{ marginTop: 10 }} key={y[3] + 'votes'}>
         <td>
-          <img src={y[3]} alt={y[2]} />
+          <img style={cardImage} src={y[3]} alt={y[2]} />
         </td>
         <td style={{ lineHeight: '1.2' }}>
           <span className='text-muted hintText'>
             {y[0]} – {y[1]}
           </span>
           <br />
-          {y[2]}
+          <span style={cardName}>
+            {y[2]} ({y[4] === 'Republican' || y[4] === 'Democrat' || y[4] === 'Green' || y[4] === 'Libertarian' ? y[4][0] : 'I'})
+          </span>
           <br />
-          ({y[4]}) – {y[5]}
+          <span style={cardGrade}>
+            {y[5]}
+          </span>
         </td>
       </tr>
     ));
@@ -522,4 +526,23 @@ const districtNameInTabs = {
   fontSize: 16,
 }
 
+const cardImage = {
+  width: 41,
+  height: 53,
+  borderRadius: 4,
+  border: `1px solid grey`
+}
+
+const cardName = {
+  fontSize: '.9rem'
+}
+
+const cardGrade = {
+  fontSize: '1.1rem',
+  fontWeight: 600
+}
+
+const cardParty = {
+  fontSize: '.7rem'
+}
 export default State;
