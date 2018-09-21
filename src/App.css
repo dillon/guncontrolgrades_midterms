@@ -143,12 +143,6 @@ br {
     margin-bottom: 20px;
 }
 
-.districtNameInTabs {
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-size: .9rem;
-}
-
 /* .candidateCheckbox:first-of-type {
     z-index: 2;
     background-color: white;
@@ -307,9 +301,10 @@ br {
 
 @supports (-webkit-overflow-scrolling: touch) {
     /* CSS specific to iOS devices */
-    .printButton {
-        visibility: hidden;
+    .sharePrint {
+        visibility: hidden !important;
         width: 0px !important;
+        display: none;
     }
 }
 
@@ -402,10 +397,38 @@ br {
             grid-template-columns: repeat(1, 1fr) !important;
         }
     }
+    #secondVotingCard {
+        visibility: visible !important;
+        height: auto !important;
+        opacity: 1 !important;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(218, 225, 233);
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 15px;
+        margin-top: 24px;
+        max-width: 500px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 1.5rem 2rem;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px;
+    
+    }
+    #secondShareSection {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
     .votingCardSpacer {
         height: 0;
     }
-    #StateContainer .noMarginCol .funbox {
+    /* .votingColumn {
+        width: 0 !important;
+        min-width: 0 !important;
+        height: 0 !important;
+    } */
+    .votingColumn {
         margin-bottom: -200px;
     }
     #votingCard {
@@ -477,6 +500,7 @@ br {
     }
     #ShareSection div {
         display: flex;
+        justify-content: flex-end;
         z-index: 2;
     }
     #ShareSectionHide {
@@ -484,17 +508,16 @@ br {
         opacity: 0;
         height: 0;
     }
+    #ShareSectionHide div .SocialMediaShareButton {
+        height: 0 !important;
+    }
     #ShareSectionHide div {
         height: 0;
     }
-    #sharePrint {
-        visibility: hidden;
-        opacity: 0;
-    }
-    #learnMore {
+    #ShareSectionHide #learnMore, #ShareSection #learnMore {
         visibility: hidden;
     }
-    .SocialMediaShareButton {
+    #ShareSectionHide .SocialMediaShareButton, #ShareSection .SocialMediaShareButton, #ShareSection .sharePrint {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -530,6 +553,14 @@ br {
     -webkit-transition-duration: .2s;
 }
 
+#scrollToTopHintHidden {
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+}
+
 .hiddenLink {
     color: black;
 }
@@ -543,9 +574,14 @@ br {
     grid-template-columns: repeat(2, 1fr);
 }
 
-@fontface {
+@font-face {
     font-family: 'Open Sans', 'sans-serif';
     src: url('https://fonts.googleapis.com/css?family=Open+Sans')
+}
+
+@font-face {
+    font-family: 'Karla', 'sans-serif';
+    src: url('https://fonts.googleapis.com/css?family=Karla')
 }
 
 .dropdown-menu a button:focus,
@@ -554,4 +590,15 @@ br {
     background-color: inherit;
     color: black;
     text-decoration: none;
+}
+
+#secondVotingCard {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+#secondShareSection {
+    visibility: hidden;
+    opacity: 0;
 }

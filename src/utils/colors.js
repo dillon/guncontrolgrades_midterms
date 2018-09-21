@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const colors = {
     primary: 'rgb(71, 87, 188)',
     primaryDark: 'rgb(55, 67, 145)',

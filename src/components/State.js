@@ -31,7 +31,8 @@ import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { IoIosArrowBack, IoMdCheckboxOutline, IoIosArrowUp, IoIosArrowDown, IoIosArrowDropupCircle } from 'react-icons/io';
 
 // colors
-import { colors } from '../utils/colors.js'
+import { colors } from '../utils/colors'
+import { constants } from '../utils/constants'
 
 // State
 const State = props => {
@@ -62,18 +63,28 @@ class StateContainer extends React.Component {
   hintTimeoutShow() {
     new Promise((resolve, reject) => {
       setTimeout(
-        function () { this.setState({ showHints: true }) }
+        function () {
+          document.addEventListener('mousedown', this.handleClickOutside);
+          document.addEventListener('touchstart', this.handleClickOutside);
+          document.addEventListener('touchmove', this.handleClickOutside);
+          this.setState({ showHints: true })
+        }
           .bind(this),
-        500
+        100
       )
     }).then(this.hintTimeoutHide())
   }
 
   hintTimeoutHide() {
     setTimeout(
-      function () { this.setState({ showHints: false }) }
+      function () {
+        document.removeEventListener('mousedown', this.handleClickOutside);
+        document.removeEventListener('touchstart', this.handleClickOutside);
+        document.removeEventListener('touchmove', this.handleClickOutside);
+        this.setState({ showHints: false })
+      }
         .bind(this),
-      2800
+      2400
     );
   }
   async componentDidMount() {
@@ -82,6 +93,17 @@ class StateContainer extends React.Component {
     this.setState({
       activeTab: stateInfo[this.props.stateId].legislatures[0].id
     });
+  }
+
+  handleClickOutside = (event) => {
+    if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+      this.setState({
+        showHints: false
+      })
+    }
+  }
+  setWrapperRef = (node) => {
+    this.wrapperRef = node;
   }
 
   indexGet(pressed, arr) {
@@ -165,7 +187,7 @@ class StateContainer extends React.Component {
         {x.districts.map(y => (
           // x = stateInfo.{stateId}.legislatures[i]districts[i]
           <div key={y.name + 'district'}>
-            <p className='districtNameInTabs'>
+            <p style={districtNameInTabs}>
               {x.name} – {y.name}
             </p>
             <div>
@@ -191,7 +213,7 @@ class StateContainer extends React.Component {
     return (
       <div id='StateContainer' style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
 
-        <div id={this.state.showHints ? 'scrollToTopHint' : 'scrollToTopHintHidden'} style={scrollToTopHint}>
+        <div ref={this.setWrapperRef} id={this.state.showHints ? 'scrollToTopHint' : 'scrollToTopHintHidden'} style={scrollToTopHint}>
           <div id='scrollToTopHintArrow' style={scrollToTopHintArrow} />
           Click here to view your voting card.
         </div>
@@ -221,7 +243,7 @@ class StateContainer extends React.Component {
                   color='#334858'
                   className='v-center'
                 />
-                <span className='v-center hiddenLink'>&nbsp;{stateName}</span>
+                <span style={stateTitle} className='v-center hiddenLink'>&nbsp;{stateName}</span>
               </Link>
             </p>
             <div className='clearfix' style={{ paddingRight: '30rem' }}>
@@ -240,12 +262,22 @@ class StateContainer extends React.Component {
         </Col>
         <Col className='noMarginCol votingColumn' style={{ padding: 0 }} md='5'>
           <MyVotes
+            id={this.state.card ? 'votingCardHide' : 'votingCard'}
             ref={el => (this.componentRef = el)}
             pressed={this.state.pressed}
             legislatures={legislatures}
             stateName={stateName}
             card={this.state.card}
           />
+          <MyVotes
+            id='secondVotingCard'
+            ref={el => (this.componentRef2 = el)}
+            pressed={this.state.pressed}
+            legislatures={legislatures}
+            stateName={stateName}
+            card={this.state.card}
+          />
+
           <p id='learnMore' className='hintText text-muted' style={{ textAlign: 'center' }}>
             Learn more about our grading system{' '}
             <Link
@@ -258,7 +290,7 @@ class StateContainer extends React.Component {
           </p>
           <div id={this.state.card ? 'ShareSectionHide' : 'ShareSection'}>
             <div lg='12' style={{ margin: 0, textAlign: 'center' }}>
-              <span id='sharePrint'>
+              <span class='sharePrint'>
                 <ReactToPrint
                   trigger={() => (
                     <TiPrinter className='printButton' size={22 * 1.2} color='#333' />
@@ -268,7 +300,7 @@ class StateContainer extends React.Component {
               </span>
 
               <EmailShareButton
-                url='https://github.com'
+                url={constants.websiteURL}
                 subject={'My GunControlMap voting card'}
                 body={
                   'I filled out my Midterm Elections voting card at GunControlMap.com' +
@@ -280,7 +312,7 @@ class StateContainer extends React.Component {
               </EmailShareButton>
 
               <FacebookShareButton
-                url='https://github.com'
+                url={constants.websiteURL}
                 quote={
                   'I filled out my Midterm Elections voting card at GunControlMap.com' +
                   shareQuote +
@@ -292,7 +324,7 @@ class StateContainer extends React.Component {
               </FacebookShareButton>
 
               <TwitterShareButton
-                url='https://github.com'
+                url={constants.websiteURL}
                 title={
                   'I filled out my Midterm Elections voting card at GunControlMap.com' +
                   shareQuote +
@@ -306,6 +338,59 @@ class StateContainer extends React.Component {
                 ]}
               >
                 <FaTwitter id='shareTwitter' size={18 * 1.2} color='#1DA1F2' />
+              </TwitterShareButton>
+            </div>
+          </div>
+          <div id='secondShareSection'>
+            <div lg='12' style={{ margin: 0, textAlign: 'center' }}>
+              <span class='sharePrint'>
+                <ReactToPrint
+                  trigger={() => (
+                    <TiPrinter className='printButton' size={22 * 1.2} color='#333' />
+                  )}
+                  content={() => this.componentRef2}
+                />
+              </span>
+
+              <EmailShareButton
+                url={constants.websiteURL}
+                subject={'My GunControlMap voting card'}
+                body={
+                  'I filled out my Midterm Elections voting card at GunControlMap.com' +
+                  shareQuote +
+                  '\n'
+                }
+              >
+                <TiMail  size={22 * 1.2} color='#333' />
+              </EmailShareButton>
+
+              <FacebookShareButton
+                url={constants.websiteURL}
+                quote={
+                  'I filled out my Midterm Elections voting card at GunControlMap.com' +
+                  shareQuote +
+                  '\n'
+                }
+                hashtag='#GunControlMap'
+              >
+                <FaFacebook  size={18 * 1.2} color='#3B5998' />
+              </FacebookShareButton>
+
+              <TwitterShareButton
+                url={constants.websiteURL}
+                title={
+                  'I filled out my Midterm Elections voting card at GunControlMap.com' +
+                  shareQuote +
+                  '\n'
+                }
+                hashtags={[
+                  'GunControlMap',
+                  'GunControl',
+                  'GunRegulation',
+                  'Midterms'
+                ]}
+              >
+                <FaTwitter  size={18 * 1.2} color='#1DA1F2' />
               </TwitterShareButton>
             </div>
           </div>
@@ -339,7 +424,7 @@ class MyVotes extends React.Component {
     return (
       <div style={{ maxWidth: 500, width: '100%', margin: 'auto' }}>
         {/* <div className='votingCardSpacer' /> */}
-        <div id={this.props.card ? 'votingCardHide' : 'votingCard'}>
+        <div id={this.props.id}>
           <p style={{ width: '100%' }} className='smallCaps'>
             MY {this.props.stateName.toUpperCase()} VOTING CARD
           </p>
@@ -425,6 +510,16 @@ const scrollToTopHintArrow = {
   borderRightColor: 'transparent',
   borderTopColor: 'white',
   borderLeftColor: 'transparent'
+}
+const stateTitle = {
+  fontSize: 18,
+  fontWeight: 500,
+}
+
+const districtNameInTabs = {
+  marginTop: 15,
+  marginBottom: 5,
+  fontSize: 16,
 }
 
 export default State;
