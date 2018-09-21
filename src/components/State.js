@@ -52,14 +52,33 @@ class StateContainer extends React.Component {
     this.state = {
       activeTab: 'usHouse',
       pressed: [],
-      card: true
+      card: true,
+      showHints: false
     };
     this.toggle = this.toggle.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
 
-  componentWillMount() {
+  hintTimeoutShow() {
+    new Promise((resolve, reject) => {
+      setTimeout(
+        function () { this.setState({ showHints: true }) }
+          .bind(this),
+        500
+      )
+    }).then(this.hintTimeoutHide())
+  }
+
+  hintTimeoutHide() {
+    setTimeout(
+      function () { this.setState({ showHints: false }) }
+        .bind(this),
+      2800
+    );
+  }
+  async componentDidMount() {
     // set activeTab to whatever the first legislature is, in case usHouse is not up for election in this state
+    await this.hintTimeoutShow()
     this.setState({
       activeTab: stateInfo[this.props.stateId].legislatures[0].id
     });
@@ -172,7 +191,12 @@ class StateContainer extends React.Component {
     return (
       <div id='StateContainer' style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
 
-        <button id="scrollToTop" style={scrollToTop} onClick={() => this.toggleCard()}>
+        <div id={this.state.showHints ? 'scrollToTopHint' : 'scrollToTopHintHidden'} style={scrollToTopHint}>
+          <div id='scrollToTopHintArrow' style={scrollToTopHintArrow} />
+          Click here to view your voting card.
+        </div>
+
+        <button id='scrollToTop' style={scrollToTop} onClick={() => this.toggleCard()}>
           <IconContext.Provider value={{ color: colors.primary, size: '2.2em', className: 'global-class-name' }}>
             {
               this.state.card ?
@@ -222,7 +246,7 @@ class StateContainer extends React.Component {
             stateName={stateName}
             card={this.state.card}
           />
-          <p id="learnMore" className='hintText text-muted' style={{ textAlign: 'center' }}>
+          <p id='learnMore' className='hintText text-muted' style={{ textAlign: 'center' }}>
             Learn more about our grading system{' '}
             <Link
               style={{ textDecoration: 'underline', color: 'inherit' }}
@@ -234,7 +258,7 @@ class StateContainer extends React.Component {
           </p>
           <div id={this.state.card ? 'ShareSectionHide' : 'ShareSection'}>
             <div lg='12' style={{ margin: 0, textAlign: 'center' }}>
-              <span id="sharePrint">
+              <span id='sharePrint'>
                 <ReactToPrint
                   trigger={() => (
                     <TiPrinter className='printButton' size={22 * 1.2} color='#333' />
@@ -252,7 +276,7 @@ class StateContainer extends React.Component {
                   '\n'
                 }
               >
-                <TiMail id="shareMail" size={22 * 1.2} color='#333' />
+                <TiMail id='shareMail' size={22 * 1.2} color='#333' />
               </EmailShareButton>
 
               <FacebookShareButton
@@ -264,7 +288,7 @@ class StateContainer extends React.Component {
                 }
                 hashtag='#GunControlMap'
               >
-                <FaFacebook id="shareFacebook" size={18 * 1.2} color='#3B5998' />
+                <FaFacebook id='shareFacebook' size={18 * 1.2} color='#3B5998' />
               </FacebookShareButton>
 
               <TwitterShareButton
@@ -281,7 +305,7 @@ class StateContainer extends React.Component {
                   'Midterms'
                 ]}
               >
-                <FaTwitter id="shareTwitter" size={18 * 1.2} color='#1DA1F2' />
+                <FaTwitter id='shareTwitter' size={18 * 1.2} color='#1DA1F2' />
               </TwitterShareButton>
             </div>
           </div>
@@ -374,6 +398,33 @@ const scrollToTop = {
   borderRadius: '50%',
   zIndex: 2,
   backgroundColor: colors.primaryLight
+}
+
+const scrollToTopHint = {
+  position: 'fixed',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  paddingLeft: 10,
+  paddingRight: 10,
+  paddingTop: 8,
+  paddingBottom: 8,
+  bottom: (10 + 55) + 15,
+  right: (10) + 5,
+  borderRadius: '3px',
+  backgroundColor: 'white',
+  zIndex: 2,
+}
+const scrollToTopHintArrow = {
+  bottom: '-10px',
+  right: 15,
+  border: '5px solid white',
+  content: '',
+  position: 'absolute',
+  borderBottomColor: 'transparent',
+  borderRightColor: 'transparent',
+  borderTopColor: 'white',
+  borderLeftColor: 'transparent'
 }
 
 export default State;
