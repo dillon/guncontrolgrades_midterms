@@ -372,7 +372,7 @@ br {
     display: none !important
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) and (min-width: 766px) {
     .candidatesContainer {
         grid-template-columns: repeat(1, 1fr) !important;
     }
@@ -391,6 +391,11 @@ br {
         flex-wrap: wrap;
         padding: 1rem .75rem;
         border-radius: .25rem;
+    }
+    @media only screen and (max-width: 600px) {
+        .candidatesContainer {
+            grid-template-columns: repeat(1, 1fr) !important;
+        }
     }
     .votingCardSpacer {
         height: 0;
