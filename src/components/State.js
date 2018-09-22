@@ -539,7 +539,7 @@ const cardName = {
 
 const cardGrade = {
   fontSize: '1.1rem',
-  fontWeight: 600
+  fontWeight: 600,
 }
 
 const cardParty = {
