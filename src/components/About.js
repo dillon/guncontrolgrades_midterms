@@ -3,7 +3,7 @@ import { Col } from 'reactstrap';
 const About = () => {
     return (
       <div className="pageContainer">
-        <div className="funbox">
+        <div className="funbox funboxBorder">
           <Col sm="12">
             <div className="funboxTitle">About</div>
             <div className="clearfix" style={{ paddingRight: "30rem" }}>
