@@ -5,6 +5,7 @@ export const colors = {
     primaryLowOpacity: 'rgba(71, 87, 188, .08)',
     primaryMediumOpacity: 'rgba(71, 87, 188, .3)',
     primaryHighOpacity: 'rgba(71, 87, 188, .8)',
+    darkGrey: 'rgb(73, 85, 95)'
 }
 
 // export const colors = {

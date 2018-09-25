@@ -12,6 +12,7 @@ import {
 } from 'reactstrap';
 
 import { colors } from '../utils/colors'
+import { constants } from '../utils/constants'
 
 
 class NavHeader extends React.Component {
@@ -31,10 +32,11 @@ class NavHeader extends React.Component {
     render() {
       return (
         <div id="navBar" class="Navbar" style={navbarContainer}>
-          <Navbar style={navbar} expand='sm' dark>
+          <Navbar style={navbar} expand='xs' dark>
             <NavbarBrand>
               <Link className='active' to='/'>
-                <strong>D4D</strong> Gun Control Grades
+                {/* <strong>{constants.nameAbbreviated}</strong> {constants.name} */}
+                <img width='50' src={require('../utils/logoWhite.svg')}/>
               </Link>
             </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
@@ -64,7 +66,7 @@ class NavHeader extends React.Component {
   
 
 const navbar = {
-  backgroundColor: colors.primaryDark,
+  backgroundColor: colors.primary,
   maxWidth: 1100,
   margin: 'auto',
   paddingLeft: '24px ',
@@ -73,7 +75,7 @@ const navbar = {
 }
 
 const navbarContainer = {
-  backgroundColor: colors.primaryDark
+  backgroundColor: colors.primary
 }
 
   export default NavHeader;

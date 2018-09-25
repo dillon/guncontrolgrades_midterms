@@ -10,6 +10,7 @@ import { IconContext } from 'react-icons';
 import { GoPlus, GoCheck } from 'react-icons/go';
 
 import { colors } from "../utils/colors.js";
+import { constants } from "../utils/constants";
 
 // State > StateContainer > {tabPanes > Candidates}
 class Candidates extends React.Component {
@@ -71,7 +72,7 @@ class Candidates extends React.Component {
                 active={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade}
               >
                 <IconContext.Provider value={{ color: 'white', size: '1.2em', className: 'global-class-name' }}>
-                  <div style={{ paddingBottom: 2 }}>
+                  <div style={{display:'flex',alignItems:'center'}}>
                     <GoCheck />
                   </div>
                 </IconContext.Provider>
@@ -84,11 +85,11 @@ class Candidates extends React.Component {
                 active={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade}
               >
                 <IconContext.Provider value={{ color: colors.primary, size: '.9em', className: 'global-class-name' }}>
-                  <div style={{ paddingBottom: 2 }}>
+                  <div style={{display:'flex',alignItems:'center'}}>
                     <GoPlus />
                   </div>
                 </IconContext.Provider >
-                <div style={{ fontSize: '.9rem' }}>Add</div>
+                <div className="AddText" style={{ fontSize: '.9rem', }}>Add</div>
               </button>
             }
             </div>
@@ -109,20 +110,20 @@ Candidates.propTypes = {
 
 
 const candidateCard = {
-  height: 130,
+  height: constants.imageHeight, //130,
   borderRadius: 5,
   overflow: 'hidden',
   display: 'flex',
   flexDirection: 'row',
   transition: '.1s',
   webkitTransition: '.1s',
-  maxWidth: 280,
+  maxWidth: 288,
 }
 
 const candidateCardSelected = {
   backgroundColor: colors.primaryLowOpacity,
   color: colors.primaryDark,
-  height: 130,
+  height: constants.imageHeight,
   borderRadius: 5,
   overflow: 'hidden',
   display: 'flex',
@@ -130,13 +131,13 @@ const candidateCardSelected = {
   border: `1px solid ${colors.primaryMediumOpacity}`,
   transition: '.1s',
   webkitTransition: '.1s',
-  maxWidth: 280,
+  maxWidth: 288,
 
 }
 
 const candidateImage = {
-  height: 130,
-  width: 100,
+  height: constants.imageHeight,//130,
+  width: constants.imageWidth,
 }
 
 const candidateInfo = {

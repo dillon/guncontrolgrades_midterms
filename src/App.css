@@ -14,7 +14,6 @@ br {
 .funbox {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(218, 225, 233);
     margin: 24px;
     /* 24 px */
     max-width: 1100px;
@@ -24,6 +23,10 @@ br {
     flex-wrap: wrap;
     padding: 1.5rem 2rem;
     border-radius: .25rem;
+}
+
+.funboxBorder {
+    border: 1px solid rgb(218, 225, 233);
 }
 
 .row {
@@ -40,8 +43,14 @@ br {
     font-size: 1.1rem;
 }
 
+#Map>.dropdown>button {
+    padding: 0 !important;
+    color: black !important;
+    font-size: 1.1rem !important;
+}
+
 .hintText {
-    font-size: .75rem;
+    font-size: .8rem;
     line-height: 1.2;
 }
 
@@ -97,7 +106,7 @@ br {
 }
 
 #g5 a {
-    fill: rgb(71, 87, 188)
+    fill: rgb(73, 85, 95)
 }
 
 #g5 {
@@ -226,6 +235,13 @@ br {
         border-width: 1px;
         border-color: rgb(219, 224, 232) !important;
     }
+    .AddText {
+        padding-top: 0 !important;
+    }
+}
+
+.AddText {
+    padding-top: 1px;
 }
 
 /* State right column */
@@ -266,12 +282,10 @@ br {
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px;
 }
 
-
 .table tr:first-child,
 .table tr:first-child td {
     border-top: none !important;
 }
-
 
 .table tr td:first-child {
     width: 50px;
@@ -370,7 +384,6 @@ br {
     .funbox {
         box-shadow: none;
         background-color: rgb(255, 255, 255);
-        border: none;
         margin: 0px;
         max-width: 1100px;
         display: -ms-flexbox;
@@ -378,8 +391,13 @@ br {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         padding: 1rem .75rem;
-        border-radius: .25rem;
+        border-radius: 0;
     }
+
+    .funboxBorder {
+        border: none;
+    }
+
     @media only screen and (max-width: 600px) {
         .candidatesContainer {
             grid-template-columns: repeat(1, 1fr) !important;
@@ -402,7 +420,6 @@ br {
         flex-wrap: wrap;
         padding: 1.5rem 2rem;
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px;
-    
     }
     #secondShareSection {
         visibility: visible !important;
@@ -427,7 +444,6 @@ br {
         right: 0;
         bottom: 60px;
         flex: 1;
-        height: 70%;
         width: auto;
         max-width: 410px;
         max-height: 800px;
@@ -438,6 +454,9 @@ br {
         -moz-box-shadow: 0px 0px 3000px 3000px rgba(0, 0, 0, 0.7);
         box-shadow: 0px 0px 3000px 1400px rgba(0, 0, 0, 0.7);
     }
+    #votingCard {
+        max-height: 75%;
+    }
     #votingCardHide {
         /* display: block; */
         visibility: hidden;
@@ -447,7 +466,6 @@ br {
         right: 0;
         bottom: 60px;
         flex: 1;
-        height: 70%;
         width: auto;
         max-width: 410px;
         max-height: 800px;
@@ -457,6 +475,9 @@ br {
         -webkit-box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
         -moz-box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
         box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
+    }
+    #votingCardHide .tableDiv {
+        min-height: 50%;
     }
     #scrollToTop {
         visibility: visible !important;
@@ -502,10 +523,13 @@ br {
     #ShareSectionHide div {
         height: 0;
     }
-    #ShareSectionHide #learnMore, #ShareSection #learnMore {
+    #ShareSectionHide #learnMore,
+    #ShareSection #learnMore {
         visibility: hidden;
     }
-    #ShareSectionHide .SocialMediaShareButton, #ShareSection .SocialMediaShareButton, #ShareSection .sharePrint {
+    #ShareSectionHide .SocialMediaShareButton,
+    #ShareSection .SocialMediaShareButton,
+    #ShareSection .sharePrint {
         display: flex;
         justify-content: center;
         align-items: center;

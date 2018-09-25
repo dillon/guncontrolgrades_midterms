@@ -1,3 +1,29 @@
+# Left to do
+Design
+[x] Voting Card
+[x] Consider changing button icon for voting card
+[x] Center the word "Add" on mobile
+[ ] Landing Page
+[x] Icon
+[x] Navbar Color
+[x] State Color
+Code
+[ ] Truncate Twitter and Facebook URLs
+[ ] Delete Storybooks
+Last
+[ ] Fix images bug
+[ ] Crop Portraits
+[ ] Add Grades
+[ ] Add Keywords for SEO
+[ ] Get URL
+
+Final
+[ ] Further isolate components into different files
+[ ] Clean up CSS/Styles
+[ ] Comment Code
+
+
+
 # Deliverables, Estimates, Costs
 
 ## Information/Assets I need

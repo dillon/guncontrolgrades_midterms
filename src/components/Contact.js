@@ -10,7 +10,7 @@ const EMAIL_URL =
 const Contact = () => {
     return (
         <div className="pageContainer">
-            <div className="funbox">
+            <div className="funbox  funboxBorder">
                 <Col sm="12">
                     <div className="funboxTitle">Contact</div>
                     <div className="clearfix" style={{ paddingRight: "50rem" }}>

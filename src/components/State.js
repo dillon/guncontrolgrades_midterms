@@ -234,7 +234,7 @@ class StateContainer extends React.Component {
         </button>
 
         <Col className='noMarginCol' md='7'>
-          <div className='funbox'>
+          <div className='funbox funboxBorder'>
             <p className='funboxTitle'>
               <Link className='active' to='/'>
                 <IoIosArrowBack
@@ -405,22 +405,20 @@ class StateContainer extends React.Component {
 class MyVotes extends React.Component {
   render() {
     const votes = this.props.pressed.map(y => (
-      <tr style={{ marginTop: 10 }} key={y[3] + 'votes'}>
+      <tr style={cardRow} key={y[3] + 'votes'}>
         <td>
           <img style={cardImage} src={y[3]} alt={y[2]} />
         </td>
         <td style={{ lineHeight: '1.2' }}>
-          <span className='text-muted hintText'>
+          <div className='text-muted hintText'>
             {y[0]} – {y[1]}
-          </span>
-          <br />
-          <span style={cardName}>
+          </div>
+          <div style={cardName}>
             {y[2]} ({y[4] === 'Republican' || y[4] === 'Democrat' || y[4] === 'Green' || y[4] === 'Libertarian' ? y[4][0] : 'I'})
-          </span>
-          <br />
-          <span style={cardGrade}>
+          </div>
+          <div style={cardGrade}>
             {y[5]}
-          </span>
+          </div>
         </td>
       </tr>
     ));
@@ -530,7 +528,9 @@ const cardImage = {
   width: 41,
   height: 53,
   borderRadius: 4,
-  border: `1px solid grey`
+  border: `1px solid grey`,
+  marginTop: 3,
+  marginBottom: 3,
 }
 
 const cardName = {
@@ -544,5 +544,8 @@ const cardGrade = {
 
 const cardParty = {
   fontSize: '.7rem'
+}
+
+const cardRow = {
 }
 export default State;
