@@ -3,8 +3,6 @@ import {
   Button
 } from 'reactstrap';
 
-import PropTypes from 'prop-types';
-
 import { IconContext } from 'react-icons';
 
 import { GoPlus, GoCheck } from 'react-icons/go';
@@ -54,7 +52,7 @@ class Candidates extends React.Component {
         <img style={candidateImage} src={x.img} alt={x.name} />
         <div style={candidateInfo}>
           <div style={candidateName}>
-            {x.name}{/*&nbsp;({x.party[0]}) */}
+            {x.name}
             <div style={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade ? candidateNameAlternativeSelected : candidateNameAlternative}>
             {x.party}
           </div>
@@ -79,7 +77,7 @@ class Candidates extends React.Component {
               </button>
               :
               <button
-                class="candidateCheckbox"
+                class="candidateCheckbox candidateCheckboxNotActive"
                 style={candidateCheckbox}
                 onClick={() => this.onRadioBtnClick(joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade)}
                 active={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade}
@@ -102,15 +100,8 @@ class Candidates extends React.Component {
   }
 }
 
-Candidates.propTypes = {
-  candidates: PropTypes.object,
-  district: PropTypes.string,
-  legislature: PropTypes.string
-};
-
-
 const candidateCard = {
-  height: constants.imageHeight, //130,
+  height: constants.imageHeight,
   borderRadius: 5,
   overflow: 'hidden',
   display: 'flex',
@@ -132,7 +123,6 @@ const candidateCardSelected = {
   transition: '.1s',
   webkitTransition: '.1s',
   maxWidth: 288,
-
 }
 
 const candidateImage = {
@@ -149,25 +139,31 @@ const candidateInfo = {
 }
 
 const candidateName = {
-  fontSize: '1.0rem',
+  fontSize: '1rem',
+  // fontSize: '.9rem',
+  // fontWeight: 'bold',
   lineHeight: 1.2,
 }
 
 const candidateNameAlternative = {
   color: 'grey',
-  fontSize: '.8rem'
+  fontSize: '.8rem',
+  fontWeight: 'normal',
+
 }
 
 const candidateNameAlternativeSelected = {
   color: colors.primary,
   fontSize: '.8rem',
+  fontWeight: 'normal',
 }
 
 const candidateGrade = {
   fontSize: '1.7rem',
   fontFamily: 'Open Sans, sans-serif',
   // paddingBottom: 5,
-  fontWeight: 600
+  fontWeight: 600,
+  color: colors.primary
 }
 
 const candidateGradeAndCheck = {
@@ -200,7 +196,7 @@ const candidateCheckboxActive = {
 
 const candidateCheckbox = {
   color: colors.primary,
-  // backgroundColor: 'rgba(0,0,0,0)',
+  backgroundColor: 'rgba(0,0,0,0)',
   width: 60,
   height: 35,
   borderRadius: 3,

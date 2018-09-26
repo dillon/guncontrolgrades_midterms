@@ -1,5 +1,7 @@
 import React from 'react';
 import { Col } from 'reactstrap';
+import { constants } from '../utils/constants'
+import { colors } from '../utils/colors'
 const About = () => {
     return (
       <div className="pageContainer">
@@ -10,7 +12,7 @@ const About = () => {
               <div />
             </div>
             <p style={{ maxWidth: 600, marginTop: 15 }}>
-              <strong>D4D Gun Control</strong> is a tool created by Downtown for
+              <strong>{constants.name}</strong> is a tool created by Downtown for
               Democracy that displays the organization's ranks given to political
               candidates for their prospective views toward stricter gun Control.
             </p>

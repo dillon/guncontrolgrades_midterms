@@ -2,8 +2,11 @@ export const constants = {
     name: 'Gun Control Grades',
     nameAbbreviated: 'GCG',
     nameNoSpaces: 'GunControlGrades',
+    hashtags: ['GunControlGrades', 'GunControl', 'GunSafety', 'Midterms', 'MidtermElections'],
     URL: 'https://guncontrolgrades.com',
     URLString: 'guncontrolgrades.com',
+    email: 'info@guncontrolgrades.com',
+    mailto: 'mailto:info@guncontrolgrades.com?subject=Gun%20Control%20Grades',
     imageHeight: 109.25,
     imageWidth: 95,
 }

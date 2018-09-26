@@ -1,10 +1,8 @@
 import React from "react";
 import { Col } from 'reactstrap';
 
-
-const EMAIL_ADDRESS = "info@downtown4democracy.org";
-const EMAIL_URL =
-  "mailto:info@downtown4democracy.org?subject=Gun%20Control%20Map";
+import { colors } from '../utils/colors'
+import { constants } from '../utils/constants'
 
 
 const Contact = () => {
@@ -17,8 +15,8 @@ const Contact = () => {
                         <div />
                     </div>
                     <p style={{ maxWidth: 600, marginTop: 15 }}>
-                        <a href={EMAIL_URL} target="_blank" className="site-email">
-                            {EMAIL_ADDRESS}
+                        <a href={constants.mailto} target="_blank" className="site-email">
+                            {constants.email}
                         </a>{" "}
                     </p>
                 </Col>

@@ -22,7 +22,6 @@ import { stateInfo } from '../dictionaries/stateInfo.js';
 
 // other components
 import Candidates from './Candidates.js'
-// import MyVotes from './MyVotes.js'
 
 // icons
 import { IconContext } from 'react-icons';
@@ -30,7 +29,7 @@ import { TiMail, TiPrinter } from 'react-icons/ti';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { IoIosArrowBack, IoMdCheckboxOutline, IoIosArrowUp, IoIosArrowDown, IoIosArrowDropupCircle } from 'react-icons/io';
 
-// colors
+// constants
 import { colors } from '../utils/colors'
 import { constants } from '../utils/constants'
 
@@ -128,7 +127,6 @@ class StateContainer extends React.Component {
         pressed.splice(index, 1);
         break;
       case 'change':
-        // const removeIndex = this.indexGet(this.state.pressed, remove.split(','));
         pressed.splice(this.indexGet(this.state.pressed, remove.split(',')), 1, arr);
         break;
       default:
@@ -207,7 +205,7 @@ class StateContainer extends React.Component {
 
     // Format Candidate metainfo for Voting Card
     const shareQuote = this.state.pressed.map(
-      y => '\n' + y[0] + ' – ' + y[1] + ': ' + y[2] + ' (' + y[4] + ')'
+      y => '\n' + y[0] + `${y[1] === 'Statewide' ? '' : ' – ' + y[1]}` + ': ' + y[2] + ' (' + y[4] + ')'
     );
 
     return (
@@ -239,11 +237,11 @@ class StateContainer extends React.Component {
               <Link className='active' to='/'>
                 <IoIosArrowBack
                   size={18}
-                  style={{ marginTop: 1 }}
+                  // style={{ marginTop: 1 }}
                   color='#334858'
                   className='v-center'
                 />
-                <span style={stateTitle} className='v-center hiddenLink'>&nbsp;{stateName}</span>
+                <span className='funboxTitle v-center hiddenLink'>&nbsp;{stateName}</span>
               </Link>
             </p>
             <div className='clearfix' style={{ paddingRight: '30rem' }}>
@@ -301,11 +299,11 @@ class StateContainer extends React.Component {
 
               <EmailShareButton
                 url={constants.URL}
-                subject={`My ${constants.nameNoSpaces} voting card`}
+                subject={`${constants.name} at ${constants.URLString}`}
                 body={
-                  `I filled out my Midterm Elections voting card at ${constants.URLString}` +
-                  shareQuote +
-                  '\n'
+                  `I filled out my Midterm Elections voting card at ${constants.URLString}`
+                  + '\n'
+                  + shareQuote
                 }
               >
                 <TiMail id='shareMail' size={22 * 1.2} color='#333' />
@@ -314,9 +312,7 @@ class StateContainer extends React.Component {
               <FacebookShareButton
                 url={constants.URL}
                 quote={
-                  `I filled out my Midterm Elections voting card at ${constants.URLString}` +
-                  shareQuote +
-                  '\n'
+                  `I filled out my Midterm Elections voting card at ${constants.URLString}`
                 }
                 hashtag={'#' + constants.nameNoSpaces}
               >
@@ -326,16 +322,9 @@ class StateContainer extends React.Component {
               <TwitterShareButton
                 url={constants.URL}
                 title={
-                  `I filled out my Midterm Elections voting card at ${constants.URLString}` +
-                  shareQuote +
-                  '\n'
+                  `I filled out my Midterm Elections voting card at ${constants.URLString}`
                 }
-                hashtags={[
-                  constants.nameNoSpaces,
-                  'GunControl',
-                  'GunRegulation',
-                  'Midterms'
-                ]}
+                hashtags={constants.hashtags}
               >
                 <FaTwitter id='shareTwitter' size={18 * 1.2} color='#1DA1F2' />
               </TwitterShareButton>
@@ -354,11 +343,11 @@ class StateContainer extends React.Component {
 
               <EmailShareButton
                 url={constants.URL}
-                subject={`My ${constants.nameNoSpaces} voting card`}
+                subject={`${constants.name} at ${constants.URLString}`}
                 body={
-                  `I filled out my Midterm Elections voting card at ${constants.URLString}` +
-                  shareQuote +
-                  '\n'
+                  `I filled out my Midterm Elections voting card at ${constants.URLString}`
+                  + '\n'
+                  + shareQuote
                 }
               >
                 <TiMail size={22 * 1.2} color='#333' />
@@ -367,9 +356,7 @@ class StateContainer extends React.Component {
               <FacebookShareButton
                 url={constants.URL}
                 quote={
-                  `I filled out my Midterm Elections voting card at ${constants.URLString}` +
-                  shareQuote +
-                  '\n'
+                  `I filled out my Midterm Elections voting card at ${constants.URLString}`
                 }
                 hashtag={'#' + constants.nameNoSpaces}
               >
@@ -379,18 +366,11 @@ class StateContainer extends React.Component {
               <TwitterShareButton
                 url={constants.URL}
                 title={
-                  `I filled out my Midterm Elections voting card at ${constants.URLString}` +
-                  shareQuote +
-                  '\n'
+                  `I filled out my Midterm Elections voting card at ${constants.URLString}`
                 }
-                hashtags={[
-                  constants.nameNoSpaces,
-                  'GunControl',
-                  'GunRegulation',
-                  'Midterms'
-                ]}
+                hashtags={constants.hashtags}
               >
-                <FaTwitter size={18 * 1.2} color='#1DA1F2' />
+                <FaTwitter id='shareTwitter' size={18 * 1.2} color='#1DA1F2' />
               </TwitterShareButton>
             </div>
           </div>
@@ -411,7 +391,7 @@ class MyVotes extends React.Component {
         </td>
         <td style={{ lineHeight: '1.2' }}>
           <div className='text-muted hintText'>
-            {y[0]}{y[1]==='Statewide' ? '' : ' - ' + y[1]}
+            {y[0]}{y[1] === 'Statewide' ? '' : ' - ' + y[1]}
           </div>
           <div style={cardName}>
             {y[2]} ({y[4] === 'Republican' || y[4] === 'Democrat' || y[4] === 'Green' || y[4] === 'Libertarian' ? y[4][0] : 'I'})
@@ -513,14 +493,10 @@ const scrollToTopHintArrow = {
   borderTopColor: 'white',
   borderLeftColor: 'transparent'
 }
-const stateTitle = {
-  fontSize: 18,
-  fontWeight: 500,
-}
 
 const districtNameInTabs = {
-  marginTop: 15,
-  marginBottom: 5,
+  marginTop: 30,
+  marginBottom: 8,
   fontSize: 16,
 }
 

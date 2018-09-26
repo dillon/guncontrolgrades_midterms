@@ -8,9 +8,39 @@ import { colors } from '../utils/colors'
 
 const LandingLogo = () => {
   return (
-    <div style={{ backgroundColor: colors.primary, padding: 30, height: 180, display: 'flex', flex: 1, alignItems: 'center', flexDirection: 'column', justifyContent: 'flex-start' }}>
-      <img id='logoLarge' src={require('../utils/logoWhite.svg')} />
-      <div id='logoDescription' style={{ marginTop: 10, paddingLeft: 3, fontWeight: 200, fontSize: '1.02rem', color: 'white' }}>Gun Control Grades</div>
+    <div id='landingLogo' style={{
+      background: `linear-gradient(${colors.primary} 24%, ${colors.primaryDark} 168%)`,
+      backgroundColor: colors.primary, //fallback
+      display: 'flex',
+      flex: 1,
+      alignItems: 'center',
+      flexDirection: 'column',
+      justifyContent: 'flex-start'
+    }}>
+      {/* <img id='logoLarge' src={require('../utils/logoWhite.svg')} /> */}
+      <div id='landingFullName' style={{
+        marginTop: 0,
+        paddingLeft: 3,
+        fontWeight: 300,
+        opacity: '.65',
+        color: 'white',
+        letterSpacing: .7
+      }}>
+        Gun Control Grades
+      </div>
+      <div id='landingDescription' style={{
+        maxWidth: 400,
+        paddingBottom: 40,
+        // paddingTop: 30,
+        lineHeight: 1.5,
+        textAlign: 'center',
+        fontWeight: 300,
+        color: 'white',
+        opacity: .9
+      }}>
+        Choose your candidates<br />
+        for the midterm elections.
+      </div>
     </div>
   )
 }
@@ -42,16 +72,15 @@ class UsMap extends React.Component {
               <div id='Map' className='mapContainer'>
                 <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                   <DropdownToggle caret color="link">
-                  <span style={{fontSize:'1.1rem'}}>Select your state</span>
-              </DropdownToggle>
+                    <span className='funboxTitle'>Select your state</span>
+                  </DropdownToggle>
                   <DropdownMenu style={{ height: 'auto', maxHeight: 250, overflowX: 'hidden' }}>
                     {namesOfStates.map(x => <Link to={`State/${x.id}`}><DropdownItem>{x.name}</DropdownItem></Link>)}
                   </DropdownMenu>
                 </Dropdown>
-                <p className='text-muted hintText'>
-                  Click on a state below to view its candidates up for election
+                <p style={{ paddingBottom: 30 }} className='text-muted hintText'>
+                  Click on a state from the dropdown or map below to view candidates up for election
               </p>
-
                 <div id='us-map'>
                   <svg
                     xmlns='http://www.w3.org/2000/svg'

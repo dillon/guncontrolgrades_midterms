@@ -8,7 +8,7 @@ Design
 [x] Navbar Color
 [x] State Color
 Code
-[ ] Truncate Twitter and Facebook URLs
+[x] Truncate Twitter and Facebook URLs
 [ ] Delete Storybooks
 Last
 [ ] Fix images bug

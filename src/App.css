@@ -1,5 +1,7 @@
 body {
     background-color: rgb(244, 247, 250) !important;
+    font-family: '-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"';
+    color: rgb(36, 41, 46);
 }
 
 br {
@@ -40,12 +42,12 @@ br {
 }
 
 .funboxTitle {
-    font-size: 1.1rem;
+    font-size: 20px;
 }
 
 #Map>.dropdown>button {
     padding: 0 !important;
-    color: black !important;
+    color: rgb(36, 41, 46) !important;
     font-size: 1.1rem !important;
 }
 
@@ -106,11 +108,12 @@ br {
 }
 
 #g5 a {
-    fill: #A1A3A9
+    fill: rgba(73, 85, 95, .6)
 }
 
 #g5 {
-    fill: #d7d7d8
+    fill: #d7d7d8;
+    cursor: pointer;
 }
 
 #g5 a:hover {
@@ -136,11 +139,11 @@ br {
 } */
 
 .candidateCard {
-    border: 1px solid lightgrey
+    border: 1px solid #d1d5da
 }
 
 .candidateCard:hover {
-    border: 1px solid lightgrey;
+    border: 1px solid #d1d5da;
 }
 
 .candidates {
@@ -157,9 +160,10 @@ br {
     background-color: white;
 } */
 
-.candidateCheckbox:hover {
-    background-color: rgb(236, 239, 251);
+.candidateCheckboxNotActive:hover {
+    background-color: rgb(236, 239, 251) !important;
 }
+
 
 /* .candidates img {
     width: 100%;
@@ -299,6 +303,7 @@ br {
 .tableDiv {
     min-height: 200px;
     margin: auto;
+    min-width: 210px;
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
@@ -397,14 +402,22 @@ br {
     #logoLarge {
         width: 110px !important;
     }
-    #logoDescription {
-        opacity: .8 !important;
+    #landingLogo {
+        min-height: 125px !important;
+        padding: 20px !important;
+    }
+
+    #landingDescription {
+        font-size: 24px !important;
+    }
+    
+    #landingFullName {
+        font-size: 16px !important;
     }
 
     .funboxBorder {
         border: none;
         /* border: 1px solid rgb(218, 225, 233); */
-
     }
 
     @media only screen and (max-width: 600px) {
@@ -583,33 +596,23 @@ br {
 }
 
 .hiddenLink {
-    color: black;
+    color: rgb(36, 41, 46);
 }
 
 .hiddenLink:hover {
     text-decoration: none;
-    color: black;
+    color: rgb(36, 41, 46);
 }
 
 .candidatesContainer {
     grid-template-columns: repeat(2, 1fr);
 }
 
-@font-face {
-    font-family: 'Open Sans', 'sans-serif';
-    src: url('https://fonts.googleapis.com/css?family=Open+Sans')
-}
-
-@font-face {
-    font-family: 'Karla', 'sans-serif';
-    src: url('https://fonts.googleapis.com/css?family=Karla')
-}
-
 .dropdown-menu a button:focus,
 .dropdown-menu a button:active,
 .dropdown-menu a button:hover {
     background-color: inherit;
-    color: black;
+    color: rgb(36, 41, 46);
     text-decoration: none;
 }
 
@@ -625,13 +628,26 @@ br {
 }
 
 #logoLarge {
-    width: 150px;
+    width: 140px;
 }
 
-#logoDescription {
-    opacity: .6;
-}
 
 #landingPageFunbox {
     margin-top: -20px !important;
+}
+
+#landingLogo {
+    min-height: 150px;
+    padding: 75px;
+}
+
+#landingDescription {
+    /* -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility; */
+    font-size: 34px;
+}
+
+#landingFullName {
+    font-size: 22px;
 }
