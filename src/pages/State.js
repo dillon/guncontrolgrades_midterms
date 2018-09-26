@@ -20,8 +20,8 @@ import ReactToPrint from 'react-to-print';
 // dictionary
 import { stateInfo } from '../dictionaries/stateInfo.js';
 
-// other components
-import Candidates from './Candidates.js'
+// components
+import Candidates from '../components/Candidates.js'
 
 // icons
 import { IconContext } from 'react-icons';

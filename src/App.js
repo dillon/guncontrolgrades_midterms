@@ -2,12 +2,12 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import React from 'react';
 import './App.css';
 
-// components
-import UsMap from './components/Map.js'
-import About from './components/About.js'
-import Contact from './components/Contact.js'
+// pages
 import NavHeader from './components/NavHeader.js'
-import State from './components/State.js'
+import UsMap from './pages/Map.js'
+import State from './pages/State.js'
+import About from './pages/About.js'
+import Contact from './pages/Contact.js'
 
 
 // APP
