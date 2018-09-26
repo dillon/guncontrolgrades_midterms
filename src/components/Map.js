@@ -8,9 +8,9 @@ import { colors } from '../utils/colors'
 
 const LandingLogo = () => {
   return (
-    <div style={{ padding: 30, height: '100% !important', display: 'flex', flex: 1, alignItems: 'center', flexDirection: 'column', justifyContent: 'center' }}>
-      <img width='150' src={require('../utils/logoWhite.svg')} />
-      <div style={{ marginTop: 10, fontWeight: 200, opacity: .6, fontSize: '1.05rem', color: 'white' }}>Gun Control Grades</div>
+    <div style={{ backgroundColor: colors.primary, padding: 30, height: 180, display: 'flex', flex: 1, alignItems: 'center', flexDirection: 'column', justifyContent: 'flex-start' }}>
+      <img id='logoLarge' src={require('../utils/logoWhite.svg')} />
+      <div id='logoDescription' style={{ marginTop: 10, paddingLeft: 3, fontWeight: 200, fontSize: '1.02rem', color: 'white' }}>Gun Control Grades</div>
     </div>
   )
 }
@@ -33,11 +33,11 @@ class UsMap extends React.Component {
 
   render() {
     return (
-      <div style={{ backgroundColor: colors.primary }}>
+      <div>
         <LandingLogo />
 
-        <div className='pageContainer' style={{backgroundColor:colors.primary}}>
-          <div className='funbox'>
+        <div className='pageContainer'>
+          <div id='landingPageFunbox' className='funbox funboxBorder'>
             <Col sm='12'>
               <div id='Map' className='mapContainer'>
                 <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>

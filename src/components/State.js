@@ -411,7 +411,7 @@ class MyVotes extends React.Component {
         </td>
         <td style={{ lineHeight: '1.2' }}>
           <div className='text-muted hintText'>
-            {y[0]} – {y[1]}
+            {y[0]}{y[1]==='Statewide' ? '' : ' - ' + y[1]}
           </div>
           <div style={cardName}>
             {y[2]} ({y[4] === 'Republican' || y[4] === 'Democrat' || y[4] === 'Green' || y[4] === 'Libertarian' ? y[4][0] : 'I'})

@@ -106,7 +106,7 @@ br {
 }
 
 #g5 a {
-    fill: rgb(73, 85, 95)
+    fill: #A1A3A9
 }
 
 #g5 {
@@ -114,13 +114,13 @@ br {
 }
 
 #g5 a:hover {
-    /* 
+/*     
   stroke: black !important;
   stroke-width:.05rem;
   stroke-linejoin: round;
   */
-    fill: rgba(71, 87, 188, .8) !important;
-    cursor: pointer;
+    fill: rgba(73, 85, 95, .9);
+    
 }
 
 #path67 {
@@ -394,8 +394,17 @@ br {
         border-radius: 0;
     }
 
+    #logoLarge {
+        width: 110px !important;
+    }
+    #logoDescription {
+        opacity: .8 !important;
+    }
+
     .funboxBorder {
         border: none;
+        /* border: 1px solid rgb(218, 225, 233); */
+
     }
 
     @media only screen and (max-width: 600px) {
@@ -613,4 +622,16 @@ br {
 #secondShareSection {
     visibility: hidden;
     opacity: 0;
+}
+
+#logoLarge {
+    width: 150px;
+}
+
+#logoDescription {
+    opacity: .6;
+}
+
+#landingPageFunbox {
+    margin-top: -20px !important;
 }
