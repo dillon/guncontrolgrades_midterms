@@ -18,7 +18,7 @@ import classnames from 'classnames';
 import ReactToPrint from 'react-to-print';
 
 // dictionary
-import { stateInfo } from '../dictionaries/stateInfo.js';
+import { stateInfo } from '../utils/stateInfo.js';
 
 // components
 import Candidates from '../components/Candidates.js'
