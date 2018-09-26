@@ -1,12 +1,10 @@
 import React from 'react';
-import {
-  Button
-} from 'reactstrap';
 
+// icons
 import { IconContext } from 'react-icons';
-
 import { GoPlus, GoCheck } from 'react-icons/go';
 
+// constants
 import { colors } from "../utils/colors.js";
 import { constants } from "../utils/constants";
 

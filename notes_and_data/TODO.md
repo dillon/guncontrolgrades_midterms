@@ -3,14 +3,15 @@ Design
 [x] Voting Card
 [x] Consider changing button icon for voting card
 [x] Center the word "Add" on mobile
-[ ] Landing Page
+[x] Landing Page
 [x] Icon
 [x] Navbar Color
 [x] State Color
 Code
 [x] Truncate Twitter and Facebook URLs
-[ ] Delete Storybooks
+[x] Delete Storybooks
 Last
+[ ] Revise all copy
 [ ] Fix images bug
 [ ] Crop Portraits
 [ ] Add Grades

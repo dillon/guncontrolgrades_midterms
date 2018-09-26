@@ -27,7 +27,7 @@ import Candidates from '../components/Candidates.js'
 import { IconContext } from 'react-icons';
 import { TiMail, TiPrinter } from 'react-icons/ti';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
-import { IoIosArrowBack, IoMdCheckboxOutline, IoIosArrowUp, IoIosArrowDown, IoIosArrowDropupCircle } from 'react-icons/io';
+import { IoIosArrowBack, IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
 
 // constants
 import { colors } from '../utils/colors'
