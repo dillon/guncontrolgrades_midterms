@@ -72,9 +72,9 @@ br {
     font-size: 1rem !important;
 }
 
-.Navbar .nav-link a:hover {
+.Navbar .navbar-nav .nav-item a:hover {
     color: white;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .Navbar .navbar-brand a {

@@ -33,28 +33,28 @@ class NavHeader extends React.Component {
     return (
       <div id='navBar' class='Navbar' style={Styles.navbarContainer}>
         <Navbar style={Styles.navbar} expand='xs' dark>
-          <NavbarBrand>
-            <Link className='active' to='/'>
+          <Link className='active' to='/'>
+            <NavbarBrand>
               {/* <strong>{constants.nameAbbreviated}</strong> {constants.name} */}
               <img width='50' src={require('../utils/logoWhite.svg')} />
-            </Link>
-          </NavbarBrand>
+            </NavbarBrand>
+          </Link>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className='ml-auto' navbar>
               <NavItem>
-                <NavLink>
-                  <Link className='active' to='/About'>
+                <Link className='active' to='/About'>
+                  <NavLink>
                     About
-                  </Link>
                 </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink>
-                  <Link className='active' to='/Contact'>
+                <Link className='active' to='/Contact'>
+                  <NavLink>
                     Contact
-                  </Link>
-                </NavLink>
+                  </NavLink>
+                </Link>
               </NavItem>
             </Nav>
           </Collapse>
