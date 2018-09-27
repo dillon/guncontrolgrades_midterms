@@ -11,7 +11,6 @@ import {
   NavItem,
   NavLink,
   Col,
-  Table,
 } from 'reactstrap';
 
 // dictionary
@@ -19,6 +18,7 @@ import { stateInfo } from '../utils/stateInfo.js';
 
 // components
 import Candidates from '../components/Candidates.js';
+import MyVotes from '../components/MyVotes'
 
 // share buttons
 import {
@@ -39,6 +39,9 @@ import { IoIosArrowBack, IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
 // constants
 import { colors } from '../utils/colors'
 import { constants } from '../utils/constants'
+
+// styles
+import { State as Styles } from '../utils/styles'
 
 
 const State = props => {
@@ -239,7 +242,7 @@ class StatePage extends React.Component { // State -> StatePage
                   color='#334858'
                   className='v-center'
                 />
-                <span className='funboxTitle v-center hiddenLink'>&nbsp;{stateName}</span>
+                <span className='v-center hiddenLink'>&nbsp;{stateName}</span>
               </Link>
             </p>
             <div className='clearfix' style={{ paddingRight: '30rem' }}>
@@ -267,7 +270,7 @@ class StatePage extends React.Component { // State -> StatePage
           />
           <MyVotes
             id='secondVotingCard'
-            ref={el => (this.componentRef2 = el)}
+            // ref={el => (this.componentRef = el)}
             pressed={this.state.pressed}
             legislatures={legislatures}
             stateName={stateName}
@@ -335,7 +338,7 @@ class StatePage extends React.Component { // State -> StatePage
                   trigger={() => (
                     <TiPrinter className='printButton' size={22 * 1.2} color='#333' />
                   )}
-                  content={() => this.componentRef2}
+                  content={() => this.componentRef}
                 />
               </span>
 
@@ -378,136 +381,4 @@ class StatePage extends React.Component { // State -> StatePage
   }
 }
 
-
-// State > StateContainer > MyVotes
-class MyVotes extends React.Component {
-  render() {
-    const votes = this.props.pressed.map(y => (
-      <tr key={y[3] + 'votes'}>
-        <td>
-          <img style={Styles.cardImage} src={y[3]} alt={y[2]} />
-        </td>
-        <td style={{ lineHeight: '1.2' }}>
-          <div className='text-muted hintText'>
-            {y[0]}{y[1] === 'Statewide' ? '' : ' - ' + y[1]}
-          </div>
-          <div style={Styles.cardName}>
-            {y[2]} ({y[4] === 'Republican' || y[4] === 'Democrat' || y[4] === 'Green' || y[4] === 'Libertarian' ? y[4][0] : 'I'})
-          </div>
-          <div style={Styles.cardGrade}>
-            {y[5]}
-          </div>
-        </td>
-      </tr>
-    ));
-
-    return (
-      <div style={{ maxWidth: 500, width: '100%', margin: 'auto' }}>
-        {/* <div className='votingCardSpacer' /> */}
-        <div id={this.props.id}>
-          <p style={{ width: '100%' }} className='smallCaps'>
-            MY {this.props.stateName.toUpperCase()} VOTING CARD
-          </p>
-          <div className='tableDiv'>
-            <Table id='votesList' flush>
-              <tbody>
-                {this.props.pressed.length === 0 ? (
-                  <div className='text-muted' style={{ fontSize: '.8rem' }}>
-                    <em>Select a candidate to add them to your voting card.</em>
-                  </div>
-                ) : (
-                    votes
-                  )}
-              </tbody>
-            </Table>
-          </div>
-          <div style={{ width: '100%' }}>
-            <div
-              style={{ position: 'relative', bottom: 0, textAlign: 'center' }}
-              className='hintText text-muted'
-            >
-              created on guncontrolgrades.com
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
-
-const Styles = {
-  candidatesContainer: {
-    width: '100%',
-    display: 'grid',
-    // gridTemplateColumns: 'repeat(2, 1fr)',
-    gridColumnGap: 10,
-    gridRowGap: 10
-    // gridGap: '10px',
-    // gridAutoRows: 'minMax(100px, auto)'
-  },
-  districtNameInTabs: {
-    marginTop: 30,
-    marginBottom: 8,
-    fontSize: 16,
-  },
-  cardImage: {
-    width: 41,
-    height: 53,
-    borderRadius: 4,
-    border: `1px solid grey`,
-    marginTop: 3,
-    marginBottom: 3,
-  },
-  cardName: {
-    fontSize: '.9rem'
-  },
-  cardGrade: {
-    fontSize: '1.1rem',
-    fontWeight: 600,
-  },
-  popupButtonHint: {
-    position: 'fixed',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingLeft: 10,
-    paddingRight: 10,
-    paddingTop: 8,
-    paddingBottom: 8,
-    bottom: (10 + 55) + 15,
-    right: (10) + 5,
-    borderRadius: '3px',
-    backgroundColor: 'white',
-    zIndex: 2,
-  },
-  popupButtonHintArrow: {
-    bottom: '-10px',
-    right: 15,
-    border: '5px solid white',
-    content: '',
-    position: 'absolute',
-    borderBottomColor: 'transparent',
-    borderRightColor: 'transparent',
-    borderTopColor: 'white',
-    borderLeftColor: 'transparent'
-  },
-  popupButton: {
-    cursor: 'pointer',
-    position: 'fixed',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    // border: `1px solid ${colors.primary}`,
-    width: 55,
-    height: 55,
-    border: '1px solid rgba(0,0,0,0)',
-    // right: window.innerHeight - 100,
-    // top: window.innerWidth - 100
-    bottom: 10,
-    right: 10,
-    borderRadius: '50%',
-    zIndex: 2,
-    backgroundColor: colors.primaryLight
-  }
-}
 export default State;

@@ -5,8 +5,11 @@ import { IconContext } from 'react-icons';
 import { GoPlus, GoCheck } from 'react-icons/go';
 
 // constants
-import { colors } from "../utils/colors.js";
-import { constants } from "../utils/constants";
+import { colors } from '../utils/colors.js';
+import { constants } from '../utils/constants';
+
+// styles
+import { Candidates as Styles } from '../utils/styles'
 
 // State > StateContainer > {tabPanes > Candidates}
 class Candidates extends React.Component {
@@ -43,51 +46,51 @@ class Candidates extends React.Component {
 
     const candidates = this.props.candidates.map(x => (
       <div
-        style={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade ? candidateCardSelected : candidateCard}
+        style={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade ? Styles.candidateCardSelected : Styles.candidateCard}
         className='candidateCard'
         key={x.img + x.name}
       >
-        <img style={candidateImage} src={x.img} alt={x.name} />
-        <div style={candidateInfo}>
-          <div style={candidateName}>
+        <img style={Styles.candidateImage} src={x.img} alt={x.name} />
+        <div style={Styles.candidateInfo}>
+          <div style={Styles.candidateName}>
             {x.name}
-            <div style={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade ? candidateNameAlternativeSelected : candidateNameAlternative}>
-            {x.party}
+            <div style={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade ? Styles.candidateNameAlternativeSelected : Styles.candidateNameAlternative}>
+              {x.party}
+            </div>
           </div>
-          </div>
-          <div style={candidateGradeAndCheck}>
-            <div style={candidateGrade}>
+          <div style={Styles.candidateGradeAndCheck}>
+            <div style={Styles.candidateGrade}>
               {x.grade}
             </div>
-            <div style={buttonContainer}>
-            {this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade ?
-              <button
-                class="candidateCheckbox"
-                style={candidateCheckboxActive}
-                onClick={() => this.onRadioBtnClick(joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade)}
-                active={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade}
-              >
-                <IconContext.Provider value={{ color: 'white', size: '1.2em', className: 'global-class-name' }}>
-                  <div style={{display:'flex',alignItems:'center'}}>
-                    <GoCheck />
-                  </div>
-                </IconContext.Provider>
-              </button>
-              :
-              <button
-                class="candidateCheckbox candidateCheckboxNotActive"
-                style={candidateCheckbox}
-                onClick={() => this.onRadioBtnClick(joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade)}
-                active={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade}
-              >
-                <IconContext.Provider value={{ color: colors.primary, size: '.9em', className: 'global-class-name' }}>
-                  <div style={{display:'flex',alignItems:'center'}}>
-                    <GoPlus />
-                  </div>
-                </IconContext.Provider >
-                <div className="AddText" style={{ fontSize: '.9rem', }}>Add</div>
-              </button>
-            }
+            <div style={Styles.buttonContainer}>
+              {this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade ?
+                <button
+                  class='candidateCheckbox'
+                  style={Styles.candidateCheckboxActive}
+                  onClick={() => this.onRadioBtnClick(joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade)}
+                  active={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade}
+                >
+                  <IconContext.Provider value={{ color: 'white', size: '1.2em', className: 'global-class-name' }}>
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                      <GoCheck />
+                    </div>
+                  </IconContext.Provider>
+                </button>
+                :
+                <button
+                  class='candidateCheckbox candidateCheckboxNotActive'
+                  style={Styles.candidateCheckbox}
+                  onClick={() => this.onRadioBtnClick(joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade)}
+                  active={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade}
+                >
+                  <IconContext.Provider value={{ color: colors.primary, size: '.9em', className: 'global-class-name' }}>
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                      <GoPlus />
+                    </div>
+                  </IconContext.Provider >
+                  <div className='AddText' style={{ fontSize: '.9rem', }}>Add</div>
+                </button>
+              }
             </div>
           </div>
         </div>
@@ -98,122 +101,4 @@ class Candidates extends React.Component {
   }
 }
 
-const candidateCard = {
-  height: constants.imageHeight,
-  borderRadius: 5,
-  overflow: 'hidden',
-  display: 'flex',
-  flexDirection: 'row',
-  transition: '.1s',
-  webkitTransition: '.1s',
-  maxWidth: 288,
-}
-
-const candidateCardSelected = {
-  backgroundColor: colors.primaryLowOpacity,
-  color: colors.primaryDark,
-  height: constants.imageHeight,
-  borderRadius: 5,
-  overflow: 'hidden',
-  display: 'flex',
-  flexDirection: 'row',
-  border: `1px solid ${colors.primaryMediumOpacity}`,
-  transition: '.1s',
-  webkitTransition: '.1s',
-  maxWidth: 288,
-}
-
-const candidateImage = {
-  height: constants.imageHeight,//130,
-  width: constants.imageWidth,
-}
-
-const candidateInfo = {
-  padding: 10,
-  flex: 1,
-  display: 'flex',
-  flexDirection: 'column',
-  justifyContent: 'space-between',
-}
-
-const candidateName = {
-  fontSize: '1rem',
-  // fontSize: '.9rem',
-  // fontWeight: 'bold',
-  lineHeight: 1.2,
-}
-
-const candidateNameAlternative = {
-  color: 'grey',
-  fontSize: '.8rem',
-  fontWeight: 'normal',
-
-}
-
-const candidateNameAlternativeSelected = {
-  color: colors.primary,
-  fontSize: '.8rem',
-  fontWeight: 'normal',
-}
-
-const candidateGrade = {
-  fontSize: '1.7rem',
-  fontFamily: 'Open Sans, sans-serif',
-  // paddingBottom: 5,
-  fontWeight: 600,
-  color: colors.primary
-}
-
-const candidateGradeAndCheck = {
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'space-between',
-  alignContent: 'center',
-  alignItems: 'center',
-}
-
-
-const candidateCheckboxActive = {
-  color: 'white',
-  backgroundColor: colors.primary,
-  width: 60,
-  height: 35,
-  borderRadius: 3,
-  border: `1px solid ${colors.primary}`,
-  display: 'flex',
-  alignContent: 'center',
-  alignItems: 'center',
-  justifyContent: 'center',
-  cursor: 'pointer',
-  // delete below to get rid of button animation
-  borderRadius: '50%',
-  width: 35,
-  transition: '.1s',
-  webkitTransition: '.1s',
-}
-
-const candidateCheckbox = {
-  color: colors.primary,
-  backgroundColor: 'rgba(0,0,0,0)',
-  width: 60,
-  height: 35,
-  borderRadius: 3,
-  border: `1px solid ${colors.primary}`,
-  display: 'flex',
-  alignContent: 'center',
-  alignItems: 'center',
-  justifyContent: 'center',
-  cursor: 'pointer',
-  // delete below to get rid of button animation
-  transition: '.1s',
-  webkitTransition: '.1s'
-
-}
-
-const buttonContainer = {
-  // width: 60,
-  display: 'flex',
-  alignContent: 'center',
-  justifyContent: 'center',
-}
 export default Candidates;

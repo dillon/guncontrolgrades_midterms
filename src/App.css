@@ -17,12 +17,7 @@ br {
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
     background-color: rgb(255, 255, 255);
     margin: 24px;
-    /* 24 px */
     max-width: 1100px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     padding: 1.5rem 2rem;
     border-radius: .25rem;
 }
@@ -43,6 +38,7 @@ br {
 
 .funboxTitle {
     font-size: 20px;
+    margin-bottom: 15px;
 }
 
 #Map>.dropdown>button {
@@ -100,21 +96,25 @@ br {
 /* US Map */
 
 #g5 a {
-    fill: rgba(73, 85, 95, .6)
+    /* fill: rgba(73, 85, 95, .6) */
+    /* fill: #d7d7d8; */
+    fill: rgb(132, 131, 131);
+    /* fill: rgb(104, 127, 196); */
 }
 
 #g5 {
     fill: #d7d7d8;
-    cursor: pointer;
 }
 
-#g5 a:hover {
+#g5 a path:hover {
 /*     
   stroke: black !important;
   stroke-width:.05rem;
   stroke-linejoin: round;
   */
-    fill: rgba(73, 85, 95, .9);
+    fill: rgb(69,102,199);
+    opacity: 1 !important;
+    cursor: pointer;
     
 }
 
@@ -367,10 +367,6 @@ br {
     /* margin-bottom: 30px !important; */
 }
 
-.clearfix::after {
-    display: none !important
-}
-
 @media only screen and (max-width: 1000px) and (min-width: 766px) {
     .candidatesContainer {
         grid-template-columns: repeat(1, 1fr) !important;
@@ -383,10 +379,6 @@ br {
         background-color: rgb(255, 255, 255);
         margin: 0px;
         max-width: 1100px;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
         padding: 1rem .75rem;
         border-radius: 0;
     }
@@ -395,7 +387,7 @@ br {
         width: 110px !important;
     }
     #landingLogo {
-        min-height: 125px !important;
+        min-height: 135px !important;
         padding: 20px !important;
     }
 

@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import React from 'react';
 import {
   Nav,
@@ -11,71 +11,57 @@ import {
   NavbarBrand,
 } from 'reactstrap';
 
-import { colors } from '../utils/colors'
-import { constants } from '../utils/constants'
+// styles
+import { NavHeader as Styles } from '../utils/styles'
 
 
 class NavHeader extends React.Component {
-    constructor(props) {
-      super(props);
-  
-      this.toggle = this.toggle.bind(this);
-      this.state = {
-        isOpen: false
-      };
-    }
-    toggle() {
-      this.setState({
-        isOpen: !this.state.isOpen
-      });
-    }
-    render() {
-      return (
-        <div id="navBar" class="Navbar" style={navbarContainer}>
-          <Navbar style={navbar} expand='xs' dark>
-            <NavbarBrand>
-              <Link className='active' to='/'>
-                {/* <strong>{constants.nameAbbreviated}</strong> {constants.name} */}
-                <img width='50' src={require('../utils/logoWhite.svg')}/>
-              </Link>
-            </NavbarBrand>
-            <NavbarToggler onClick={this.toggle} />
-            <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className='ml-auto' navbar>
-                <NavItem>
-                  <NavLink>
-                    <Link className='active' to='/About'>
-                      About
-                    </Link>
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink>
-                    <Link className='active' to='/Contact'>
-                      Contact
-                    </Link>
-                  </NavLink>
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </Navbar>
-        </div>
-      );
-    }
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
   }
-  
-
-const navbar = {
-  backgroundColor: colors.primary,
-  maxWidth: 1100,
-  margin: 'auto',
-  paddingLeft: '24px ',
-  paddingRight: '24px ,'
-
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render() {
+    return (
+      <div id='navBar' class='Navbar' style={Styles.navbarContainer}>
+        <Navbar style={Styles.navbar} expand='xs' dark>
+          <NavbarBrand>
+            <Link className='active' to='/'>
+              {/* <strong>{constants.nameAbbreviated}</strong> {constants.name} */}
+              <img width='50' src={require('../utils/logoWhite.svg')} />
+            </Link>
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className='ml-auto' navbar>
+              <NavItem>
+                <NavLink>
+                  <Link className='active' to='/About'>
+                    About
+                  </Link>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink>
+                  <Link className='active' to='/Contact'>
+                    Contact
+                  </Link>
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
+    );
+  }
 }
 
-const navbarContainer = {
-  backgroundColor: colors.primary
-}
-
-  export default NavHeader;
+export default NavHeader;
