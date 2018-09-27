@@ -5921,20 +5921,18 @@ export const stateInfo = {
           {
             name: 'District 3',
             candidates: [
-              [
-                {
-                  name: 'Michael Evans',
-                  img: require('../portraits/Michael_Evans.jpg'),
-                  party: DEMOCRAT,
-                  grade: NO_GRADE
-                },
-                {
-                  name: 'Michael Guest',
-                  img: require('../portraits/Michael_Guest-photo.jpg'),
-                  party: REPUBLICAN,
-                  grade: NO_GRADE
-                }
-              ]
+              {
+                name: 'Michael Evans',
+                img: require('../portraits/Michael_Evans.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Michael Guest',
+                img: require('../portraits/Michael_Guest-photo.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              }
             ]
           },
           {
