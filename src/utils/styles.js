@@ -3,22 +3,16 @@ import { constants } from '../utils/constants';
 
 export const NavHeader = {
     navbar: {
-      backgroundColor: colors.primary,
-      maxWidth: 1100,
-      margin: 'auto',
-      paddingLeft: '24px ',
-      paddingRight: '24px ,'
+        backgroundColor: colors.primary,
+        maxWidth: 1100,
+        margin: 'auto',
+        paddingLeft: '24px ',
+        paddingRight: '24px ,'
     },
-    navbarContainer: {
-      backgroundColor: colors.primary
-    },
-    navLink: {
-        fontSize: '.8rem'
-    },
-    navbarBrand: {
-        marginTop: -2
-    }
-  }
+    navbarContainer: { backgroundColor: colors.primary },
+    navLink: { fontSize: '.8rem' },
+    navbarBrand: { marginTop: -2 }
+}
 
 export const MyVotes = {
     cardImage: {
@@ -29,9 +23,7 @@ export const MyVotes = {
         marginTop: 3,
         marginBottom: 3,
     },
-    cardName: {
-        fontSize: '.9rem'
-    },
+    cardName: { fontSize: '.9rem' },
     cardGrade: {
         fontSize: '1.1rem',
         fontWeight: 600,
@@ -131,8 +123,6 @@ export const Candidates = {
     },
     candidateName: {
         fontSize: '1rem',
-        // fontSize: '.9rem',
-        // fontWeight: 'bold',
         lineHeight: 1.2,
     },
     candidateNameAlternative: {
@@ -148,7 +138,6 @@ export const Candidates = {
     candidateGrade: {
         fontSize: '1.7rem',
         fontFamily: 'Open Sans, sans-serif',
-        // paddingBottom: 5,
         fontWeight: 600,
         color: colors.primary
     },
@@ -162,9 +151,9 @@ export const Candidates = {
     candidateCheckboxActive: {
         color: 'white',
         backgroundColor: colors.primary,
-        width: 60,
+        borderRadius: '50%',
+        width: 35,
         height: 35,
-        borderRadius: 3,
         border: `1px solid ${colors.primary}`,
         display: 'flex',
         alignContent: 'center',
@@ -172,8 +161,6 @@ export const Candidates = {
         justifyContent: 'center',
         cursor: 'pointer',
         // delete below to get rid of button animation
-        borderRadius: '50%',
-        width: 35,
         transition: '.1s',
         webkitTransition: '.1s',
     },
@@ -194,7 +181,6 @@ export const Candidates = {
         webkitTransition: '.1s'
     },
     buttonContainer: {
-        // width: 60,
         display: 'flex',
         alignContent: 'center',
         justifyContent: 'center',
@@ -222,7 +208,6 @@ export const Map = {
     landingDescription: {
         maxWidth: 400,
         paddingBottom: 40,
-        // paddingTop: 30,
         lineHeight: 1.5,
         textAlign: 'center',
         fontWeight: 300,
@@ -234,9 +219,7 @@ export const Map = {
         maxHeight: 250,
         overflowX: 'hidden'
     },
-    hintText: {
-        paddingBottom: 30
-    },
+    hintText: { paddingBottom: 30 },
     svg: {
         width: '102%',
         height: '100%',

@@ -5,13 +5,6 @@ import {
   Table,
 } from 'reactstrap';
 
-// share buttons
-import {
-  FacebookShareButton,
-  TwitterShareButton,
-  EmailShareButton
-} from 'react-share';
-
 // import styles
 import { MyVotes as Styles } from '../utils/styles'
 
