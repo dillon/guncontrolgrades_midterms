@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 import { Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from 'reactstrap';
 
 // constants
-import { namesOfStates, constants, stateOpacityArray } from '../utils/constants'
-import { colors } from '../utils/colors'
+import { namesOfStates } from '../utils/constants'
 
 // styles
 import { Map as Styles } from '../utils/styles'

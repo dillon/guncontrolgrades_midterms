@@ -1,6 +1,5 @@
 import React from 'react';
 import { constants } from '../utils/constants'
-import { colors } from '../utils/colors'
 const About = () => {
   return (
     <div className='pageContainer'>

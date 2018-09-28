@@ -35,7 +35,7 @@ class NavHeader extends React.Component {
           <Link className='active' to='/'>
             <NavbarBrand>
               {/* <strong>{constants.nameAbbreviated}</strong> {constants.name} */}
-              <img width='50' style={Styles.navbarBrand} src={require('../utils/logoWhite.svg')} />
+              <img width='50' alt='logo' style={Styles.navbarBrand} src={require('../utils/logoWhite.svg')} />
             </NavbarBrand>
           </Link>
           <NavbarToggler onClick={this.toggle} />

@@ -6,7 +6,6 @@ import { GoPlus, GoCheck } from 'react-icons/go';
 
 // constants
 import { colors } from '../utils/colors.js';
-import { constants } from '../utils/constants';
 
 // styles
 import { Candidates as Styles } from '../utils/styles'
