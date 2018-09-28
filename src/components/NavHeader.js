@@ -1,6 +1,7 @@
-// eslint-disable-next-line
-import { Link } from 'react-router-dom';
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+// bootstrap
 import {
   Nav,
   NavItem,
@@ -18,13 +19,11 @@ import { NavHeader as Styles } from '../utils/styles'
 class NavHeader extends React.Component {
   constructor(props) {
     super(props);
-
-    this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false
     };
   }
-  toggle() {
+  toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen
     });

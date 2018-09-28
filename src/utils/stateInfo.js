@@ -28,6 +28,10 @@ const CONSTITUTION = 'Constitution'
 const AMERICAN = 'American'
 const UNITED_CITIZENS = 'United Citizens'
 const GRASSROOTS = 'Grassroots'
+const INDEPENDENCE = 'Independence'
+const REFORM = 'Reform'
+const WORKING_FAMILIES = 'Working Families'
+const CONSERVATIVE = 'Conservative'
 const UNAFFILIATED = 'Unaffiliated'
 
 const gradesArray = ['A+', 'A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'F']
@@ -6707,7 +6711,92 @@ export const stateInfo = {
       }
     ]
   },
-  // NH: New Hampshire // Sept. 11
+  NH: {
+    name: 'New Hampshire',
+    legislatures: [
+      {
+        name: GOVERNOR,
+        id: 'governor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Molly Kelly',
+                img: require('../portraits/todo.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Chris Sununu',
+                img: require('../portraits/todo.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Jilletta Jarvis',
+                img: require('../portraits/todo.jpg'),
+                party: LIBERTARIAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Chris Pappas',
+                img: require('../portraits/todo.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Eddie Edwards',
+                img: require('../portraits/todo.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Dan Belforti',
+                img: require('../portraits/todo.jpg'),
+                party: LIBERTARIAN,
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Ann McLane Kuster',
+                img: require('../portraits/todo.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Steve Negron',
+                img: require('../portraits/todo.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Justin O\'Donnell',
+                img: require('../portraits/todo.jpg'),
+                party: LIBERTARIAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   NJ: {
     name: 'New Jersey',
     legislatures: [
@@ -7090,7 +7179,652 @@ export const stateInfo = {
       }
     ]
   },
-  // NY: New York // Sept. 13
+  NY: {
+   name: 'New York',
+   legislatures: [
+     {
+       name: GOVERNOR,
+       id: 'governor',
+       districts: [
+         {
+           name: STATEWIDE,
+           candidates: [
+             {
+               name: 'Andrew M. Cuomo',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Marc Molinaro',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Howie Hawkins',
+               img: require('../portraits/todo.jpg'),
+               party: GREEN,
+               grade: NO_GRADE
+             }
+           ]
+         }
+       ]
+     },
+     {
+       name: US_SENATE,
+       id: 'senate',
+       districts: [
+         {
+           name: STATEWIDE,
+           candidates: [
+             {
+               name: 'Kirsten Gillibrand',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Chele Farley',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         }
+       ]
+     },
+     {
+       name: US_HOUSE,
+       id: 'usHouse',
+       districts: [
+         {
+           name: 'District 1',
+           candidates: [
+             {
+               name: 'Perry Gershon',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Lee Zeldin',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Patricia Latzman',
+               img: require('../portraits/todo.jpg'),
+               party: WORKING_FAMILIES,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 2',
+           candidates: [
+             {
+               name: 'Liuba Shirley',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Peter King',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 3',
+           candidates: [
+             {
+               name: 'Thomas Suozzi',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Dan DeBono',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 4',
+           candidates: [
+             {
+               name: 'Kathleen Rice',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Ameer Benno',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 5',
+           candidates: [
+             {
+               name: 'Gregory Meeks',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 6',
+           candidates: [
+             {
+               name: 'Grace Meng',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Thomas Hillgardner',
+               img: require('../portraits/todo.jpg'),
+               party: GREEN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 7',
+           candidates: [
+             {
+               name: 'Nydia Valezquez',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Joseph Lieberman',
+               img: require('../portraits/todo.jpg'),
+               party: CONSERVATIVE,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 8',
+           candidates: [
+             {
+               name: 'Hakeem Jeffries',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Ernest Johnson',
+               img: require('../portraits/todo.jpg'),
+               party: CONSERVATIVE,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Jessica White',
+               img: require('../portraits/todo.jpg'),
+               party: REFORM,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 9',
+           candidates: [
+             {
+               name: 'Yvette Clarke',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Lutchi Gayot',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Joel Anabilah-Azumah',
+               img: require('../portraits/todo.jpg'),
+               party: REFORM,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 10',
+           candidates: [
+             {
+               name: 'Jerrold Nadler',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Naomi Levin',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 11',
+           candidates: [
+             {
+               name: 'Max Rose',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Dan Donovan',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Henry Bardel',
+               img: require('../portraits/todo.jpg'),
+               party: GREEN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 12',
+           candidates: [
+             {
+               name: 'Carolyn Maloney',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Eliot Rabin',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Scott Hutchins',
+               img: require('../portraits/todo.jpg'),
+               party: GREEN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 13',
+           candidates: [
+             {
+               name: 'Adriano Espaillat',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Jineea Butler',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 14',
+           candidates: [
+             {
+               name: 'Alexandria Ocasio-Cortez',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Anthony Pappas',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Elizabeth Perri',
+               img: require('../portraits/todo.jpg'),
+               party: CONSERVATIVE,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 15',
+           candidates: [
+             {
+               name: 'Jose E. Serrano',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Jason Gonzalez',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 16',
+           candidates: [
+             {
+               name: 'Eliot Engel',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 17',
+           candidates: [
+             {
+               name: 'Nita Lowey',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Joseph Ciardullo',
+               img: require('../portraits/todo.jpg'),
+               party: REFORM,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 18',
+           candidates: [
+             {
+               name: 'Sean Patrick Maloney',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'James O\'Donnell',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 19',
+           candidates: [
+             {
+               name: 'Antonio Delgado',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'John Faso',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Steven Greenfield',
+               img: require('../portraits/todo.jpg'),
+               party: GREEN,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Bob Cohen',
+               img: require('../portraits/todo.jpg'),
+               party: WORKING_FAMILIES,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 20',
+           candidates: [
+             {
+               name: 'Paul Tonko',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Francis Vitollo',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 21',
+           candidates: [
+             {
+               name: 'Tedra Cobb',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Elise Stefanik',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Lynn Kahn',
+               img: require('../portraits/todo.jpg'),
+               party: GREEN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 22',
+           candidates: [
+             {
+               name: 'Anthony Brindisi',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Claudia Tenney',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 23',
+           candidates: [
+             {
+               name: 'Tracy Mitrano',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Thomas Reed',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 24',
+           candidates: [
+             {
+               name: 'Dana Balter',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'John Katko',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 25',
+           candidates: [
+             {
+               name: 'Joseph Morelle',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Jim Maxwell',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 26',
+           candidates: [
+             {
+               name: 'Brian Higgins',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Renee Zeno',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             }
+           ]
+         },
+         {
+           name: 'District 27',
+           candidates: [
+             {
+               name: 'Nate McMurray',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Chris Collins',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Larry Piegza',
+               img: require('../portraits/todo.jpg'),
+               party: REFORM,
+               grade: NO_GRADE
+             }
+           ]
+         }
+       ]
+     },
+     {
+       name: LIEUTENANT_GOVERNOR,
+       id: 'lieutenantGovernor',
+       districts: [
+         {
+           name: STATEWIDE,
+           candidates: [
+             {
+               name: 'Kathy Hochul',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Julie Killian',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Jia Lee',
+               img: require('../portraits/todo.jpg'),
+               party: GREEN,
+               grade: NO_GRADE
+             }
+           ]
+         }
+       ]
+     },
+     {
+       name: ATTORNEY_GENERAL,
+       id: 'attorneyGeneral',
+       districts: [
+         {
+           name: STATEWIDE,
+           candidates: [
+             {
+               name: 'Letitia James',
+               img: require('../portraits/todo.jpg'),
+               party: DEMOCRAT,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Keith Wofford',
+               img: require('../portraits/todo.jpg'),
+               party: REPUBLICAN,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Michael Sussman',
+               img: require('../portraits/todo.jpg'),
+               party: GREEN,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Vincent Messina',
+               img: require('../portraits/todo.jpg'),
+               party: INDEPENDENCE,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Nancy Sliwa',
+               img: require('../portraits/todo.jpg'),
+               party: REFORM,
+               grade: NO_GRADE
+             },
+             {
+               name: 'Kenneth Schaeffer',
+               img: require('../portraits/todo.jpg'),
+               party: WORKING_FAMILIES,
+               grade: NO_GRADE
+             }
+           ]
+         }
+       ]
+     }
+   ]
+  },
   NC: {
     name: 'North Carolina',
     legislatures: [
@@ -8580,7 +9314,183 @@ export const stateInfo = {
       }
     ]
   },
-  // RI: Rhode Island // Sept. 12
+  RI: {
+    name: 'Rhode Island',
+    legislatures: [
+      {
+        name: GOVERNOR,
+        id: 'governor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Gina Raimondo',
+                img: require('../portraits/todo.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Allan Fung',
+                img: require('../portraits/todo.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_SENATE,
+        id: 'usSenate',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Sheldon Whitehouse',
+                img: require('../portraits/todo.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Robert Flander',
+                img: require('../portraits/todo.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: US_HOUSE,
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'David Cicilline',
+                img: require('../portraits/todo.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Patrick Donovan',
+                img: require('../portraits/todo.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Jim Langevin',
+                img: require('../portraits/todo.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Salvatore Caiozzo',
+                img: require('../portraits/todo.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: LIEUTENANT_GOVERNOR,
+        id: 'lieutenantGovernor',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Daniel McKee',
+                img: require('../portraits/todo.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Paul Pence',
+                img: require('../portraits/todo.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: ATTORNEY_GENERAL,
+        id: 'attorneyGeneral',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Peter Neronha',
+                img: require('../portraits/todo.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: SECRETARY_OF_STATE,
+        id: 'secretaryOfState',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Nellie Gorbea',
+                img: require('../portraits/todo.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Pat Cortellessa',
+                img: require('../portraits/todo.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: TREASURER,
+        id: 'treasurer',
+        districts: [
+          {
+            name: STATEWIDE,
+            candidates: [
+              {
+                name: 'Seth Magaziner',
+                img: require('../portraits/todo.jpg'),
+                party: DEMOCRAT,
+                grade: NO_GRADE
+              },
+              {
+                name: 'Michael Riley',
+                img: require('../portraits/todo.jpg'),
+                party: REPUBLICAN,
+                grade: NO_GRADE
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   SC: {
     name: 'South Carolina',
     legislatures: [
