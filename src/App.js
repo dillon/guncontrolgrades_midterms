@@ -11,11 +11,11 @@ import Contact from './pages/Contact.js'
 
 
 // APP
-// https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#serving-apps-with-client-side-routing
+// for server rendering: https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#serving-apps-with-client-side-routing
 const App = () => {
   return (
     // delete when deploying to custom URL
-    <Router basename='/d4d-map'>
+    <Router>{/* basename='/d4d-map'>*/}
       <div>
         <NavHeader />
         <Route path='/State/:id' exact component={State} />
@@ -26,7 +26,5 @@ const App = () => {
     </Router>
   );
 };
-
-
 
 export default App;

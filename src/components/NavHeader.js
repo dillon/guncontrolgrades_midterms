@@ -35,7 +35,7 @@ class NavHeader extends React.Component {
           <Link className='active' to='/'>
             <NavbarBrand>
               {/* <strong>{constants.nameAbbreviated}</strong> {constants.name} */}
-              <img width='50' src={require('../utils/logoWhite.svg')} />
+              <img width='50' style={Styles.navbarBrand} src={require('../utils/logoWhite.svg')} />
             </NavbarBrand>
           </Link>
           <NavbarToggler onClick={this.toggle} />
@@ -43,14 +43,14 @@ class NavHeader extends React.Component {
             <Nav className='ml-auto' navbar>
               <NavItem>
                 <Link className='active' to='/About'>
-                  <NavLink>
+                  <NavLink style={Styles.navLink}>
                     About
                 </NavLink>
                 </Link>
               </NavItem>
               <NavItem>
                 <Link className='active' to='/Contact'>
-                  <NavLink>
+                  <NavLink style={Styles.navLink}>
                     Contact
                   </NavLink>
                 </Link>

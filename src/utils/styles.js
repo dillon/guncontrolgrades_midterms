@@ -11,6 +11,12 @@ export const NavHeader = {
     },
     navbarContainer: {
       backgroundColor: colors.primary
+    },
+    navLink: {
+        fontSize: '.8rem'
+    },
+    navbarBrand: {
+        marginTop: -2
     }
   }
 
