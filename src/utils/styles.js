@@ -11,7 +11,7 @@ export const NavHeader = {
     },
     navbarContainer: { backgroundColor: colors.primary },
     navLink: { fontSize: '.8rem' },
-    navbarBrand: { marginTop: -2 }
+    navbarBrand: { marginTop: -1 }
 }
 
 export const MyVotes = {
