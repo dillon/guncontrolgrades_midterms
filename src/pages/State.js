@@ -13,9 +13,6 @@ import {
   Col,
 } from 'reactstrap';
 
-// dictionary
-import { stateInfo } from '../utils/stateInfo.js';
-
 // components
 import Candidates from '../components/Candidates.js';
 import MyVotes from '../components/MyVotes'
@@ -42,6 +39,10 @@ import { constants } from '../utils/constants'
 
 // styles
 import { State as Styles } from '../utils/styles'
+
+// dictionary
+// import { stateInfo } from '../utils/stateInfo.js';
+import { stateInfo } from '../utils/computatedGrades.js';
 
 
 const State = props => {

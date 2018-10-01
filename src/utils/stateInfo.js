@@ -245,7 +245,7 @@ export const stateInfo = {
                 grade: NO_GRADE()
               },
               {
-                name: 'John Merril',
+                name: 'John Merrill',
                 img: require('../portraits/John_Merrill.jpg'),
                 party: REPUBLICAN,
                 grade: NO_GRADE()
@@ -760,7 +760,7 @@ export const stateInfo = {
                 grade: NO_GRADE()
               },
               {
-                name: 'Brucer Westerman',
+                name: 'Bruce Westerman',
                 img: require('../portraits/bruce-westerman.jpg'),
                 party: REPUBLICAN,
                 grade: NO_GRADE()
@@ -2974,7 +2974,7 @@ export const stateInfo = {
                 grade: NO_GRADE()
               },
               {
-                name: 'Earl L. "Buddy" Carter',
+                name: 'Earl L. Carter',
                 img: require('../portraits/Buddy.jpg'),
                 party: REPUBLICAN,
                 grade: NO_GRADE()
@@ -5764,7 +5764,7 @@ export const stateInfo = {
                 grade: NO_GRADE()
               },
               {
-                nae: 'Ray Sandman',
+                name: 'Ray Sandman',
                 img: require('../portraits/Ray_Skip_Sandman.jpg'),
                 party: INDEPENDENT,
                 grade: NO_GRADE()
@@ -9831,6 +9831,7 @@ export const stateInfo = {
               {
                 name: 'Bill Lee',
                 img: require('../portraits/5947.jpg'),
+                party: REPUBLICAN,
                 grade: NO_GRADE()
               }
             ]
