@@ -66,7 +66,7 @@ class Candidates extends React.Component {
               <div style={Styles.buttonContainer}>
                 {this.state.rSelected === joinedString ?
                   <button
-                    class='candidateCheckbox'
+                    className='candidateCheckbox'
                     style={Styles.candidateCheckboxActive}
                     onClick={() => this.onRadioBtnClick(joinedString)}
                     active={this.state.rSelected === joinedString}
@@ -79,7 +79,7 @@ class Candidates extends React.Component {
                   </button>
                   :
                   <button
-                    class='candidateCheckbox candidateCheckboxNotActive'
+                    className='candidateCheckbox candidateCheckboxNotActive'
                     style={Styles.candidateCheckbox}
                     onClick={() => this.onRadioBtnClick(joinedString)}
                     active={this.state.rSelected === joinedString}

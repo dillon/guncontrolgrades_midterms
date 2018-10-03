@@ -11,7 +11,6 @@ import { MyVotes as Styles } from '../utils/styles'
 class MyVotes extends React.Component { // State -> StatePage -> MyVotes
   render() {
     const votes = this.props.pressed.map(y => {
-      console.log(y[5])
       const legislature = y[0]
       const district = y[1] === 'Statewide' ? '' : ' - ' + y[1]
       const name = y[2]
@@ -50,10 +49,10 @@ class MyVotes extends React.Component { // State -> StatePage -> MyVotes
             <Table id='votesList' flush>
               <tbody>
                 {this.props.pressed.length === 0 ? (
-                  <div className='text-muted' style={{ fontSize: '.8rem' }}>
-                    <em>Select a candidate to add them to your voting card.</em>
-                  </div>
-                ) : (votes)}
+                  <tr className='text-muted' style={{ fontSize: '.8rem' }}>
+                    <td><em>Select a candidate to add them to your voting card.</em></td>
+                  </tr>
+                ) : votes}
               </tbody>
             </Table>
           </div>

@@ -94,7 +94,7 @@ export const Candidates = {
         display: 'flex',
         flexDirection: 'row',
         transition: '.1s',
-        webkitTransition: '.1s',
+        WebkitTransition: '.1s',
         maxWidth: 288,
     },
     candidateCardSelected: {
@@ -107,7 +107,7 @@ export const Candidates = {
         flexDirection: 'row',
         border: `1px solid ${colors.primaryMediumOpacity}`,
         transition: '.1s',
-        webkitTransition: '.1s',
+        WebkitTransition: '.1s',
         maxWidth: 288,
     },
     candidateImage: {
@@ -162,7 +162,7 @@ export const Candidates = {
         cursor: 'pointer',
         // delete below to get rid of button animation
         transition: '.1s',
-        webkitTransition: '.1s',
+        WebkitTransition: '.1s',
     },
     candidateCheckbox: {
         color: colors.primary,
@@ -178,7 +178,7 @@ export const Candidates = {
         cursor: 'pointer',
         // delete below to get rid of button animation
         transition: '.1s',
-        webkitTransition: '.1s'
+        WebkitTransition: '.1s'
     },
     buttonContainer: {
         display: 'flex',

@@ -52,7 +52,7 @@ class UsMap extends React.Component {
                   <span className='funboxTitle'>Select your state</span>
                 </DropdownToggle>
                 <DropdownMenu style={Styles.dropdownMenu}>
-                  {namesOfStates.map(x => <Link to={`State/${x.id}`}><DropdownItem>{x.name}</DropdownItem></Link>)}
+                  {namesOfStates.map(x => <Link key={x.id} to={`State/${x.id}`}><DropdownItem>{x.name}</DropdownItem></Link>)}
                 </DropdownMenu>
               </Dropdown>
               <p style={Styles.hintText} className='text-muted hintText'>

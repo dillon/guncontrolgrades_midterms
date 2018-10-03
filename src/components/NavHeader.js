@@ -30,7 +30,7 @@ class NavHeader extends React.Component {
   }
   render() {
     return (
-      <div id='navBar' class='Navbar' style={Styles.navbarContainer}>
+      <div id='navBar' className='Navbar' style={Styles.navbarContainer}>
         <Navbar style={Styles.navbar} expand='xs' dark>
           <Link className='active' to='/'>
             <NavbarBrand>

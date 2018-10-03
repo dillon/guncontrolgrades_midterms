@@ -290,7 +290,7 @@ class StatePage extends React.Component { // State -> StatePage
           </p>
           <div id={this.state.card ? 'ShareSectionHide' : 'ShareSection'}>
             <div lg='12' style={{ margin: 0, textAlign: 'center' }}>
-              <span class='sharePrint'>
+              <span className='sharePrint'>
                 <ReactToPrint
                   trigger={() => (
                     <TiPrinter className='printButton' size={22 * 1.2} color='#333' />
@@ -334,7 +334,7 @@ class StatePage extends React.Component { // State -> StatePage
           </div>
           <div id='secondShareSection'>
             <div lg='12' style={{ margin: 0, textAlign: 'center' }}>
-              <span class='sharePrint'>
+              <span className='sharePrint'>
                 <ReactToPrint
                   trigger={() => (
                     <TiPrinter className='printButton' size={22 * 1.2} color='#333' />
