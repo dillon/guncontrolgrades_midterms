@@ -10,24 +10,34 @@ import { MyVotes as Styles } from '../utils/styles'
 
 class MyVotes extends React.Component { // State -> StatePage -> MyVotes
   render() {
-    const votes = this.props.pressed.map(y => (
-      <tr key={y[3] + 'votes'}>
-        <td>
-          <img style={Styles.cardImage} src={y[3]} alt={y[2]} />
-        </td>
-        <td style={{ lineHeight: '1.2' }}>
-          <div className='text-muted hintText'>
-            {y[0]}{y[1] === 'Statewide' ? '' : ' - ' + y[1]}
-          </div>
-          <div style={Styles.cardName}>
-            {y[2]} ({y[4] === 'Republican' || y[4] === 'Democrat' || y[4] === 'Green' || y[4] === 'Libertarian' ? y[4][0] : 'I'})
+    const votes = this.props.pressed.map(y => {
+      console.log(y[5])
+      const legislature = y[0]
+      const district = y[1] === 'Statewide' ? '' : ' - ' + y[1]
+      const name = y[2]
+      const img = y[3]
+      const party = y[4] === 'Republican' || y[4] === 'Democrat' || y[4] === 'Green' || y[4] === 'Libertarian' ? y[4][0] : 'I'
+      const grade = y[5] ? y[5] : '?'
+      const endorsed = y[6] === 'true' && '*'
+      return (
+        <tr key={y[3] + 'votes'}>
+          <td>
+            <img style={Styles.cardImage} src={img} alt={y[2]} />
+          </td>
+          <td style={{ lineHeight: '1.2' }}>
+            <div className='text-muted hintText'>
+              {legislature}{district}
             </div>
-          <div style={Styles.cardGrade}>
-            {y[5]}{y[6]==='true' && '*'}
-          </div>
-        </td>
-      </tr>
-    ));
+            <div style={Styles.cardName}>
+              {name} ({party})
+            </div>
+            <div style={Styles.cardGrade}>
+              {grade}{endorsed}
+            </div>
+          </td>
+        </tr>
+      )
+    });
 
     return (
       <div style={{ maxWidth: 500, width: '100%', margin: 'auto' }}>

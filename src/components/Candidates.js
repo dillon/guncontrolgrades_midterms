@@ -11,9 +11,6 @@ import { colors } from '../utils/colors.js';
 import { Candidates as Styles } from '../utils/styles'
 
 
-function createStringForState(joinedString, x) {
-  return joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade + ',' + x.endorsedByGiffords
-}
 
 // State > StateContainer > {tabPanes > Candidates}
 class Candidates extends React.Component {
@@ -45,61 +42,62 @@ class Candidates extends React.Component {
   }
 
   render() {
-    const joinedString =
-      this.props.legislature + ',' + this.props.district + ',';
-
-    const candidates = this.props.candidates.map(x => (
-      <div
-        style={this.state.rSelected === createStringForState(joinedString, x) ? Styles.candidateCardSelected : Styles.candidateCard}
-        className='candidateCard'
-        key={x.img + x.name}
-      >
-        <img style={Styles.candidateImage} src={x.img} alt={x.name} />
-        <div style={Styles.candidateInfo}>
-          <div style={Styles.candidateName}>
-            {x.name}
-            <div style={this.state.rSelected === createStringForState(joinedString, x) ? Styles.candidateNameAlternativeSelected : Styles.candidateNameAlternative}>
-              {x.party}
+    const candidates = this.props.candidates.map(x => {
+      const joinedString = this.props.legislature + ',' + this.props.district + ',' + x.name + ',' + x.img + ',' + x.party + ',' + x.grade + ',' + x.endorsedByGiffords;
+      x.grade = x.grade ? x.grade: '?'
+      return (
+        <div
+          style={this.state.rSelected === joinedString ? Styles.candidateCardSelected : Styles.candidateCard}
+          className='candidateCard'
+          key={x.img + x.name}
+        >
+          <img style={Styles.candidateImage} src={x.img} alt={x.name} />
+          <div style={Styles.candidateInfo}>
+            <div style={Styles.candidateName}>
+              {x.name}
+              <div style={this.state.rSelected === joinedString ? Styles.candidateNameAlternativeSelected : Styles.candidateNameAlternative}>
+                {x.party}
+              </div>
             </div>
-          </div>
-          <div style={Styles.candidateGradeAndCheck}>
-            <div style={Styles.candidateGrade}>
-              {x.grade && x.grade}{x.endorsedByGiffords && '*'}
-            </div>
-            <div style={Styles.buttonContainer}>
-              {this.state.rSelected === createStringForState(joinedString, x) ?
-                <button
-                  class='candidateCheckbox'
-                  style={Styles.candidateCheckboxActive}
-                  onClick={() => this.onRadioBtnClick(createStringForState(joinedString, x))}
-                  active={this.state.rSelected === createStringForState(joinedString, x)}
-                >
-                  <IconContext.Provider value={{ color: 'white', size: '1.2em', className: 'global-class-name' }}>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                      <GoCheck />
-                    </div>
-                  </IconContext.Provider>
-                </button>
-                :
-                <button
-                  class='candidateCheckbox candidateCheckboxNotActive'
-                  style={Styles.candidateCheckbox}
-                  onClick={() => this.onRadioBtnClick(createStringForState(joinedString, x))}
-                  active={this.state.rSelected === createStringForState(joinedString, x)}
-                >
-                  <IconContext.Provider value={{ color: colors.primary, size: '.9em', className: 'global-class-name' }}>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                      <GoPlus />
-                    </div>
-                  </IconContext.Provider >
-                  <div className='AddText' style={{ fontSize: '.9rem', }}>Add</div>
-                </button>
-              }
+            <div style={Styles.candidateGradeAndCheck}>
+              <div style={Styles.candidateGrade}>
+                {x.grade}{x.endorsedByGiffords && '*'}
+              </div>
+              <div style={Styles.buttonContainer}>
+                {this.state.rSelected === joinedString ?
+                  <button
+                    class='candidateCheckbox'
+                    style={Styles.candidateCheckboxActive}
+                    onClick={() => this.onRadioBtnClick(joinedString)}
+                    active={this.state.rSelected === joinedString}
+                  >
+                    <IconContext.Provider value={{ color: 'white', size: '1.2em', className: 'global-class-name' }}>
+                      <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <GoCheck />
+                      </div>
+                    </IconContext.Provider>
+                  </button>
+                  :
+                  <button
+                    class='candidateCheckbox candidateCheckboxNotActive'
+                    style={Styles.candidateCheckbox}
+                    onClick={() => this.onRadioBtnClick(joinedString)}
+                    active={this.state.rSelected === joinedString}
+                  >
+                    <IconContext.Provider value={{ color: colors.primary, size: '.9em', className: 'global-class-name' }}>
+                      <div style={{ display: 'flex', alignItems: 'center' }}>
+                        <GoPlus />
+                      </div>
+                    </IconContext.Provider >
+                    <div className='AddText' style={{ fontSize: '.9rem', }}>Add</div>
+                  </button>
+                }
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    ));
+      )
+    });
 
     return candidates
   }
