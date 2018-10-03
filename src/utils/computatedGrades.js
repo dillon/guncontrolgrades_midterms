@@ -4384,6 +4384,261 @@ export const stateInfo =
       }
     ]
   },
+  LA: {
+    name: 'Louisiana',
+    legislatures: [
+      {
+        name: 'U.S. House',
+        id: 'usHouse',
+        districts: [
+          {
+            name: 'District 1',
+            candidates: [
+              {
+                name: 'Steve Scalise',
+                img: '/static/media/Steve_Scalise.jpg',
+                party: 'Republican',
+                grade: 'F-'
+              },
+              {
+                name: 'Lee Ann Dugas',
+                img: '/static/media/Lee_Ann_Dugas.jpg',
+                party: 'Democrat',
+                grade: 'A'
+              },
+              {
+                name: 'Jim Francis',
+                img: '/static/media/Jim_Francis.jpg',
+                party: 'Democrat',
+                grade: 'F'
+              },
+              {
+                name: 'Tammy Savoie',
+                img: '/static/media/TammySavoie.jpg',
+                party: 'Democrat',
+              },
+              {
+                name: 'Howard Kearney',
+                img: '/static/media/Howard_Kearney.jpg',
+                party: 'Libertarian',
+                grade: 'F'
+              },
+              {
+                name: 'Frederick Jones',
+                img: '/static/media/none.jpg',
+                party: 'Independent',
+              }
+            ]
+          },
+          {
+            name: 'District 2',
+            candidates: [
+              {
+                name: 'Cedric Richmond',
+                img: '/static/media/Cedric_Richmond.jpg',
+                party: 'Democrat',
+                grade: 'A',
+                endorsedByGiffords: true
+              },
+              {
+                name: 'Belden Batiste',
+                img: '/static/media/Belden_Noonie_Man_Batiste_-_Head_Shot.jpg',
+                party: 'Independent',
+              },
+              {
+                name: 'Shawndra Rodriguez',
+                img: '/static/media/Campaign_Photo_(1).jpg',
+                party: 'Independent',
+              },
+              {
+                name: 'Jesse Schmidt',
+                img: '/static/media/Jesse_Schmidt.jpg',
+                party: 'Independent'
+              }
+            ]
+          },
+          {
+            name: 'District 3',
+            candidates: [
+              {
+                name: 'Clay Higgins',
+                img: '/static/media/Clay_Higgins.jpg',
+                party: 'Republican',
+                grade: 'F'
+              },
+              {
+                name: 'Rob Anderson',
+                img: '/static/media/C82425EA-825D-4A40-8D87-99E5DBFB26F5.jpg',
+                party: 'Democrat'
+              },
+              {
+                name: 'Mildred Methvin',
+                img: '/static/media/MethvinM_1331_PRINT.jpg',
+                party: 'Democrat',
+              },
+              {
+                name: 'Larry Rader',
+                img: '/static/media/Larry_Rader.jpg',
+                party: 'Democrat',
+                grade: '?'
+              },
+              {
+                name: 'Verone Thomas',
+                img: '/static/media/IMG_20180327_234830.jpg',
+                party: 'Democrat'
+              },
+              {
+                name: 'Josh Guillory',
+                img: '/static/media/Josh_Guillory.jpg',
+                party: 'Republican'
+              },
+              {
+                name: 'Aaron Andrus',
+                img: '/static/media/Aaron_Andrus.jpg',
+                party: 'Libertarian'
+              }
+            ]
+          },
+          {
+            name: 'District 4',
+            candidates: [
+              {
+                name: 'Mike Johnson',
+                img: '/static/media/Mike_Johnsonla.jpg',
+                party: 'Republican',
+                grade: 'F'
+              },
+              {
+                name: 'Ryan Trundle',
+                img: '/static/media/3DAC1703-1A97-433A-843E-A15718ECCD0E.jpg',
+                party: 'Democrat'
+              },
+              {
+                name: 'Mark Halverson',
+                img: '/static/media/Mark_Halverson.jpg',
+                party: 'Independent',
+                grade: '?'
+              }
+            ]
+          },
+          {
+            name: 'District 5',
+            candidates: [
+              {
+                name: 'Ralph Abraham',
+                img: '/static/media/Ralph_Abraham_official_congressional_photo.jpg',
+                party: 'Republican',
+                grade: 'F'
+              },
+              {
+                name: 'Jessee Carlton Fleenor',
+                img: '/static/media/none.jpg',
+                party: 'Democrat'
+              },
+              {
+                name: 'Kyle Randol',
+                img: '/static/media/none.jpg',
+                party: 'Libertarian'
+              },
+              {
+                name: 'Billy Burkette',
+                img: '/static/media/Billy_Burkette.jpg',
+                party: 'Independent',
+                grade: '?'
+              }
+            ]
+          },
+          {
+            name: 'District 6',
+            candidates: [
+              {
+                name: 'Garret Graves',
+                img: '/static/media/Garret_Graves_official_congressional_photo.jpg',
+                party: 'Republican',
+                grade: 'F'
+              },
+              {
+                name: 'Justin DeWitt',
+                img: '/static/media/Justin_Dewitt.jpg',
+                party: 'Democrat',
+              },
+              {
+                name: 'Andie Saizan',
+                img: '/static/media/andie.saizan.jpg',
+                party: 'Democrat'
+              },
+              {
+                name: 'Devin Lance Graham',
+                img: '/static/media/Devin_Lance_Graham.jpg',
+                party: 'Independent',
+                grade: '?'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Secretary of State',
+        id: 'secretaryOfState',
+        districts: [
+          {
+            name: 'Statewide',
+            candidates: [
+              {
+                name: 'Kyle Ardoin',
+                img: '/static/media/kyle-ardoin-06446ac43907e8ca.jpg',
+                party: 'Republican'
+              },
+              {
+                name: 'Gwen Collins-Greenup',
+                img: '/static/media/5751e46594cf0.jpg',
+                party: 'Democrat'
+              },
+              {
+                name: 'Renee Fontenot Free',
+                img: '/static/media/Real-experience.jpg',
+                party: 'Democrat'
+              },
+              {
+                name: 'Heather Cloud',
+                img: '/static/media/none.jpg',
+                party: 'Republican'
+              },
+              {
+                name: 'A.G. Crowe',
+                img: '/static/media/A.G._Crowe.jpg',
+                party: 'Republican',
+                grade: 'F'
+              },
+              {
+                name: 'Rick Edmonds',
+                img: '/static/media/Rick_Edmonds.jpg',
+                party: 'Republican',
+                grade: 'F'
+              },
+              {
+                name: 'Thomas Kennedy III',
+                img: '/static/media/none.jpg',
+                party: 'Republican'
+              },
+              {
+                name: 'Julie Stokes',
+                img: '/static/media/Julie_Stokes.jpg',
+                party: 'Republican',
+                grade: 'F'
+              },
+              {
+                name: 'Matthew Moreau',
+                img: '/static/media/none.jpg',
+                party: 'Independent'
+              }
+            ]
+          }
+        ]
+      }
+    ]
+
+  },
   ME: {
     name: 'Maine',
     legislatures: [

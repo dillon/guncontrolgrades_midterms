@@ -44,7 +44,7 @@ class Candidates extends React.Component {
   render() {
     const candidates = this.props.candidates.map(x => {
       const joinedString = this.props.legislature + ',' + this.props.district + ',' + x.name + ',' + x.img + ',' + x.party + ',' + x.grade + ',' + x.endorsedByGiffords;
-      x.grade = x.grade ? x.grade: '?'
+      x.grade = x.grade ? x.grade : '?'
       return (
         <div
           style={this.state.rSelected === joinedString ? Styles.candidateCardSelected : Styles.candidateCard}

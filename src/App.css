@@ -1,127 +1,127 @@
 body {
-    background-color: rgb(244, 247, 250) !important;
-    font-family: '-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"';
-    color: rgb(36, 41, 46);
+  background-color: rgb(244, 247, 250) !important;
+  font-family: '-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"';
+  color: rgb(36, 41, 46);
 }
 
 br {
-    font-size: 0.1rem;
+  font-size: 0.1rem;
 }
 
 .pageContainer {
-    margin: auto;
-    max-width: 1100px;
+  margin: auto;
+  max-width: 1100px;
 }
 
 .funbox {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-    background-color: rgb(255, 255, 255);
-    margin: 24px;
-    max-width: 1100px;
-    padding: 1.5rem 2rem;
-    border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  background-color: rgb(255, 255, 255);
+  margin: 24px;
+  max-width: 1100px;
+  padding: 1.5rem 2rem;
+  border-radius: .25rem;
 }
 
 .funboxBorder {
-    border: 1px solid rgb(218, 225, 233);
+  border: 1px solid rgb(218, 225, 233);
 }
 
 .row {
-    margin: 0px !important;
+  margin: 0px !important;
 }
 
 .smallCaps {
-    font-size: .8rem;
-    text-align: center;
-    color: #212529;
+  font-size: .8rem;
+  text-align: center;
+  color: #212529;
 }
 
 .funboxTitle {
-    font-size: 20px;
-    margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 #Map>.dropdown>button {
-    padding: 0 !important;
-    color: rgb(36, 41, 46) !important;
-    font-size: 1.1rem !important;
+  padding: 0 !important;
+  color: rgb(36, 41, 46) !important;
+  font-size: 1.1rem !important;
 }
 
 .hintText {
-    font-size: .8rem;
-    line-height: 1.2;
+  font-size: .8rem;
+  line-height: 1.2;
 }
 
 .v-center {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
 }
 
 .nav-tabs {
-    padding-bottom: 15px !important;
+  padding-bottom: 15px !important;
 }
 
 .Navbar .nav-link a {
-    color: white;
-    font-size: .8rem;
-    font-weight: normal;
+  color: white;
+  font-size: .8rem;
+  font-weight: normal;
 }
 
 .navbar-brand {
-    font-size: 1rem !important;
+  font-size: 1rem !important;
 }
 
 .Navbar .navbar-nav .nav-item a:hover {
-    color: white;
-    text-decoration: none !important;
+  color: white;
+  text-decoration: none !important;
 }
 
 .Navbar .navbar-brand a {
-    color: white;
-    font-size: .9rem;
-    font-weight: normal;
-    display: block;
+  color: white;
+  font-size: .9rem;
+  font-weight: normal;
+  display: block;
 }
 
 .Navbar .navbar-brand a:hover {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .nav-item:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* US Map */
 
 #g5 a {
-    /* fill: rgba(73, 85, 95, .6) */
-    /* fill: #d7d7d8; */
-    fill: rgb(132, 131, 131);
-    /* fill: rgb(104, 127, 196); */
+  /* fill: rgba(73, 85, 95, .6) */
+  /* fill: #d7d7d8; */
+  fill: rgb(132, 131, 131);
+  /* fill: rgb(104, 127, 196); */
 }
 
 #g5 {
-    fill: #d7d7d8;
+  fill: #d7d7d8;
 }
 
-#g5 a path:hover {
-/*     
+#g5 a path:hover,
+#g5 a g:hover {
+  /*     
   stroke: black !important;
   stroke-width:.05rem;
   stroke-linejoin: round;
   */
-    fill: rgb(69,102,199);
-    opacity: 1 !important;
-    cursor: pointer;
-    
+  fill: rgb(69, 102, 199);
+  opacity: 1 !important;
+  cursor: pointer;
 }
 
 #path67 {
-    fill: none !important;
-    stroke: #a9a9a9 !important;
-    cursor: default;
+  fill: none !important;
+  stroke: #a9a9a9 !important;
+  cursor: default;
 }
 
 /* State left column */
@@ -131,20 +131,20 @@ br {
 } */
 
 .candidateCard {
-    border: 1px solid #d1d5da
+  border: 1px solid #d1d5da
 }
 
 .candidateCard:hover {
-    border: 1px solid #d1d5da;
+  border: 1px solid #d1d5da;
 }
 
 .candidates {
-    width: 100%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 /* .candidateCheckbox:first-of-type {
@@ -153,9 +153,8 @@ br {
 } */
 
 .candidateCheckboxNotActive:hover {
-    background-color: rgb(236, 239, 251) !important;
+  background-color: rgb(236, 239, 251) !important;
 }
-
 
 /* .candidates img {
     width: 100%;
@@ -214,8 +213,8 @@ br {
 } */
 
 .noMarginCol {
-    margin: 0;
-    padding: 0 !important;
+  margin: 0;
+  padding: 0 !important;
 }
 
 /* TARGET DEVICES WITH NO HOVER OR SIMULATED HOVER (I.E. IOS) */
@@ -223,335 +222,330 @@ br {
 /* MAKE SAME AS .CANDIDATES BUTTON */
 
 @media (hover: none) {
-    .candidates button:hover {
-        background-color: white;
-        color: #212529;
-        padding: 0px;
-        border-radius: 5px 5px 5px 5px;
-        border-width: 1px;
-        border-color: rgb(219, 224, 232) !important;
-    }
-    .AddText {
-        padding-top: 0 !important;
-    }
+  .candidates button:hover {
+    background-color: white;
+    color: #212529;
+    padding: 0px;
+    border-radius: 5px 5px 5px 5px;
+    border-width: 1px;
+    border-color: rgb(219, 224, 232) !important;
+  }
+  .AddText {
+    padding-top: 0 !important;
+  }
 }
 
 .AddText {
-    padding-top: 1px;
+  padding-top: 1px;
 }
 
 /* State right column */
 
 .votingCardSpacer {
-    height: 126px;
+  height: 126px;
 }
 
 #votingCard {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(218, 225, 233);
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-bottom: 15px;
-    margin-top: 24px;
-    max-width: 500px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 1.5rem 2rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(218, 225, 233);
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 15px;
+  margin-top: 24px;
+  max-width: 500px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 1.5rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px;
 }
 
 #votingCardHide {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(218, 225, 233);
-    margin-left: 24px;
-    margin-right: 24px;
-    margin-bottom: 15px;
-    margin-top: 24px;
-    max-width: 500px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 1.5rem 2rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(218, 225, 233);
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 15px;
+  margin-top: 24px;
+  max-width: 500px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 1.5rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px;
 }
 
 .table tr:first-child,
 .table tr:first-child td {
-    border-top: none !important;
+  border-top: none !important;
 }
 
 .table tr td:first-child {
-    width: 50px;
+  width: 50px;
 }
 
 .table td {
-    float: top;
-    height: 50px;
+  float: top;
+  height: 50px;
 }
 
 .tableDiv {
-    min-height: 200px;
-    margin: auto;
-    min-width: 210px;
+  min-height: 200px;
+  margin: auto;
+  min-width: 210px;
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-    /* CSS specific to iOS devices */
-    .sharePrint {
-        visibility: hidden !important;
-        width: 0px !important;
-        display: none;
-    }
+  /* CSS specific to iOS devices */
+  .sharePrint {
+    visibility: hidden !important;
+    width: 0px !important;
+    display: none;
+  }
 }
 
 .SocialMediaShareButton,
 .printButton {
-    margin: 3px;
-    width: 25px;
-    vertical-align: middle !important;
-    display: inline-block;
+  margin: 3px;
+  width: 25px;
+  vertical-align: middle !important;
+  display: inline-block;
 }
 
 .printButton {
-    margin-top: 6px;
+  margin-top: 6px;
 }
 
 .ShareSection .row div {
-    margin: 5px;
+  margin: 5px;
 }
 
 .SocialMediaShareButton:hover,
 .printButton:hover {
-    cursor: pointer;
-    opacity: 0.75 !important;
-    /* transition: 0.3s; */
+  cursor: pointer;
+  opacity: 0.75 !important;
+  /* transition: 0.3s; */
 }
 
 .SocialMediaShareButton,
 .printButton {
-    opacity: 1;
-    /* transition: 0.3s; */
+  opacity: 1;
+  /* transition: 0.3s; */
 }
 
 .social-icon--whatsapp {
-    display: none;
+  display: none;
 }
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-    border-bottom-color: rgb(222, 226, 230) !important;
+  border-bottom-color: rgb(222, 226, 230) !important;
 }
 
 .nav-item .nav-link {
-    padding: .3rem .6rem !important;
-    font-size: .9rem;
+  padding: .3rem .6rem !important;
+  font-size: .9rem;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    background-color: #e9ecef !important;
-    color: #212529 !important;
+  background-color: #e9ecef !important;
+  color: #212529 !important;
 }
 
 .table td,
 .table th {
-    padding: 0.1rem !important;
-    vertical-align: middle !important;
+  padding: 0.1rem !important;
+  vertical-align: middle !important;
 }
 
 .votingColumn {
-    min-width: 300px;
-    /* margin-bottom: 30px !important; */
+  min-width: 300px;
+  /* margin-bottom: 30px !important; */
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 766px) {
-    .candidatesContainer {
-        grid-template-columns: repeat(1, 1fr) !important;
-    }
+  .candidatesContainer {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-    .funbox {
-        box-shadow: none;
-        background-color: rgb(255, 255, 255);
-        margin: 0px;
-        max-width: 1100px;
-        padding: 1rem .75rem;
-        border-radius: 0;
+  .funbox {
+    box-shadow: none;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    max-width: 1100px;
+    padding: 1rem .75rem;
+    border-radius: 0;
+  }
+  #logoLarge {
+    width: 110px !important;
+  }
+  #landingLogo {
+    min-height: 135px !important;
+    padding: 20px !important;
+  }
+  #landingDescription {
+    font-size: 24px !important;
+  }
+  #landingFullName {
+    font-size: 16px !important;
+  }
+  .funboxBorder {
+    border: none;
+    /* border: 1px solid rgb(218, 225, 233); */
+  }
+  @media only screen and (max-width: 600px) {
+    .candidatesContainer {
+      grid-template-columns: repeat(1, 1fr) !important;
     }
-
-    #logoLarge {
-        width: 110px !important;
-    }
-    #landingLogo {
-        min-height: 135px !important;
-        padding: 20px !important;
-    }
-
-    #landingDescription {
-        font-size: 24px !important;
-    }
-    
-    #landingFullName {
-        font-size: 16px !important;
-    }
-
-    .funboxBorder {
-        border: none;
-        /* border: 1px solid rgb(218, 225, 233); */
-    }
-
-    @media only screen and (max-width: 600px) {
-        .candidatesContainer {
-            grid-template-columns: repeat(1, 1fr) !important;
-        }
-    }
-    #secondVotingCard {
-        visibility: visible !important;
-        height: auto !important;
-        opacity: 1 !important;
-        background-color: rgb(255, 255, 255);
-        border: 1px solid rgb(218, 225, 233);
-        margin-left: 24px;
-        margin-right: 24px;
-        margin-bottom: 15px;
-        margin-top: 24px;
-        max-width: 500px;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        padding: 1.5rem 2rem;
-        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px;
-    }
-    #secondShareSection {
-        visibility: visible !important;
-        opacity: 1 !important;
-    }
-    .votingCardSpacer {
-        height: 0;
-    }
-    /* .votingColumn {
+  }
+  #secondVotingCard {
+    visibility: visible !important;
+    height: auto !important;
+    opacity: 1 !important;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(218, 225, 233);
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 15px;
+    margin-top: 24px;
+    max-width: 500px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 2px 0px;
+  }
+  #secondShareSection {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .votingCardSpacer {
+    height: 0;
+  }
+  /* .votingColumn {
         width: 0 !important;
         min-width: 0 !important;
         height: 0 !important;
     } */
-    .votingColumn {
-        margin-bottom: -200px;
-    }
-    #votingCard {
-        /* visibility: hidden; */
-        /* display: block; */
-        position: fixed;
-        z-index: 1;
-        right: 0;
-        bottom: 60px;
-        flex: 1;
-        width: auto;
-        max-width: 410px;
-        max-height: 800px;
-        overflow-y: scroll;
-        border-radius: 3px;
-        -webkit-overflow-scrolling: touch;
-        -webkit-box-shadow: 0px 0px 3000px 3000px rgba(0, 0, 0, 0.7);
-        -moz-box-shadow: 0px 0px 3000px 3000px rgba(0, 0, 0, 0.7);
-        box-shadow: 0px 0px 3000px 1400px rgba(0, 0, 0, 0.7);
-    }
-    #votingCard {
-        max-height: 75%;
-    }
-    #votingCardHide {
-        /* display: block; */
-        visibility: hidden;
-        opacity: 0;
-        position: fixed;
-        z-index: 1;
-        right: 0;
-        bottom: 60px;
-        flex: 1;
-        width: auto;
-        max-width: 410px;
-        max-height: 800px;
-        overflow-y: scroll;
-        border-radius: 3px;
-        max-width: 767px;
-        -webkit-box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
-        -moz-box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
-        box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
-    }
-    #votingCardHide .tableDiv {
-        min-height: 50%;
-    }
-    #popupButton {
-        visibility: visible !important;
-    }
-    #popupButtonHint {
-        visibility: visible !important;
-        opacity: 1;
-        transition-duration: .2s;
-        -moz-transition-duration: .2s;
-        -webkit-transition-duration: .2s;
-        -webkit-box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
-        -moz-box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
-        box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
-    }
-    #popupButtonHintHidden {
-        visibility: hidden;
-        opacity: 0;
-        transition-duration: .2s;
-        -moz-transition-duration: .2s;
-        -webkit-transition-duration: .2s;
-    }
-    #ShareSection {
-        bottom: 8px;
-        right: 68px;
-        position: fixed;
-        padding: 0;
-        margin: 0;
-        z-index: 2;
-    }
-    #ShareSection div {
-        display: flex;
-        justify-content: flex-end;
-        z-index: 2;
-    }
-    #ShareSectionHide {
-        visibility: hidden;
-        opacity: 0;
-        height: 0;
-    }
-    #ShareSectionHide div .SocialMediaShareButton {
-        height: 0 !important;
-    }
-    #ShareSectionHide div {
-        height: 0;
-    }
-    #ShareSectionHide #learnMore,
-    #ShareSection #learnMore {
-        visibility: hidden;
-    }
-    #ShareSectionHide .SocialMediaShareButton,
-    #ShareSection .SocialMediaShareButton,
-    #ShareSection .sharePrint {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* border: 1px solid red; */
-        width: 55px;
-        height: 55px;
-        /* border: 1px solid rgba(0,0,0,0); */
-        /* // right: window.innerHeight - 100, */
-        /* // top: window.innerWidth - 100 */
-        /* bottom: 10px;
+  .votingColumn {
+    margin-bottom: -200px;
+  }
+  #votingCard {
+    /* visibility: hidden; */
+    /* display: block; */
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    bottom: 60px;
+    flex: 1;
+    width: auto;
+    max-width: 410px;
+    max-height: 800px;
+    overflow-y: scroll;
+    border-radius: 3px;
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-shadow: 0px 0px 3000px 3000px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 3000px 3000px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 3000px 1400px rgba(0, 0, 0, 0.7);
+  }
+  #votingCard {
+    max-height: 75%;
+  }
+  #votingCardHide {
+    /* display: block; */
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    bottom: 60px;
+    flex: 1;
+    width: auto;
+    max-width: 410px;
+    max-height: 800px;
+    overflow-y: scroll;
+    border-radius: 3px;
+    max-width: 767px;
+    -webkit-box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
+  }
+  #votingCardHide .tableDiv {
+    min-height: 50%;
+  }
+  #popupButton {
+    visibility: visible !important;
+  }
+  #popupButtonHint {
+    visibility: visible !important;
+    opacity: 1;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -webkit-box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 1400px 1400px rgba(0, 0, 0, 0.7);
+  }
+  #popupButtonHintHidden {
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+  }
+  #ShareSection {
+    bottom: 8px;
+    right: 68px;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    z-index: 2;
+  }
+  #ShareSection div {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+  }
+  #ShareSectionHide {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+  }
+  #ShareSectionHide div .SocialMediaShareButton {
+    height: 0 !important;
+  }
+  #ShareSectionHide div {
+    height: 0;
+  }
+  #ShareSectionHide #learnMore,
+  #ShareSection #learnMore {
+    visibility: hidden;
+  }
+  #ShareSectionHide .SocialMediaShareButton,
+  #ShareSection .SocialMediaShareButton,
+  #ShareSection .sharePrint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 55px;
+    height: 55px;
+    /* border: 1px solid rgba(0,0,0,0); */
+    /* // right: window.innerHeight - 100, */
+    /* // top: window.innerWidth - 100 */
+    /* bottom: 10px;
         right: 75px; */
-        border-radius: 50%;
-        z-index: 2;
-        background-color: rgb(236, 239, 251);
-        margin: 3px;
-    }
+    border-radius: 50%;
+    z-index: 2;
+    background-color: rgb(236, 239, 251);
+    margin: 3px;
+  }
 }
 
 /* #votingCardHide img {
@@ -561,77 +555,76 @@ br {
 } */
 
 #popupButton {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #popupButtonHint {
-    visibility: hidden;
-    transition-duration: .2s;
-    -moz-transition-duration: .2s;
-    -webkit-transition-duration: .2s;
+  visibility: hidden;
+  transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -webkit-transition-duration: .2s;
 }
 
 #popupButtonHintHidden {
-    visibility: hidden;
-    opacity: 0;
-    transition-duration: .2s;
-    -moz-transition-duration: .2s;
-    -webkit-transition-duration: .2s;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -webkit-transition-duration: .2s;
 }
 
 .hiddenLink {
-    color: rgb(36, 41, 46);
+  color: rgb(36, 41, 46);
 }
 
 .hiddenLink:hover {
-    text-decoration: none;
-    color: rgb(36, 41, 46);
+  text-decoration: none;
+  color: rgb(36, 41, 46);
 }
 
 .candidatesContainer {
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .dropdown-menu a button:focus,
 .dropdown-menu a button:active,
 .dropdown-menu a button:hover {
-    background-color: inherit;
-    color: rgb(36, 41, 46);
-    text-decoration: none;
+  background-color: inherit;
+  color: rgb(36, 41, 46);
+  text-decoration: none;
 }
 
 #secondVotingCard {
-    visibility: hidden;
-    opacity: 0;
-    height: 0;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
 }
 
 #secondShareSection {
-    visibility: hidden;
-    opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 }
 
 #logoLarge {
-    width: 140px;
+  width: 140px;
 }
 
-
 #landingPageFunbox {
-    margin-top: -20px !important;
+  margin-top: -20px !important;
 }
 
 #landingLogo {
-    min-height: 150px;
-    padding: 75px;
+  min-height: 150px;
+  padding: 75px;
 }
 
 #landingDescription {
-    /* -moz-osx-font-smoothing: grayscale;
+  /* -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizelegibility; */
-    font-size: 34px;
+  font-size: 34px;
 }
 
 #landingFullName {
-    font-size: 22px;
+  font-size: 22px;
 }
