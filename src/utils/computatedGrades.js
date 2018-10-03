@@ -2283,6 +2283,32 @@ export const stateInfo =
       }
     ]
   },
+  DC: {
+    name: 'District of Columbia',
+    legislatures: [
+      {
+        name: 'Attorney General',
+        id: 'attorneyGeneral',
+        districts: [
+          {
+            name: 'Statewide',
+            candidates: [
+              {
+                name: 'Karl Racine',
+                img: '/static/media/KarlRacine.jpg',
+                party: 'Democrat'
+              },
+              {
+                name: 'Joe Henchman',
+                img: '/static/media/joe-henchman.png',
+                party: 'Libertarian'
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
   FL: {
     name: 'Florida',
     legislatures: [

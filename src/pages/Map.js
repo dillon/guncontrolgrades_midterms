@@ -430,7 +430,7 @@ class UsMap extends React.Component {
                         <path
                           id='path58'
                           d='M975.8,353.8l-1.1-1.6l-1-0.8l1.1-1.6l2.2,1.5L975.8,353.8z'
-                            // opacity={stateOpacityArray[0]}
+                        // opacity={stateOpacityArray[0]}
                         />
                         <circle
                           id='circle60'
