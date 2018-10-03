@@ -10,6 +10,11 @@ import { colors } from '../utils/colors.js';
 // styles
 import { Candidates as Styles } from '../utils/styles'
 
+
+function createStringForState(joinedString, x) {
+  return joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade + ',' + x.endorsedByGiffords
+}
+
 // State > StateContainer > {tabPanes > Candidates}
 class Candidates extends React.Component {
   constructor(props) {
@@ -45,7 +50,7 @@ class Candidates extends React.Component {
 
     const candidates = this.props.candidates.map(x => (
       <div
-        style={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade ? Styles.candidateCardSelected : Styles.candidateCard}
+        style={this.state.rSelected === createStringForState(joinedString, x) ? Styles.candidateCardSelected : Styles.candidateCard}
         className='candidateCard'
         key={x.img + x.name}
       >
@@ -53,21 +58,21 @@ class Candidates extends React.Component {
         <div style={Styles.candidateInfo}>
           <div style={Styles.candidateName}>
             {x.name}
-            <div style={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade ? Styles.candidateNameAlternativeSelected : Styles.candidateNameAlternative}>
+            <div style={this.state.rSelected === createStringForState(joinedString, x) ? Styles.candidateNameAlternativeSelected : Styles.candidateNameAlternative}>
               {x.party}
             </div>
           </div>
           <div style={Styles.candidateGradeAndCheck}>
             <div style={Styles.candidateGrade}>
-              {x.grade}
+              {x.grade && x.grade}{x.endorsedByGiffords && '*'}
             </div>
             <div style={Styles.buttonContainer}>
-              {this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade ?
+              {this.state.rSelected === createStringForState(joinedString, x) ?
                 <button
                   class='candidateCheckbox'
                   style={Styles.candidateCheckboxActive}
-                  onClick={() => this.onRadioBtnClick(joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade)}
-                  active={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade}
+                  onClick={() => this.onRadioBtnClick(createStringForState(joinedString, x))}
+                  active={this.state.rSelected === createStringForState(joinedString, x)}
                 >
                   <IconContext.Provider value={{ color: 'white', size: '1.2em', className: 'global-class-name' }}>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -79,8 +84,8 @@ class Candidates extends React.Component {
                 <button
                   class='candidateCheckbox candidateCheckboxNotActive'
                   style={Styles.candidateCheckbox}
-                  onClick={() => this.onRadioBtnClick(joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade)}
-                  active={this.state.rSelected === joinedString + x.name + ',' + x.img + ',' + x.party + ',' + x.grade}
+                  onClick={() => this.onRadioBtnClick(createStringForState(joinedString, x))}
+                  active={this.state.rSelected === createStringForState(joinedString, x)}
                 >
                   <IconContext.Provider value={{ color: colors.primary, size: '.9em', className: 'global-class-name' }}>
                     <div style={{ display: 'flex', alignItems: 'center' }}>

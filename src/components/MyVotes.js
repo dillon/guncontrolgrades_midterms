@@ -23,7 +23,7 @@ class MyVotes extends React.Component { // State -> StatePage -> MyVotes
             {y[2]} ({y[4] === 'Republican' || y[4] === 'Democrat' || y[4] === 'Green' || y[4] === 'Libertarian' ? y[4][0] : 'I'})
             </div>
           <div style={Styles.cardGrade}>
-            {y[5]}
+            {y[5]}{y[6]==='true' && '*'}
           </div>
         </td>
       </tr>
