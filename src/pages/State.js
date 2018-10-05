@@ -205,19 +205,25 @@ class StatePage extends React.Component { // State -> StatePage
       </TabPane>
     ));
 
-    const shareQuote = this.state.pressed.map(
-      // Format Candidate metainfo for Voting Card
-      y => {
-        const legislature = y[0]
-        const district = y[1]
-        const name = y[2]
-        const party = y[4]
-        return (
-          '\n\n'
-          + `${legislature} – ${district}\n`
-          + `${name} (${party})`
-        )
-      });
+    const shareQuote =
+      '\n\n'
+      + stateName
+      + this.state.pressed.map(
+        // Format Candidate metainfo for Voting Card
+        y => {
+          const legislature = y[0]
+          const district = y[1]
+          const name = y[2]
+          const party = y[4]
+          const grade = y[5]
+          const endorsed = y[6]
+          return (
+            '\n\n'
+            + `${legislature} – ${district}\n`
+            + `${name} (${party})\n`
+            + `Grade: ${grade}${endorsed === 'true' ? '*' : ''}`
+          )
+        }).join(' ');
 
     return (
       <div id='StateContainer' style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
