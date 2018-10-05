@@ -14,6 +14,10 @@ Last
 [ ] Revise all copy
 [ ] Double-check all social buttons (fix email))
 [ ] Fix images bug
+[ ] Fix images crop
+[ ] Fix star logic and replace all asterisks with stars
+    - if alone, big star, if together, small star in corner like the asterisk was
+    - if neither star nor asterisk, put question mark
 [ ] Crop Portraits
 [x] Add Grades
 [x] Create endorsements hint

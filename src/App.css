@@ -4,13 +4,28 @@ body {
   color: rgb(36, 41, 46);
 }
 
-button:focus, a:focus, svg:focus, path:Focus, div:focus {
+button:focus,
+a:focus,
+svg:focus,
+path:Focus,
+div:focus {
   outline-color: rgb(125, 148, 213) !important;
 }
 
 br {
   font-size: 0.1rem;
 }
+
+.endorsementStarPadding svg {
+  margin-bottom: 15px;
+  margin-left: -1px;
+}
+
+.endorsementStarPaddingSmall svg {
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
 
 .pageContainer {
   margin: auto;
@@ -370,6 +385,13 @@ br {
   /* margin-bottom: 30px !important; */
 }
 
+#screenshotHint {
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  padding-bottom: 10px;
+}
+
 @media only screen and (max-width: 1000px) and (min-width: 766px) {
   .candidatesContainer {
     grid-template-columns: repeat(1, 1fr) !important;
@@ -407,6 +429,17 @@ br {
       grid-template-columns: repeat(1, 1fr) !important;
     }
   }
+  #screenshotHint {
+    height: auto !important;
+    margin-top: -30px;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  #secondShareSection {
+    padding-bottom: 30px;
+  }
+
   #secondVotingCard {
     visibility: visible !important;
     height: auto !important;
@@ -619,7 +652,10 @@ br {
 
 #landingLogo {
   min-height: 150px;
-  padding: 75px;
+  padding-bottom: 40px;
+  padding-right: 75px;
+  padding-left: 75px;
+  padding-top: 30px;
 }
 
 #landingDescription {

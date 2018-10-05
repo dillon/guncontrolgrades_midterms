@@ -3,7 +3,7 @@ import React from 'react';
 // icons
 import { IconContext } from 'react-icons';
 import { GoPlus, GoCheck } from 'react-icons/go';
-
+import { TiStar } from 'react-icons/ti'
 // constants
 import { colors } from '../utils/colors.js';
 
@@ -44,7 +44,13 @@ class Candidates extends React.Component {
   render() {
     const candidates = this.props.candidates.map(x => {
       const joinedString = this.props.legislature + ',' + this.props.district + ',' + x.name + ',' + x.img + ',' + x.party + ',' + x.grade + ',' + x.endorsedByGiffords;
-      x.grade = x.grade ? x.grade : '?'
+      let endorsementStarSize = '1rem'
+      let endorsementStarPadding = true
+      if (!x.grade) { // if no grade and also no endorsement, grade = '?'
+        if (!x.endorsedByGiffords) { x.grade = '?'; }
+        else { x.grade = ''; endorsementStarSize = '1.7rem'; endorsementStarPadding = false; } // if no grade but no endorsement, make endorsement star larger
+      }
+
       return (
         <div
           style={this.state.rSelected === joinedString ? Styles.candidateCardSelected : Styles.candidateCard}
@@ -60,8 +66,12 @@ class Candidates extends React.Component {
               </div>
             </div>
             <div style={Styles.candidateGradeAndCheck}>
-              <div style={Styles.candidateGrade}>
-                {x.grade}{x.endorsedByGiffords && '*'}
+              <div className={endorsementStarPadding && 'endorsementStarPadding'} style={Styles.candidateGrade}>
+                {x.grade}{x.endorsedByGiffords && (
+                    <IconContext.Provider value={{ color: colors.primary, size: endorsementStarSize, className: 'global-class-name' }}>
+                        <TiStar />
+                    </IconContext.Provider>
+                )}
               </div>
               <div style={Styles.buttonContainer}>
                 {this.state.rSelected === joinedString ?

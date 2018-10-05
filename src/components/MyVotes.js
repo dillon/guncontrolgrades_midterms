@@ -5,6 +5,9 @@ import {
   Table,
 } from 'reactstrap';
 
+import { IconContext } from 'react-icons';
+import { TiStar } from 'react-icons/ti';
+
 // import styles
 import { MyVotes as Styles } from '../utils/styles'
 
@@ -16,8 +19,15 @@ class MyVotes extends React.Component { // State -> StatePage -> MyVotes
       const name = y[2]
       const img = y[3]
       const party = y[4] === 'Republican' || y[4] === 'Democrat' || y[4] === 'Green' || y[4] === 'Libertarian' ? y[4][0] : 'I'
-      const grade = y[5] ? y[5] : '?'
-      const endorsed = y[6] === 'true' && '*'
+      let grade = y[5]
+      const endorsed = y[6]
+      let endorsementStarSize = '.8rem'
+      let endorsementStarPadding = true
+      if (!grade) { // if no grade and also no endorsement, grade = '?'
+        if (!endorsed) { grade = '?'; }
+        else { grade = ''; endorsementStarSize = '1.1rem'; endorsementStarPadding = false; } // if no grade but no endorsement, make endorsement star larger
+      }
+
       return (
         <tr key={y[3] + 'votes'}>
           <td>
@@ -31,7 +41,13 @@ class MyVotes extends React.Component { // State -> StatePage -> MyVotes
               {name} ({party})
             </div>
             <div style={Styles.cardGrade}>
-              {grade}{endorsed}
+              {grade}{endorsed==='true' && (
+                <div className={endorsementStarPadding && 'endorsementStarPaddingSmall'} style={Styles.candidateGrade}>
+                  <IconContext.Provider value={{ size: endorsementStarSize, className: 'global-class-name' }}>
+                    <TiStar />
+                  </IconContext.Provider>
+                </div>
+              )}
             </div>
           </td>
         </tr>
@@ -62,7 +78,7 @@ class MyVotes extends React.Component { // State -> StatePage -> MyVotes
               className='hintText text-muted'
             >
               created on guncontrolgrades.com
-              </div>
+            </div>
           </div>
         </div>
       </div>

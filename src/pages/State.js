@@ -33,6 +33,7 @@ import { TiMail, TiPrinter } from 'react-icons/ti';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowDown } from 'react-icons/io';
 import { MdPlaylistAddCheck } from 'react-icons/md';
+import { TiStar } from 'react-icons/ti';
 
 // constants
 import { colors } from '../utils/colors'
@@ -296,7 +297,11 @@ class StatePage extends React.Component { // State -> StatePage
 
           <p id='learnMore' className='hintText text-muted' style={{ textAlign: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 0, margin: 0 }}>
-              <div style={Styles.hintAsterisk}>*</div><div>&nbsp;indicates an endorsement by Giffords.org</div>
+              <div style={Styles.hintAsterisk}>
+                <IconContext.Provider value={{ color: colors.primaryHighOpacity, size: '1rem', className: 'global-class-name' }}>
+                  <TiStar />
+                </IconContext.Provider>
+              </div><div>&nbsp;indicates endorsement by Giffords.org</div>
             </div>
             Learn more about our grading system{' '}
             <Link
@@ -307,6 +312,7 @@ class StatePage extends React.Component { // State -> StatePage
               here.
             </Link>
           </p>
+          <div id="screenshotHint" className='hintText text-muted' style={{ textAlign: 'center' }}><br /><br />Share your card below or screenshot to save</div>
           <div id={this.state.card ? 'ShareSectionHide' : 'ShareSection'}>
             <div lg='12' style={{ margin: 0, textAlign: 'center' }}>
               <span className='sharePrint'>
