@@ -207,8 +207,17 @@ class StatePage extends React.Component { // State -> StatePage
 
     const shareQuote = this.state.pressed.map(
       // Format Candidate metainfo for Voting Card
-      y => '\n' + y[0] + y[1] === 'Statewide' ? '' : ' – ' + y[1] + ': ' + y[2] + ' (' + y[4] + ')'
-    );
+      y => {
+        const legislature = y[0]
+        const district = y[1]
+        const name = y[2]
+        const party = y[4]
+        return (
+          '\n\n'
+          + `${legislature} – ${district}\n`
+          + `${name} (${party})`
+        )
+      });
 
     return (
       <div id='StateContainer' style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>

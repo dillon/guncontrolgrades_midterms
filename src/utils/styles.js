@@ -19,7 +19,7 @@ export const MyVotes = {
         width: constants.imageWidth/2.2,
         height: constants.imageHeight/2.2,
         borderRadius: 2,
-        border: `.5px solid grey`,
+        border: `1px solid grey`,
         marginTop: 3,
         marginBottom: 3,
     },
