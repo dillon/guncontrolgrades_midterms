@@ -7,7 +7,7 @@ export const constants = {
     URLString: 'guncontrolgrades.com',
     email: 'info@guncontrolgrades.com',
     mailto: 'mailto:info@guncontrolgrades.com?subject=Gun%20Control%20Grades',
-    imageHeight: 109.25,
+    imageHeight: 110,
     imageWidth: 95,
 }
 

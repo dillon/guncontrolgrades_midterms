@@ -16,10 +16,10 @@ export const NavHeader = {
 
 export const MyVotes = {
     cardImage: {
-        width: 41,
-        height: 53,
+        width: constants.imageWidth/2.2,
+        height: constants.imageHeight/2.2,
         borderRadius: 2,
-        border: `1px solid grey`,
+        border: `.5px solid grey`,
         marginTop: 3,
         marginBottom: 3,
     },

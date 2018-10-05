@@ -12,10 +12,11 @@ Code
 [x] Delete Storybooks
 Last
 [ ] Revise all copy
+[ ] Double-check all social buttons (fix email))
 [ ] Fix images bug
 [ ] Crop Portraits
 [x] Add Grades
-[ ] Create endorsements hint
+[x] Create endorsements hint
 [ ] Add Keywords for SEO
 [ ] Get URL
 
