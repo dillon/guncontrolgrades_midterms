@@ -290,7 +290,7 @@ class StatePage extends React.Component { // State -> StatePage
 
           <p id='learnMore' className='hintText text-muted' style={{ textAlign: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 0, margin: 0 }}>
-              <div style={Styles.hintAsterisk}>*</div><div>&nbsp;indicate endorsements by Giffords.org</div>
+              <div style={Styles.hintAsterisk}>*</div><div>&nbsp;indicates an endorsement by Giffords.org</div>
             </div>
             Learn more about our grading system{' '}
             <Link
