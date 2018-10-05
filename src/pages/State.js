@@ -31,7 +31,8 @@ import ReactToPrint from 'react-to-print';
 import { IconContext } from 'react-icons';
 import { TiMail, TiPrinter } from 'react-icons/ti';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
-import { IoIosArrowBack, IoIosArrowUp, IoIosArrowDown } from 'react-icons/io';
+import { IoIosArrowBack, IoIosArrowDown } from 'react-icons/io';
+import { MdPlaylistAddCheck } from 'react-icons/md';
 
 // constants
 import { colors } from '../utils/colors'
@@ -218,11 +219,11 @@ class StatePage extends React.Component { // State -> StatePage
         </div>
 
         <button id='popupButton' style={Styles.popupButton} onClick={() => this.toggleCard()}>
-          <IconContext.Provider value={{ color: colors.primary, size: '2.2em', className: 'global-class-name' }}>
+          <IconContext.Provider value={{ color: colors.primary, size: '1.9em', className: 'global-class-name' }}>
             {
               this.state.card ?
-                <div style={{ paddingBottom: 4 }}>
-                  <IoIosArrowUp />
+                <div style={{ paddingBottom: 0, paddingLeft: 4 }}>
+                  <MdPlaylistAddCheck />
                 </div>
                 :
                 <div style={{ paddingTop: 4 }}>
@@ -279,6 +280,9 @@ class StatePage extends React.Component { // State -> StatePage
           />
 
           <p id='learnMore' className='hintText text-muted' style={{ textAlign: 'center' }}>
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 0, margin: 0 }}>
+              <div style={Styles.hintAsterisk}>*</div><div>&nbsp;indicate endorsements by Giffords.org</div>
+            </div>
             Learn more about our grading system{' '}
             <Link
               style={{ textDecoration: 'underline', color: 'inherit' }}
@@ -377,7 +381,7 @@ class StatePage extends React.Component { // State -> StatePage
             </div>
           </div>
         </Col>
-      </div>
+      </div >
     );
   }
 }

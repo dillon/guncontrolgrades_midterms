@@ -49,7 +49,7 @@ class UsMap extends React.Component {
             <div id='Map' className='mapContainer'>
               <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                 <DropdownToggle caret color="link">
-                  <span className='funboxTitle'>Select your state</span>
+                  <span className='funboxTitle' style={{marginTop: 40}}>Select your state</span>
                 </DropdownToggle>
                 <DropdownMenu style={Styles.dropdownMenu}>
                   {namesOfStates.map(x => <Link key={x.id} to={`State/${x.id}`}><DropdownItem>{x.name}</DropdownItem></Link>)}

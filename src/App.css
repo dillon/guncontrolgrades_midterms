@@ -4,6 +4,10 @@ body {
   color: rgb(36, 41, 46);
 }
 
+button:focus {
+  outline-color: rgba(69,102,199, .02) !important;
+}
+
 br {
   font-size: 0.1rem;
 }

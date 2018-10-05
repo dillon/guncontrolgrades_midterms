@@ -14,7 +14,8 @@ Last
 [ ] Revise all copy
 [ ] Fix images bug
 [ ] Crop Portraits
-[ ] Add Grades
+[x] Add Grades
+[ ] Create endorsements hint
 [ ] Add Keywords for SEO
 [ ] Get URL
 
@@ -22,6 +23,9 @@ Final
 [ ] Further isolate components into different files
 [ ] Clean up CSS/Styles
 [ ] Comment Code
+
+After
+[ ] Look into implementing server (after saving to git)
 
 
 

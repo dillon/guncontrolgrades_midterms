@@ -26,7 +26,9 @@ export const MyVotes = {
     cardName: { fontSize: '.9rem' },
     cardGrade: {
         fontSize: '1.1rem',
+        fontFamily: 'Open Sans, sans-serif',
         fontWeight: 600,
+        // color: colors.primary
     }
 }
 
@@ -82,7 +84,16 @@ export const State = {
         borderRadius: '50%',
         zIndex: 2,
         backgroundColor: colors.primaryLight
-    }
+    },
+    hintAsterisk: {
+      fontSize: '2.0rem',
+      fontFamily: 'Open Sans, sans-serif',
+      fontWeight: 600,
+      color: colors.primaryHighOpacity,
+      // marginTop: 13
+      marginBottom: -13
+  }
+
 
 }
 
