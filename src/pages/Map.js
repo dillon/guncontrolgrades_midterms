@@ -13,10 +13,15 @@ import { Map as Styles } from '../utils/styles'
 // import logo
 import logo from '../utils/nra-flip-logo-v1.svg'
 
+// analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-127152248-1'); // Here we should use our GA id
+
+
 const LandingLogo = () => {
   return (
     <div id='landingLogo' style={Styles.landingLogo}>
-      <object type="image/svg+xml" alt='flip-logo' id='jlsf' style={{opacity:1}} width='200px' height='196.55px' data={logo}/>
+      <object type="image/svg+xml" alt='flip-logo' id='jlsf' style={{ opacity: 1 }} width='200px' height='196.55px' data={logo} />
       <div id='logoLarge' style={Styles.landingFullName}>
         {/* Gun Control Grades */}
       </div>
@@ -35,6 +40,9 @@ class UsMap extends React.Component {
       dropdownOpen: false
     };
   }
+  componentDidMount() {
+    ReactGA.pageview(window.location.hash);
+  }
 
   toggle = () => {
     // toggles Dropdown
@@ -52,7 +60,7 @@ class UsMap extends React.Component {
             <div id='Map' className='mapContainer'>
               <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                 <DropdownToggle caret color="link">
-                  <span className='funboxTitle' style={{marginTop: 40}}>Select your state</span>
+                  <span className='funboxTitle' style={{ marginTop: 40 }}>Select your state</span>
                 </DropdownToggle>
                 <DropdownMenu style={Styles.dropdownMenu}>
                   {namesOfStates.map(x => <Link key={x.id} to={`State/${x.id}`}><DropdownItem>{x.name}</DropdownItem></Link>)}

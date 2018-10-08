@@ -4,7 +4,12 @@ import { colors } from '../utils/colors'
 import { IconContext } from 'react-icons'
 import { TiStar } from 'react-icons/ti'
 
+// analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-127152248-1'); // Here we should use our GA id
+
 const About = () => {
+  ReactGA.pageview(window.location.hash);
   return (
     <div className='pageContainer'>
       <div className='funbox funboxBorder'>

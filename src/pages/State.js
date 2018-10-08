@@ -46,11 +46,17 @@ import { State as Styles } from '../utils/styles'
 // import { stateInfo } from '../utils/stateInfo.js';
 import { stateInfo } from '../utils/computatedGrades.js';
 
+// analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-127152248-1'); // Here we should use our GA id
+
 
 const State = props => {
   // props: stateId
   const { id } = props.match.params;
   const newId = id.toUpperCase();
+  ReactGA.pageview(window.location.hash);
+
   return (
     <div height='100%' className='pageContainer'>
       <StatePage stateId={newId} />

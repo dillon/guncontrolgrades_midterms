@@ -2,7 +2,12 @@ import React from 'react';
 
 import { constants } from '../utils/constants'
 
+// analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-127152248-1'); // Here we should use our GA id
+
 const Contact = () => {
+  ReactGA.pageview(window.location.hash);
     return (
         <div className='pageContainer'>
             <div className='funbox funboxBorder'>
