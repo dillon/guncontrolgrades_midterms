@@ -20,9 +20,11 @@ const About = () => {
         <p style={{ maxWidth: 600 }}>
           <strong>{constants.name}</strong> are an inversion of the grades issued by the National Rifle Association. An "F" from the NRA becomes an "A" from GCG; a "D" becomes a "B" and so on. Additionally, a
           <span id='endorsementStarAboutPage'>
-            <IconContext.Provider value={{ color: colors.red, size: '1.4rem', className: 'global-class-name' }}>
+            &nbsp;"
+            <IconContext.Provider value={{ color: 'black', size: '1.4rem', className: 'global-class-name' }}>
               <TiStar />
             </IconContext.Provider>
+            "&nbsp;
           </span>
           from GCG indicates that a candidate has been endorsed by <a style={{ textDecoration: 'underline', color: 'inherit' }} href='https://giffords.org' target='_blank'>Giffords</a>, an organization founded to fight the gun violence epidemic. For candidates who have not yet been rated by either organization, a question mark is posted.
         </p>

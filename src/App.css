@@ -36,6 +36,8 @@ br {
 
 #endorsementStarAboutPage svg {
   margin-top: -5px;
+  margin-left:-3px;
+  margin-right:-3px;
 }
 
 .pageContainer {
