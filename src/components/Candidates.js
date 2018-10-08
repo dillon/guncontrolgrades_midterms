@@ -46,9 +46,11 @@ class Candidates extends React.Component {
       const joinedString = this.props.legislature + ',' + this.props.district + ',' + x.name + ',' + x.img + ',' + x.party + ',' + x.grade + ',' + x.endorsedByGiffords;
       let endorsementStarSize = '1rem'
       let endorsementStarPadding = true
-      if (!x.grade) { // if no grade and also no endorsement, grade = '?'
+      if (!x.grade) {
+        // if no grade and also no endorsement, grade = '?'
         if (!x.endorsedByGiffords) { x.grade = '?'; }
-        else { x.grade = ''; endorsementStarSize = '1.7rem'; endorsementStarPadding = false; } // if no grade but no endorsement, make endorsement star larger
+        // if no grade but no endorsement, make endorsement star larger
+        else { x.grade = ''; endorsementStarSize = '1.7rem'; endorsementStarPadding = false; }
       }
 
       return (
@@ -66,9 +68,9 @@ class Candidates extends React.Component {
               </div>
             </div>
             <div style={Styles.candidateGradeAndCheck}>
-              <div className={endorsementStarPadding && 'endorsementStarPadding'} style={Styles.candidateGrade}>
+              <div className={endorsementStarPadding ? 'endorsementStarPadding' : 'endorsementStarPaddingLargeStar'} style={Styles.candidateGrade}>
                 {x.grade}{x.endorsedByGiffords && (
-                    <IconContext.Provider value={{ color: colors.primary, size: endorsementStarSize, className: 'global-class-name' }}>
+                    <IconContext.Provider value={{ color: colors.red, size: endorsementStarSize, className: 'global-class-name' }}>
                         <TiStar />
                     </IconContext.Provider>
                 )}

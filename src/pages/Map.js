@@ -14,7 +14,7 @@ const LandingLogo = () => {
   return (
     <div id='landingLogo' style={Styles.landingLogo}>
       {/* <img id='logoLarge' src={require('../utils/logoWhite.svg')} /> */}
-      <img id='jlsf' style={{opacity:1}} width='200' src={require('../utils/nra-flip-logo-v1.svg')}/>
+      <img alt='flip-logo' id='jlsf' style={{opacity:1}} width='200' src={require('../utils/nra-flip-logo-v1.svg')}/>
       <div id='logoLarge' style={Styles.landingFullName}>
         {/* Gun Control Grades */}
       </div>

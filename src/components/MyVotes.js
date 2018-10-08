@@ -10,6 +10,7 @@ import { TiStar } from 'react-icons/ti';
 
 // import styles
 import { MyVotes as Styles } from '../utils/styles'
+import { colors } from '../utils/colors'
 
 class MyVotes extends React.Component { // State -> StatePage -> MyVotes
   render() {
@@ -42,8 +43,8 @@ class MyVotes extends React.Component { // State -> StatePage -> MyVotes
             </div>
             <div style={Styles.cardGrade}>
               {grade}{endorsed==='true' && (
-                <div className={endorsementStarPadding && 'endorsementStarPaddingSmall'} style={Styles.candidateGrade}>
-                  <IconContext.Provider value={{ size: endorsementStarSize, className: 'global-class-name' }}>
+                <div className={endorsementStarPadding ? 'endorsementStarPaddingSmall' : 'endorsementStarPaddingSmallLargeStar'} style={Styles.candidateGrade}>
+                  <IconContext.Provider value={{ color: colors.red, size: endorsementStarSize, className: 'global-class-name' }}>
                     <TiStar />
                   </IconContext.Provider>
                 </div>

@@ -29,6 +29,7 @@ export const MyVotes = {
     fontFamily: 'Open Sans, sans-serif',
     fontWeight: 600,
     // color: colors.primary
+    color: colors.red,
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'flex-start',
@@ -156,7 +157,8 @@ export const Candidates = {
     fontSize: '1.7rem',
     fontFamily: 'Open Sans, sans-serif',
     fontWeight: 600,
-    color: colors.primary,
+    // color: colors.primary,
+    color: colors.red
   },
   candidateGradeAndCheck: {
     display: 'flex',

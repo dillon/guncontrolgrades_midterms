@@ -15,7 +15,7 @@ Last
 [ ] Double-check all social buttons (fix email))
 [ ] Revisit email to make sure asterisks render correctly
 [ ] Fix images bug
-[ ] Fix images crop
+[x] Fix images crop
 [ ] Fix star logic and replace all asterisks with stars
     - if alone, big star, if together, small star in corner like the asterisk was
     - if neither star nor asterisk, put question mark
