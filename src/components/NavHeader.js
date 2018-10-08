@@ -15,6 +15,7 @@ import {
 // styles
 import { NavHeader as Styles } from '../utils/styles'
 
+import { constants } from '../utils/constants'
 
 class NavHeader extends React.Component {
   constructor(props) {
@@ -34,10 +35,9 @@ class NavHeader extends React.Component {
         <Navbar style={Styles.navbar} expand='xs' dark>
           <Link className='active' to='/'>
             <NavbarBrand>
-              {/* <strong>{constants.nameAbbreviated}</strong> {constants.name} */}
               {/* <img width='50' alt='logo' style={Styles.navbarBrand} src={require('../utils/logoWhite.svg')} /> */}
               <span style={{ color: 'white', fontSize: '1.6rem', letterSpacing: 1.2, fontWeight: 600 }}>
-                GCG
+                {constants.nameAbbreviated}
               </span>
             </NavbarBrand>
           </Link>
