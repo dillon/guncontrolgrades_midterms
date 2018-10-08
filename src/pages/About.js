@@ -24,7 +24,7 @@ const About = () => {
               <TiStar />
             </IconContext.Provider>
           </span>
-          from GCG indicates that a candidate has been endorsed by <a style={{ textDecoration: 'underline', color: 'inherit' }} href='https://giffords.org'>Giffords</a>, an organization founded to fight the gun violence epidemic. For candidates who have not yet been rated by either organization, a question mark is posted.
+          from GCG indicates that a candidate has been endorsed by <a style={{ textDecoration: 'underline', color: 'inherit' }} href='https://giffords.org' target='_blank'>Giffords</a>, an organization founded to fight the gun violence epidemic. For candidates who have not yet been rated by either organization, a question mark is posted.
         </p>
       </div>
     </div>
