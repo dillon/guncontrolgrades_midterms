@@ -298,7 +298,7 @@ class StatePage extends React.Component { // State -> StatePage
           <p id='learnMore' className='hintText text-muted' style={{ textAlign: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 0, margin: 0 }}>
               <div style={Styles.hintAsterisk}>
-                <IconContext.Provider value={{ color: colors.primaryHighOpacity, size: '1rem', className: 'global-class-name' }}>
+                <IconContext.Provider value={{ color: colors.redLowOpacity, size: '1rem', className: 'global-class-name' }}>
                   <TiStar />
                 </IconContext.Provider>
               </div><div>&nbsp;indicates endorsement by Giffords.org</div>

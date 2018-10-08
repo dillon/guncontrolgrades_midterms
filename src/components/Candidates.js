@@ -52,7 +52,7 @@ class Candidates extends React.Component {
         // if no grade but no endorsement, make endorsement star larger
         else { x.grade = ''; endorsementStarSize = '1.7rem'; endorsementStarPadding = false; }
       }
-
+      // const image = require(`${x.img}`)
       return (
         <div
           style={this.state.rSelected === joinedString ? Styles.candidateCardSelected : Styles.candidateCard}
