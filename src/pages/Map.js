@@ -10,10 +10,13 @@ import { namesOfStates, stateOpacityArray } from '../utils/constants'
 // styles
 import { Map as Styles } from '../utils/styles'
 
+// import logo
+import logo from '../utils/nra-flip-logo-v1.svg'
+
 const LandingLogo = () => {
   return (
     <div id='landingLogo' style={Styles.landingLogo}>
-      <img alt='flip-logo' id='jlsf' style={{opacity:1}} width='200px' height='196.55px' src={require('../utils/nra-flip-logo-v1.svg')}/>
+      <object type="image/svg+xml" alt='flip-logo' id='jlsf' style={{opacity:1}} width='200px' height='196.55px' data={logo}/>
       <div id='logoLarge' style={Styles.landingFullName}>
         {/* Gun Control Grades */}
       </div>

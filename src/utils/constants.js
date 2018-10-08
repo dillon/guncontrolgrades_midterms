@@ -2,7 +2,7 @@ export const constants = {
     name: 'Gun Control Grades',
     nameAbbreviated: 'GCG',
     nameNoSpaces: 'GunControlGrades',
-    hashtags: ['GunControlGrades', 'GunControl', 'GunSafety', 'Midterms', 'MidtermElections'],
+    hashtags: ['GunControlGrades', 'GunControl', 'Midterms', 'MidtermElections'],
     URL: 'https://guncontrolgrades.org',
     URLString: 'guncontrolgrades.org',
     email: 'info@guncontrolgrades.org',
