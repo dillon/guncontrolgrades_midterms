@@ -52,7 +52,7 @@ const State = props => {
   const { id } = props.match.params;
   const newId = id.toUpperCase();
   return (
-    <div className='pageContainer'>
+    <div height='100%' className='pageContainer'>
       <StatePage stateId={newId} />
     </div>
   );

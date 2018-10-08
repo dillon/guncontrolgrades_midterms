@@ -1,10 +1,10 @@
 html,
 body {
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; 
+  /* overflow-x: hidden;  */
   color: #212529;;
   /* -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
