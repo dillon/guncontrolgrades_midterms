@@ -15,7 +15,7 @@ import Contact from './pages/Contact.js'
 const App = () => {
   return (
     // delete when deploying to custom URL
-    <Router>{/* basename='/d4d-map'>*/}
+    <Router>
       <div>
         <NavHeader />
         <Route path='/State/:id' exact component={State} />
