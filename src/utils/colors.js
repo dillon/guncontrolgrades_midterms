@@ -8,7 +8,8 @@ export const colors = {
     darkGrey: 'rgb(73, 85, 95)',
     black: 'rgb(36, 41, 46)',
     // red: 'rgb(244, 70, 79)'
-    red: '#f4464f'
+    red: '#ed4949'
+    // red: 'rgb(222,41,96)'
 }
 
 // export const colors = {
