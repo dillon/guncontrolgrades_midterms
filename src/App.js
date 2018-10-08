@@ -10,6 +10,12 @@ import About from './pages/About.js'
 import Contact from './pages/Contact.js'
 import ScrollToTop from './components/ScrollToTop'
 
+// analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-127152248-1'); // Here we should use our GA id
+ReactGA.pageview(window.location.pathname + window.location.hash);
+
+
 // APP
 // for server rendering: https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#serving-apps-with-client-side-routing
 const App = () => {
