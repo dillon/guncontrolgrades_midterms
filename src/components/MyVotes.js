@@ -11,6 +11,7 @@ import { TiStar } from 'react-icons/ti';
 // import styles
 import { MyVotes as Styles } from '../utils/styles'
 import { colors } from '../utils/colors'
+import { constants } from '../utils/constants'
 
 class MyVotes extends React.Component { // State -> StatePage -> MyVotes
   render() {
@@ -78,7 +79,7 @@ class MyVotes extends React.Component { // State -> StatePage -> MyVotes
               style={{ position: 'relative', bottom: 0, textAlign: 'center' }}
               className='hintText text-muted'
             >
-              created on guncontrolgrades.com
+              created on {constants.URLString}
             </div>
           </div>
         </div>

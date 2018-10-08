@@ -10,7 +10,7 @@ export const NavHeader = {
     paddingRight: '24px ,'
   },
   navbarContainer: { backgroundColor: colors.primary },
-  navLink: { fontSize: '.8rem' },
+  navLink: { fontSize: '.9rem' },
   navbarBrand: { marginTop: -1 }
 }
 
