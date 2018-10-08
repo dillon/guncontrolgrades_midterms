@@ -13,6 +13,7 @@ Code
 Last
 [ ] Revise all copy
 [ ] Double-check all social buttons (fix email))
+[ ] Revisit email to make sure asterisks render correctly
 [ ] Fix images bug
 [ ] Fix images crop
 [ ] Fix star logic and replace all asterisks with stars
