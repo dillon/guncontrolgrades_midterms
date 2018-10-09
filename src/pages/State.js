@@ -133,12 +133,27 @@ class StatePage extends React.Component {
     switch (type) {
       case 'add':
         pressed.push(incomingCandidateArray);
+        ReactGA.event({ // Analytics Event
+          category: 'Interact',
+          action: 'Pressed Candidate Button',
+          label: 'Add'
+        })
         break;
       case 'delete':
         pressed.splice(index, 1);
+        ReactGA.event({ // Analytics Event
+          category: 'Interact',
+          action: 'Pressed Candidate Button',
+          label: 'Delete'
+        })
         break;
       case 'change':
         pressed.splice(this.getIndexOfState(pressed, remove.split(',')), 1, incomingCandidateArray);
+        ReactGA.event({ // Analytics Event
+          category: 'Interact',
+          action: 'Pressed Candidate Button',
+          label: 'Change'
+        })
         break;
       default:
         console.log('switch defaulted');
@@ -163,6 +178,11 @@ class StatePage extends React.Component {
       this.setState({
         activeTab: tab
       });
+      ReactGA.event({ // Analytics Event
+        category: 'Interact',
+        action: 'Changed Legislature',
+        label: tab
+      });
     }
   }
 
@@ -170,7 +190,11 @@ class StatePage extends React.Component {
     // Toggle voting card popup (for mobile)
     this.setState({
       card: !this.state.card
-    })
+    });
+    ReactGA.event({ // Analytics Event
+      category: 'Interact',
+      action: 'Toggle Voting Card Popup',
+    });
   }
 
   render() {
@@ -301,7 +325,11 @@ class StatePage extends React.Component {
           <p id='learnMore' className='hintText text-muted' style={{ textAlign: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 0, margin: 0 }}>
               <div style={Styles.hintAsterisk}>
-                <IconContext.Provider value={{ color: colors.redLowOpacity, size: '1rem', className: 'global-class-name' }}>
+                <IconContext.Provider value={{
+                  color: colors.redLowOpacity,
+                  size: '1rem',
+                  className: 'global-class-name'
+                }}>
                   <TiStar />
                 </IconContext.Provider>
               </div><div>&nbsp;indicates endorsement by Giffords.org</div>
@@ -344,6 +372,13 @@ class StatePage extends React.Component {
                   + '\n'
                   + shareQuote
                 }
+                onClick={() =>
+                  ReactGA.event({
+                    category: 'Share',
+                    action: 'Email',
+                    label: 'Dialogue 1'
+                  })
+                }
               >
                 <TiMail id='shareMail' size={22 * 1.2} color='#333' />
               </EmailShareButton>
@@ -354,6 +389,13 @@ class StatePage extends React.Component {
                   `I filled out my Midterm Elections voting card at ${constants.URLString}`
                 }
                 hashtag={'#' + constants.nameNoSpaces}
+                onClick={() =>
+                  ReactGA.event({
+                    category: 'Share',
+                    action: 'Facebook',
+                    label: 'Dialogue 1'
+                  })
+                }
               >
                 <FaFacebook id='shareFacebook' size={18 * 1.2} color='#3B5998' />
               </FacebookShareButton>
@@ -364,6 +406,13 @@ class StatePage extends React.Component {
                   `I filled out my Midterm Elections voting card at ${constants.URLString}`
                 }
                 hashtags={constants.hashtags}
+                onClick={() =>
+                  ReactGA.event({
+                    category: 'Share',
+                    action: 'Twitter',
+                    label: 'Dialogue 1'
+                  })
+                }
               >
                 <FaTwitter id='shareTwitter' size={18 * 1.2} color='#1DA1F2' />
               </TwitterShareButton>
@@ -371,20 +420,21 @@ class StatePage extends React.Component {
           </div>
           <div id='secondShareSection'>
             <div lg='12' style={{ margin: 0, textAlign: 'center' }}>
-                <ReactToPrint
-                  trigger={() => (
-                    <span className='sharePrint'>
+              <ReactToPrint
+                trigger={() => (
+                  <span className='sharePrint'>
                     <TiPrinter className='printButton' size={22 * 1.2} color='#333' />
-                    </span>
-                  )}
-                  onAfterPrint={() => {
-                    ReactGA.event({
-                      category: 'Share',
-                      action: 'Printed via Print2'
-                    });
-                  }}
-                  content={() => this.componentRef}
-                />
+                  </span>
+                )}
+                onAfterPrint={() => {
+                  ReactGA.event({
+                    category: 'Share',
+                    action: 'Print',
+                    label: 'Dialogue 2'
+                  });
+                }}
+                content={() => this.componentRef}
+              />
 
               <EmailShareButton
                 url={constants.URL}
@@ -394,10 +444,12 @@ class StatePage extends React.Component {
                   + '\n'
                   + shareQuote
                 }
-                onClick={ReactGA.event({
-                  category: 'Share',
-                  action: 'Emailed via Email2'
-                })
+                onClick={() =>
+                  ReactGA.event({
+                    category: 'Share',
+                    action: 'Email',
+                    label: 'Dialogue 2'
+                  })
                 }
               >
                 <TiMail size={22 * 1.2} color='#333' />
@@ -409,6 +461,13 @@ class StatePage extends React.Component {
                   `I filled out my Midterm Elections voting card at ${constants.URLString}`
                 }
                 hashtag={'#' + constants.nameNoSpaces}
+                onClick={() =>
+                  ReactGA.event({
+                    category: 'Share',
+                    action: 'Facebook',
+                    label: 'Dialogue 2'
+                  })
+                }
               >
                 <FaFacebook size={18 * 1.2} color='#3B5998' />
               </FacebookShareButton>
@@ -419,6 +478,13 @@ class StatePage extends React.Component {
                   `I filled out my Midterm Elections voting card at ${constants.URLString}`
                 }
                 hashtags={constants.hashtags}
+                onClick={() =>
+                  ReactGA.event({
+                    category: 'Share',
+                    action: 'Twitter',
+                    label: 'Dialogue 2'
+                  })
+                }
               >
                 <FaTwitter id='shareTwitter' size={18 * 1.2} color='#1DA1F2' />
               </TwitterShareButton>
