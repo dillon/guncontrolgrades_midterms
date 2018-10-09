@@ -17,7 +17,7 @@ import {
 } from 'reactstrap';
 
 // Logo
-import logo from '../utils/nra-flip-logo-v1.svg'
+import logo from '../utils/nra-flip-logo-v1.png'
 
 // Analytics
 import ReactGA from 'react-ga';
@@ -27,7 +27,7 @@ ReactGA.initialize('UA-127152248-1');
 const LandingLogo = () => {
   return (
     <div id='landingLogo' style={Styles.landingLogo}>
-      <object type="image/svg+xml" alt='flip-logo' aria-label='logo' style={{ opacity: 1 }} width='200px' height='196.55px' data={logo} />
+      <img alt='flip-logo' style={{ opacity: 1}} width='200px' height='196.55px' src={logo} />
       <div id='logoLarge' style={Styles.landingFullName}>
       </div>
       <div id='landingDescription' style={Styles.landingDescription}>
@@ -45,6 +45,7 @@ class UsMap extends React.Component {
       dropdownOpen: false
     };
   }
+
   componentDidMount() {
     ReactGA.pageview(window.location.hash);
   }
