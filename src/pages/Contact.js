@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Constants
-import { constants } from '../utils/constants'
+import { constants } from '../utils/constants';
 
 // Analytics
 import ReactGA from 'react-ga';

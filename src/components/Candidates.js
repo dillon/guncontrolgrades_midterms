@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Styles
-import { Candidates as Styles } from '../utils/styles'
+import { Candidates as Styles } from '../utils/styles';
 
 // Constants
 import { colors } from '../utils/colors.js';
@@ -10,7 +10,7 @@ import { colors } from '../utils/colors.js';
 // Icons
 import { IconContext } from 'react-icons';
 import { GoPlus, GoCheck } from 'react-icons/go';
-import { TiStar } from 'react-icons/ti'
+import { TiStar } from 'react-icons/ti';
 
 
 // State > StateContainer > {tabPanes > Candidates}

@@ -128,10 +128,7 @@ br {
 /* US Map */
 
 #g5 a {
-  /* fill: rgba(73, 85, 95, .6) */
-  /* fill: #d7d7d8; */
   fill: rgb(132, 131, 131);
-  /* fill: rgb(104, 127, 196); */
 }
 
 #g5 {
@@ -140,11 +137,6 @@ br {
 
 #g5 a path:hover,
 #g5 a g:hover {
-  /*     
-  stroke: black !important;
-  stroke-width:.05rem;
-  stroke-linejoin: round;
-  */
   fill: rgb(69, 102, 199);
   opacity: 1 !important;
   cursor: pointer;
@@ -179,70 +171,9 @@ br {
   margin-bottom: 20px;
 }
 
-/* .candidateCheckbox:first-of-type {
-    z-index: 2;
-    background-color: white;
-} */
-
 .candidateCheckboxNotActive:hover {
   background-color: rgb(236, 239, 251) !important;
 }
-
-/* .candidates img {
-    width: 100%;
-
-    transition: .1s;
-    -webkit-transition: .1s;
-    opacity: .9;
-}
-
-
-.candidates button:hover img {
-
-    transition: .1s;
-    -webkit-transition: .1s;
-}
-
-.candidates button:hover {
-    background-color: white;
-    color: #212529;
-    ;
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
-    border-color: rgb(156, 164, 177) !important;
-    transition: .1s;
-    -webkit-transition: .1s;
-}
-
-.candidates button {
-    max-width: 180px;
-    background-color: white;
-    color: #212529;
-    padding: 0px;
-    border-radius: 5px 5px 5px 5px;
-    border-width: 1px;
-    border-color: rgb(219, 224, 232) !important;
-    transition: .1s;
-    -webkit-transition: .1s;
-}
-
-.btn-secondary:not(:disabled):not(.disabled).active,
-.btn-secondary:not(:disabled):not(.disabled):active,
-.show>.btn-secondary.dropdown-toggle {
-    box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, .5);
-    border-color: rgb(113, 173, 23) !important;
-    background-color: inherit !important;
-    color: inherit !important;
-    transition: .1s;
-    -webkit-transition: .1s !important;
-}
-
-.btn-secondary:not(:disabled):not(.disabled).active img,
-.btn-secondary:not(:disabled):not(.disabled):active img,
-.show>.btn-secondary.dropdown-toggle img {
-    transition: .1s;
-    -webkit-transition: .1s !important;
-    opacity: 1;
-} */
 
 .noMarginCol {
   margin: 0;
@@ -355,16 +286,14 @@ br {
 }
 
 .SocialMediaShareButton:hover,
-.printButton:hover {
+ .sharePrint:hover {
   cursor: pointer;
   opacity: 0.75 !important;
-  /* transition: 0.3s; */
 }
 
 .SocialMediaShareButton,
 .printButton {
   opacity: 1;
-  /* transition: 0.3s; */
 }
 
 .social-icon--whatsapp {
@@ -582,26 +511,15 @@ br {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
     width: 55px;
     height: 55px;
-    /* border: 1px solid rgba(0,0,0,0); */
-    /* // right: window.innerHeight - 100, */
-    /* // top: window.innerWidth - 100 */
-    /* bottom: 10px;
-        right: 75px; */
     border-radius: 50%;
     z-index: 2;
     background-color: rgb(236, 239, 251);
     margin: 3px;
+    cursor: pointer;
   }
 }
-
-/* #votingCardHide img {
-    opacity: 0;
-    height: 0;
-    width: 0
-} */
 
 #popupButton {
   visibility: hidden;

@@ -2,11 +2,11 @@
 import React from 'react';
 
 // Styles
-import { MyVotes as Styles } from '../utils/styles'
+import { MyVotes as Styles } from '../utils/styles';
 
 // Constants
-import { colors } from '../utils/colors'
-import { constants } from '../utils/constants'
+import { colors } from '../utils/colors';
+import { constants } from '../utils/constants';
 
 // Bootstrap
 import { Table } from 'reactstrap';

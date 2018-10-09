@@ -3,10 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Styles
-import { NavHeader as Styles } from '../utils/styles'
+import { NavHeader as Styles } from '../utils/styles';
 
 // Constants
-import { constants } from '../utils/constants'
+import { constants } from '../utils/constants';
 
 // Bootstrap
 import {

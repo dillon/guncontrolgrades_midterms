@@ -44,7 +44,6 @@ import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowDown } from 'react-icons/io';
 import { MdPlaylistAddCheck } from 'react-icons/md';
 
-
 // Analytics
 import ReactGA from 'react-ga';
 ReactGA.initialize('UA-127152248-1');
@@ -322,14 +321,20 @@ class StatePage extends React.Component {
           </div>
           <div id={this.state.card ? 'ShareSectionHide' : 'ShareSection'}>
             <div lg='12' style={{ margin: 0, textAlign: 'center' }}>
-              <span className='sharePrint'>
-                <ReactToPrint
-                  trigger={() => (
+              <ReactToPrint
+                trigger={() => (
+                  <span className='sharePrint'>
                     <TiPrinter className='printButton' size={22 * 1.2} color='#333' />
-                  )}
-                  content={() => this.componentRef}
-                />
-              </span>
+                  </span>
+                )}
+                onAfterPrint={() => {
+                  ReactGA.event({
+                    category: 'Share',
+                    action: 'Printed via Print1'
+                  });
+                }}
+                content={() => this.componentRef}
+              />
 
               <EmailShareButton
                 url={constants.URL}
@@ -366,14 +371,20 @@ class StatePage extends React.Component {
           </div>
           <div id='secondShareSection'>
             <div lg='12' style={{ margin: 0, textAlign: 'center' }}>
-              <span className='sharePrint'>
                 <ReactToPrint
                   trigger={() => (
+                    <span className='sharePrint'>
                     <TiPrinter className='printButton' size={22 * 1.2} color='#333' />
+                    </span>
                   )}
+                  onAfterPrint={() => {
+                    ReactGA.event({
+                      category: 'Share',
+                      action: 'Printed via Print2'
+                    });
+                  }}
                   content={() => this.componentRef}
                 />
-              </span>
 
               <EmailShareButton
                 url={constants.URL}
@@ -382,6 +393,11 @@ class StatePage extends React.Component {
                   `I filled out my Midterm Elections voting card at ${constants.URLString}`
                   + '\n'
                   + shareQuote
+                }
+                onClick={ReactGA.event({
+                  category: 'Share',
+                  action: 'Emailed via Email2'
+                })
                 }
               >
                 <TiMail size={22 * 1.2} color='#333' />

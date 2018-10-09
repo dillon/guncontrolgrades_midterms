@@ -2,11 +2,11 @@
 import React from 'react';
 
 // Constants
-import { constants } from '../utils/constants'
+import { constants } from '../utils/constants';
 
 // Icons
-import { IconContext } from 'react-icons'
-import { TiStar } from 'react-icons/ti'
+import { IconContext } from 'react-icons';
+import { TiStar } from 'react-icons/ti';
 
 // Analytics
 import ReactGA from 'react-ga';

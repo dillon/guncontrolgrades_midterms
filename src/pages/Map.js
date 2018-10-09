@@ -3,10 +3,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Styles
-import { Map as Styles } from '../utils/styles'
+import { Map as Styles } from '../utils/styles';
 
 // Constants
-import { namesOfStates, /*stateOpacityArray*/ } from '../utils/constants'
+import { namesOfStates, /*stateOpacityArray*/ } from '../utils/constants';
 
 // Bootstrap
 import {
