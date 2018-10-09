@@ -372,7 +372,7 @@ class StatePage extends React.Component {
                   + '\n'
                   + shareQuote
                 }
-                onClick={() =>
+                beforeOnClick={() =>
                   ReactGA.event({
                     category: 'Share',
                     action: 'Email',
@@ -389,7 +389,7 @@ class StatePage extends React.Component {
                   `I filled out my Midterm Elections voting card at ${constants.URLString}`
                 }
                 hashtag={'#' + constants.nameNoSpaces}
-                onClick={() =>
+                beforeOnClick={() =>
                   ReactGA.event({
                     category: 'Share',
                     action: 'Facebook',
@@ -406,7 +406,7 @@ class StatePage extends React.Component {
                   `I filled out my Midterm Elections voting card at ${constants.URLString}`
                 }
                 hashtags={constants.hashtags}
-                onClick={() =>
+                beforeOnClick={() =>
                   ReactGA.event({
                     category: 'Share',
                     action: 'Twitter',
@@ -444,7 +444,7 @@ class StatePage extends React.Component {
                   + '\n'
                   + shareQuote
                 }
-                onClick={() =>
+                beforeOnClick={() =>
                   ReactGA.event({
                     category: 'Share',
                     action: 'Email',
@@ -461,7 +461,7 @@ class StatePage extends React.Component {
                   `I filled out my Midterm Elections voting card at ${constants.URLString}`
                 }
                 hashtag={'#' + constants.nameNoSpaces}
-                onClick={() =>
+                beforeOnClick={() =>
                   ReactGA.event({
                     category: 'Share',
                     action: 'Facebook',
@@ -478,7 +478,7 @@ class StatePage extends React.Component {
                   `I filled out my Midterm Elections voting card at ${constants.URLString}`
                 }
                 hashtags={constants.hashtags}
-                onClick={() =>
+                beforeOnClick={() =>
                   ReactGA.event({
                     category: 'Share',
                     action: 'Twitter',
