@@ -1,15 +1,16 @@
+// /State/:id -> Candidates
 import React from 'react';
 
-// icons
+// Styles
+import { Candidates as Styles } from '../utils/styles'
+
+// Constants
+import { colors } from '../utils/colors.js';
+
+// Icons
 import { IconContext } from 'react-icons';
 import { GoPlus, GoCheck } from 'react-icons/go';
 import { TiStar } from 'react-icons/ti'
-// constants
-import { colors } from '../utils/colors.js';
-
-// styles
-import { Candidates as Styles } from '../utils/styles'
-
 
 
 // State > StateContainer > {tabPanes > Candidates}
@@ -18,14 +19,13 @@ class Candidates extends React.Component {
     // props: candidates, legislature, district, handleChange
     super(props);
     this.state = {
-      // each district has its own state to manage which radio button is pressed
-      rSelected: ''
+      rSelected: '' // which candidate in this district is selected?
     };
     this.onRadioBtnClick = this.onRadioBtnClick.bind(this);
   }
 
-
   onRadioBtnClick(selected) {
+    // Handling each district's radio button logic
     const index = this.state.rSelected.indexOf(selected);
     const stateIsEmpty = this.state.rSelected.length === 0;
     const currState = this.state.rSelected;
@@ -42,17 +42,24 @@ class Candidates extends React.Component {
   }
 
   render() {
-    const candidates = this.props.candidates.map(x => {
+    return this.props.candidates.map(x => {
+      // Map over candidates
       const joinedString = this.props.legislature + ',' + this.props.district + ',' + x.name + ',' + x.img + ',' + x.party + ',' + x.grade + ',' + x.endorsedByGiffords;
       let endorsementStarSize = '1rem'
       let endorsementStarPadding = true
       if (!x.grade) {
-        // if no grade and also no endorsement, grade = '?'
-        if (!x.endorsedByGiffords) { x.grade = '?'; }
-        // if no grade but no endorsement, make endorsement star larger
-        else { x.grade = ''; endorsementStarSize = '1.7rem'; endorsementStarPadding = false; }
+        // Handle grade and endorsement styling
+        if (!x.endorsedByGiffords) {
+          // If no grade and also no endorsement, grade = '?'
+          x.grade = '?';
+        }
+        else {
+          // If no grade but there is endorsement, make endorsement star larger and get rid of padding
+          x.grade = '';
+          endorsementStarSize = '1.7rem';
+          endorsementStarPadding = false;
+        }
       }
-      // const image = require(`${x.img}`)
       return (
         <div
           style={this.state.rSelected === joinedString ? Styles.candidateCardSelected : Styles.candidateCard}
@@ -70,13 +77,14 @@ class Candidates extends React.Component {
             <div style={Styles.candidateGradeAndCheck}>
               <div className={endorsementStarPadding ? 'endorsementStarPadding' : 'endorsementStarPaddingLargeStar'} style={Styles.candidateGrade}>
                 {x.grade}{x.endorsedByGiffords && (
-                    <IconContext.Provider value={{ color: colors.red, size: endorsementStarSize, className: 'global-class-name' }}>
-                        <TiStar />
-                    </IconContext.Provider>
+                  <IconContext.Provider value={{ color: colors.red, size: endorsementStarSize, className: 'global-class-name' }}>
+                    <TiStar />
+                  </IconContext.Provider>
                 )}
               </div>
               <div style={Styles.buttonContainer}>
                 {this.state.rSelected === joinedString ?
+                  // If this candidate is selected, render active +Add button
                   <button
                     className='candidateCheckbox'
                     style={Styles.candidateCheckboxActive}
@@ -90,6 +98,7 @@ class Candidates extends React.Component {
                     </IconContext.Provider>
                   </button>
                   :
+                  // If this candidate is selected, render inactive +Add button
                   <button
                     className='candidateCheckbox candidateCheckboxNotActive'
                     style={Styles.candidateCheckbox}
@@ -110,8 +119,6 @@ class Candidates extends React.Component {
         </div>
       )
     });
-
-    return candidates
   }
 }
 

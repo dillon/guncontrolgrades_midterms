@@ -1,29 +1,34 @@
+// / (homepage)
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// bootstrap
-import { Dropdown, DropdownItem, DropdownToggle, DropdownMenu } from 'reactstrap';
-
-// constants
-import { namesOfStates, stateOpacityArray } from '../utils/constants'
-
-// styles
+// Styles
 import { Map as Styles } from '../utils/styles'
 
-// import logo
+// Constants
+import { namesOfStates, /*stateOpacityArray*/ } from '../utils/constants'
+
+// Bootstrap
+import {
+  Dropdown,
+  DropdownItem,
+  DropdownToggle,
+  DropdownMenu
+} from 'reactstrap';
+
+// Logo
 import logo from '../utils/nra-flip-logo-v1.svg'
 
-// analytics
+// Analytics
 import ReactGA from 'react-ga';
-ReactGA.initialize('UA-127152248-1'); // Here we should use our GA id
+ReactGA.initialize('UA-127152248-1');
 
 
 const LandingLogo = () => {
   return (
     <div id='landingLogo' style={Styles.landingLogo}>
-      <object type="image/svg+xml" alt='flip-logo' id='jlsf' style={{ opacity: 1 }} width='200px' height='196.55px' data={logo} />
+      <object type="image/svg+xml" alt='flip-logo' aria-label='logo' style={{ opacity: 1 }} width='200px' height='196.55px' data={logo} />
       <div id='logoLarge' style={Styles.landingFullName}>
-        {/* Gun Control Grades */}
       </div>
       <div id='landingDescription' style={Styles.landingDescription}>
         Choose your candidates<br />

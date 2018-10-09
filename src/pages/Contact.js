@@ -1,10 +1,12 @@
+// /Contact
 import React from 'react';
 
+// Constants
 import { constants } from '../utils/constants'
 
-// analytics
+// Analytics
 import ReactGA from 'react-ga';
-ReactGA.initialize('UA-127152248-1'); // Here we should use our GA id
+ReactGA.initialize('UA-127152248-1');
 
 const Contact = () => {
   ReactGA.pageview(window.location.hash);

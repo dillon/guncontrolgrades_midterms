@@ -1,23 +1,27 @@
+// /State/:id -> MyVotes
 import React from 'react';
 
-// bootstrap
-import {
-  Table,
-} from 'reactstrap';
-
-import { IconContext } from 'react-icons';
-import { TiStar } from 'react-icons/ti';
-
-// import styles
+// Styles
 import { MyVotes as Styles } from '../utils/styles'
+
+// Constants
 import { colors } from '../utils/colors'
 import { constants } from '../utils/constants'
 
-class MyVotes extends React.Component { // State -> StatePage -> MyVotes
+// Bootstrap
+import { Table } from 'reactstrap';
+
+// Icons
+import { IconContext } from 'react-icons';
+import { TiStar } from 'react-icons/ti';
+
+
+class MyVotes extends React.Component {
   render() {
     const votes = this.props.pressed.map(y => {
+      // Votes in my voting card
       const legislature = y[0]
-      const district = y[1] === 'Statewide' ? '' : ' - ' + y[1]
+      const district = y[1] === 'Statewide' ? '' : ' - ' + y[1] // if district=Statewide, delete it
       const name = y[2]
       const img = y[3]
       const party = y[4] === 'Republican' || y[4] === 'Democrat' || y[4] === 'Green' || y[4] === 'Libertarian' ? y[4][0] : 'I'
@@ -43,9 +47,13 @@ class MyVotes extends React.Component { // State -> StatePage -> MyVotes
               {name} ({party})
             </div>
             <div style={Styles.cardGrade}>
-              {grade}{endorsed==='true' && (
+              {grade}{endorsed === 'true' && (
                 <div className={endorsementStarPadding ? 'endorsementStarPaddingSmall' : 'endorsementStarPaddingSmallLargeStar'} style={Styles.candidateGrade}>
-                  <IconContext.Provider value={{ color: colors.red, size: endorsementStarSize, className: 'global-class-name' }}>
+                  <IconContext.Provider value={{
+                    color: colors.red,
+                    size: endorsementStarSize,
+                    className: 'global-class-name'
+                  }}>
                     <TiStar />
                   </IconContext.Provider>
                 </div>
@@ -57,8 +65,11 @@ class MyVotes extends React.Component { // State -> StatePage -> MyVotes
     });
 
     return (
-      <div style={{ maxWidth: 500, width: '100%', margin: 'auto' }}>
-        {/* <div className='votingCardSpacer' /> */}
+      <div style={{
+        maxWidth: 500,
+        width: '100%',
+        margin: 'auto'
+      }}>
         <div id={this.props.id}>
           <p style={{ width: '100%' }} className='smallCaps'>
             MY {this.props.stateName.toUpperCase()} VOTING CARD
@@ -76,7 +87,11 @@ class MyVotes extends React.Component { // State -> StatePage -> MyVotes
           </div>
           <div style={{ width: '100%' }}>
             <div
-              style={{ position: 'relative', bottom: 0, textAlign: 'center' }}
+              style={{
+                position: 'relative',
+                bottom: 0,
+                textAlign: 'center'
+              }}
               className='hintText text-muted'
             >
               created on {constants.URLString}
@@ -87,6 +102,5 @@ class MyVotes extends React.Component { // State -> StatePage -> MyVotes
     );
   }
 }
-
 
 export default MyVotes;

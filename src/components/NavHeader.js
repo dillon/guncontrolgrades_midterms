@@ -1,7 +1,14 @@
+// NavHeader (on all pages)
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// bootstrap
+// Styles
+import { NavHeader as Styles } from '../utils/styles'
+
+// Constants
+import { constants } from '../utils/constants'
+
+// Bootstrap
 import {
   Nav,
   NavItem,
@@ -12,10 +19,6 @@ import {
   NavbarBrand,
 } from 'reactstrap';
 
-// styles
-import { NavHeader as Styles } from '../utils/styles'
-
-import { constants } from '../utils/constants'
 
 class NavHeader extends React.Component {
   constructor(props) {
@@ -35,8 +38,12 @@ class NavHeader extends React.Component {
         <Navbar style={Styles.navbar} expand='xs' dark>
           <Link className='active' to='/'>
             <NavbarBrand>
-              {/* <img width='50' alt='logo' style={Styles.navbarBrand} src={require('../utils/logoWhite.svg')} /> */}
-              <span style={{ color: 'white', fontSize: '1.6rem', letterSpacing: 1.2, fontWeight: 600 }}>
+              <span style={{
+                color: 'white',
+                fontSize: '1.6rem',
+                letterSpacing: 1.2,
+                fontWeight: 600
+              }}>
                 {constants.nameAbbreviated}
               </span>
             </NavbarBrand>

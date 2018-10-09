@@ -1,9 +1,19 @@
+// /State/:id
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import classnames from 'classnames';
 
-// bootstrap
+// Styles
+import { State as Styles } from '../utils/styles';
+
+// Constants
+import { colors } from '../utils/colors';
+import { constants } from '../utils/constants';
+
+// Dictionary
+import { stateInfo } from '../utils/computatedGrades.js';
+
+// Bootstrap
 import {
   TabContent,
   TabPane,
@@ -13,42 +23,31 @@ import {
   Col,
 } from 'reactstrap';
 
-// components
+// Components
 import Candidates from '../components/Candidates.js';
-import MyVotes from '../components/MyVotes'
+import MyVotes from '../components/MyVotes';
 
-// share buttons
+// Share Buttons
 import {
   FacebookShareButton,
   TwitterShareButton,
   EmailShareButton
 } from 'react-share';
 
-// print functionality
+// Print Package
 import ReactToPrint from 'react-to-print';
 
-// icons
+// Icons
 import { IconContext } from 'react-icons';
-import { TiMail, TiPrinter } from 'react-icons/ti';
+import { TiMail, TiPrinter, TiStar } from 'react-icons/ti';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowDown } from 'react-icons/io';
 import { MdPlaylistAddCheck } from 'react-icons/md';
-import { TiStar } from 'react-icons/ti';
 
-// constants
-import { colors } from '../utils/colors'
-import { constants } from '../utils/constants'
 
-// styles
-import { State as Styles } from '../utils/styles'
-
-// dictionary
-// import { stateInfo } from '../utils/stateInfo.js';
-import { stateInfo } from '../utils/computatedGrades.js';
-
-// analytics
+// Analytics
 import ReactGA from 'react-ga';
-ReactGA.initialize('UA-127152248-1'); // Here we should use our GA id
+ReactGA.initialize('UA-127152248-1');
 
 
 const State = props => {
@@ -65,9 +64,11 @@ const State = props => {
 };
 
 
-class StatePage extends React.Component { // State -> StatePage
+// State -> StatePage
+class StatePage extends React.Component {
   constructor(props) {
-    super(props); // props: stateId
+    // props: stateId
+    super(props);
     this.state = {
       activeTab: 'usHouse',
       pressed: [],
@@ -79,13 +80,13 @@ class StatePage extends React.Component { // State -> StatePage
   componentDidMount() {
     this.hintDisplayTimer() // show hints
     this.setState({
-      // set activeTab to whatever the first legislature is
+      // Set activeTab to whatever the first legislature is
       activeTab: stateInfo[this.props.stateId].legislatures[0].id
     });
   }
 
   hintDisplayTimer = () => {
-    // timeout to show hints temporarily
+    // Timeout to show hints temporarily
     new Promise((resolve, reject) => {
       setTimeout(
         function () {
@@ -110,22 +111,22 @@ class StatePage extends React.Component { // State -> StatePage
   }
 
   setWrapperRef = (node) => {
-    // assign hint text ref
+    // Assign hint text ref
     this.wrapperRef = node;
   }
 
   handleClickOutside = (event) => {
-    // handle clicks outside of hints
+    // Handle clicks outside of hints
     if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
       this.setState({
-        // dismiss hints
+        // Dismiss hints
         showHints: false
       })
     }
   }
 
   handleChange = (type, selected, remove) => {
-    // handle candidate checkbox click
+    // Handle candidate checkbox click
     const { pressed } = this.state
     const incomingCandidateArray = selected.split(',');
     const index = this.getIndexOfState(pressed, incomingCandidateArray);
@@ -148,7 +149,7 @@ class StatePage extends React.Component { // State -> StatePage
   }
 
   getIndexOfState = (pressed, incomingCandidateArray) => {
-    // check this.state.pressed for new pressed
+    // Check this.state.pressed for new pressed
     for (var i = 0; i < pressed.length; i++) {
       let index = pressed[i].indexOf(incomingCandidateArray[3]);
       if (index > -1) {
@@ -158,7 +159,7 @@ class StatePage extends React.Component { // State -> StatePage
   }
 
   toggle = (tab) => {
-    // toggle tab for legislature
+    // Toggle tab for legislature
     if (this.state.activeTab !== tab) {
       this.setState({
         activeTab: tab
@@ -167,7 +168,7 @@ class StatePage extends React.Component { // State -> StatePage
   }
 
   toggleCard = () => {
-    // toggle voting card popup (for mobile)
+    // Toggle voting card popup (for mobile)
     this.setState({
       card: !this.state.card
     })
@@ -242,7 +243,7 @@ class StatePage extends React.Component { // State -> StatePage
 
         <button id='popupButton' style={Styles.popupButton} onClick={() => this.toggleCard()}>
           <IconContext.Provider value={{ color: colors.primary, size: '1.9em', className: 'global-class-name' }}>
-            {
+            { // Candidate Card Popup button shows List Icon or Arrow
               this.state.card ?
                 <div style={{ paddingBottom: 0, paddingLeft: 4 }}>
                   <MdPlaylistAddCheck />
@@ -255,14 +256,12 @@ class StatePage extends React.Component { // State -> StatePage
           </IconContext.Provider>
         </button>
 
-
         <Col className='noMarginCol' md='7'>
           <div className='funbox funboxBorder'>
             <p className='funboxTitle'>
               <Link className='active' to='/'>
                 <IoIosArrowBack
                   size={18}
-                  // style={{ marginTop: 1 }}
                   color='#334858'
                   className='v-center'
                 />
@@ -294,7 +293,6 @@ class StatePage extends React.Component { // State -> StatePage
           />
           <MyVotes
             id='secondVotingCard'
-            // ref={el => (this.componentRef = el)}
             pressed={this.state.pressed}
             legislatures={legislatures}
             stateName={stateName}
@@ -318,7 +316,10 @@ class StatePage extends React.Component { // State -> StatePage
               here.
             </Link>
           </p>
-          <div id="screenshotHint" className='hintText text-muted' style={{ textAlign: 'center' }}><br /><br />Share your card below or screenshot to save</div>
+          <div id="screenshotHint" className='hintText text-muted' style={{ textAlign: 'center' }}>
+            <br /><br />
+            Share your card below or screenshot to save
+          </div>
           <div id={this.state.card ? 'ShareSectionHide' : 'ShareSection'}>
             <div lg='12' style={{ margin: 0, textAlign: 'center' }}>
               <span className='sharePrint'>
