@@ -32,7 +32,7 @@ const About = () => {
             &nbsp;
             <IconContext.Provider value={{
               color: 'black',
-              size: '1.2rem',
+              size: '1.2em',
               className: 'global-class-name'
             }}>
               <TiStar />
