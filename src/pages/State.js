@@ -332,7 +332,7 @@ class StatePage extends React.Component {
                 }}>
                   <TiStar />
                 </IconContext.Provider>
-              </div><div>&nbsp;indicates endorsement by Giffords.org</div>
+              </div><div>&nbsp;indicates endorsement by Giffords.org or GunSenseVoter.org or both</div>
             </div>
             Learn more about our grading system{' '}
             <Link

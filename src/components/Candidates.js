@@ -44,12 +44,13 @@ class Candidates extends React.Component {
   render() {
     return this.props.candidates.map(x => {
       // Map over candidates
-      const joinedString = this.props.legislature + ',' + this.props.district + ',' + x.name + ',' + x.img + ',' + x.party + ',' + x.grade + ',' + x.endorsedByGiffords;
+      x.endorsed = x.endorsedByGiffords || x.endorsedByGunSenseVoter || false
+      const joinedString = this.props.legislature + ',' + this.props.district + ',' + x.name + ',' + x.img + ',' + x.party + ',' + x.grade + ',' + (x.endorsed);
       let endorsementStarSize = '1rem'
       let endorsementStarPadding = true
       if (!x.grade) {
         // Handle grade and endorsement styling
-        if (!x.endorsedByGiffords) {
+        if (!x.endorsed) {
           // If no grade and also no endorsement, grade = '?'
           x.grade = '?';
         }
@@ -76,7 +77,7 @@ class Candidates extends React.Component {
             </div>
             <div style={Styles.candidateGradeAndCheck}>
               <div className={endorsementStarPadding ? 'endorsementStarPadding' : 'endorsementStarPaddingLargeStar'} style={Styles.candidateGrade}>
-                {x.grade}{x.endorsedByGiffords && (
+                {x.grade}{x.endorsed && (
                   <IconContext.Provider value={{ color: colors.red, size: endorsementStarSize, className: 'global-class-name' }}>
                     <TiStar />
                   </IconContext.Provider>
