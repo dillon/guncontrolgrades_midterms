@@ -336,7 +336,7 @@ class StatePage extends React.Component {
               &nbsp;indicates endorsement by
             </div>
             <div>Giffords.org, GunSenseVoter.org or both</div>
-            <p style={{paddingTop:1.5}}>Learn more about our grading system{' '}
+            <p style={{paddingTop:2}}>Learn more about our grading system{' '}
               <Link
                 style={{ textDecoration: 'underline', color: 'inherit' }}
                 className='active'
