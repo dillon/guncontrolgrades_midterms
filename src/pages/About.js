@@ -25,19 +25,19 @@ const About = () => {
           Since 1976, the National Rifle Association has issued grades to elected officials and political candidates based on either their voting records or a response to a questionnare. Once prominently publicized, these grades have in the last year disappeared from the NRA's website and literature. They are still being issued, however, to pressure politicians into following the NRA's anti-gun control agenda.
         </p>
         <p style={{ maxWidth: 600 }}>
-          <strong>{constants.name}</strong> are an inversion of the grades issued by the National Rifle Association. An "F" from the NRA becomes an "A" from GCG; a "D" becomes a "B" and so on.
+          <strong>{constants.name}</strong> inverts the grades issued by the National Rifle Association. An <strong>F</strong> from the NRA becomes an <strong>A</strong> from GCG; a <strong>D</strong> becomes a <strong>B</strong>, and so on.
         </p>
         <p style={{ maxWidth: 600 }}>Additionally, a
           <span id='endorsementStarAboutPage'>
-            &nbsp;"
+            &nbsp;
             <IconContext.Provider value={{
               color: 'black',
-              size: '1.4rem',
+              size: '1.2rem',
               className: 'global-class-name'
             }}>
               <TiStar />
             </IconContext.Provider>
-            "&nbsp;
+            &nbsp;
           </span>
           from GCG indicates that a candidate has been endorsed by
           &nbsp;
@@ -48,7 +48,7 @@ const About = () => {
           <a style={{ textDecoration: 'underline', color: 'inherit' }} href='https://gunsensevoter.org' rel="noopener noreferrer" target='_blank'>
             Gun Sense
           </a>
-          , an organization founded to fight the gun violence epidemic. For candidates who have not yet been rated by either organization, a question mark is posted.
+          , organizations founded to fight the gun violence epidemic. Candidates who have not yet been rated by either organization or the NRA have a question mark by their name.
         </p>
       </div>
     </div>

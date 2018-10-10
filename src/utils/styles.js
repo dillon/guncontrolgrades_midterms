@@ -98,7 +98,8 @@ export const State = {
     // fontWeight: 600,
     // color: colors.primaryHighOpacity,
     // marginTop: 13
-    marginBottom: 2
+    marginBottom: 2,
+    float: 'left'
   }
 
 

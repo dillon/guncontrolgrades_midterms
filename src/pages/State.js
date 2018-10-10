@@ -322,7 +322,7 @@ class StatePage extends React.Component {
             card={this.state.card}
           />
 
-          <p id='learnMore' className='hintText text-muted' style={{ textAlign: 'center' }}>
+          <p id='learnMore' className='hintText text-muted' style={{ textAlign: 'center', padding: '0px 24px' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 0, margin: 0 }}>
               <div style={Styles.hintAsterisk}>
                 <IconContext.Provider value={{
@@ -332,8 +332,10 @@ class StatePage extends React.Component {
                 }}>
                   <TiStar />
                 </IconContext.Provider>
-              </div><div>&nbsp;indicates endorsement by Giffords.org or GunSenseVoter.org or both</div>
+              </div>
+              &nbsp;indicates endorsement by
             </div>
+            <div>Giffords.org, GunSenseVoter.org or both</div>
             Learn more about our grading system{' '}
             <Link
               style={{ textDecoration: 'underline', color: 'inherit' }}
