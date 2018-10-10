@@ -6,8 +6,6 @@ export const NavHeader = {
     backgroundColor: colors.primary,
     maxWidth: 1100,
     margin: 'auto',
-    paddingLeft: '24px ',
-    paddingRight: '24px ,'
   },
   navbarContainer: { backgroundColor: colors.primary },
   navLink: { fontSize: '.9rem' },

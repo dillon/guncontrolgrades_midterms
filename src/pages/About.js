@@ -39,8 +39,7 @@ const About = () => {
             </IconContext.Provider>
             &nbsp;
           </span>
-          from GCG indicates that a candidate has been endorsed by
-          &nbsp;
+          from GCG indicates that a candidate has been endorsed by&nbsp;
           <a style={{ textDecoration: 'underline', color: 'inherit' }} href='https://giffords.org' rel="noopener noreferrer" target='_blank'>
             Giffords
           </a>

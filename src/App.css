@@ -36,8 +36,8 @@ br {
 
 #endorsementStarAboutPage svg {
   margin-top: -5px;
-  margin-left:-3px;
-  margin-right:-3px;
+  margin-left: -3px;
+  margin-right: -3px;
 }
 
 .pageContainer {
@@ -92,6 +92,11 @@ br {
 
 .nav-tabs {
   padding-bottom: 15px !important;
+}
+
+.Navbar .navbar {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .Navbar .nav-link a {
@@ -286,7 +291,7 @@ br {
 }
 
 .SocialMediaShareButton:hover,
- .sharePrint:hover {
+.sharePrint:hover {
   cursor: pointer;
   opacity: 0.75 !important;
 }
@@ -349,13 +354,16 @@ br {
     padding: 1rem .75rem;
     border-radius: 0;
   }
+  .Navbar .navbar {
+    padding-left: .75rem !important;
+    padding-right: .75rem !important;
+  }
   #logoLarge {
     width: 110px !important;
   }
   #landingLogo {
     min-height: 135px !important;
     padding: 0px 15px 15px 15px !important;
-
   }
   #landingDescription {
     font-size: 24px !important;
