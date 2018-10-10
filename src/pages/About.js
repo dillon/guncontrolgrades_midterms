@@ -6,7 +6,7 @@ import { constants } from '../utils/constants';
 
 // Icons
 import { IconContext } from 'react-icons';
-import { TiStar } from 'react-icons/ti';
+import { MdStar } from 'react-icons/md';
 
 // Analytics
 import ReactGA from 'react-ga';
@@ -35,7 +35,7 @@ const About = () => {
               size: '1.2em',
               className: 'global-class-name'
             }}>
-              <TiStar />
+              <MdStar />
             </IconContext.Provider>
             &nbsp;
           </span>

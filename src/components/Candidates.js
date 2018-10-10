@@ -10,7 +10,7 @@ import { colors } from '../utils/colors.js';
 // Icons
 import { IconContext } from 'react-icons';
 import { GoPlus, GoCheck } from 'react-icons/go';
-import { TiStar } from 'react-icons/ti';
+import { MdStar } from 'react-icons/md';
 
 
 // State > StateContainer > {tabPanes > Candidates}
@@ -46,7 +46,7 @@ class Candidates extends React.Component {
       // Map over candidates
       x.endorsed = x.endorsedByGiffords || x.endorsedByGunSenseVoter || false
       const joinedString = this.props.legislature + ',' + this.props.district + ',' + x.name + ',' + x.img + ',' + x.party + ',' + x.grade + ',' + (x.endorsed);
-      let endorsementStarSize = '1rem'
+      let endorsementStarSize = '.6em'
       let endorsementStarPadding = true
       if (!x.grade) {
         // Handle grade and endorsement styling
@@ -57,7 +57,7 @@ class Candidates extends React.Component {
         else {
           // If no grade but there is endorsement, make endorsement star larger and get rid of padding
           x.grade = '';
-          endorsementStarSize = '1.7rem';
+          endorsementStarSize = '1em';
           endorsementStarPadding = false;
         }
       }
@@ -79,7 +79,7 @@ class Candidates extends React.Component {
               <div className={endorsementStarPadding ? 'endorsementStarPadding' : 'endorsementStarPaddingLargeStar'} style={Styles.candidateGrade}>
                 {x.grade}{x.endorsed && (
                   <IconContext.Provider value={{ color: colors.red, size: endorsementStarSize, className: 'global-class-name' }}>
-                    <TiStar />
+                    <MdStar />
                   </IconContext.Provider>
                 )}
               </div>

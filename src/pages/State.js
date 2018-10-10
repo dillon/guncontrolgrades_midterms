@@ -39,10 +39,11 @@ import ReactToPrint from 'react-to-print';
 
 // Icons
 import { IconContext } from 'react-icons';
-import { TiMail, TiPrinter, TiStar } from 'react-icons/ti';
+import { TiMail, TiPrinter } from 'react-icons/ti';
 import { FaFacebook, FaTwitter } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowDown } from 'react-icons/io';
 import { MdPlaylistAddCheck } from 'react-icons/md';
+import { MdStar } from 'react-icons/md';
 
 // Analytics
 import ReactGA from 'react-ga';
@@ -327,10 +328,9 @@ class StatePage extends React.Component {
               <div style={Styles.hintAsterisk}>
                 <IconContext.Provider value={{
                   color: colors.redLowOpacity,
-                  size: '1rem',
                   className: 'global-class-name'
                 }}>
-                  <TiStar />
+                  <MdStar />
                 </IconContext.Provider>
               </div>
               &nbsp;indicates endorsement by

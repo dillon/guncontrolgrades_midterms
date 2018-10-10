@@ -13,7 +13,7 @@ import { Table } from 'reactstrap';
 
 // Icons
 import { IconContext } from 'react-icons';
-import { TiStar } from 'react-icons/ti';
+import { MdStar } from 'react-icons/md';
 
 
 class MyVotes extends React.Component {
@@ -27,11 +27,11 @@ class MyVotes extends React.Component {
       const party = y[4] === 'Republican' || y[4] === 'Democrat' || y[4] === 'Green' || y[4] === 'Libertarian' ? y[4][0] : 'I'
       let grade = y[5]
       const endorsed = y[6]
-      let endorsementStarSize = '.8rem'
+      let endorsementStarSize = '.7em'
       let endorsementStarPadding = true
       if (!grade) { // if no grade and also no endorsement, grade = '?'
         if (!endorsed) { grade = '?'; }
-        else { grade = ''; endorsementStarSize = '1.1rem'; endorsementStarPadding = false; } // if no grade but no endorsement, make endorsement star larger
+        else { grade = ''; endorsementStarSize = '1.1em'; endorsementStarPadding = false; } // if no grade but no endorsement, make endorsement star larger
       }
 
       return (
@@ -54,7 +54,7 @@ class MyVotes extends React.Component {
                     size: endorsementStarSize,
                     className: 'global-class-name'
                   }}>
-                    <TiStar />
+                    <MdStar />
                   </IconContext.Provider>
                 </div>
               )}
