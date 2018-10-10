@@ -336,14 +336,15 @@ class StatePage extends React.Component {
               &nbsp;indicates endorsement by
             </div>
             <div>Giffords.org, GunSenseVoter.org or both</div>
-            Learn more about our grading system{' '}
-            <Link
-              style={{ textDecoration: 'underline', color: 'inherit' }}
-              className='active'
-              to='/About'
-            >
-              here.
+            <p style={{paddingTop:1}}>Learn more about our grading system{' '}
+              <Link
+                style={{ textDecoration: 'underline', color: 'inherit' }}
+                className='active'
+                to='/About'
+              >
+                here.
             </Link>
+            </p>
           </p>
           <div id="screenshotHint" className='hintText text-muted' style={{ textAlign: 'center' }}>
             <br /><br />
