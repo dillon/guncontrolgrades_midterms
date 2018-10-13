@@ -28,7 +28,7 @@ ___
 
 ##### Mobile
 
-<img alt="screenshot" src="/extra_files/media-for-docs/mobile/1_land_mobile.png" width="1%" align="center" style="max-width:800px;min-width:300px">  <img alt="screenshot" src="/extra_files/media-for-docs/mobile/3_hint_mobile.png" width="1%" align="center" style="max-width:800px;min-width:300px"> <img alt="screenshot" src="/extra_files/media-for-docs/mobile/4_select_mobile.png" width="1%" align="center" style="max-width:800px;min-width:300px"> <img alt="screenshot" src="/extra_files/media-for-docs/mobile/5_myvotes_mobile.png" width="1%" align="center" style="max-width:800px;min-width:300px">
+<img alt="screenshot" src="/extra_files/media-for-docs/mobile/1_land_mobile.png" width="49%" align="center">  <img alt="screenshot" src="/extra_files/media-for-docs/mobile/3_hint_mobile.png" width="49%" align="center"> <img alt="screenshot" src="/extra_files/media-for-docs/mobile/4_select_mobile.png" width="49%" align="center"> <img alt="screenshot" src="/extra_files/media-for-docs/mobile/5_myvotes_mobile.png" width="49%" align="center" >
 
 
 ##### Animations
@@ -42,7 +42,7 @@ ___
 
 ##### Share Buttons
 
-<img alt="3_state" src="/extra_files/media-for-docs/desktop/5_email.png" width="32%" align="center" style="max-width:800px;min-width:500px"> <img alt="screenshot" src="/extra_files/media-for-docs/desktop/8_print.png" width="32%" align="center" style="max-width:800px;min-width:500px"> <img alt="screenshot" src="/extra_files/media-for-docs/desktop/6_facebook.png" width="32%" align="center" style="max-width:800px;min-width:500px"> <img alt="screenshot" src="/extra_files/media-for-docs/desktop/7_twitter.png%3D%3D" width="32%" align="center" style="max-width:800px;min-width:500px">
+<img alt="3_state" src="/extra_files/media-for-docs/desktop/5_email.png" width="600px" align="center" <img alt="screenshot" src="/extra_files/media-for-docs/desktop/8_print.png" width="600px" align="center" ><img alt="screenshot" src="/extra_files/media-for-docs/desktop/6_facebook.png" width="600px" align="center" ><img alt="screenshot" src="/extra_files/media-for-docs/desktop/7_twitter.png" width="600px" align="center">
 
 
 
