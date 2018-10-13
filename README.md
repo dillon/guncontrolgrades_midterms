@@ -33,16 +33,16 @@ ___
 
 ##### Animations
 
-<img alt="screenshot" src="/extra_files/media-for-docs/animations/1_add_animation.gif" width="90%" align="center" style="max-width:350px">
+<img alt="screenshot" src="/extra_files/media-for-docs/animations/1_add_animation.gif" width="350px" align="center">
 
 
 
-<img alt="screenshot" src="/extra_files/media-for-docs/animations/2_myvotes_animation.gif" width="90%" align="center" style="max-width:350px">
+<img alt="screenshot" src="/extra_files/media-for-docs/animations/2_myvotes_animation.gif" width="350px" align="center">
 
 
 ##### Share Buttons
 
-<img alt="3_state" src="/extra_files/media-for-docs/desktop/5_email.png" width="1%" align="center" style="max-width:800px;min-width:500px"> <img alt="screenshot" src="/extra_files/media-for-docs/desktop/8_print.png" width="1%" align="center" style="max-width:800px;min-width:500px"> <img alt="screenshot" src="/extra_files/media-for-docs/desktop/6_facebook.png" width="1%" align="center" style="max-width:800px;min-width:500px"> <img alt="screenshot" src="/extra_files/media-for-docs/desktop/7_twitter.png%3D%3D" width="1%" align="center" style="max-width:800px;min-width:500px">
+<img alt="3_state" src="/extra_files/media-for-docs/desktop/5_email.png" width="32%" align="center" style="max-width:800px;min-width:500px"> <img alt="screenshot" src="/extra_files/media-for-docs/desktop/8_print.png" width="32%" align="center" style="max-width:800px;min-width:500px"> <img alt="screenshot" src="/extra_files/media-for-docs/desktop/6_facebook.png" width="32%" align="center" style="max-width:800px;min-width:500px"> <img alt="screenshot" src="/extra_files/media-for-docs/desktop/7_twitter.png%3D%3D" width="32%" align="center" style="max-width:800px;min-width:500px">
 
 
 
@@ -56,31 +56,31 @@ Along with being integrated to track which states are viewed, it also has integr
 ###### Pageviews
 Pageviews track which states are visited.
 
-<img alt="screenshot" src="/extra_files/media-for-docs/analytics/1_pages.png" width="90%" style="max-width:460px" align="center">
+<img alt="screenshot" src="/extra_files/media-for-docs/analytics/1_pages.png" width="460px" align="center">
 
 #
 ###### Event Categories:
 Categories are broken up into candidate card interactions and shares.
 
-<img alt="screenshot" src="/extra_files/media-for-docs/analytics/2_event_categories.png" width="90%" align="center" style="max-width:800px">
+<img alt="screenshot" src="/extra_files/media-for-docs/analytics/2_event_categories.png" width="800px" align="center">
 
 #
 ###### Event Category: Interact
 This event category tracks users' legislation tab changes, candidate button adds, and mobile voting card popup visibility toggles.
 
-<img alt="screenshot" src="/extra_files/media-for-docs/analytics/3_interact_actions.png" width="90%" align="center" style="max-width:800px">
+<img alt="screenshot" src="/extra_files/media-for-docs/analytics/3_interact_actions.png" width="800px" align="center">
 
 #
 ###### Event Action: Changed Legislature
 The `Change Legislature` event action also tracks the name of the legislation that a user views.
 
-<img alt="screenshot" src="/extra_files/media-for-docs/analytics/4_interact_labels.png" width="90%" align="center" style="max-width:800px">
+<img alt="screenshot" src="/extra_files/media-for-docs/analytics/4_interact_labels.png" width="800px" align="center">
 
 #
 ###### Event Category: Interact
 This event category tracks when a user prints or shares their card via Email, Twitter, or Facebook. An additional set of print/share buttons are visible on the mobile version of the app, and these too are tracked.
 
-<img alt="screenshot" src="/extra_files/media-for-docs/analytics/5_share_actions.png" width="90%" align="center" style="max-width:800px">
+<img alt="screenshot" src="/extra_files/media-for-docs/analytics/5_share_actions.png" width="800px" align="center">
 
 
 
