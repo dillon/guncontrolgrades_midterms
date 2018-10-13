@@ -21,9 +21,9 @@ ___
 #### Screenshots
 
 
-<img alt="1_land" src="guncontrolgrades/extra_files/media-for-docs/desktop/1_land.png?" width="100%" style="max-width:800px">
+<img alt="1_land" src="/extra_files/media-for-docs/desktop/1_land.png?" width="100%" style="max-width:800px">
 
-<img alt="3_state" src="guncontrolgrades/extra_files/media-for-docs/desktop/3_state.png" width="100%" style="max-width:800px">
+<img alt="3_state" src="http://extra_files/media-for-docs/desktop/3_state.png" width="100%" style="max-width:800px">
 
 
 ##### Mobile
