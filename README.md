@@ -41,7 +41,7 @@ ___
 
 ##### Share Buttons
 
-<img alt="screenshot" src="/extra_files/media-for-docs/desktop/5_email.png" width="600px" align="center"> <img alt="screenshot" src="/extra_files/media-for-docs/desktop/8_print.png" width="600px" align="center" ><img alt="screenshot" src="/extra_files/media-for-docs/desktop/6_facebook.png" width="600px" align="center" ><img alt="screenshot" src="/extra_files/media-for-docs/desktop/7_twitter.png" width="600px" align="center">
+<img alt="screenshot" src="/extra_files/media-for-docs/desktop/5_email.png" width="49%" align="center"> <img alt="screenshot" src="/extra_files/media-for-docs/desktop/8_print.png" width="49%" align="center" ><img alt="screenshot" src="/extra_files/media-for-docs/desktop/6_facebook.png" width="49%" align="center" ><img alt="screenshot" src="/extra_files/media-for-docs/desktop/7_twitter.png" width="49%" align="center">
 
 ___
 
