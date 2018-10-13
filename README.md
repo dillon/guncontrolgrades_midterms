@@ -37,6 +37,8 @@ ___
 
 <img alt="screenshot" src="/extra_files/media-for-docs/animations/2_myvotes_animation.gif" width="350px" align="left"> <img alt="screenshot" src="/extra_files/media-for-docs/animations/1_add_animation.gif" width="350px" align="right">
 
+<img>
+
 <hr width="100%"/>
 
 
