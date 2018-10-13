@@ -31,13 +31,13 @@ ___
 
 <img alt="screenshot" src="/extra_files/media-for-docs/mobile/1_land_mobile.png" width="49%" align="center">  <img alt="screenshot" src="/extra_files/media-for-docs/mobile/3_hint_mobile.png" width="49%" align="center"> <img alt="screenshot" src="/extra_files/media-for-docs/mobile/4_select_mobile.png" width="49%" align="center"> <img alt="screenshot" src="/extra_files/media-for-docs/mobile/5_myvotes_mobile.png" width="49%" align="center" >
 
-___
+#
 
 ##### Animations
 
 <img alt="screenshot" src="/extra_files/media-for-docs/animations/2_myvotes_animation.gif" width="49%"> <img alt="screenshot" src="/extra_files/media-for-docs/animations/1_add_animation.gif" width="49%">
 
-___
+#
 
 
 ##### Share Buttons
