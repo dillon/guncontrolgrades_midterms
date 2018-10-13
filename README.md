@@ -21,9 +21,9 @@ ___
 #### Screenshots
 
 
-<img alt="1_land" src="/extra_files/media-for-docs/desktop/1_land.png?" width="100%" style="max-width:800px">
+<img alt="screenshot" src="/extra_files/media-for-docs/desktop/1_land.png?" width="100%" style="max-width:800px">
 
-<img alt="3_state" src="/extra_files/media-for-docs/desktop/3_state.png" width="100%" style="max-width:800px">
+<img alt="screenshot" src="/extra_files/media-for-docs/desktop/3_state.png" width="100%" style="max-width:800px">
 
 
 ##### Mobile
@@ -33,16 +33,12 @@ ___
 
 ##### Animations
 
-<img alt="screenshot" src="/extra_files/media-for-docs/animations/1_add_animation.gif" width="350px" align="center">
-
-
-
-<img alt="screenshot" src="/extra_files/media-for-docs/animations/2_myvotes_animation.gif" width="350px" align="center">
+<img alt="screenshot" src="/extra_files/media-for-docs/animations/2_myvotes_animation.gif" width="350px" align="center"> <img alt="screenshot" src="/extra_files/media-for-docs/animations/1_add_animation.gif" width="350px" align="center">
 
 
 ##### Share Buttons
 
-<img alt="3_state" src="/extra_files/media-for-docs/desktop/5_email.png" width="600px" align="center" <img alt="screenshot" src="/extra_files/media-for-docs/desktop/8_print.png" width="600px" align="center" ><img alt="screenshot" src="/extra_files/media-for-docs/desktop/6_facebook.png" width="600px" align="center" ><img alt="screenshot" src="/extra_files/media-for-docs/desktop/7_twitter.png" width="600px" align="center">
+<img alt="screenshot" src="/extra_files/media-for-docs/desktop/5_email.png" width="600px" align="center"> <img alt="screenshot" src="/extra_files/media-for-docs/desktop/8_print.png" width="600px" align="center" ><img alt="screenshot" src="/extra_files/media-for-docs/desktop/6_facebook.png" width="600px" align="center" ><img alt="screenshot" src="/extra_files/media-for-docs/desktop/7_twitter.png" width="600px" align="center">
 
 
 
@@ -53,31 +49,31 @@ __GCG__ uses `react-ga` for integration with `Google Analytics`.
 Along with being integrated to track which states are viewed, it also has integration with session `events` to track which legislations are selected, how many voting card interactions are performed, and if or when a user prints or shares their voting card via email or social media.
 
 #
-###### Pageviews
+##### Pageviews
 Pageviews track which states are visited.
 
 <img alt="screenshot" src="/extra_files/media-for-docs/analytics/1_pages.png" width="460px" align="center">
 
 #
-###### Event Categories:
+##### Event Categories:
 Categories are broken up into candidate card interactions and shares.
 
 <img alt="screenshot" src="/extra_files/media-for-docs/analytics/2_event_categories.png" width="800px" align="center">
 
 #
-###### Event Category: Interact
+##### Event Category: Interact
 This event category tracks users' legislation tab changes, candidate button adds, and mobile voting card popup visibility toggles.
 
 <img alt="screenshot" src="/extra_files/media-for-docs/analytics/3_interact_actions.png" width="800px" align="center">
 
 #
-###### Event Action: Changed Legislature
+##### Event Action: Changed Legislature
 The `Change Legislature` event action also tracks the name of the legislation that a user views.
 
 <img alt="screenshot" src="/extra_files/media-for-docs/analytics/4_interact_labels.png" width="800px" align="center">
 
 #
-###### Event Category: Interact
+##### Event Category: Interact
 This event category tracks when a user prints or shares their card via Email, Twitter, or Facebook. An additional set of print/share buttons are visible on the mobile version of the app, and these too are tracked.
 
 <img alt="screenshot" src="/extra_files/media-for-docs/analytics/5_share_actions.png" width="800px" align="center">
