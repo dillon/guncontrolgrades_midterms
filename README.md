@@ -35,7 +35,7 @@ ___
 
 ##### Animations
 
-<img alt="screenshot" src="/extra_files/media-for-docs/animations/2_myvotes_animation.gif" width="50%"> <img alt="screenshot" src="/extra_files/media-for-docs/animations/1_add_animation.gif" width="50%">
+<img alt="screenshot" src="/extra_files/media-for-docs/animations/2_myvotes_animation.gif" width="49%"> <img alt="screenshot" src="/extra_files/media-for-docs/animations/1_add_animation.gif" width="49%">
 
 ___
 
