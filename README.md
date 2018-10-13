@@ -1,4 +1,4 @@
-## Gun Control Grades<a href="https://guncontrolgrades.org"><img align="left" src="https://raw.githubusercontent.com/dillon/guncontrolgrades/master/public/favicon.ico?token=AH_iMx1_QV5rIA2Hwk7RpSc3Y8SXYMR2ks5bye4UwA%3D%3D" width="80px" style="padding-right:15px"></a>
+## Gun Control Grades<a href="https://guncontrolgrades.org"><img align="left" src="/public/favicon.ico" width="80px" style="padding-right:15px"></a>
 
 [![Developer](https://img.shields.io/badge/Developer-dillon-red.svg)](http://dillonpetito.ml/)
 [![GitHub release](https://img.shields.io/github/release/dpett122/Masternode-Status.svg)](https://github.com/dillon/guncontrolgrades/releases)
@@ -17,6 +17,7 @@ ___
 | React | React Router |
 |--|--|
 
+___
 
 #### Screenshots
 
@@ -30,17 +31,19 @@ ___
 
 <img alt="screenshot" src="/extra_files/media-for-docs/mobile/1_land_mobile.png" width="49%" align="center">  <img alt="screenshot" src="/extra_files/media-for-docs/mobile/3_hint_mobile.png" width="49%" align="center"> <img alt="screenshot" src="/extra_files/media-for-docs/mobile/4_select_mobile.png" width="49%" align="center"> <img alt="screenshot" src="/extra_files/media-for-docs/mobile/5_myvotes_mobile.png" width="49%" align="center" >
 
+___
 
 ##### Animations
 
 <img alt="screenshot" src="/extra_files/media-for-docs/animations/2_myvotes_animation.gif" width="350px" align="center"> <img alt="screenshot" src="/extra_files/media-for-docs/animations/1_add_animation.gif" width="350px" align="center">
 
+___
 
 ##### Share Buttons
 
 <img alt="screenshot" src="/extra_files/media-for-docs/desktop/5_email.png" width="600px" align="center"> <img alt="screenshot" src="/extra_files/media-for-docs/desktop/8_print.png" width="600px" align="center" ><img alt="screenshot" src="/extra_files/media-for-docs/desktop/6_facebook.png" width="600px" align="center" ><img alt="screenshot" src="/extra_files/media-for-docs/desktop/7_twitter.png" width="600px" align="center">
 
-
+___
 
 #### Analytics
 
