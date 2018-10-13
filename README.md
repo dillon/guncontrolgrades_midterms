@@ -21,21 +21,29 @@ ___
 #### Screenshots
 
 
-<img alt="1_land" src="https://raw.githubusercontent.com/dillon/guncontrolgrades/master/extra_files/media-for-docs/desktop/1_land.png?token=AH_iM01qWkN5eMh2KC6EUP3vurhfumMrks5byl1zwA%3D%3D" width="100%" style="max-width:800px">
+<img alt="1_land" src="guncontrolgrades/extra_files/media-for-docs/desktop/1_land.png?" width="100%" style="max-width:800px">
 
-<img alt="3_state" src="https://raw.githubusercontent.com/dillon/guncontrolgrades/master/extra_files/media-for-docs/desktop/3_state.png?token=AH_iM8yowi5UoCs3VMzUiVlzeqVNcDr8ks5bymVlwA%3D%3D
-" width="100%" style="max-width:800px">
+<img alt="3_state" src="guncontrolgrades/extra_files/media-for-docs/desktop/3_state.png" width="100%" style="max-width:800px">
 
 
 ##### Mobile
 
-<img alt="screenshot" src="https://raw.githubusercontent.com/dillon/guncontrolgrades/master/extra_files/media-for-docs/mobile/1_land_mobile.png?token=AH_iM2mtwN9VLikeH9Q4wozUM9DGv0Zaks5bymgZwA%3D%3D
+<img alt="screenshot" src="guncontrolgrades/extra_files/media-for-docs/mobile/1_land_mobile.png
 " width="1%" align="center" style="max-width:800px;min-width:300px"> <img alt="screenshot" src="https://raw.githubusercontent.com/dillon/guncontrolgrades/master/extra_files/media-for-docs/mobile/3_hint_mobile.png?token=AH_iM4WSDHGbZXAy_W_Of5JYS9lO1pqtks5bymggwA%3D%3D
 " width="1%" align="center" style="max-width:800px;min-width:300px"> <img alt="screenshot" src="https://raw.githubusercontent.com/dillon/guncontrolgrades/master/extra_files/media-for-docs/mobile/4_select_mobile.png?token=AH_iM-tfDcQBqP_rqHesB9k8goaSw42Yks5bymgjwA%3D%3D
 " width="1%" align="center" style="max-width:800px;min-width:300px"> <img alt="screenshot" src="https://raw.githubusercontent.com/dillon/guncontrolgrades/master/extra_files/media-for-docs/mobile/5_myvotes_mobile.png?token=AH_iM6D8UP1H3LnrF2yj8eVwk5kuLb4lks5bymgmwA%3D%3D
 " width="1%" align="center" style="max-width:800px;min-width:300px">
 
 
+##### Animations
+
+<img alt="screenshot" src="https://raw.githubusercontent.com/dillon/guncontrolgrades/master/extra_files/media-for-docs/animations/1_add_animation.gif?token=AH_iMzgZE1qpjajlZXDi6FVGw7IG0DLJks5byo0swA%3D%3D
+" width="90%" align="center" style="max-width:350px">
+
+
+
+<img alt="screenshot" src="https://raw.githubusercontent.com/dillon/guncontrolgrades/master/extra_files/media-for-docs/animations/2_myvotes_animation.gif?token=AH_iM5oQylMCWE5PbuXQXgjRVfNSFx1jks5byo11wA%3D%3D
+" width="90%" align="center" style="max-width:350px">
 
 
 ##### Share Buttons
