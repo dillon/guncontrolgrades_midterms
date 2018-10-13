@@ -28,7 +28,7 @@ ___
 
 ##### Mobile
 
-<img alt="screenshot" src="/extra_files/media-for-docs/mobile/1_land_mobile.png
+<img alt="screenshot" src="extra_files/media-for-docs/mobile/1_land_mobile.png
 " width="1%" align="center" style="max-width:800px;min-width:300px"> <img alt="screenshot" src="https://raw.githubusercontent.com/dillon/guncontrolgrades/master/extra_files/media-for-docs/mobile/3_hint_mobile.png?token=AH_iM4WSDHGbZXAy_W_Of5JYS9lO1pqtks5bymggwA%3D%3D
 " width="1%" align="center" style="max-width:800px;min-width:300px"> <img alt="screenshot" src="https://raw.githubusercontent.com/dillon/guncontrolgrades/master/extra_files/media-for-docs/mobile/4_select_mobile.png?token=AH_iM-tfDcQBqP_rqHesB9k8goaSw42Yks5bymgjwA%3D%3D
 " width="1%" align="center" style="max-width:800px;min-width:300px"> <img alt="screenshot" src="https://raw.githubusercontent.com/dillon/guncontrolgrades/master/extra_files/media-for-docs/mobile/5_myvotes_mobile.png?token=AH_iM6D8UP1H3LnrF2yj8eVwk5kuLb4lks5bymgmwA%3D%3D
