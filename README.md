@@ -12,10 +12,30 @@ Choosing candidates to vote for in the 2018 U.S. Midterm elections based on inve
 
 ___
 
-#### Info
+#### About
+
+Since 1976, the National Rifle Association has issued grades to elected officials and political candidates based on either their voting records or a response to a questionnare. Once prominently publicized, these grades have in the last year disappeared from the NRA's website and literature. They are still being issued, however, to pressure politicians into following the NRA's anti-gun control agenda.
+
+Gun Control Grades inverts the grades issued by the National Rifle Association. An F from the NRA becomes an A from GCG; a D becomes a B, and so on.
+
+Additionally, a Star from GCG indicates that a candidate has been endorsed by Giffords or Gun Sense, organizations founded to fight the gun violence epidemic. Candidates who have not yet been rated by either organization or the NRA have a question mark by their name.
+
+___
+#### Technical Details
 
 | React | React Router |
 |--|--|
+
+
+##### Dependencies
+
+| react-ga | react-to-print | react-share |
+|--|--|--|
+
+| react-icons | reactstrap | react-sticky |
+|--|--|--|
+
+
 
 ___
 
