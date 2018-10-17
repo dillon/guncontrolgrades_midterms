@@ -16,7 +16,7 @@ import { MdStar } from 'react-icons/md';
 // State > StateContainer > {tabPanes > Candidates}
 class Candidates extends React.Component {
   constructor(props) {
-    // props: candidates, legislature, district, handleChange
+    // props: candidates, legislature, district, onCandidateChange
     super(props);
     this.state = {
       rSelected: '' // which candidate in this district is selected?
@@ -31,13 +31,13 @@ class Candidates extends React.Component {
     const currState = this.state.rSelected;
     if (index < 0 && stateIsEmpty) {
       this.setState({ rSelected: selected });
-      this.props.handleChange('add', selected);
+      this.props.onCandidateChange('add', selected);
     } else if (index < 0 && !stateIsEmpty) {
       this.setState({ rSelected: selected });
-      this.props.handleChange('change', selected, currState);
+      this.props.onCandidateChange('change', selected, currState);
     } else {
       this.setState({ rSelected: '' });
-      this.props.handleChange('delete', selected);
+      this.props.onCandidateChange('delete', selected);
     }
   }
 

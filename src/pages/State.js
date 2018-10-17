@@ -75,6 +75,13 @@ class StatePage extends React.Component {
       card: true,
       showHints: false
     };
+    this.setWrapperRef          = this.setWrapperRef.bind(this);
+    this.onClickOutsideOfHint   = this.onClickOutsideOfHint.bind(this);
+    this.toggleVotingCardPopup  = this.toggleVotingCardPopup.bind(this);
+    this.onLegislationChange    = this.onLegislationChange.bind(this);
+    this.onCandidateChange      = this.onCandidateChange.bind(this);
+    this.getIndexOfState        = this.getIndexOfState.bind(this);
+    this.hintDisplayTimer       = this.hintDisplayTimer.bind(this);
   }
 
   componentDidMount() {
@@ -85,37 +92,12 @@ class StatePage extends React.Component {
     });
   }
 
-  hintDisplayTimer = () => {
-    // Timeout to show hints temporarily
-    new Promise((resolve, reject) => {
-      setTimeout(
-        function () {
-          document.addEventListener('mousedown', this.handleClickOutside);
-          document.addEventListener('touchstart', this.handleClickOutside);
-          document.addEventListener('touchmove', this.handleClickOutside);
-          this.setState({ showHints: true })
-        }.bind(this),
-        100
-      )
-    }).then(
-      setTimeout(
-        function () {
-          document.removeEventListener('mousedown', this.handleClickOutside);
-          document.removeEventListener('touchstart', this.handleClickOutside);
-          document.removeEventListener('touchmove', this.handleClickOutside);
-          this.setState({ showHints: false })
-        }.bind(this),
-        2400
-      )
-    )
-  }
-
-  setWrapperRef = (node) => {
+  setWrapperRef(node) {
     // Assign hint text ref
     this.wrapperRef = node;
   }
 
-  handleClickOutside = (event) => {
+  onClickOutsideOfHint(event) {
     // Handle clicks outside of hints
     if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
       this.setState({
@@ -125,7 +107,32 @@ class StatePage extends React.Component {
     }
   }
 
-  handleChange = (type, selected, remove) => {
+  toggleVotingCardPopup() {
+    // Toggle voting card popup (for mobile)
+    this.setState({
+      card: !this.state.card
+    });
+    ReactGA.event({ // Analytics Event
+      category: 'Interact',
+      action: 'Toggle Voting Card Popup',
+    });
+  }
+
+  onLegislationChange = (tab) => {
+    // Toggle tab for legislature
+    if (this.state.activeTab !== tab) {
+      this.setState({
+        activeTab: tab
+      });
+      ReactGA.event({ // Analytics Event
+        category: 'Interact',
+        action: 'Changed Legislature',
+        label: tab
+      });
+    }
+  }
+
+  onCandidateChange(type, selected, remove) {
     // Handle candidate checkbox click
     const { pressed } = this.state
     const incomingCandidateArray = selected.split(',');
@@ -163,7 +170,7 @@ class StatePage extends React.Component {
     this.setState({ pressed });
   }
 
-  getIndexOfState = (pressed, incomingCandidateArray) => {
+  getIndexOfState(pressed, incomingCandidateArray) {
     // Check this.state.pressed for new pressed
     for (var i = 0; i < pressed.length; i++) {
       let index = pressed[i].indexOf(incomingCandidateArray[3]);
@@ -173,49 +180,49 @@ class StatePage extends React.Component {
     }
   }
 
-  toggle = (tab) => {
-    // Toggle tab for legislature
-    if (this.state.activeTab !== tab) {
-      this.setState({
-        activeTab: tab
-      });
-      ReactGA.event({ // Analytics Event
-        category: 'Interact',
-        action: 'Changed Legislature',
-        label: tab
-      });
-    }
-  }
-
-  toggleCard = () => {
-    // Toggle voting card popup (for mobile)
-    this.setState({
-      card: !this.state.card
-    });
-    ReactGA.event({ // Analytics Event
-      category: 'Interact',
-      action: 'Toggle Voting Card Popup',
-    });
+  hintDisplayTimer() {
+    // Timeout to show hints temporarily
+    new Promise((resolve, reject) => {
+      setTimeout(
+        function () {
+          document.addEventListener('mousedown', this.onClickOutsideOfHint);
+          document.addEventListener('touchstart', this.onClickOutsideOfHint);
+          document.addEventListener('touchmove', this.onClickOutsideOfHint);
+          this.setState({ showHints: true })
+        }.bind(this),
+        100
+      )
+    }).then(
+      setTimeout(
+        function () {
+          document.removeEventListener('mousedown', this.onClickOutsideOfHint);
+          document.removeEventListener('touchstart', this.onClickOutsideOfHint);
+          document.removeEventListener('touchmove', this.onClickOutsideOfHint);
+          this.setState({ showHints: false })
+        }.bind(this),
+        2400
+      )
+    )
   }
 
   render() {
     const stateName = stateInfo[this.props.stateId].name;
     const legislatures = stateInfo[this.props.stateId].legislatures;
 
-    const navTabs = stateInfo[this.props.stateId]['legislatures'].map(x => (
-      // Nav Tabs (mapped) x = stateInfo.{stateId}.legislatures[i]
+    const navTabButtons = stateInfo[this.props.stateId]['legislatures'].map(x => (
+      // Nav Tab Buttons (mapped) x = stateInfo.{stateId}.legislatures[i]
       <NavItem key={x.id}>
         <NavLink
           className={classnames({ active: this.state.activeTab === x.id })}
-          onClick={() => { this.toggle(x.id) }}
+          onClick={() => { this.onLegislationChange(x.id) }}
         >
           {x.name}
         </NavLink>
       </NavItem>
     ));
 
-    const tabPanes = legislatures.map(x => (
-      // Tab Panes (mapped) x = stateInfo.{stateId}.legislatures[i]
+    const navTabPanes = legislatures.map(x => (
+      // Nav Tab Panes (mapped) x = stateInfo.{stateId}.legislatures[i]
       <TabPane key={x.id + 'tabpane'} tabId={x.id}>
         {x.districts.map(y => (
           // Candidates (mapped) x = stateInfo.{stateId}.legislatures[i]districts[i]
@@ -228,8 +235,7 @@ class StatePage extends React.Component {
                 candidates={y.candidates}
                 legislature={x.name}
                 district={y.name}
-                handleChange={this.handleChange}
-                handleClickOutside={this.handleClickOutside}
+                onCandidateChange={this.onCandidateChange}
               />
             </div>
           </div>
@@ -265,7 +271,7 @@ class StatePage extends React.Component {
           Click here to view your voting card.
         </div>
 
-        <button id='popupButton' style={Styles.popupButton} onClick={() => this.toggleCard()}>
+        <button id='popupButton' style={Styles.popupButton} onClick={() => this.toggleVotingCardPopup()}>
           <IconContext.Provider value={{ color: colors.primary, size: '1.9em', className: 'global-class-name' }}>
             { // Candidate Card Popup button shows List Icon or Arrow
               this.state.card ?
@@ -296,13 +302,13 @@ class StatePage extends React.Component {
               <div />
             </div>
             <Nav pills tabs>
-              {navTabs}
+              {navTabButtons}
             </Nav>
             <div className='clearfix' style={{ paddingRight: '30rem' }}>
               <div />
             </div>
             <TabContent className='TabContent' style={{ width: '100%' }} activeTab={this.state.activeTab}>
-              {tabPanes}
+              {navTabPanes}
             </TabContent>
           </div>
         </Col>
@@ -336,7 +342,7 @@ class StatePage extends React.Component {
               &nbsp;indicates endorsement by
             </div>
             <div>Giffords.org, GunSenseVoter.org or both</div>
-            <p style={{paddingTop:2}}>Learn more about our grading system{' '}
+            <p style={{ paddingTop: 2 }}>Learn more about our grading system{' '}
               <Link
                 style={{ textDecoration: 'underline', color: 'inherit' }}
                 className='active'

@@ -19,7 +19,7 @@ import { MdStar } from 'react-icons/md';
 class MyVotes extends React.Component {
   render() {
     const votes = this.props.pressed.map(y => {
-      // Votes in my voting card
+      // Votes (mapped) in my voting card
       const legislature = y[0]
       const district = y[1] === 'Statewide' ? '' : ' - ' + y[1] // if district=Statewide, delete it
       const name = y[2]
@@ -62,7 +62,7 @@ class MyVotes extends React.Component {
           </td>
         </tr>
       )
-    });
+    }); // ends mapping of votes
 
     return (
       <div style={{

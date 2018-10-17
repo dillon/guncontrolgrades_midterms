@@ -1,4 +1,4 @@
-// / (homepage)
+// Homepage
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -27,7 +27,7 @@ ReactGA.initialize('UA-127152248-1');
 const LandingLogo = () => {
   return (
     <div id='landingLogo' style={Styles.landingLogo}>
-      <img alt='flip-logo' style={{ opacity: 1}} width='200px' height='196.55px' src={logo} />
+      <img alt='flip-logo' style={{ opacity: 1 }} width='200px' height='196.55px' src={logo} />
       <div id='logoLarge' style={Styles.landingFullName}>
       </div>
       <div id='landingDescription' style={Styles.landingDescription}>
@@ -50,7 +50,7 @@ class UsMap extends React.Component {
     ReactGA.pageview(window.location.hash);
   }
 
-  toggle = () => {
+  toggleDropdown = () => {
     // toggles Dropdown
     this.setState(prevState => ({
       dropdownOpen: !prevState.dropdownOpen
@@ -64,7 +64,7 @@ class UsMap extends React.Component {
         <div className='pageContainer'>
           <div id='landingPageFunbox' className='funbox funboxBorder'>
             <div id='Map' className='mapContainer'>
-              <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+              <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggleDropdown}>
                 <DropdownToggle caret color="link">
                   <span className='funboxTitle' style={{ marginTop: 40 }}>Select your state</span>
                 </DropdownToggle>
