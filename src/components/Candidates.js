@@ -90,7 +90,7 @@ class Candidates extends React.Component {
                     className='candidateCheckbox'
                     style={Styles.candidateCheckboxActive}
                     onClick={() => this.onRadioBtnClick(joinedString)}
-                    active={this.state.rSelected === joinedString}
+                    active={(this.state.rSelected === joinedString).toString()}
                   >
                     <IconContext.Provider value={{ color: 'white', size: '1.2em', className: 'global-class-name' }}>
                       <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -104,7 +104,7 @@ class Candidates extends React.Component {
                     className='candidateCheckbox candidateCheckboxNotActive'
                     style={Styles.candidateCheckbox}
                     onClick={() => this.onRadioBtnClick(joinedString)}
-                    active={this.state.rSelected === joinedString}
+                    active={(this.state.rSelected === joinedString).toString()}
                   >
                     <IconContext.Provider value={{ color: colors.primary, size: '.9em', className: 'global-class-name' }}>
                       <div style={{ display: 'flex', alignItems: 'center' }}>

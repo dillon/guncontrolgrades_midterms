@@ -75,7 +75,7 @@ class MyVotes extends React.Component {
             MY {this.props.stateName.toUpperCase()} VOTING CARD
             </p>
           <div className='tableDiv'>
-            <Table id='votesList' flush>
+            <Table id='votesList' flush='true'>
               <tbody>
                 {this.props.pressed.length === 0 ? (
                   <tr className='text-muted' style={{ fontSize: '.8rem' }}>

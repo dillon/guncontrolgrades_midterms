@@ -211,7 +211,7 @@ class StatePage extends React.Component {
 
     const navTabButtons = stateInfo[this.props.stateId]['legislatures'].map(x => (
       // Nav Tab Buttons (mapped) x = stateInfo.{stateId}.legislatures[i]
-      <NavItem key={x.id}>
+      <NavItem key={stateName + x.id}>
         <NavLink
           className={classnames({ active: this.state.activeTab === x.id })}
           onClick={() => { this.onLegislationChange(x.id) }}
@@ -329,7 +329,7 @@ class StatePage extends React.Component {
             card={this.state.card}
           />
 
-          <p id='learnMore' className='hintText text-muted' style={{ textAlign: 'center', padding: '0px 24px' }}>
+          <div id='learnMore' className='hintText text-muted' style={{ textAlign: 'center', padding: '0px 24px' }}>
             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 0, margin: 0 }}>
               <div style={Styles.hintAsterisk}>
                 <IconContext.Provider value={{
@@ -351,7 +351,7 @@ class StatePage extends React.Component {
                 here.
             </Link>
             </p>
-          </p>
+          </div>
           <div id="screenshotHint" className='hintText text-muted' style={{ textAlign: 'center' }}>
             <br /><br />
             Share your card below or screenshot to save
