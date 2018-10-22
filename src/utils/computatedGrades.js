@@ -1,5 +1,3 @@
-import { A } from "glamorous";
-
 export const stateInfo =
 {
   AL: {
