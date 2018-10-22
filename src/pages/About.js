@@ -22,7 +22,7 @@ const About = () => {
           About
         </div>
         <p style={{ maxWidth: 600 }}>
-          Since 1976, the National Rifle Association has issued grades to elected officials and political candidates based on either their voting records or a response to a questionnare. Once prominently publicized, these grades have in the last year disappeared from the NRA's website and literature. They are still being issued, however, to pressure politicians into following the NRA's anti-gun control agenda.
+          Since 1976, the National Rifle Association has issued grades to elected officials and political candidates based on either their voting records or a response to a questionnare. Once prominently publicized, these grades now appear on the NRA's website only before elections with the goal of pressuring candidates into adhering to the NRA's anti-gun control agenda. 
         </p>
         <p style={{ maxWidth: 600 }}>
           <strong>{constants.name}</strong> inverts the grades issued by the National Rifle Association. An <strong>F</strong> from the NRA becomes an <strong>A</strong> from GCG; a <strong>D</strong> becomes a <strong>B</strong>, and so on.
