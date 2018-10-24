@@ -5202,7 +5202,7 @@ export const stateInfo =
       // TODO: Lieutenant Governor: [boyd k. rutherford: (none), susan turnbull: A]
     ]
   },
-  MA: { //TODO: LEFT OFF
+  MA: {
     name: 'Massachusetts',
     legislatures: [
       {
