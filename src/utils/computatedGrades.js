@@ -5207,7 +5207,7 @@ export const stateInfo =
     legislatures: [
       {
         name: 'Governor',
-        id: 'govenror',
+        id: 'governor',
         districts: [
           {
             name: 'Statewide',
@@ -5215,12 +5215,14 @@ export const stateInfo =
               {
                 name: 'Jay Gonzalez',
                 img: 'portraits/JayGonzalez.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Charlie Baker',
                 img: 'portraits/CharlesBaker2015.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'B'
               }
             ]
           }
@@ -5260,7 +5262,8 @@ export const stateInfo =
               {
                 name: 'Richard E. Neal',
                 img: 'portraits/Richard_Neal.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               }
             ]
           },
@@ -5286,7 +5289,8 @@ export const stateInfo =
               {
                 name: 'Lori Trahan',
                 img: 'portraits/LTHeadshot.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Rick Green',
@@ -5386,13 +5390,14 @@ export const stateInfo =
               {
                 name: 'Quentin Palfrey',
                 img: 'portraits/Quentin_Palfrey.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Karyn Polito',
                 img: 'portraits/G2qztDnO_400x400.jpg',
                 party: 'Republican',
-                grade: 'F+'
+                grade: 'B'
               }
             ]
           }
@@ -5409,13 +5414,14 @@ export const stateInfo =
                 name: 'Maura Healey',
                 img: 'portraits/MauraHealy2015.jpg',
                 party: 'Democrat',
-                grade: 'B',
+                grade: 'A',
                 endorsedByGunSenseVoter: true
               },
               {
                 name: 'James McMahon',
                 img: 'portraits/static1.squarespace-2.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           }
@@ -5473,7 +5479,8 @@ export const stateInfo =
               {
                 name: 'Deborah Goldberg',
                 img: 'portraits/Deb_Goldberg.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Keiko Orrall',
