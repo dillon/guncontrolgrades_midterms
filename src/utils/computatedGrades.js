@@ -2398,32 +2398,32 @@ export const stateInfo =
       }
     ]
   },
-  DC: { // TODO: delete District of Columbia
-    name: 'District of Columbia',
-    legislatures: [
-      {
-        name: 'Attorney General',
-        id: 'attorneyGeneral',
-        districts: [
-          {
-            name: 'Statewide',
-            candidates: [
-              {
-                name: 'Karl Racine',
-                img: 'portraits/KarlRacine.jpg',
-                party: 'Democrat'
-              },
-              {
-                name: 'Joe Henchman',
-                img: 'portraits/joe-henchman.jpg',
-                party: 'Libertarian'
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
+  // DC: {
+  //   name: 'District of Columbia',
+  //   legislatures: [
+  //     {
+  //       name: 'Attorney General',
+  //       id: 'attorneyGeneral',
+  //       districts: [
+  //         {
+  //           name: 'Statewide',
+  //           candidates: [
+  //             {
+  //               name: 'Karl Racine',
+  //               img: 'portraits/KarlRacine.jpg',
+  //               party: 'Democrat'
+  //             },
+  //             {
+  //               name: 'Joe Henchman',
+  //               img: 'portraits/joe-henchman.jpg',
+  //               party: 'Libertarian'
+  //             }
+  //           ]
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // },
   FL: {
     name: 'Florida',
     legislatures: [
@@ -10926,7 +10926,7 @@ export const stateInfo =
       {
         name: 'Attorney General',
         id: 'attorneyGeneral',
-        districts : [
+        districts: [
           {
             name: 'Statewide',
             candidates: [

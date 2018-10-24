@@ -25,7 +25,7 @@ export const namesOfStates = [
     { id: 'CO', name: 'Colorado' },
     { id: 'CT', name: 'Connecticut' },
     { id: 'DE', name: 'Delaware' },
-    { id: 'DC', name: 'District Of Columbia' },
+    // { id: 'DC', name: 'District Of Columbia' },
     { id: 'FL', name: 'Florida' },
     { id: 'GA', name: 'Georgia' },
     { id: 'HI', name: 'Hawaii' },
