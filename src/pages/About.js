@@ -47,7 +47,7 @@ const About = () => {
           <a style={{ textDecoration: 'underline', color: 'inherit' }} href='https://gunsensevoter.org' rel="noopener noreferrer" target='_blank'>
             Gun Sense
           </a>
-          , organizations founded to fight the gun violence epidemic.
+          , organizations founded to fight the gun violence epidemic. Candidates who have not yet been rated by either organization or the NRA have a question mark by their name.
         </p>
       </div>
     </div>
