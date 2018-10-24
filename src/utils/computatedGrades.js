@@ -7403,7 +7403,6 @@ export const stateInfo =
                 party: 'Republican',
                 grade: 'F'
               }
-              // TODO: LEFT OFF HERE
             ]
           }
         ]
@@ -7545,7 +7544,7 @@ export const stateInfo =
       }
     ]
   },
-  NY: {
+  NY: { // TODO: LEFT OFF HERE
     name: 'New York',
     legislatures: [
       {
