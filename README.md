@@ -8,7 +8,7 @@ ___
 
 #### [guncontrolgrades.org](https://guncontrolgrades.org)
 
-Choosing candidates to vote for in the 2018 U.S. Midterm elections based on inverted ratings from the National Rifle Association and endorsements from anti-gun-violence organizations.
+Choose candidates to vote for in the 2018 U.S. Midterm elections based on inverted ratings from the National Rifle Association and endorsements from anti-gun-violence organizations.
 
 ___
 
