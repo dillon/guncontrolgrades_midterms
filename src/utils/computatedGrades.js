@@ -1,3 +1,5 @@
+// Finish all 'TODO:'
+// Replace all 'todo.jpg'
 export const stateInfo =
 {
   AL: {
@@ -975,7 +977,6 @@ export const stateInfo =
           {
             name: 'District 5',
             candidates: [
-              // TODO: Anthony Mills: grade: none
               {
                 name: 'Mike Thompson',
                 img: 'portraits/Mike_Thompson.jpg',
@@ -983,6 +984,11 @@ export const stateInfo =
                 grade: 'A',
                 endorsedByGiffords: true,
                 endorsedByGunSenseVoter: true
+              },
+              {
+                name: 'Anthony Mills',
+                img: 'portraits/none.jpg',
+                party: 'Independent',
               }
             ]
           },
@@ -1023,7 +1029,12 @@ export const stateInfo =
           {
             name: 'District 8',
             candidates: [
-              // TODO: Tim Donnely: grade: 'F'
+              {
+                name: 'Tim Donnelly',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
+              },
               {
                 name: 'Paul Cook',
                 img: 'portraits/Paul_Cook.jpg',
@@ -1086,25 +1097,34 @@ export const stateInfo =
           {
             name: 'District 12',
             candidates: [
-              // TODO: Lisa Remmer. Grade: 'F'
               {
                 name: 'Nancy Pelosi',
                 img: 'portraits/Nancy_Pelosi.jpg',
                 party: 'Democrat',
                 grade: 'A'
+              },
+              {
+                name: 'Lisa Remmer',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           },
           {
             name: 'District 13',
             candidates: [
-              // TODO: Laura Wells. grade: (none)
               {
                 name: 'Barbara Lee',
                 img: 'portraits/Barbara_Lee.jpg',
                 party: 'Democrat',
                 grade: 'A',
                 endorsedByGiffords: true
+              },
+              {
+                name: 'Laura Wells',
+                img: 'portraits/todo.jpg',
+                party: 'Green',
               }
             ]
           },
@@ -1194,12 +1214,17 @@ export const stateInfo =
           {
             name: 'District 19',
             candidates: [
-              // TODO: Justin Aguilera, grade: 'F'
               {
                 name: 'Zoe Lofgren',
                 img: 'portraits/Zoe_Lofgren.jpg',
                 party: 'Democrat',
                 grade: 'A'
+              },
+              {
+                name: 'Justin Aguilera',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           },
@@ -1259,7 +1284,12 @@ export const stateInfo =
           {
             name: 'District 23',
             candidates: [
-              // TODO: Tatiana Matta, grade: 'A'
+              {
+                name: 'Tatiana Matta',
+                img: 'portraits/todo.jpg',
+                party: 'Democrat',
+                grade: 'A'
+              },
               {
                 name: 'Kevin McCarthy',
                 img: 'portraits/Kevin_McCarthy_CA.jpg',
@@ -1413,12 +1443,16 @@ export const stateInfo =
           {
             name: 'District 32',
             candidates: [
-              // TODO: Joshua Scott, grade: (none)
               {
                 name: 'Grace F. Napolitano',
                 img: 'portraits/Grace_Napolitano.jpg',
                 party: 'Democrat',
                 grade: 'A'
+              },
+              {
+                name: 'Joshua Scott',
+                img: 'portraits/todo.jpg',
+                party: 'Republican'
               }
             ]
           },
@@ -1611,7 +1645,6 @@ export const stateInfo =
           {
             name: 'District 44',
             candidates: [
-              // TODO: Aja Brown, grade: 'A'
               {
                 name: 'Nanette Barragán',
                 img: 'portraits/Nanette_Barragan.jpg',
@@ -1731,12 +1764,17 @@ export const stateInfo =
           {
             name: 'District 51',
             candidates: [
-              // TODO: Juan Hidalgo Jr. grade: F
               {
                 name: 'Juan C. Vargas',
                 img: 'portraits/Juan_Vargas_official_photo.jpg',
                 party: 'Democrat',
                 grade: 'A'
+              },
+              {
+                name: 'Juan Hidalgo Jr.',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           },
@@ -1760,12 +1798,16 @@ export const stateInfo =
           {
             name: 'District 53',
             candidates: [
-              // TODO: Morgan Murtaugh, grade: (none)
               {
                 name: 'Susan A. Davis',
                 img: 'portraits/Susan_Davis.jpg',
                 party: 'Democrat',
                 grade: 'A'
+              },
+              {
+                name: 'Morgan Murtaugh',
+                img: 'portraits/todo.jpg',
+                party: 'Republican'
               }
             ]
           }
@@ -1778,10 +1820,15 @@ export const stateInfo =
           {
             name: 'Statewide',
             candidates: [
-              // TODO: Ed Hernandez, grade: 'A'
               {
                 name: 'Eleni Kounalakis',
                 img: 'portraits/3612660B-ED2A-43B5-9AA8-FB134D4CC650.jpg',
+                party: 'Democrat',
+                grade: 'A'
+              },
+              {
+                name: 'Edward Hernandez',
+                img: 'portraits/none.jpg',
                 party: 'Democrat',
                 grade: 'A'
               }
@@ -2352,7 +2399,12 @@ export const stateInfo =
           {
             name: 'Statewide',
             candidates: [
-              // TODO: Lisa Blunt Rochester, grade: 'A'
+              {
+                name: 'Lisa Blunt Rochester',
+                img: 'portraits/todo.jpg',
+                party: 'Democrat',
+                grade: 'A'
+              },
               {
                 name: 'Scott Walker',
                 img: 'portraits/scottwalker.jpg',
@@ -2369,12 +2421,16 @@ export const stateInfo =
           {
             name: 'Statewide',
             candidates: [
-              // TODO: Bernard Pepukayi, grade: (none)
               {
                 name: 'Kathy Jennings',
                 img: 'portraits/jennings.jpg',
                 party: 'Democrat',
                 grade: 'A'
+              },
+              {
+                name: 'Bernard Pepukayi',
+                img: 'portraits/todo.jpg',
+                party: 'Republican'
               }
             ]
           }
@@ -2391,6 +2447,12 @@ export const stateInfo =
                 name: 'Kathy McGuiness',
                 img: 'portraits/38493483948.jpg',
                 party: 'Democrat'
+              },
+              {
+                name: 'James Spadola',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'D'
               }
             ]
           }
@@ -4265,8 +4327,29 @@ export const stateInfo =
           }
         ]
       },
-      // TODO: Lieutenant Governor
-      // candidates: [Adam Gregg: F, Rita R. Hart: A]
+      {
+        name: 'Lieutenant Governor',
+        id: 'lieutenantGovernor',
+        districts: [
+          {
+            name: 'Statewide',
+            candidates: [
+              {
+                name: 'Rita Hart',
+                img: 'portraits/todo.jpg',
+                party: 'Democrat',
+                grade: 'A'
+              },
+              {
+                name: 'Adam Gregg',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
+              }
+            ]
+          }
+        ]
+      },
       {
         name: 'Attorney General',
         id: 'attorneyGeneral',
@@ -4367,8 +4450,13 @@ export const stateInfo =
                 img: 'portraits/Kris_Kobach.jpg',
                 party: 'Republican',
                 grade: 'F-'
+              },
+              {
+                name: 'Greg Orman',
+                img: 'portraits/todo.jpg',
+                party: 'Independent',
+                grade: 'F'
               }
-              // TODO: Greg Orman, grade: F
             ]
           }
         ]
@@ -4447,7 +4535,35 @@ export const stateInfo =
           }
         ]
       },
-      // TODO: Lieutenant Governor: [wink hartman: F, lynn Rogers: A, john doll: A]
+      {
+        name: 'Lieutenant Governor',
+        id: 'lieutenantGovernor',
+        districts: [
+          {
+            name: 'Statewide',
+            candidates: [
+              {
+                name: 'Lynn Rogers',
+                img: 'portraits/todo.jpg',
+                party: 'Democrat',
+                grade: 'A'
+              },
+              {
+                name: 'Wink Hartman',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
+              },
+              {
+                name: 'John Doll',
+                img: 'portraits/todo.jpg',
+                party: 'Independent',
+                grade: 'A'
+              }
+            ]
+          }
+        ]
+      },
       {
         name: 'Attorney General',
         id: 'attorneyGeneral',
@@ -4515,7 +4631,28 @@ export const stateInfo =
           }
         ]
       },
-      // TODO: Insurance Commissioner: [vicki schmidt: F, nathaniel mclaughlin: (none)]
+      {
+        name: 'Insurance Commissioner',
+        id: 'insuranceCommissioner',
+        districts: [
+          {
+            name: 'Statewide',
+            candidates: [
+              {
+                name: 'Nathaniel McLaughlin',
+                img: 'portraits/todo.jpg',
+                party: 'Democrat'
+              },
+              {
+                name: 'Vicki Schmidt',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   KY: {
@@ -4926,7 +5063,6 @@ export const stateInfo =
           {
             name: 'Statewide',
             candidates: [
-              // TODO: Zak Ringelstein
               {
                 name: 'Zak Ringelstein',
                 img: 'portraits/image3.jpg',
@@ -5199,7 +5335,6 @@ export const stateInfo =
           }
         ]
       }
-      // TODO: Lieutenant Governor: [boyd k. rutherford: (none), susan turnbull: A]
     ]
   },
   MA: {
@@ -5467,7 +5602,7 @@ export const stateInfo =
               },
               {
                 name: 'Helen Brady',
-                img: 'none.jpg',
+                img: 'portraits/none.jpg',
                 party: 'Republican'
               }
             ]
@@ -5556,7 +5691,12 @@ export const stateInfo =
           {
             name: 'District 1',
             candidates: [
-              // TODO: Matt Morgan, grade: B
+              {
+                name: 'Matt Morgan',
+                img: 'portraits/todo.jpg',
+                party: 'Democrat',
+                grade: 'B'
+              },
               {
                 name: 'Jack Bergman',
                 img: 'portraits/Jack_Bergman.jpg',
@@ -6100,7 +6240,6 @@ export const stateInfo =
           }
         ]
       },
-      // TODO: Lieutenant Governor: [donna bergstrom: F, peggy flanagan: A]
       {
         name: 'Auditor',
         id: 'auditor',
@@ -6159,8 +6298,29 @@ export const stateInfo =
                 grade: 'F'
               }
             ]
+          },
+          {
+            name: 'Special Election',
+            candidates: [
+              {
+                name: 'Mike Espy',
+                img: 'portraits/todo.jpg',
+                party: 'Democrat'
+              },
+              {
+                name: 'Cindy Hyde-Smith',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
+              },
+              {
+                name: 'Chris McDaniel',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
+              }
+            ]
           }
-          // TODO: District: 'Special Election': [cindy hyde-smith: F, chris mcdaniel: F, mike espy]
         ]
       },
       {
@@ -6939,7 +7099,12 @@ export const stateInfo =
           {
             name: 'Statewide',
             candidates: [
-              // TODO: Barbara K. Cegavske, grade: F
+              {
+                name: 'Nelson Araujo',
+                img: 'portraits/todo.jpg',
+                party: 'Democrat',
+                grade: 'B'
+              },
               {
                 name: 'Barbara Cegavske',
                 img: 'portraits/Barbara_Cegavske.jpg',
@@ -6957,7 +7122,11 @@ export const stateInfo =
           {
             name: 'Statewide',
             candidates: [
-              // TODO: Zachary B Conine, grade: (none)
+              {
+                name: 'Zach Conine',
+                img: 'portraits/todo.jpg',
+                party: 'Democrat'
+              },
               {
                 name: 'Bob Beers',
                 img: 'portraits/Bob_Beers.jpg',
@@ -7343,8 +7512,13 @@ export const stateInfo =
                 img: 'portraits/MickRich.jpg',
                 party: 'Republican',
                 grade: 'A'
+              },
+              {
+                name: 'Gary Johnson',
+                img: 'portraits/todo.jpg',
+                party: 'Libertarian',
+                grade: 'F'
               }
-              // TODO: Gary Johnson, grade: F
             ]
           }
         ]
@@ -7465,12 +7639,11 @@ export const stateInfo =
                 party: 'Democrat'
               },
               {
-                name: 'JoHanna Cox',
-                img: 'portraits/JoHanna-C-Cox-Law-Headshot-683x1024.jpg',
-                party: 'Republican'
+                name: 'Gavin Clarkson',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
               }
-              // TODO: check if Johanna Cox should be there
-              // TODO: Gavin Clarkson: F
             ]
           }
         ]
@@ -7544,7 +7717,7 @@ export const stateInfo =
       }
     ]
   },
-  NY: { // TODO: LEFT OFF HERE
+  NY: {
     name: 'New York',
     legislatures: [
       {
@@ -8126,7 +8299,7 @@ export const stateInfo =
               },
               {
                 name: 'Jia Lee',
-                img: 'none.jpg',
+                img: 'portraits/none.jpg',
                 party: 'Green'
               }
             ]
@@ -8513,12 +8686,16 @@ export const stateInfo =
                 img: 'portraits/Joshua_Boschee.jpg',
                 party: 'Democrat'
               },
-              // TODO: Al Jaeger, grade: F
-              // Check if other candidates are correct
               {
-                name: 'Will Gardner',
-                img: 'portraits/Will_Gardner.jpg',
-                party: 'Republican'
+                name: 'Al Jaeger',
+                img: 'portraits/todo.jpg',
+                party: 'Independent',
+                grade: 'F'
+              },
+              {
+                name: 'Michael Coachman',
+                img: 'portraits/todo.jpg',
+                party: 'Independent'
               }
             ]
           }
@@ -8990,12 +9167,11 @@ export const stateInfo =
                 party: 'Democrat',
                 grade: 'B'
               },
-              // TODO: Kevin Stitt, grade: F
-              // TODO: check if Republican candidate is correct
               {
-                name: 'Mick Cornett',
-                img: 'portraits/Mick_Cornett.jpg',
-                party: 'Republican'
+                name: 'Kevin Stitt',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
               },
               {
                 name: 'Chris Powell',
@@ -9019,7 +9195,12 @@ export const stateInfo =
                 party: 'Democrat',
                 grade: 'A'
               },
-              // TODO: Kevin Hern, grade: F
+              {
+                name: 'Kevin Hern',
+                img: 'portraits/Tim_Gilpin.jpg',
+                party: 'Republican',
+                grade: 'F'
+              }
             ]
           },
           {
@@ -9109,12 +9290,11 @@ export const stateInfo =
                 party: 'Democrat',
                 grade: 'C'
               },
-              // TODO: Matt Pinnell, grade: F
-              // TODO: Check Republican Candidate
               {
-                name: 'Dana Murphy',
-                img: 'portraits/Dana_Murphy.jpg',
-                party: 'Republican'
+                name: 'Matt Pinnell',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           }
@@ -9235,7 +9415,6 @@ export const stateInfo =
           {
             name: 'District 3',
             candidates: [
-              // TODO: Tom Harrison, grade: F
               {
                 name: 'Earl Blumenauer',
                 img: 'portraits/Earl_Blumenauer.jpg',
@@ -9303,7 +9482,6 @@ export const stateInfo =
                 name: 'Scott Wagner',
                 img: 'portraits/Scott_Wagner.jpg',
                 party: 'Republican',
-                grade: 'F',
                 grade: 'F'
               }
             ]
@@ -10169,9 +10347,73 @@ export const stateInfo =
           }
         ]
       },
-      // TODO: Lieutenant Governor: [Larry Rhoden: F, Michelle Lavalle: (none)]
-      // TODO: Attorney General: [Jason Ravnsborg: F, Randy Seiler: (none)]
-      // TODO: Secretary of State: [Steve Barnett: F, Alexandra Frederick: B]
+      {
+        name: 'Lieutenant Governor',
+        id: 'lieutenantGovernor',
+        districts: [
+          {
+            name: 'Statewide',
+            candidates: [
+              {
+                name: 'Michelle Lavalle',
+                img: 'portraits/todo.jpg',
+                party: 'Democrat'
+              },
+              {
+                name: 'Larry Rhoden',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Attorney General',
+        id: 'attorneyGeneral',
+        districts: [
+          {
+            name: 'Statewide',
+            candidates: [
+              {
+                name: 'Randy Seiler',
+                img: 'portraits/todo.jpg',
+                party: 'Democrat',
+              },
+              {
+                name: 'Jason Ravnsborg',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: 'Secretary of State',
+        id: 'secretaryOfState',
+        districts: [
+          {
+            name: 'Statewide',
+            candidates: [
+              {
+                name: 'Alexandra Frederick',
+                img: 'portraits/todo.jpg',
+                party: 'Democrat',
+                grade: 'B'
+              },
+              {
+                name: 'Steve Barnett',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
+              }
+            ]
+          }
+        ]
+      }
     ]
   },
   TN: {
@@ -11139,12 +11381,14 @@ export const stateInfo =
               {
                 name: 'Jenny Wilson',
                 img: 'portraits/Jenny_Wilson.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Mitt Romney',
                 img: 'portraits/Mitt_Romney.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               },
               {
                 name: 'Tim Aalders',
@@ -11175,7 +11419,8 @@ export const stateInfo =
               {
                 name: 'Lee Castillo',
                 img: 'portraits/Lee_Castillo.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Rob Bishop',
@@ -11201,7 +11446,8 @@ export const stateInfo =
               {
                 name: 'Shireen Ghorbani',
                 img: 'portraits/Shireen_Ghorbani.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Chris Stewart',
@@ -11211,7 +11457,7 @@ export const stateInfo =
               },
               {
                 name: 'Jeffrey Whipple',
-                img: 'none.jpg',
+                img: 'portraits/none.jpg',
                 party: 'Libertarian'
               },
               {
@@ -11227,12 +11473,14 @@ export const stateInfo =
               {
                 name: 'James Singer',
                 img: 'portraits/james_singer.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'John Curtis',
                 img: 'portraits/CurtisUtah.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               },
               {
                 name: 'Gregory Duerden',
@@ -11253,7 +11501,7 @@ export const stateInfo =
                 name: 'Ben McAdams',
                 img: 'portraits/Ben_McAdams.jpg',
                 party: 'Democrat',
-                grade: 'C'
+                grade: 'A'
               },
               {
                 name: 'Mia Love',
@@ -11280,13 +11528,14 @@ export const stateInfo =
               {
                 name: 'Christine Hallquist',
                 img: 'portraits/23948.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'B'
               },
               {
                 name: 'Phil Scott',
                 img: 'portraits/Phil_Scott.jpg',
                 party: 'Republican',
-                grade: 'F'
+                grade: 'B'
               },
               {
                 name: 'Cris Ericson',
@@ -11313,12 +11562,13 @@ export const stateInfo =
                 name: 'Bernie Sanders',
                 img: 'portraits/Bernie_Sanders.jpg',
                 party: 'Democrat',
-                grade: 'B+'
+                grade: 'A'
               },
               {
-                name: 'Brooke Paige',
-                img: 'portraits/Brooke_Paige.jpg',
-                party: 'Republican'
+                name: 'Lawrence Zupan',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           }
@@ -11338,9 +11588,10 @@ export const stateInfo =
                 grade: 'A'
               },
               {
-                name: 'Brooke Paige',
-                img: 'portraits/Brooke_Paige.jpg',
-                party: 'Republican'
+                name: 'Anya Tynio',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
               },
               {
                 name: 'Cris Ericson',
@@ -11367,7 +11618,8 @@ export const stateInfo =
               {
                 name: 'Don Turner',
                 img: 'portraits/donaldnorcross.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           }
@@ -11387,9 +11639,10 @@ export const stateInfo =
                 grade: 'A'
               },
               {
-                name: 'Brooke Paige',
-                img: 'portraits/Brooke_Paige.jpg',
-                party: 'Republican'
+                name: 'Janssen Willhoit',
+                img: 'portraits/todo.jpg',
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           }
@@ -11429,6 +11682,8 @@ export const stateInfo =
                 img: 'portraits/Doug_Hoffer.jpg',
                 party: 'Democrat'
               },
+              // TODO: Richard Kenyon, grade: (none)
+              // TODO: check if Republican candidate is correct
               {
                 name: 'Brooke Paige',
                 img: 'portraits/Brooke_Paige.jpg',
@@ -11450,6 +11705,8 @@ export const stateInfo =
                 img: 'portraits/Elizabeth_Pearce.jpg',
                 party: 'Democrat'
               },
+              // TODO: Richard Morton, grade: (none)
+              // tODO: check if republican candidate is correct
               {
                 name: 'Brooke Paige',
                 img: 'portraits/Brooke_Paige.jpg',
@@ -11499,13 +11756,14 @@ export const stateInfo =
               {
                 name: 'Vangie Williams',
                 img: 'portraits/VangieWilliams.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Rob Wittman',
                 img: 'portraits/Rob_Wittman.jpg',
                 party: 'Republican',
-                grade: 'F-'
+                grade: 'F'
               }
             ]
           },
@@ -11516,6 +11774,7 @@ export const stateInfo =
                 name: 'Elaine Luria',
                 img: 'portraits/Elaine_Luria.jpg',
                 party: 'Democrat',
+                grade: 'A',
                 endorsedByGiffords: true,
                 endorsedByGunSenseVoter: true
               },
@@ -11533,7 +11792,8 @@ export const stateInfo =
               {
                 name: 'Robert C. Scott',
                 img: 'portraits/Bobby_Scott.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               }
             ]
           },
@@ -11550,7 +11810,8 @@ export const stateInfo =
               {
                 name: 'Ryan McAdams',
                 img: 'portraits/Ryan_McAdams_Candidate_US_Representative_VA_4th.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           },
@@ -11561,12 +11822,14 @@ export const stateInfo =
                 name: 'Leslie Cockburn',
                 img: 'portraits/Leslie_Cockburn.jpg',
                 party: 'Democrat',
+                grade: 'A',
                 endorsedByGiffords: true
               },
               {
                 name: 'Denver Riggleman',
                 img: 'portraits/denver_riggleman.jpg',
                 party: 'Republican',
+                grade: 'F',
                 endorsedByGiffords: true
               }
             ]
@@ -11577,8 +11840,10 @@ export const stateInfo =
               {
                 name: 'Jennifer Lewis',
                 img: 'portraits/039489834.jpg',
-                party: 'Democrat'
-              }
+                party: 'Democrat',
+                grade: 'A'
+              },
+              // TODO: Ben Cline, grade: 'F-'
             ]
           },
           {
@@ -11588,9 +11853,11 @@ export const stateInfo =
                 name: 'Abigail Spanberger',
                 img: 'portraits/Spanberger_Abigail.jpg',
                 party: 'Democrat',
+                grade: 'A',
                 endorsedByGiffords: true,
                 endorsedByGunSenseVoter: true
-              }
+              },
+              // TODO: Dave Brat, grade: F
             ]
           },
           {
@@ -11600,10 +11867,11 @@ export const stateInfo =
                 name: 'Don Beyer',
                 img: 'portraits/don-beyer.jpg',
                 party: 'Democrat',
-                // grade: '?',
+                grade: 'A',
                 endorsedByGiffords: true,
                 endorsedByGunSenseVoter: true
-              }
+              },
+              // TODO: Thomas Oh, grade: (none)
             ]
           },
           {
@@ -11612,13 +11880,14 @@ export const stateInfo =
               {
                 name: 'Anthony Flaccavento',
                 img: 'portraits/Anthony_Flaccavento.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'B'
               },
               {
                 name: 'Morgan Griffith',
                 img: 'portraits/Morgan_Griffith.jpg',
                 party: 'Republican',
-                grade: 'F'
+                grade: 'F-'
               }
             ]
           },
@@ -11654,7 +11923,8 @@ export const stateInfo =
               {
                 name: 'Jeff Dove',
                 img: 'portraits/Jeff-Dove-1144x763.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           }
@@ -11681,7 +11951,8 @@ export const stateInfo =
               {
                 name: 'Susan Hutchison',
                 img: 'portraits/Susan_Hutchison_Washington.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           }
@@ -11698,12 +11969,14 @@ export const stateInfo =
                 name: 'Suzan DelBene',
                 img: 'portraits/jlkdfs.jpg',
                 party: 'Democrat',
+                grade: 'A',
                 endorsedByGiffords: true
               },
               {
                 name: 'Jeffrey Beeler',
                 img: 'portraits/Jeffrey-Beeler-Candidate-Photo-2018.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           },
@@ -11716,7 +11989,8 @@ export const stateInfo =
                 party: 'Democrat',
                 grade: 'A',
                 endorsedByGiffords: true
-              }
+              },
+              // TODO: Brian Luke, grade: F
             ]
           },
           {
@@ -11732,6 +12006,7 @@ export const stateInfo =
                 name: 'Carolyn Long',
                 img: 'portraits/CarolynLong.jpg',
                 party: 'Democrat',
+                grade: 'A',
                 endorsedByGunSenseVoter: true
               }
             ]
@@ -11742,7 +12017,8 @@ export const stateInfo =
               {
                 name: 'Christine Brown',
                 img: 'portraits/Christine_Brown.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Dan Newhouse',
@@ -11758,12 +12034,14 @@ export const stateInfo =
               {
                 name: 'Cathy McMorris Rodgers',
                 img: 'portraits/Cathy_McMorris_Rodgers.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'F'
               },
               {
                 name: 'Lisa Brown',
                 img: 'portraits/Brown_lisa.jpg',
                 party: 'Republican',
+                grade: 'A',
                 endorsedByGiffords: true,
                 endorsedByGunSenseVoter: true
               }
@@ -11782,7 +12060,8 @@ export const stateInfo =
               {
                 name: 'Douglas Dightman',
                 img: 'portraits/Screenshot_20180525-165712.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           },
@@ -11793,6 +12072,7 @@ export const stateInfo =
                 name: 'Pramila Jayapal',
                 img: 'portraits/Pramila_Jayapal_115th_Congress_photo.jpg',
                 party: 'Democrat',
+                grade: 'A',
                 endorsedByGiffords: true
               },
               {
@@ -11808,7 +12088,7 @@ export const stateInfo =
             candidates: [
               {
                 name: 'Dino Rossi',
-                img: 'none.jpg',
+                img: 'portraits/none.jpg',
                 party: 'Republican',
                 grade: 'F'
               },
@@ -11816,6 +12096,7 @@ export const stateInfo =
                 name: 'Kim Schrier',
                 img: 'portraits/Kim_Schrier.jpg',
                 party: 'Democrat',
+                grade: 'A',
                 endorsedByGiffords: true,
                 endorsedByGunSenseVoter: true
               }
@@ -11830,7 +12111,8 @@ export const stateInfo =
                 party: 'Democrat',
                 grade: 'A',
                 endorsedByGiffords: true
-              }
+              },
+              // TODO: Sarah Smith, grade: A
             ]
           },
           {
@@ -11839,12 +12121,14 @@ export const stateInfo =
               {
                 name: 'Denny Heck',
                 img: 'portraits/denny_heck.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Joseph Brumbles',
                 img: 'portraits/181132_lg.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           }
@@ -11866,7 +12150,7 @@ export const stateInfo =
                 name: 'Joe Manchin',
                 img: 'portraits/Joe_Manchin.jpg',
                 party: 'Democrat',
-                grade: 'F'
+                grade: 'B'
               },
               {
                 name: 'Patrick Morrisey',
@@ -11904,7 +12188,8 @@ export const stateInfo =
               {
                 name: 'Talley Sergent',
                 img: 'portraits/Sergent_Headshot.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'B'
               },
               {
                 name: 'Alex X. Mooney',
@@ -11948,7 +12233,8 @@ export const stateInfo =
               {
                 name: 'Tony Evers',
                 img: 'portraits/Tony-Evers.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Scott Walker',
@@ -12006,12 +12292,14 @@ export const stateInfo =
                 name: 'Randy Bryce',
                 img: 'portraits/Randy_bryce_0.jpg',
                 party: 'Democrat',
+                grade: 'A',
                 endorsedByGiffords: true
               },
               {
                 name: 'Bryan Steil',
                 img: 'portraits/Bryan_Steil_Headshot-min.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           },
@@ -12038,7 +12326,8 @@ export const stateInfo =
               {
                 name: 'Steve Toft',
                 img: 'portraits/Steve_Toft_Osseo_WI3D.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           },
@@ -12054,7 +12343,8 @@ export const stateInfo =
               {
                 name: 'Tim Rogers',
                 img: 'portraits/none.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           },
@@ -12064,7 +12354,8 @@ export const stateInfo =
               {
                 name: 'Tom Palzewicz',
                 img: 'portraits/Tom_Palzewicz.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Jim Sensenbrenner',
@@ -12096,7 +12387,8 @@ export const stateInfo =
               {
                 name: 'Margaret Engebretson',
                 img: 'portraits/MargaretEngebretson.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Sean P. Duffy',
@@ -12112,7 +12404,8 @@ export const stateInfo =
               {
                 name: 'Beau Liegeois',
                 img: 'portraits/Beau_Legois.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Mike Gallagher',
@@ -12134,7 +12427,8 @@ export const stateInfo =
               {
                 name: 'Mandela Barnes',
                 img: 'portraits/News1_MandelaBarnes.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'A'
               },
               {
                 name: 'Rebecca Kleefisch',
@@ -12149,7 +12443,7 @@ export const stateInfo =
               },
               {
                 name: 'Patrick Baird',
-                img: 'none.jpg',
+                img: 'portraits/none.jpg',
                 party: 'Libertarian'
               }
             ]
@@ -12171,11 +12465,11 @@ export const stateInfo =
               {
                 name: 'Brad Schimel',
                 img: 'portraits/Josh_Kaul_for_Attorney_General.jpg',
-                grade: 'F'
+                grade: 'F-'
               },
               {
                 name: 'Terry Larson',
-                img: 'none.jpg',
+                img: 'portraits/none.jpg',
                 party: 'Constitution'
               }
             ]
@@ -12219,7 +12513,8 @@ export const stateInfo =
               {
                 name: 'Travis Hartwig',
                 img: 'portraits/unnamed-19.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               },
               {
                 name: 'Andrew Zuelke',
@@ -12246,13 +12541,13 @@ export const stateInfo =
                 name: 'Mary Throne',
                 img: 'portraits/Throne.jpg',
                 party: 'Democrat',
-                grade: 'C'
+                grade: 'B'
               },
               {
                 name: 'Mark Gordon',
                 img: 'portraits/Mark_Gordon.jpg',
                 party: 'Republican',
-                grade: 'D+'
+                grade: 'F'
               }
             ]
           }
@@ -12268,7 +12563,8 @@ export const stateInfo =
               {
                 name: 'Gary Trauner',
                 img: 'portraits/Gary_Trauner.jpg',
-                party: 'Democrat'
+                party: 'Democrat',
+                grade: 'B'
               },
               {
                 name: 'John Barrasso',
@@ -12313,13 +12609,13 @@ export const stateInfo =
                 name: 'James Byrd',
                 img: 'portraits/Byrd.jpg',
                 party: 'Democrat',
-                grade: 'C'
+                grade: 'A'
               },
               {
                 name: 'Edward Buchanan',
                 img: 'portraits/Buchanan.jpg',
                 party: 'Republican',
-                grade: 'D-'
+                grade: 'F'
               }
             ]
           }
@@ -12340,7 +12636,8 @@ export const stateInfo =
               {
                 name: 'Kristi Racines',
                 img: 'portraits/KristiRacines.jpg',
-                party: 'Republican'
+                party: 'Republican',
+                grade: 'F'
               }
             ]
           }
@@ -12357,7 +12654,7 @@ export const stateInfo =
                 name: 'Curt Meier',
                 img: 'portraits/MeierCS03.jpg',
                 party: 'Republican',
-                grade: 'F'
+                grade: 'F-'
               }
             ]
           }
