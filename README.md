@@ -2,7 +2,7 @@
 
 [![Developer](https://img.shields.io/badge/Developer-dillon-red.svg)](http://dillonpetito.ml/)
 [![GitHub release](https://img.shields.io/github/release/dpett122/Masternode-Status.svg)](https://github.com/dillon/guncontrolgrades/releases)
-[![GitHub Commits](https://img.shields.io/github/commits-since/dillon/guncontrolgrades/1.0.0.svg)](https://github.com/dillon/guncontrolgrades/commits)
+[![Github last-commit](https://img.shields.io/github/last-commit/dillon/guncontrolgrades.svg)]
 
 ___
 
