@@ -1,8 +1,6 @@
 ## Gun Control Grades<a href="https://guncontrolgrades.org"><img align="left" src="/public/favicon.ico" width="80px" style="padding-right:15px"></a>
 
 [![Developer](https://img.shields.io/badge/Developer-dillon-red.svg)](http://dillonpetito.ml/)
-[![GitHub release](https://img.shields.io/github/release/dpett122/Masternode-Status.svg)](https://github.com/dillon/guncontrolgrades/releases)
-[![GitHub Commits](https://img.shields.io/github/commits-since/dillon/guncontrolgrades/1.0.0.svg)](https://github.com/dillon/guncontrolgrades/commits)
 
 ___
 
