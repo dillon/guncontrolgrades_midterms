@@ -78,7 +78,9 @@ ___
 
 ##### <span id="animations">Animations</span>
 
-<img alt="screenshot" src="/extra_files/media-for-docs/animations/2_myvotes_animation.gif" width="49%"> <img alt="screenshot" src="/extra_files/media-for-docs/animations/1_add_animation.gif" width="49%">
+<img alt="screenshot" src="/extra_files/media-for-docs/animations/2_myvotes_animation.gif" width="40%">
+
+<img alt="screenshot" src="/extra_files/media-for-docs/animations/1_add_animation.gif" width="40%">
 
 #
 
