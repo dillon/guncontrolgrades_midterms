@@ -109,19 +109,19 @@ Categories are broken up into candidate card interactions and shares.
 <img alt="screenshot" src="/extra_files/media-for-docs/analytics/2_event_categories.png" width="800px" align="center">
 
 #
-##### Event Category: Interact
+##### Event Category: `Interact`
 This event category tracks users' legislation tab changes, candidate button adds, and mobile voting card popup visibility toggles.
 
 <img alt="screenshot" src="/extra_files/media-for-docs/analytics/3_interact_actions.png" width="800px" align="center">
 
 #
-##### Event Action: Changed Legislature
+##### Event Action: `Changed Legislature`
 The `Change Legislature` event action also tracks the name of the legislation that a user views.
 
 <img alt="screenshot" src="/extra_files/media-for-docs/analytics/4_interact_labels.png" width="800px" align="center">
 
 #
-##### Event Category: Interact
+##### Event Category: `Share`
 This event category tracks when a user prints or shares their card via Email, Twitter, or Facebook. An additional set of print/share buttons are visible on the mobile version of the app, and these too are tracked.
 
 <img alt="screenshot" src="/extra_files/media-for-docs/analytics/5_share_actions.png" width="800px" align="center">
