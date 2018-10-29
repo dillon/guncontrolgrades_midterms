@@ -69,6 +69,7 @@ ___
 
 <img alt="screenshot" src="/extra_files/media-for-docs/desktop/3_state.png" width="100%" style="max-width:800px">
 
+#
 
 ##### <span id="mobile">Mobile</span>
 
