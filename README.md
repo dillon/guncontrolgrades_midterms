@@ -11,7 +11,7 @@ Choose candidates to vote for in the 2018 U.S. Midterm elections based on invert
 ___
 <div style="line-height:1.2">
 
-#### Contents
+#### Table of Contents
 
 __[About](#about)__
 
