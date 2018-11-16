@@ -63,7 +63,11 @@ class Candidates extends React.Component {
       }
       return (
         <div
-          style={this.state.rSelected === joinedString ? Styles.candidateCardSelected : Styles.candidateCard}
+          style={x.wonElection ?
+            this.state.rSelected === joinedString ? Styles.candidateCardSelected : Styles.candidateCard
+            :
+            Styles.candidateCardDisabled
+          }
           className='candidateCard'
           key={x.img + x.name}
         >
@@ -84,35 +88,54 @@ class Candidates extends React.Component {
                 )}
               </div>
               <div style={Styles.buttonContainer}>
-                {this.state.rSelected === joinedString ?
-                  // If this candidate is selected, render active +Add button
-                  <button
-                    className='candidateCheckbox'
-                    style={Styles.candidateCheckboxActive}
-                    onClick={() => this.onRadioBtnClick(joinedString)}
-                    active={(this.state.rSelected === joinedString).toString()}
-                  >
-                    <IconContext.Provider value={{ color: 'white', size: '1.2em', className: 'global-class-name' }}>
-                      <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <GoCheck />
-                      </div>
-                    </IconContext.Provider>
-                  </button>
-                  :
-                  // If this candidate is selected, render inactive +Add button
-                  <button
-                    className='candidateCheckbox candidateCheckboxNotActive'
-                    style={Styles.candidateCheckbox}
-                    onClick={() => this.onRadioBtnClick(joinedString)}
-                    active={(this.state.rSelected === joinedString).toString()}
-                  >
-                    <IconContext.Provider value={{ color: colors.primary, size: '.9em', className: 'global-class-name' }}>
-                      <div style={{ display: 'flex', alignItems: 'center' }}>
-                        <GoPlus />
-                      </div>
-                    </IconContext.Provider >
-                    <div className='AddText' style={{ fontSize: '.9rem', }}>Add</div>
-                  </button>
+                {
+                  x.wonElection ?
+
+                    <button
+                      className='candidateCheckbox candidateCheckboxNotActive'
+                      style={Styles.candidateCheckboxWon}
+                      // onClick={() => this.onRadioBtnClick(joinedString)} // uncomment this to re-enable buttons
+                      active={(this.state.rSelected === joinedString).toString()}
+                    >
+                      <IconContext.Provider value={{ color: colors.primary, size: '.9em', className: 'global-class-name' }}>
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                          <GoPlus />
+                        </div>
+                      </IconContext.Provider >
+                      <div className='AddText' style={{ fontSize: '.9rem', }}>Add</div>
+                    </button>
+                    
+                    :
+
+                  // this.state.rSelected === joinedString ?
+                  // // If this candidate is selected, render active +Add button
+                  // <button
+                  //   className='candidateCheckbox'
+                  //   style={Styles.candidateCheckboxActive}
+                  //   onClick={() => this.onRadioBtnClick(joinedString)}
+                  //   active={(this.state.rSelected === joinedString).toString()}
+                  // >
+                  //   <IconContext.Provider value={{ color: 'white', size: '1.2em', className: 'global-class-name' }}>
+                  //     <div style={{ display: 'flex', alignItems: 'center' }}>
+                  //       <GoCheck />
+                  //     </div>
+                  //   </IconContext.Provider>
+                  // </button>
+                  // :
+                // If this candidate is selected, render inactive +Add button
+                <button
+                  className='candidateCheckbox candidateCheckboxNotActive'
+                  style={Styles.candidateCheckbox}
+                  // onClick={() => this.onRadioBtnClick(joinedString)} // uncomment this to re-enable buttons
+                  active={(this.state.rSelected === joinedString).toString()}
+                >
+                  <IconContext.Provider value={{ color: colors.primary, size: '.9em', className: 'global-class-name' }}>
+                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                      <GoPlus />
+                    </div>
+                  </IconContext.Provider >
+                  <div className='AddText' style={{ fontSize: '.9rem', }}>Add</div>
+                </button>
                 }
               </div>
             </div>

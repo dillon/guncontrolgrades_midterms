@@ -8,5 +8,6 @@ export const colors = {
     darkGrey: 'rgb(73, 85, 95)',
     black: 'rgb(36, 41, 46)',
     red: 'rgb(237, 73, 73)',
-    redLowOpacity: 'rgb(242, 121, 121)'
+    redLowOpacity: 'rgb(242, 121, 121)',
+    disabled: 'rgb(255,255,255)'
 }
