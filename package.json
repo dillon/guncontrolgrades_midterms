@@ -2,7 +2,7 @@
   "name": "gunsafetymap",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dillon.github.com/",
+  "homepage": "https://dillon.github.io/guncontrolgrades_midterms/",
   "dependencies": {
     "audit": "0.0.6",
     "bootstrap": "^4.1.1",
