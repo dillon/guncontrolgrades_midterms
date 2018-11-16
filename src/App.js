@@ -15,7 +15,7 @@ import ScrollToTop from './components/ScrollToTop'
 const App = () => {
   return (
     // delete when deploying to custom URL
-    <Router>
+    <Router basename='guncontrolgrades_midterms'>
       <ScrollToTop>
         <NavHeader />
         <Route path='/State/:id' exact component={State} />
