@@ -1,10 +1,10 @@
-## Gun Control Grades<a href="https://guncontrolgrades.org"><img align="left" src="/public/favicon.ico" width="80px" style="padding-right:15px"></a>
+## Gun Control Grades<a href="https://dillon.github.io/guncontrolgrades_midterms"><img align="left" src="/public/favicon.ico" width="80px" style="padding-right:15px"></a>
 
 [![Developer](https://img.shields.io/badge/Developer-dillon-red.svg)](http://dillonpetito.ml/)
 
 ___
 
-#### [guncontrolgrades.org](https://guncontrolgrades.org)
+#### This is an [archived version](https://dillon.github.io/guncontrolgrades_midterms) of [guncontrolgrades.org](https://guncontrolgrades.org) created for the 2018 midterm elections
 
 Choose candidates to vote for in the 2018 U.S. Midterm elections based on inverted ratings from the National Rifle Association and endorsements from anti-gun-violence organizations.
 
