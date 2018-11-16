@@ -127,23 +127,6 @@ export const Candidates = {
     WebkitTransition: '.1s',
     maxWidth: 288,
   },
-  candidateCardDisabled: {
-    backgroundColor: colors.disabled,
-    color: colors.primaryDark,
-    height: constants.imageHeight,
-    borderRadius: 5,
-    overflow: 'hidden',
-    display: 'flex',
-    flexDirection: 'row',
-    border: `1px solid ${colors.primaryMediumOpacity}`,
-    transition: '.1s',
-    WebkitTransition: '.1s',
-    maxWidth: 288,
-    cursor: 'default !important',
-    opacity: .35,
-    backgroundImage: 'linear-gradient(45deg, #c9c9cf 25%, transparent 25%, transparent 50%, #c9c9cf 50%, #c9c9cf 75%, transparent 75%, transparent)',
-    backgroundSize: '5px 5px'
-  },
   candidateImage: {
     height: constants.imageHeight,//130,
     width: constants.imageWidth,
@@ -213,32 +196,7 @@ export const Candidates = {
     cursor: 'pointer',
     // delete below to get rid of button animation
     transition: '.1s',
-    WebkitTransition: '.1s',
-    // delete below to enable buttons
-    // backgroundImage: 'linear-gradient(45deg, #c9c9cf 25%, transparent 25%, transparent 50%, #c9c9cf 50%, #c9c9cf 75%, transparent 75%, transparent)',
-    // backgroundSize: '5px 5px',
-    cursor: 'default'
-  },
-  candidateCheckboxWon: {
-    color: colors.primary,
-    backgroundColor: 'rgba(0,0,0,0)',
-    width: 60,
-    height: 35,
-    borderRadius: 3,
-    border: `1px solid ${colors.primary}`,
-    display: 'flex',
-    alignContent: 'center',
-    alignItems: 'center',
-    justifyContent: 'center',
-    cursor: 'pointer',
-    // delete below to get rid of button animation
-    transition: '.1s',
-    WebkitTransition: '.1s',
-    // delete below to enable buttons
-    backgroundImage: 'linear-gradient(45deg, #c9c9cf 25%, transparent 25%, transparent 50%, #c9c9cf 50%, #c9c9cf 75%, transparent 75%, transparent)',
-    backgroundSize: '5px 5px',
-    opacity: .35,
-    cursor: 'default'
+    WebkitTransition: '.1s'
   },
   buttonContainer: {
     display: 'flex',

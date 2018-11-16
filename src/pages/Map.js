@@ -31,7 +31,8 @@ const LandingLogo = () => {
       <div id='logoLarge' style={Styles.landingFullName}>
       </div>
       <div id='landingDescription' style={Styles.landingDescription}>
-        See where your<br />elected officials stand.
+        Choose your candidates<br />
+        for the midterm elections.
       </div>
     </div>
   )
@@ -72,7 +73,7 @@ class UsMap extends React.Component {
                 </DropdownMenu>
               </Dropdown>
               <p style={Styles.hintText} className='text-muted hintText'>
-                Choose a state to view ratings for elected officials
+                Choose a state to view candidates up for election
                 </p>
               <div id='us-map'>
                 <svg
